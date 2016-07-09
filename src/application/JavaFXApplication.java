@@ -7,9 +7,9 @@ import javafx.scene.Scene;
 public class JavaFXApplication extends Application {
 
 	//screens declarations
-	public static String chooseImageScreenFXML = "ChooseImageScreen.fxml";
-	public static String chooseLabelScreenFXML = "ChooseLabelScreen.fxml";
-	public static String homeScreenFXML = "HomeScreen.fxml";
+	public static String chooseImageScreenFXML = "../fxml/ChooseImageScreen.fxml";
+	public static String chooseLabelScreenFXML = "../fxml/ChooseLabelScreen.fxml";
+	public static String homeScreenFXML = "../fxml/HomeScreen.fxml";
 
 	public static ScreenPane mainContainer = null;
 	

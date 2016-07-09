@@ -1,21 +1,29 @@
 package application;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import javafx.application.Platform;
+import screenController.ScreenController;
+import screenData.ChooseImageScreenData;
+import screenData.ScreenData;
+import screenData.ScreenDataHolder;
 
 public class Test{
 
 	HashMap<String,Integer> answers = new HashMap<String, Integer>();
-	
+	HashMap<String,Integer> correctAnswers = new HashMap<String, Integer>();
+
 	private Queue<String> screenList = new LinkedList<String>();
 
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
 	
-	Test(String category){
+	public Test(String category){
 		answeredQuestions = 0;
 		totalQuestions = JavaFXApplication.parser.getCategoryTotalQuestions(category);
 		System.out.println("totalQuestions = "+totalQuestions);
@@ -24,6 +32,10 @@ public class Test{
 		for(String screenId : JavaFXApplication.parser.getCategoriesScreenIdList(category)){
 	        JavaFXApplication.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
+			ScreenData screenData = ScreenDataHolder.getScreenData(screenId);
+			ChooseImageScreenData sd = (ChooseImageScreenData)screenData;
+			Integer answer = sd.getAnswer();
+			correctAnswers.put(screenId, answer);	
 
 		}
 	}
@@ -49,14 +61,43 @@ public class Test{
     	myScreenPane.setScreen(screenId);
 	}
 	
+	private String calculateResults(){
+		
+		System.out.println("answers: "+answers.toString());
+		System.out.println("correctAnswers: "+correctAnswers.toString());
+		
+			
+		double correct = 0;
+		double wrong = 0;
+
+		for (String key : answers.keySet()) {
+			if(answers.get(key).equals(correctAnswers.get(key)))
+				correct++;
+			else
+				wrong++;
+		}
+
+		Integer res = (int) (((correct)/(correct+wrong))*100);
+		return Integer.toString(res)+"%";
+		
+	}
+	
 	public void finishTest(){
 		if(totalQuestions != answeredQuestions){
 			System.out.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
-		System.out.println("answers: "+answers.toString());
+		String results = calculateResults();
+		System.out.println("results= "+results);
 		
-		Platform.exit();
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		Date date = new Date();
+		String strDate = dateFormat.format(date);
+		System.out.println("date= "+strDate);
+		
+        String screenId = "homeScreen";
+		JavaFXApplication.mainContainer.setScreen(screenId);
+		//Platform.exit();
 	}
 	
 	public void submitAnswer(ScreenPane myScreenPane, Integer answerNo){

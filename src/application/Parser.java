@@ -12,6 +12,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import screenData.ChooseImageScreenData;
+import screenData.ScreenDataHolder;
+
 public class Parser {
 	
 	private JSONObject jsonObject;
@@ -96,8 +99,9 @@ public class Parser {
     	String image1Id = (String)(question.get("image1Id"));
     	String image2Id = (String)(question.get("image2Id"));
     	String image3Id = (String)(question.get("image3Id"));
+    	String answer = (String)(question.get("answer"));
 
-        ChooseImageScreenData chooseImageScreenData1 = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,chapterName,categoryName);
+        ChooseImageScreenData chooseImageScreenData1 = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,answer,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseImageScreenData1);
 	}
 	

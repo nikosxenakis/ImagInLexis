@@ -85,6 +85,7 @@
 							"image1Id": "mastoras",
 							"image2Id": "grammateas",
 							"image3Id": "daskala",
+							"answer": "3"
 						},
 						{
 							"screenId": "ScreenProfessionsPoliceman",
@@ -93,6 +94,7 @@
 							"image1Id": "grammateas",
 							"image2Id": "mastoras",
 							"image3Id": "daskala",
+							"answer": "1"
 						},
 					]
 				},
@@ -107,6 +109,7 @@
 							"image1Id": "elefantas",
 							"image2Id": "ippopotamos",
 							"image3Id": "rinokeros",
+							"answer": "1"
 						},
 						{
 							"screenId": "ScreenAnimalsHorse",
@@ -115,6 +118,7 @@
 							"image1Id": "alogo",
 							"image2Id": "gaidaros",
 							"image3Id": "gaidaros",
+							"answer": "1"
 						},
 					]
 				}

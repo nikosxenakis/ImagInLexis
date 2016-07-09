@@ -1,0 +1,16 @@
+FXML ScreenList:
+
+	question types:
+		ChooseImageScreen.fxml (3 options)
+		ChooseImageV2Screen.fxml (4 options)
+		ChooseLabelScreen.fxml (3 options)
+		ChooseLabelV2Screen.fxml (2 options)
+		ChooseInImageScreen.fxml
+
+	screens:
+		HomeScreen.fxml ()
+		HighScoreScreen.fxml (a table with (Name/Date/Results) )
+		WhatIsItScreen.fxml (basic Info)
+		ChapterScreen.fxml
+
+	
