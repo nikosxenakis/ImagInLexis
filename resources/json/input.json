@@ -1,0 +1,164 @@
+{
+	"images": [
+		{
+			"id": "recognizionImage",
+			"path": "images/recognizionIcon.jpg"
+		},
+		{
+			"id": "animalsImage",
+			"path": "images/animalIcon.jpg"
+		},
+		{
+			"id": "soundIcon",
+			"path": "images/soundIcon.jpg"
+		},
+		{
+			"id": "ippopotamos",
+			"path": "images/animals/ippopotamos.jpg"
+		},
+		{
+			"id": "alogo",
+			"path": "images/animals/alogo.jpg"
+		},
+		{
+			"id": "elefantas",
+			"path": "images/animals/elefantas.jpg"
+		},
+		{
+			"id": "gaidaros",
+			"path": "images/animals/gaidaros.jpg"
+		},
+		{
+			"id": "rinokeros",
+			"path": "images/animals/rinokeros.jpg"
+		},
+		{
+			"id": "grammateas",
+			"path": "images/grammateas.jpg"
+		},
+		{
+			"id": "mastoras",
+			"path": "images/mastoras.jpg"
+		},
+		{
+			"id": "daskala",
+			"path": "images/daskala.jpg"
+		},
+		{
+			"id": "kilindros",
+			"path": "images/kilindros.jpg"
+		},
+		{
+			"id": "kivos",
+			"path": "images/kivos.jpg"
+		},
+		{
+			"id": "romvos",
+			"path": "images/romvos.jpg"
+		}
+	],
+
+	"sounds": [
+		{
+			"id": "...",
+			"path": "..."
+		}
+	],
+	"screens": [
+		{
+			"screenId": "homeScreen"
+		}
+	],
+	"questions": [
+		{
+			"chapter": "recognizion",
+			"chapterName": "Αναγνώρηση",
+			"chapterList": [
+				{
+					"category": "professions",
+					"categoryName": "Επαγγέλματα",
+					"categoryList": [
+						{
+							"screenId": "ScreenProfessionsTeacher",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με τον δάσκαλο",
+							"image1Id": "mastoras",
+							"image2Id": "grammateas",
+							"image3Id": "daskala",
+						},
+						{
+							"screenId": "ScreenProfessionsPoliceman",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με τον αστυνομικό",
+							"image1Id": "grammateas",
+							"image2Id": "mastoras",
+							"image3Id": "daskala",
+						},
+					]
+				},
+				{
+					"category": "animals",
+					"categoryName": "Ζώα",
+					"categoryList": [
+						{
+							"screenId": "ScreenAnimalsElephant",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με τον ελέφαντα",
+							"image1Id": "elefantas",
+							"image2Id": "ippopotamos",
+							"image3Id": "rinokeros",
+						},
+						{
+							"screenId": "ScreenAnimalsHorse",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με  το άλογο",
+							"image1Id": "alogo",
+							"image2Id": "gaidaros",
+							"image3Id": "gaidaros",
+						},
+					]
+				}
+			]
+		},
+		{
+			"chapterName": "chapter2",
+			"chapterList": [
+				
+			]
+		},
+		{
+			"chapterName": "chapter3",
+			"chapterList": [
+				
+			]
+		}
+	]
+
+	"scores": [
+		{
+			"chapterName": "chapter1",
+			"chapterList": [
+				{
+					"categoryName": "animals",
+					"categoryList": [
+						{
+							"name": "nikos",
+							"score": "0.8",
+							"data": "12 Ιουλίου 2016"
+						}
+					]
+				}
+			]
+		},
+		{
+			"chapterName": "chapter2",
+			"chapterList": [
+			]
+		},
+		{
+			"chapterName": "chapter3",
+			"chapterList": [
+			]
+		}
+	]
+}

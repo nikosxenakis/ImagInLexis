@@ -1,0 +1,130 @@
+{
+	"images": [
+		{
+			"id": "ΑναγνώρησηImage",
+			"path": "images/recognizionIcon.jpg"
+		},
+		{
+			"id": "ΖώαImage",
+			"path": "images/animalIcon.jpg"
+		},
+		{
+			"id": "soundIcon",
+			"path": "images/soundIcon.jpg"
+		},
+		{
+			"id": "grammateas",
+			"path": "images/grammateas.jpg"
+		},
+		{
+			"id": "mastoras",
+			"path": "images/mastoras.jpg"
+		},
+		{
+			"id": "daskala",
+			"path": "images/daskala.jpg"
+		},
+		{
+			"id": "kilindros",
+			"path": "images/kilindros.jpg"
+		},
+		{
+			"id": "kivos",
+			"path": "images/kivos.jpg"
+		},
+		{
+			"id": "romvos",
+			"path": "images/romvos.jpg"
+		}
+	],
+
+	"sounds": [
+		{
+			"id": "...",
+			"path": "..."
+		}
+	],
+
+	"questions": [
+		{
+			"chapterName": "Αναγνώρηση",
+			"chapterList": [
+				{
+					"categoryName": "Ζώα",
+					"categoryList": [
+						{
+							"screenId": "Screen11",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα που δείχνει τον ελέφαντα",
+							"image1Id": "grammateas",
+							"image2Id": "mastoras",
+							"image3Id": "daskala",
+							"questionNumber": "1",
+							"totalQuestions": "3"
+						},
+						{
+							"screenId": "Screen12",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα που δείχνει τον ρινοκερο",
+							"image1Id": "grammateas",
+							"image2Id": "mastoras",
+							"image3Id": "daskala",
+							"questionNumber": "2",
+							"totalQuestions": "3"
+						},
+						{
+							"screenId": "Screen21",
+							"screenType": "chooseLabel",
+							"question": "Δείξε την εικόνα που δείχνει τον ρινοκερο",
+							"image1Id": "grammateas",
+							"image2Id": "mastoras",
+							"image3Id": "daskala",
+							"questionNumber": "2",
+							"totalQuestions": "3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"chapterName": "chapter2",
+			"chapterList": [
+				
+			]
+		},
+		{
+			"chapterName": "chapter3",
+			"chapterList": [
+				
+			]
+		}
+	]
+
+	"scores": [
+		{
+			"chapterName": "chapter1",
+			"chapterList": [
+				{
+					"categoryName": "animals",
+					"categoryList": [
+						{
+							"name": "nikos",
+							"score": "0.8",
+							"data": "12 Ιουλίου 2016"
+						}
+					]
+				}
+			]
+		},
+		{
+			"chapterName": "chapter2",
+			"chapterList": [
+			]
+		},
+		{
+			"chapterName": "chapter3",
+			"chapterList": [
+			]
+		}
+	]
+}
