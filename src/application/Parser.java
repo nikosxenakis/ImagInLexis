@@ -106,7 +106,7 @@ public class Parser {
 	}
 	
 	private void parseQuestion(Object question, String chapterName,String category, String categoryName){
-    	System.out.println(question);
+    	//System.out.println(question);
         
     	JSONObject questionObj = (JSONObject) question;
     	String screenType = (String)(questionObj.get("screenType"));
@@ -115,13 +115,17 @@ public class Parser {
 		addtoCategoriesScreenIdList(category,screenId);
 
     	if(screenType.equals("chooseImage")){
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/ChooseImageScreen.fxml");
+
     		createChooseImageQuestion(questionObj,chapterName,categoryName);
     	}
     	else if(screenType.equals("chooseLabel")){
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/ChooseLabelScreen.fxml");
+
     		createChooseLabelQuestion(questionObj,chapterName,categoryName);
     	}
     	else{
-    		System.out.println("not implemented yet");
+    		//System.out.println("not implemented yet");
     	}
 	}
 	
@@ -146,7 +150,7 @@ public class Parser {
 	
 	private void parseChapter(Object chapter){
 		if(!(chapter instanceof JSONObject)){
-			System.out.println("error in parseChapter");
+			System.err.println("error in parseChapter");
 		}
 		
     	JSONObject tmpChapter = (JSONObject) chapter;
@@ -179,6 +183,8 @@ public class Parser {
     	for (Object screen : screens){
     		JSONObject s = (JSONObject) screen;
     		String screenId = (String) s.get("screenId");
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/HomeScreen.fxml");
+
             JavaFXApplication.mainContainer.loadScreen(screenId, null);
         }
 	}
@@ -208,7 +214,7 @@ public class Parser {
 		}
 		
 		list.add(categoryName);
-		System.out.println(chaptersCategoryList.toString());
+		//System.out.println(chaptersCategoryList.toString());
 	}
 
 	public void addtoCategoriesScreenIdList(String category, String screenId){
@@ -221,6 +227,6 @@ public class Parser {
 		}
 		
 		list.add(screenId);
-		System.out.println(categoriesScreenIdList.toString());
+		//System.out.println(categoriesScreenIdList.toString());
 	}
 }

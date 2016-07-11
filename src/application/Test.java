@@ -7,13 +7,14 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javafx.application.Platform;
-import screenController.ScreenController;
-import screenData.ChooseImageScreenData;
-import screenData.ScreenData;
+import screenController.QuestionScreenController;
+import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
 
 public class Test{
+
+	private String chapter;
+	private String category;
 
 	HashMap<String,Integer> answers = new HashMap<String, Integer>();
 	HashMap<String,Integer> correctAnswers = new HashMap<String, Integer>();
@@ -22,25 +23,33 @@ public class Test{
 
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
-	
-	public Test(String category){
+
+	public Test(String chapter, String category){
+		this.chapter = chapter;
+		this.category = category;
+
 		answeredQuestions = 0;
 		totalQuestions = JavaFXApplication.parser.getCategoryTotalQuestions(category);
-		System.out.println("totalQuestions = "+totalQuestions);
-		System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
-
+		//System.out.println("totalQuestions = "+totalQuestions);
+		//System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
+        
 		for(String screenId : JavaFXApplication.parser.getCategoriesScreenIdList(category)){
 	        JavaFXApplication.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
-			ScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-			ChooseImageScreenData sd = (ChooseImageScreenData)screenData;
-			Integer answer = sd.getAnswer();
+			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
+			Integer answer = screenData.getAnswer();
 			correctAnswers.put(screenId, answer);	
-
 		}
+
 	}
 	
+	public String getChapter(){
+		return this.chapter;
+	}
 	
+	public String getCategory(){
+		return this.category;
+	}
     
 	public void startTest(){
 		System.out.println("start test");
@@ -84,7 +93,7 @@ public class Test{
 	
 	public void finishTest(){
 		if(totalQuestions != answeredQuestions){
-			System.out.println("error in finishTest answeredQuestions = "+answeredQuestions);
+			System.err.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
 		String results = calculateResults();
@@ -110,7 +119,7 @@ public class Test{
     	if(screenId == null)
     		return;
     	
-        ScreenController screenController = JavaFXApplication.mainContainer.getController(screenId);
+        QuestionScreenController screenController = (QuestionScreenController) JavaFXApplication.mainContainer.getController(screenId);
         screenController.setAnsweredQuestions(answeredQuestions);
 	}
 	
@@ -143,5 +152,13 @@ public class Test{
     
     public Integer getAnsweredQuestions(){
     	return answeredQuestions;
+    }
+    
+    public boolean isLastQuestion(){
+    	System.out.println(totalQuestions.toString()+answeredQuestions.toString());
+		if(totalQuestions - 1 == answeredQuestions){
+			return true;
+		}
+		return false;
     }
 }

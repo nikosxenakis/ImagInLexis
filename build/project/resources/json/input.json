@@ -1,16 +1,36 @@
 {
 	"images": [
 		{
-			"id": "ΑναγνώρησηImage",
+			"id": "recognizionImage",
 			"path": "images/recognizionIcon.jpg"
 		},
 		{
-			"id": "ΖώαImage",
+			"id": "animalsImage",
 			"path": "images/animalIcon.jpg"
 		},
 		{
 			"id": "soundIcon",
 			"path": "images/soundIcon.jpg"
+		},
+		{
+			"id": "ippopotamos",
+			"path": "images/animals/ippopotamos.jpg"
+		},
+		{
+			"id": "alogo",
+			"path": "images/animals/alogo.jpg"
+		},
+		{
+			"id": "elefantas",
+			"path": "images/animals/elefantas.jpg"
+		},
+		{
+			"id": "gaidaros",
+			"path": "images/animals/gaidaros.jpg"
+		},
+		{
+			"id": "rinokeros",
+			"path": "images/animals/rinokeros.jpg"
 		},
 		{
 			"id": "grammateas",
@@ -44,44 +64,62 @@
 			"path": "..."
 		}
 	],
-
+	"screens": [
+		{
+			"screenId": "homeScreen"
+		}
+	],
 	"questions": [
 		{
+			"chapter": "recognizion",
 			"chapterName": "Αναγνώρηση",
 			"chapterList": [
 				{
+					"category": "professions",
+					"categoryName": "Επαγγέλματα",
+					"categoryList": [
+						{
+							"screenId": "ScreenProfessionsTeacher",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με τον δάσκαλο",
+							"image1Id": "mastoras",
+							"image2Id": "grammateas",
+							"image3Id": "daskala",
+							"answer": "3"
+						},
+						{
+							"screenId": "ScreenProfessionsPoliceman",
+							"screenType": "chooseImage",
+							"question": "Δείξε την εικόνα με τον αστυνομικό",
+							"image1Id": "grammateas",
+							"image2Id": "mastoras",
+							"image3Id": "daskala",
+							"answer": "1"
+						},
+					]
+				},
+				{
+					"category": "animals",
 					"categoryName": "Ζώα",
 					"categoryList": [
 						{
-							"screenId": "Screen11",
+							"screenId": "ScreenAnimalsElephant",
 							"screenType": "chooseImage",
-							"question": "Δείξε την εικόνα που δείχνει τον ελέφαντα",
-							"image1Id": "grammateas",
-							"image2Id": "mastoras",
-							"image3Id": "daskala",
-							"questionNumber": "1",
-							"totalQuestions": "3"
+							"question": "Δείξε την εικόνα με τον ελέφαντα",
+							"image1Id": "elefantas",
+							"image2Id": "ippopotamos",
+							"image3Id": "rinokeros",
+							"answer": "1"
 						},
 						{
-							"screenId": "Screen12",
+							"screenId": "ScreenAnimalsHorse",
 							"screenType": "chooseImage",
-							"question": "Δείξε την εικόνα που δείχνει τον ρινοκερο",
-							"image1Id": "grammateas",
-							"image2Id": "mastoras",
-							"image3Id": "daskala",
-							"questionNumber": "2",
-							"totalQuestions": "3"
+							"question": "Δείξε την εικόνα με  το άλογο",
+							"image1Id": "alogo",
+							"image2Id": "gaidaros",
+							"image3Id": "gaidaros",
+							"answer": "1"
 						},
-						{
-							"screenId": "Screen21",
-							"screenType": "chooseLabel",
-							"question": "Δείξε την εικόνα που δείχνει τον ρινοκερο",
-							"image1Id": "grammateas",
-							"image2Id": "mastoras",
-							"image3Id": "daskala",
-							"questionNumber": "2",
-							"totalQuestions": "3"
-						}
 					]
 				}
 			]

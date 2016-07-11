@@ -6,7 +6,7 @@ public class ScreenDataHolder{
 	
     private static ScreenDataHolder instance = new ScreenDataHolder();
     
-    private HashMap<String, ScreenData> screenData;
+    private HashMap<String, QuestionScreenData> screenData;
     
     private ScreenDataHolder(){
     	this.screenData = new HashMap<>();
@@ -16,14 +16,14 @@ public class ScreenDataHolder{
         return instance;
     }
     
-    public static ScreenData getScreenData(String id){
-    	ScreenData screenData = instance.screenData.get(id);
+    public static QuestionScreenData getScreenData(String id){
+    	QuestionScreenData screenData = instance.screenData.get(id);
     	if(screenData == null)
-    		System.out.println("error in getScreenData");
+    		System.err.println("error in getScreenData");
     	return screenData;
     }
     
-    public static void addScreenData(String id, ScreenData screenData){
+    public static void addScreenData(String id, QuestionScreenData screenData){
     	instance.screenData.put(id, screenData);
     }
     

@@ -21,7 +21,7 @@ public class SoundHolder{
     public static Image getImage(String id){
     	Image image = instance.sounds.get(id);
     	if(image == null)
-    		System.out.println("error in getImage");
+    		System.err.println("error in getImage");
     	return image;
     }
     

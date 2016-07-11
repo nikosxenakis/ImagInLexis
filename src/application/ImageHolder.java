@@ -21,7 +21,7 @@ public class ImageHolder{
     public static Image getImage(String id){
     	Image image = instance.images.get(id);
     	if(image == null)
-    		System.out.println("error in getImage");
+    		System.err.println("error in getImage");
     	return image;
     }
     
