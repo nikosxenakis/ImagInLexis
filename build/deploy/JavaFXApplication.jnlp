@@ -11,7 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXApplication.jar" size="3861792" download="eager" />
+    <jar href="JavaFXApplication.jar" size="3881478" download="eager" />
     <jar href="libs/json-simple-1.1.jar" size="16046" download="eager" />
   </resources>
   <applet-desc  width="0" height="0" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication" >

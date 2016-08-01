@@ -1,5 +1,7 @@
 package screenController;
 
+import java.util.HashSet;
+import java.util.Set;
 import application.ImageHolder;
 import application.Test;
 import javafx.fxml.FXML;
@@ -8,11 +10,15 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import screenData.QuestionScreenData;
 
 public abstract class QuestionScreenController extends ScreenController{
 
+	@FXML
+	protected AnchorPane mainWindow;
+	
 	@FXML
     protected Button submitButton;
     
@@ -45,7 +51,7 @@ public abstract class QuestionScreenController extends ScreenController{
     
     private Test test;
     private boolean isSelection = false;
-    private Integer answer = null;
+    private Set<Integer> answers = new HashSet<Integer>();
 
 	public Test getTest(){
 		return test;
@@ -55,12 +61,17 @@ public abstract class QuestionScreenController extends ScreenController{
 		return this.isSelection;
 	}
 	
-	public Integer getAnswer(){
-		return this.answer;
+	public Set<Integer> getAnswer(){
+		return this.answers;
 	}
 	
 	public void setAnswer(Integer answer){
-		this.answer = answer;
+		this.answers.clear();
+		this.answers.add(answer);
+	}
+	
+	public void addAnswer(Integer answer){
+		this.answers.add(answer);
 	}
 	
 	public void setIsSelection(boolean isSelection){
@@ -78,17 +89,35 @@ public abstract class QuestionScreenController extends ScreenController{
     	totalQuestions.setText(test.getTotalQuestions().toString());
     	chapterName.setText(screenData.getChapterName().toString());
     	categoryName.setText(screenData.getCategoryName().toString());
-    	
+   
     	Image image = ImageHolder.getImage(test.getChapter().toString()+"Image");
     	chapterImage.setImage(image);
-  
+
     	image = ImageHolder.getImage(test.getCategory()+"Image");
     	categoryImage.setImage(image);
-    	
+    
+
     	progressBar.setProgress((double)(getTest().getAnsweredQuestions()/(double)getTest().getTotalQuestions()));
     	
     	submitButton.setDisable(true);
-		
+    	
+    	String style = "-fx-border-width: 10;";
+    	if(chapterName.getText().equals("Αναγνώρηση")){
+        	style += "-fx-background-color:  #9ED5DB; -fx-border-color:  #DDE3A8";
+        	mainWindow.setStyle(style);	
+    	}
+    	else if(chapterName.getText().equals("Κατονομασία")){
+        	style += "-fx-background-color:  #8CDB80; -fx-border-color:  #CF903B";
+        	mainWindow.setStyle(style);	
+    	}
+    	else if(chapterName.getText().equals("Συνδιαστικό")){
+        	style += "-fx-background-color:  #E39DCC; -fx-border-color:  #E08E70";
+        	mainWindow.setStyle(style);	
+    	}
+    	else{
+    		System.err.println("error in setData in Question Screen no such a chapter");
+    	}
+
     }
     
     public void setAnsweredQuestions(Integer answeredQuestions){
@@ -111,8 +140,10 @@ public abstract class QuestionScreenController extends ScreenController{
     	*/
 	
         if((Button)e.getSource() == submitButton){
-        	if(getIsSelection() == false)
+        	if(getIsSelection() == false){
+        		System.err.println("error in clicked there is no selection");
         		return;
+        	}
         	
         	System.out.println("submitButton clicked");
             

@@ -14,7 +14,7 @@ import screenData.ChooseImageScreenData;
 import screenData.QuestionScreenData;
 
 public class ChooseImageScreenController extends QuestionScreenController{
-    
+
 	@FXML
     private ImageView image1;
 

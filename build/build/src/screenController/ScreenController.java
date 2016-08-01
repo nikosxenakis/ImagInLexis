@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 
 public abstract class ScreenController implements Initializable{
     private ScreenPane myScreenPane;
-
+ 
     /**
      * Initializes the controller class.
      */
@@ -23,5 +23,4 @@ public abstract class ScreenController implements Initializable{
 	public ScreenPane getScreenPane(){
 		return myScreenPane;
 	}
-    
 }

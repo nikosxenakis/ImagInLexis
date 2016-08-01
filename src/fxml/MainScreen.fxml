@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.MainScreenController">
+   <children>
+      <Text fx:id="chapter3Button" fill="WHITE" layoutX="417.0" layoutY="411.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="chapter3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="chapter2Button" fill="WHITE" layoutX="398.0" layoutY="286.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="chapter2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="chapter1Button" fill="WHITE" layoutX="395.0" layoutY="196.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="chapter1" wrappingWidth="89.15945434570312">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="instructionsButton" fill="WHITE" layoutX="629.0" layoutY="317.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="instructions" wrappingWidth="89.15945434570312">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="whatIsThisButton" fill="WHITE" layoutX="619.0" layoutY="245.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="what is this" wrappingWidth="89.15945434570312">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="scoreTableButton" fill="WHITE" layoutX="616.0" layoutY="439.0" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="score table" wrappingWidth="89.15945434570312">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

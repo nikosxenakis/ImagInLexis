@@ -6,14 +6,11 @@ import javafx.scene.Scene;
 
 public class JavaFXApplication extends Application {
 
-	//screens declarations
-	public static String chooseImageScreenFXML = "../fxml/ChooseImageScreen.fxml";
-	public static String chooseLabelScreenFXML = "../fxml/ChooseLabelScreen.fxml";
-	public static String homeScreenFXML = "../fxml/HomeScreen.fxml";
-
 	public static ScreenPane mainContainer = null;
 	
-	public final static String filePath = "/json/input.json";
+	public final static String inputFilePath = "/json/input.json";
+
+	public final static String scoresFilePath = "/json/scores.json";
 
 	public static Parser parser;
 	
@@ -24,18 +21,18 @@ public class JavaFXApplication extends Application {
         stage.setMinWidth(960);
         stage.setMinHeight(570);
         
-        parser = new Parser(filePath);
+        parser = new Parser(inputFilePath,scoresFilePath);
         parser.initialize();
         
         Scene scene = new Scene(mainContainer);
-        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());    
+        //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());    
         
         String screenId = "homeScreen";
 		JavaFXApplication.mainContainer.setScreen(screenId);
 
         stage.setScene(scene);
         stage.show();
-		
+
 	}
 	
 	public static void main(String[] args) {

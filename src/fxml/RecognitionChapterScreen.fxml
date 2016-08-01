@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.RecognitionChapterScreenController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane prefHeight="555.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Ellipse fill="#1f93ffb5" layoutX="499.0" layoutY="212.0" radiusX="483.0" radiusY="196.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <effect>
+                        <Shadow color="#29e2e5f7" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fill="#1f93ffb5" layoutX="721.0" layoutY="548.0" radiusX="298.0" radiusY="135.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <effect>
+                        <Shadow color="#e4ff6af7" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fx:id="body" fill="#2721ffb5" layoutX="134.0" layoutY="163.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#660eff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="opposite" fill="#2721ffb5" layoutX="630.0" layoutY="608.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="78.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#ff9270" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="week" fill="#2721ffb5" layoutX="814.0" layoutY="613.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#ffbc70" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="substractiveAbillity" fill="#2721ffb5" layoutX="547.0" layoutY="513.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="93.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#ff7070" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="season" fill="#2721ffb5" layoutX="727.0" layoutY="483.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="73.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#ffd414" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="month" fill="#2721ffb5" layoutX="923.0" layoutY="514.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <effect>
+                        <Shadow color="#ffaa00" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fill="#1f93ffb5" layoutX="214.0" layoutY="540.0" radiusX="209.0" radiusY="146.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <effect>
+                        <Shadow color="#ff7c70f7" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fx:id="object" fill="#2195ffb5" layoutX="867.0" layoutY="166.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="93.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70ebff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="fruits" fill="#2721ffb5" layoutX="804.0" layoutY="293.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#f3ff70" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="emotion" fill="#2721ffb5" layoutX="634.0" layoutY="338.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="100.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#d2ff70" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="action" fill="#27ff21b5" layoutX="425.0" layoutY="336.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="75.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#a8ff70" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="professions" fill="#21ff66b5" layoutX="231.0" layoutY="298.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="94.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70ff8d" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="location" fill="#21ffc9b5" layoutX="305.0" layoutY="206.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="81.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70ffc1" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="automatedActions" fill="#2721ffb5" layoutX="207.0" layoutY="451.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="123.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#fa4c20" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="color" fill="#2957ffb5" layoutX="511.0" layoutY="81.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="76.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#7095ff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="appliancies" fill="#21b1ffb5" layoutX="677.0" layoutY="217.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="79.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70fffd" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="question1" fill="#2721ffb5" layoutX="133.0" layoutY="542.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="113.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Shadow color="#800000" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fx:id="car" fill="#21c4ffb5" layoutX="493.0" layoutY="204.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="84.0" radiusY="37.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70ffeb" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="shape" fill="#2137ffb5" layoutX="315.0" layoutY="94.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="74.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#7c70ff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="animals" fill="#2179ffb5" layoutX="706.0" layoutY="104.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="56.0" radiusY="34.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#70b2ff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="question" fill="#2721ffb5" layoutX="236.0" layoutY="628.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="113.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#ff0808" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Text fill="WHITE" layoutX="476.0" layoutY="213.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="οχήματα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="119.0" layoutY="171.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="σώμα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="302.0" layoutY="102.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="σχήματα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="650.0" layoutY="224.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="συσκευές">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="258.0" layoutY="76.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/shapeIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="448.0" layoutY="63.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/colorIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="495.0" layoutY="89.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="χρώματα" wrappingWidth="89.15945434570312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="696.0" layoutY="110.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Ζώα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="660.0" layoutY="85.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/animalIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="795.0" layoutY="149.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/objectIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="837.0" layoutY="173.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="750.0" layoutY="275.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/fruitsIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="786.0" layoutY="300.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="φρούτα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="549.0" layoutY="320.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/emotionIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="589.0" layoutY="345.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="συναισθήματα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="401.0" layoutY="343.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="365.0" layoutY="318.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/actionIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="188.0" layoutY="305.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="152.0" layoutY="280.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/professionsIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="230.0" layoutY="188.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/locationIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="268.0" layoutY="213.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="τοποθεσίες">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="429.0" layoutY="187.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/carsIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="611.0" layoutY="198.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/appliancesIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="709.0" layoutY="491.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εποχές" wrappingWidth="89.15945434570312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="662.0" layoutY="465.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/seasonIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="874.0" layoutY="494.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/monthIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="921.0" layoutY="520.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="μήνες" wrappingWidth="89.15945434570312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="816.0" layoutY="621.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="μέρες" wrappingWidth="89.15945434570312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="769.0" layoutY="595.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/weekIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="567.0" layoutY="589.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/oppositesIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="614.0" layoutY="615.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντίθετα" wrappingWidth="89.15945434570312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="510.0" layoutY="507.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αφαιρετική &#10;ικανότητα" wrappingWidth="117.67703247070312">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="466.0" layoutY="496.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/sustractionIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="103.0" layoutY="436.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/automatedActionsIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="143.0" layoutY="447.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αυτοματοποιημές &#10;πράξεις" wrappingWidth="178.78604125976562">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="opposite111" fill="WHITE" layoutX="195.0" layoutY="636.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εντοπισμός" wrappingWidth="178.78604125976562">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="79.0" layoutY="144.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/bodyIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="145.0" layoutY="609.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/detectIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="homeIcon" fitHeight="74.0" fitWidth="77.0" layoutX="16.0" layoutY="14.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/homeIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="42.0" layoutY="523.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/questionIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="opposite1111" fill="WHITE" layoutX="92.0" layoutY="550.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ερωτήσεις (.,.)" wrappingWidth="178.78604125976562">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

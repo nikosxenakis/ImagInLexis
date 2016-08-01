@@ -9,6 +9,10 @@
 			"path": "images/animalIcon.jpg"
 		},
 		{
+			"id": "professionsImage",
+			"path": "images/professionsIcon.jpg"
+		},
+		{
 			"id": "soundIcon",
 			"path": "images/soundIcon.jpg"
 		},
@@ -66,7 +70,8 @@
 	],
 	"screens": [
 		{
-			"screenId": "homeScreen"
+			"screenId": "homeScreen",
+			"screenType": "homeScreen"
 		}
 	],
 	"questions": [
@@ -85,7 +90,21 @@
 							"image1Id": "mastoras",
 							"image2Id": "grammateas",
 							"image3Id": "daskala",
-							"answer": "3"
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "ScreenShapesRhombus",
+							"screenType": "chooseLabel",
+							"question": "Αυτός είναι ένας...",
+							"imageId": "romvos",
+							"radioOption1": "Ρόμβος",
+							"radioOption2": "Κύλινδρος",
+							"radioOption3": "Κύβος",
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 						{
 							"screenId": "ScreenProfessionsPoliceman",
@@ -94,7 +113,9 @@
 							"image1Id": "grammateas",
 							"image2Id": "mastoras",
 							"image3Id": "daskala",
-							"answer": "1"
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 					]
 				},
@@ -103,13 +124,42 @@
 					"categoryName": "Ζώα",
 					"categoryList": [
 						{
+							"screenId": "ScreenChooseInImageKid",
+							"screenType": "chooseInImage",
+							"question": "Bres ton...",
+							"imageId": "elefantas",
+							"circlesList": [
+								{
+									"circleX": "100",
+									"circleY": "100",
+									"circleW": "100",
+									"circleH": "100"
+								},
+								{
+									"circleX": "200",
+									"circleY": "150",
+									"circleW": "100",
+									"circleH": "100"
+								},
+							],
+							"answers": [{
+								"answerNo": "1"
+							},
+							{
+								"answerNo": "2"
+							}
+						]
+						},
+						{
 							"screenId": "ScreenAnimalsElephant",
 							"screenType": "chooseImage",
 							"question": "Δείξε την εικόνα με τον ελέφαντα",
 							"image1Id": "elefantas",
 							"image2Id": "ippopotamos",
 							"image3Id": "rinokeros",
-							"answer": "1"
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 						{
 							"screenId": "ScreenAnimalsHorse",
@@ -118,7 +168,9 @@
 							"image1Id": "alogo",
 							"image2Id": "gaidaros",
 							"image3Id": "gaidaros",
-							"answer": "1"
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 					]
 				}
@@ -134,34 +186,6 @@
 			"chapterName": "chapter3",
 			"chapterList": [
 				
-			]
-		}
-	]
-
-	"scores": [
-		{
-			"chapterName": "chapter1",
-			"chapterList": [
-				{
-					"categoryName": "animals",
-					"categoryList": [
-						{
-							"name": "nikos",
-							"score": "0.8",
-							"data": "12 Ιουλίου 2016"
-						}
-					]
-				}
-			]
-		},
-		{
-			"chapterName": "chapter2",
-			"chapterList": [
-			]
-		},
-		{
-			"chapterName": "chapter3",
-			"chapterList": [
 			]
 		}
 	]

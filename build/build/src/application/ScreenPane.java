@@ -13,9 +13,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
+import screenController.ChooseImageScreenController;
+import screenController.ChooseInImageScreenController;
+import screenController.ChooseLabelScreenController;
 import screenController.QuestionScreenController;
 import screenController.ScreenController;
-import screenData.ChooseImageScreenData;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
 
@@ -37,9 +39,12 @@ public class ScreenPane extends StackPane{
     public Node getScreen(String name){
         return screens.get(name);
     }
-
+	
     public ScreenController getController(String screenId){
-    	return screenControllersList.get(screenId);
+    	ScreenController sc = screenControllersList.get(screenId);
+    	if(sc == null)
+    		System.err.println("error in getController ScreenController is null");
+    	return sc;
     }
     
     public void addController(String screenId, ScreenController screenController){
@@ -49,42 +54,37 @@ public class ScreenPane extends StackPane{
     //finally injects the screenPane to the controller.
     public boolean loadScreen(String screenId,Test test){
         try{
-        	String resource = null;
-			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-
-			if(screenData != null){
-	        	if(screenData instanceof ChooseImageScreenData)
-	        		resource = JavaFXApplication.chooseImageScreenFXML;
-	        	//else if(screenData instanceof ChooseLabelScreenData)
-	        	//	resource = JavaFXApplication.chooseLabelScreenFXML;
-	        	else{
-	        		System.out.println("error in loadScreen");
-	        	}			
-			}
-			else{
-        		resource = JavaFXApplication.homeScreenFXML;
-			}
-
+        	String resource = ResourcePathsHolder.getResourcePaths(screenId);			
         	
-            FXMLLoader myLoader = new FXMLLoader(getClass().getResource(resource));
-            Parent loadScreen = (Parent) myLoader.load();
-            ScreenController myScreenControler = ((ScreenController)myLoader.getController());
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
+            Parent loadScreen = (Parent) loader.load();
             
-            myScreenControler.setScreenPane(this);
+            ScreenController screenControler = ((ScreenController)loader.getController());
+            screenControler.setScreenPane(this);
+            addController(screenId,screenControler);
+            addScreen(screenId, loadScreen);  
             
-            if(myScreenControler instanceof QuestionScreenController){
-            	QuestionScreenController tmpMyScreenControler = (QuestionScreenController) myScreenControler;
-            	tmpMyScreenControler.setData(screenData,test);
+            if(screenControler instanceof QuestionScreenController){
+    			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
 
+                if(screenControler instanceof ChooseImageScreenController){
+                	((ChooseImageScreenController)screenControler).setData(screenData,test);
+                } 
+                else if(screenControler instanceof ChooseLabelScreenController){
+                	((ChooseLabelScreenController)screenControler).setData(screenData,test);
+                } 
+                else if(screenControler instanceof ChooseInImageScreenController){
+                	((ChooseInImageScreenController)screenControler).setData(screenData,test);
+                }  
+                else{
+                	System.err.println("not implemented");
+                }
             }
-                        
-            addController(screenId,myScreenControler);
-            addScreen(screenId, loadScreen);
-
+ 
             return true;
             
         }catch(Exception e){
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
             return false;
         }
     }
@@ -102,7 +102,7 @@ public class ScreenPane extends StackPane{
       if (!getChildren().isEmpty()) {    //if there is more than one screen
         Timeline fade = new Timeline(
             new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
-            new KeyFrame(new Duration(500), new EventHandler<ActionEvent>() {
+            new KeyFrame(new Duration(200), new EventHandler<ActionEvent>() {
               @Override
               public void handle(ActionEvent t) {
                 getChildren().remove(0);                    //remove the displayed screen
@@ -110,7 +110,7 @@ public class ScreenPane extends StackPane{
                 getChildren().add(0, screens.get(screenId));     //add the screen
                 Timeline fadeIn = new Timeline(
                   new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                  new KeyFrame(new Duration(500), new KeyValue(opacity, 1.0)));
+                  new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0)));
                 fadeIn.play();
               }
             }, new KeyValue(opacity, 0.0)));
@@ -122,12 +122,12 @@ public class ScreenPane extends StackPane{
 
         Timeline fadeIn = new Timeline(
             new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-            new KeyFrame(new Duration(500), new KeyValue(opacity, 1.0)));
+            new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0)));
         fadeIn.play();
       }
       return true;
     } else {
-      System.out.println("screen hasn't been loaded!!! \n");
+      System.err.println("screen hasn't been loaded!!! \n");
       return false;
     }
 
@@ -153,7 +153,7 @@ public class ScreenPane extends StackPane{
     public boolean unloadScreen(String name){
         if(screens.remove(name) == null)
         {    
-            System.out.println("Screen didn't exist");
+            System.err.println("Screen didn't exist");
             return false;
         }else{return true;}
     }

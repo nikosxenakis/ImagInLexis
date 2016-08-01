@@ -6,20 +6,27 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import screenData.ChooseImageScreenData;
+import screenData.ChooseInImageScreenData;
+import screenData.ChooseLabelScreenData;
 import screenData.ScreenDataHolder;
 
 public class Parser {
 	
-	private JSONObject jsonObject;
+	JSONObject jsonObject;
+	JSONObject scoresJsonObject;
+
 	//chapterName -> chapterTotalQuestions
 	private HashMap<String,Integer> chapterTotalQuestions = new HashMap<String, Integer>();
+	
 	//categoryName -> chapterTotalQuestions
 	private HashMap<String,Integer> categoryTotalQuestions = new HashMap<String, Integer>();
 
@@ -29,8 +36,8 @@ public class Parser {
 	//categoryName -> screenId List
 	private HashMap<String,List<String>> categoriesScreenIdList = new HashMap<String, List<String>>();
 	
-	Parser(String filePath){
-
+	Parser(String filePath, String scoresFilePath){
+        
 		JSONParser parser = new JSONParser();
 		
 		InputStream input = JavaFXApplication.class.getResourceAsStream(filePath);
@@ -57,6 +64,68 @@ public class Parser {
 		}
 		
         this.jsonObject =  (JSONObject) obj;       
+     
+        this.loadScores(scoresFilePath);
+
+	}
+	
+	public void addScore(JSONObject obj, String chapter, String category){
+	    JSONArray scores = (JSONArray) JavaFXApplication.parser.scoresJsonObject.get("scores");
+	    
+    	for (Object scoresChapter : scores){
+    	   	JSONObject tmpScoresChapter = (JSONObject) scoresChapter;
+        	String chapterName = (String)(tmpScoresChapter.get("chapterName"));
+        	if(chapterName.equals(chapter)){
+        		JSONArray chapterList = (JSONArray)(tmpScoresChapter.get("chapterList"));
+            	System.out.println(chapterList);
+
+            	/*
+                System.out.println(scores);
+                scores.add("{s:s}");
+                
+                try (FileWriter file = new FileWriter("resources"+scoresFilePath)) {
+            		file.write(JavaFXApplication.parser.scoresJsonObject.toJSONString());
+            		System.out.println("Successfully Copied JSON Object to File...");
+            		System.out.println("\nJSON Object: " + JavaFXApplication.parser.scoresJsonObject);
+            	} catch (IOException e) {
+            		// TODO Auto-generated catch block
+            		e.printStackTrace();
+            	}
+                
+                */
+        	}
+
+    	}
+	}
+	
+	private void loadScores(String scoresFilePath){
+
+		JSONParser parser = new JSONParser();
+		
+		InputStream input = JavaFXApplication.class.getResourceAsStream(scoresFilePath);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+        StringBuilder out = new StringBuilder();
+        String line;
+        try {
+			while ((line = reader.readLine()) != null) {
+			    out.append(line);
+			}
+			reader.close();
+
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+        Object obj = null;
+		try {
+			obj = parser.parse(out.toString());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+        this.scoresJsonObject =  (JSONObject) obj;       
         
 	}
 	
@@ -78,50 +147,88 @@ public class Parser {
         
 	}
 
-	private void createChooseLabelQuestion(JSONObject question, String chapterName, String categoryName){
-		/*
+	private void createChooseInImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
     	String screenId = (String)(question.get("screenId"));
     	String questionString = (String)(question.get("question"));
-    	String image1Id = (String)(question.get("image1Id"));
-    	String image2Id = (String)(question.get("image2Id"));
-    	String image3Id = (String)(question.get("image3Id"));
-    	Integer questionNumber = Integer.parseInt( (String)(question.get("questionNumber")) );
-    	Integer totalQuestions = Integer.parseInt( (String)(question.get("totalQuestions")) );
-    	    	
-        ChooseImageScreenData chooseImageScreenData1 = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,questionNumber,totalQuestions,chapterName,categoryName);
-        JavaFXApplication.mainContainer.loadScreen(screenId, JavaFXApplication.chooseImageScreenFXML, chooseImageScreenData1);
-        */
+    	String imageId = (String)(question.get("imageId"));
+
+    	JSONArray circlesList = (JSONArray)(question.get("circlesList"));
+    	ArrayList<Circle> circlesArrayList = new ArrayList<Circle>();
+
+        for (Object c : circlesList){
+        	JSONObject c1 = (JSONObject) c;
+        	String id = (String)(c1.get("id"));
+        	Integer circleX = new Integer((String)(c1.get("circleX")));
+        	Integer circleY = new Integer((String)(c1.get("circleY")));
+        	Integer circleW = new Integer((String)(c1.get("circleW")));
+        	Integer circleH = new Integer((String)(c1.get("circleH")));
+
+        	Circle circle = new Circle(id,circleX,circleY,circleW,circleH);
+        	circlesArrayList.add(circle);
+        }
+        
+        ChooseInImageScreenData chooseInImageScreenData = new ChooseInImageScreenData(questionString,imageId,circlesArrayList,answers,chapterName,categoryName);
+        ScreenDataHolder.addScreenData(screenId,chooseInImageScreenData);
 	}
 	
-	private void createChooseImageQuestion(JSONObject question, String chapterName, String categoryName){
+	private void createChooseLabelQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+		
+    	String screenId = (String)(question.get("screenId"));
+    	String questionString = (String)(question.get("question"));
+    	String imageId = (String)(question.get("imageId"));
+    	String radioOption1 = (String)(question.get("radioOption1"));
+    	String radioOption2 = (String)(question.get("radioOption2"));
+    	String radioOption3 = (String)(question.get("radioOption3"));
+
+        ChooseLabelScreenData chooseLabelScreenData = new ChooseLabelScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,answers,chapterName,categoryName);
+        ScreenDataHolder.addScreenData(screenId,chooseLabelScreenData);
+	}
+	
+	private void createChooseImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
     	String screenId = (String)(question.get("screenId"));
     	String questionString = (String)(question.get("question"));
     	String image1Id = (String)(question.get("image1Id"));
     	String image2Id = (String)(question.get("image2Id"));
     	String image3Id = (String)(question.get("image3Id"));
-    	String answer = (String)(question.get("answer"));
 
-        ChooseImageScreenData chooseImageScreenData1 = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,answer,chapterName,categoryName);
-        ScreenDataHolder.addScreenData(screenId,chooseImageScreenData1);
+        ChooseImageScreenData chooseImageScreenData = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,answers,chapterName,categoryName);
+        ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
 	}
 	
 	private void parseQuestion(Object question, String chapterName,String category, String categoryName){
-    	System.out.println(question);
         
     	JSONObject questionObj = (JSONObject) question;
     	String screenType = (String)(questionObj.get("screenType"));
     	String screenId = (String)(questionObj.get("screenId"));
 
+        Set<Integer> answersSet = new HashSet<Integer>();
+        JSONArray answers = (JSONArray)(questionObj.get("answers"));
+        for (Object c : answers){
+        	JSONObject c1 = (JSONObject) c;
+        	Integer answerNo = new Integer((String)(c1.get("answerNo")));
+        	answersSet.add(answerNo);
+
+        }
+        
 		addtoCategoriesScreenIdList(category,screenId);
 
     	if(screenType.equals("chooseImage")){
-    		createChooseImageQuestion(questionObj,chapterName,categoryName);
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/ChooseImageScreen.fxml");
+
+    		createChooseImageQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("chooseLabel")){
-    		createChooseLabelQuestion(questionObj,chapterName,categoryName);
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/ChooseLabelScreen.fxml");
+
+    		createChooseLabelQuestion(questionObj,chapterName,categoryName,answersSet);
+    	}
+    	else if(screenType.equals("chooseInImage")){
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/ChooseInImageScreen.fxml");
+
+    		createChooseInImageQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else{
-    		System.out.println("not implemented yet");
+    		System.err.println("error in parseQuestion not implemented yet");
     	}
 	}
 	
@@ -146,7 +253,7 @@ public class Parser {
 	
 	private void parseChapter(Object chapter){
 		if(!(chapter instanceof JSONObject)){
-			System.out.println("error in parseChapter");
+			System.err.println("error in parseChapter");
 		}
 		
     	JSONObject tmpChapter = (JSONObject) chapter;
@@ -179,6 +286,8 @@ public class Parser {
     	for (Object screen : screens){
     		JSONObject s = (JSONObject) screen;
     		String screenId = (String) s.get("screenId");
+        	ResourcePathsHolder.addResourcePaths(screenId, "../fxml/HomeScreen.fxml");
+
             JavaFXApplication.mainContainer.loadScreen(screenId, null);
         }
 	}
@@ -208,7 +317,7 @@ public class Parser {
 		}
 		
 		list.add(categoryName);
-		System.out.println(chaptersCategoryList.toString());
+		//System.out.println(chaptersCategoryList.toString());
 	}
 
 	public void addtoCategoriesScreenIdList(String category, String screenId){
@@ -221,6 +330,6 @@ public class Parser {
 		}
 		
 		list.add(screenId);
-		System.out.println(categoriesScreenIdList.toString());
+		//System.out.println(categoriesScreenIdList.toString());
 	}
 }

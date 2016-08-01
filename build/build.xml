@@ -28,7 +28,7 @@
 		<mkdir dir="project" />
 		<copy todir="project">
 			<fileset dir="/Users/xenis656/Dropbox/workspace/java/JavaFXApplication">
-				<include name="resources/**" />
+				<include name="lib/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
@@ -38,7 +38,7 @@
 		</copy>
 		<copy todir="project">
 			<fileset dir="/Users/xenis656/Dropbox/workspace/java/JavaFXApplication">
-				<include name="lib/**" />
+				<include name="resources/**" />
 			</fileset>
 		</copy>
 	

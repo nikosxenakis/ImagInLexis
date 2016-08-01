@@ -1,0 +1,234 @@
+{
+	"sounds": [
+
+		
+		{
+			"id": "chapter1Anagnorisi",
+			"path": "/sounds/chapter1/anagnorisi.mp3"
+		},
+
+
+		{
+			"id": "chapter2Katonomasia",
+			"path": "/sounds/chapter2/katonomasia.mp3"
+		},
+		{
+			"id": "chapter2question1",
+			"path": "/sounds/chapter2/question1.mp3"
+		},
+		{
+			"id": "chapter2question2",
+			"path": "/sounds/chapter2/question2.mp3"
+		},
+		{
+			"id": "chapter2question3",
+			"path": "/sounds/chapter2/question3.mp3"
+		},
+		{
+			"id": "chapter2question4",
+			"path": "/sounds/chapter2/question4.mp3"
+		},
+		{
+			"id": "chapter2question5",
+			"path": "/sounds/chapter2/question5.mp3"
+		},
+		{
+			"id": "chapter2question6",
+			"path": "/sounds/chapter2/question6.mp3"
+		},
+		{
+			"id": "chapter2proposal1",
+			"path": "/sounds/chapter2/proposal1.mp3"
+		},
+		{
+			"id": "chapter2proposal2",
+			"path": "/sounds/chapter2/proposal2.mp3"
+		},
+		{
+			"id": "chapter2proposal3",
+			"path": "/sounds/chapter2/proposal3.mp3"
+		},
+		{
+			"id": "chapter2proposal4",
+			"path": "/sounds/chapter2/proposal4.mp3"
+		},
+		{
+			"id": "chapter2proposal5",
+			"path": "/sounds/chapter2/proposal5.mp3"
+		},
+		{
+			"id": "chapter2proposal6",
+			"path": "/sounds/chapter2/proposal6.mp3"
+		},
+		{
+			"id": "chapter2proposal7",
+			"path": "/sounds/chapter2/proposal7.mp3"
+		},
+		{
+			"id": "chapter2proposal8",
+			"path": "/sounds/chapter2/proposal8.mp3"
+		},
+		{
+			"id": "chapter2proposal9",
+			"path": "/sounds/chapter2/proposal9.mp3"
+		},
+		{
+			"id": "chapter2proposal10",
+			"path": "/sounds/chapter2/proposal10.mp3"
+		},
+		{
+			"id": "chapter2proposal111",
+			"path": "/sounds/chapter2/proposal11.mp3"
+		},
+		{
+			"id": "chapter2proposal12",
+			"path": "/sounds/chapter2/proposal12.mp3"
+		},
+		{
+			"id": "chapter2proposal13",
+			"path": "/sounds/chapter2/proposal13.mp3"
+		},
+		{
+			"id": "chapter2proposal14",
+			"path": "/sounds/chapter2/proposal14.mp3"
+		},
+		{
+			"id": "chapter2proposal15",
+			"path": "/sounds/chapter2/proposal15.mp3"
+		},
+		{
+			"id": "chapter2proposal16",
+			"path": "/sounds/chapter2/proposal16.mp3"
+		},
+		{
+			"id": "chapter2proposal17",
+			"path": "/sounds/chapter2/proposal17.mp3"
+		},
+		{
+			"id": "chapter2proposal18",
+			"path": "/sounds/chapter2/proposal18.mp3"
+		},
+		{
+			"id": "chapter2proposal19",
+			"path": "/sounds/chapter2/proposal19.mp3"
+		},
+		{
+			"id": "chapter2proposal20",
+			"path": "/sounds/chapter2/proposal20.mp3"
+		},
+		{
+			"id": "chapter2proposal21",
+			"path": "/sounds/chapter2/proposal21.mp3"
+		},
+		{
+			"id": "chapter2proposal22",
+			"path": "/sounds/chapter2/proposal22.mp3"
+		},
+		{
+			"id": "chapter2proposal23",
+			"path": "/sounds/chapter2/proposal23.mp3"
+		},
+		{
+			"id": "chapter2proposal24",
+			"path": "/sounds/chapter2/proposal24.mp3"
+		},
+		{
+			"id": "chapter2proposal25",
+			"path": "/sounds/chapter2/proposal25.mp3"
+		},
+		{
+			"id": "chapter2proposal26",
+			"path": "/sounds/chapter2/proposal26.mp3"
+		},
+		{
+			"id": "chapter2proposal27",
+			"path": "/sounds/chapter2/proposal27.mp3"
+		},
+		{
+			"id": "chapter2proposal28",
+			"path": "/sounds/chapter2/proposal28.mp3"
+		},
+		{
+			"id": "chapter2proposal29",
+			"path": "/sounds/chapter2/proposal29.mp3"
+		},
+		{
+			"id": "chapter2proposal30",
+			"path": "/sounds/chapter2/proposal30.mp3"
+		},
+		{
+			"id": "chapter2proposal31",
+			"path": "/sounds/chapter2/proposal31.mp3"
+		},
+		{
+			"id": "chapter2proposal32",
+			"path": "/sounds/chapter2/proposal32.mp3"
+		},
+		{
+			"id": "chapter2proposal33",
+			"path": "/sounds/chapter2/proposal33.mp3"
+		},
+		{
+			"id": "chapter2proposal34",
+			"path": "/sounds/chapter2/proposal34.mp3"
+		},
+		{
+			"id": "chapter2proposal35",
+			"path": "/sounds/chapter2/proposal35.mp3"
+		},
+		{
+			"id": "chapter2proposal36",
+			"path": "/sounds/chapter2/proposal36.mp3"
+		},
+		{
+			"id": "chapter2proposal37",
+			"path": "/sounds/chapter2/proposal37.mp3"
+		},
+		{
+			"id": "chapter2proposal38",
+			"path": "/sounds/chapter2/proposal38.mp3"
+		},
+		{
+			"id": "chapter2proposal39",
+			"path": "/sounds/chapter2/proposal39.mp3"
+		},
+		{
+			"id": "chapter2proposal40",
+			"path": "/sounds/chapter2/proposal40.mp3"
+		},
+
+
+		{
+			"id": "chapter3Sisxetizomenesennoies",
+			"path": "/sounds/chapter3/sisxetizomenesennoies.mp3"
+		},
+		{
+			"id": "chapter3question1",
+			"path": "/sounds/chapter3/question1.mp3"
+		},
+		{
+			"id": "chapter3question2",
+			"path": "/sounds/chapter3/question2.mp3"
+		},		
+		{
+			"id": "chapter3question3",
+			"path": "/sounds/chapter3/question3.mp3"
+		},		
+		{
+			"id": "chapter3question4",
+			"path": "/sounds/chapter3/question4.mp3"
+		},	
+		{
+			"id": "chapter3question5",
+			"path": "/sounds/chapter3/question5.mp3"
+		},		
+		{
+			"id": "chapter3question6",
+			"path": "/sounds/chapter3/question6.mp3"
+		},		
+		{
+			"id": "chapter3question7",
+			"path": "/sounds/chapter3/question7.mp3"
+		}
+	]
+}

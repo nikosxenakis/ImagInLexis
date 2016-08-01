@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
@@ -12,7 +11,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainWindow" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.ChooseInImageScreenController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
@@ -57,7 +56,7 @@
                <top>
                   <HBox alignment="CENTER" prefHeight="70.0" prefWidth="790.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Text fx:id="question" strokeType="OUTSIDE" strokeWidth="0.0" text="Δείξε την εικόνα που δείχνει τον ελέφαντα" textAlignment="CENTER">
+                        <Text fx:id="question" strokeType="OUTSIDE" strokeWidth="0.0" text="Εντόπισε στην εικόνα όλα τα παιδιά &#10;που δεν κάθονται στο εστιατόριο" textAlignment="CENTER">
                            <font>
                               <Font size="31.0" />
                            </font>
@@ -70,7 +69,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <image>
-                              <Image url="@../../resources/images/soundIcon.jpg" />
+                              <Image url="@../../resources/images/icons/soundIcon.jpg" />
                            </image>
                         </ImageView>
                      </children>
@@ -80,19 +79,26 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </BorderPane.margin>
                <center>
-                  <Pane prefHeight="583.0" prefWidth="790.0" BorderPane.alignment="CENTER">
+                  <AnchorPane fx:id="circleContainer" prefHeight="248.0" prefWidth="790.0" BorderPane.alignment="CENTER">
                      <children>
-                        <ImageView fx:id="image2" fitHeight="503.0" fitWidth="653.0" layoutX="64.0" layoutY="16.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="image">
-                           <image>
-                              <Image url="@../../resources/images/grammateas.jpg" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
-                        <Circle fill="#2197ff00" layoutX="374.0" layoutY="157.0" radius="86.0" stroke="#91ab8e00" strokeDashOffset="10.0" strokeType="INSIDE" style="-fx-stroke-width: 5; -fx-stroke: #15ff00;" />
+                        <HBox alignment="CENTER" prefHeight="248.0" prefWidth="790.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane>
+                                 <children>
+                                    <ImageView fx:id="image" fitHeight="341.0" fitWidth="532.0" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" styleClass="image">
+                                       <image>
+                                          <Image url="@../../resources/images/grammateas.jpg" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
                      </children>
-                  </Pane>
+                  </AnchorPane>
                </center>
             </BorderPane>
          </center>
@@ -131,7 +137,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                                  <image>
-                                    <Image url="@../../resources/images/recognizionIcon.jpg" />
+                                    <Image url="@../../resources/images/icons/recognitionIcon.jpg" />
                                  </image>
                               </ImageView>
                            </children>
@@ -156,7 +162,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                                  <image>
-                                    <Image url="@../../resources/images/animalIcon.jpg" />
+                                    <Image url="@../../resources/images/icons/animalIcon.jpg" />
                                  </image>
                               </ImageView>
                            </children>

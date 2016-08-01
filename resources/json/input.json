@@ -1,78 +1,21 @@
 {
-	"images": [
-		{
-			"id": "recognizionImage",
-			"path": "images/recognizionIcon.jpg"
-		},
-		{
-			"id": "animalsImage",
-			"path": "images/animalIcon.jpg"
-		},
-		{
-			"id": "soundIcon",
-			"path": "images/soundIcon.jpg"
-		},
-		{
-			"id": "ippopotamos",
-			"path": "images/animals/ippopotamos.jpg"
-		},
-		{
-			"id": "alogo",
-			"path": "images/animals/alogo.jpg"
-		},
-		{
-			"id": "elefantas",
-			"path": "images/animals/elefantas.jpg"
-		},
-		{
-			"id": "gaidaros",
-			"path": "images/animals/gaidaros.jpg"
-		},
-		{
-			"id": "rinokeros",
-			"path": "images/animals/rinokeros.jpg"
-		},
-		{
-			"id": "grammateas",
-			"path": "images/grammateas.jpg"
-		},
-		{
-			"id": "mastoras",
-			"path": "images/mastoras.jpg"
-		},
-		{
-			"id": "daskala",
-			"path": "images/daskala.jpg"
-		},
-		{
-			"id": "kilindros",
-			"path": "images/kilindros.jpg"
-		},
-		{
-			"id": "kivos",
-			"path": "images/kivos.jpg"
-		},
-		{
-			"id": "romvos",
-			"path": "images/romvos.jpg"
-		}
-	],
-
-	"sounds": [
-		{
-			"id": "...",
-			"path": "..."
-		}
-	],
 	"screens": [
 		{
-			"screenId": "homeScreen",
-			"screenType": "homeScreen"
+			"screenId": "ScoreTableScreen"
+		},
+		{
+			"screenId": "RecognitionChapterScreen"
+		},
+		{
+			"screenId": "CombinationalChapterScreen"
+		},
+		{
+			"screenId": "MainScreen"
 		}
 	],
 	"questions": [
 		{
-			"chapter": "recognizion",
+			"chapter": "recognition",
 			"chapterName": "Αναγνώρηση",
 			"chapterList": [
 				{
@@ -86,7 +29,21 @@
 							"image1Id": "mastoras",
 							"image2Id": "grammateas",
 							"image3Id": "daskala",
-							"answer": "3"
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "ScreenShapesRhombus",
+							"screenType": "chooseLabel",
+							"question": "Αυτός είναι ένας...",
+							"imageId": "romvos",
+							"radioOption1": "Ρόμβος",
+							"radioOption2": "Κύλινδρος",
+							"radioOption3": "Κύβος",
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 						{
 							"screenId": "ScreenProfessionsPoliceman",
@@ -95,7 +52,9 @@
 							"image1Id": "grammateas",
 							"image2Id": "mastoras",
 							"image3Id": "daskala",
-							"answer": "1"
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 					]
 				},
@@ -104,65 +63,302 @@
 					"categoryName": "Ζώα",
 					"categoryList": [
 						{
-							"screenId": "ScreenAnimalsElephant",
-							"screenType": "chooseImage",
-							"question": "Δείξε την εικόνα με τον ελέφαντα",
-							"image1Id": "elefantas",
-							"image2Id": "ippopotamos",
-							"image3Id": "rinokeros",
-							"answer": "1"
+							"screenId": "chooseLabelFromSound_1",
+							"screenType": "chooseLabelFromSound",
+							"radioOption1": "Ρόμβος",
+							"radioOption2": "Κύλινδρος",
+							"radioOption3": "Κύβος",
+							"answers": [{
+								"answerNo": "1"
+							}]
 						},
 						{
-							"screenId": "ScreenAnimalsHorse",
-							"screenType": "chooseImage",
-							"question": "Δείξε την εικόνα με  το άλογο",
-							"image1Id": "alogo",
-							"image2Id": "gaidaros",
-							"image3Id": "gaidaros",
-							"answer": "1"
-						},
+							"screenId": "ScreenChooseInImageKid",
+							"screenType": "chooseInImage",
+							"question": "Bres ton...",
+							"imageId": "elefantas",
+							"circlesList": [
+								{
+									"circleX": "300",
+									"circleY": "100",
+									"circleW": "60",
+									"circleH": "60"
+								},
+								{
+									"circleX": "400",
+									"circleY": "250",
+									"circleW": "60",
+									"circleH": "60"
+								}
+							],
+							"answers": [{
+									"answerNo": "1"
+								},
+								{
+									"answerNo": "2"
+								}
+							]
+						}
 					]
-				}
-			]
-		},
-		{
-			"chapterName": "chapter2",
-			"chapterList": [
-				
-			]
-		},
-		{
-			"chapterName": "chapter3",
-			"chapterList": [
-				
-			]
-		}
-	]
-
-	"scores": [
-		{
-			"chapterName": "chapter1",
-			"chapterList": [
+				},
 				{
-					"categoryName": "animals",
+					"category": "body",
+					"categoryName": "Σώμα",
 					"categoryList": [
 						{
-							"name": "nikos",
-							"score": "0.8",
-							"data": "12 Ιουλίου 2016"
+							"screenId": "WhatIsThisTomato",
+							"screenType": "whatIsThis"
+						},
+						{
+							"screenId": "WhatIsThisTomato2",
+							"screenType": "whatIsThis",
+							"imageId": "tomato"
+						},
+					]
+				},
+				{
+					"category": "location",
+					"categoryName": "Τοποθεσία",
+					"categoryList": [
+						{
+							"screenId": "chooseImage2_1",
+							"screenType": "chooseImage2",
+							"question": "Δείξε την εικόνα με τον δάσκαλο",
+							"image1Id": "mastoras",
+							"image2Id": "grammateas",
+							"image3Id": "daskala",
+							"image4Id": "mastoras",
+							"answers": [{
+								"answerNo": "2"
+							}]
 						}
 					]
 				}
 			]
 		},
 		{
-			"chapterName": "chapter2",
+			"chapter": "katonomasia",
+			"chapterName": "Κατονομασία",
 			"chapterList": [
+				{
+					"category": "whatIsThis",
+					"categoryName": "Τι Είναι Αυτό",
+					"categoryList": [
+						{
+							"question": "Τι είναι αυτό που βλέπεις;",
+							"screenId": "whatIsThisBottle",
+							"screenType": "whatIsThis",
+							"imageId": "bottle",
+							"soundId": "chapter2question1"
+						},
+					]
+				}
 			]
 		},
 		{
-			"chapterName": "chapter3",
+			"chapter": "combinational",
+			"chapterName": "Συνδιαστικό",
 			"chapterList": [
+				{
+					"category": "combinationalObject",
+					"categoryName": "Αντικείμενα",
+					"categoryList": [
+						{
+							"question": "Βρές ποιο αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkBag",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "bag",
+							"image1Id": "canvas",
+							"image2Id": "book",
+							"image3Id": "newspaper",
+							"soundId": "chapter3question1",
+							"answers": [{ "answerNo": "2" }]
+						},
+						{
+							"question": "Βρές ποιο αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkBath",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "bath",
+							"image1Id": "carpet",
+							"image2Id": "washbasin",
+							"image3Id": "sponge",
+							"soundId": "chapter3question1",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές ποιο αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkKnife",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "knife",
+							"image1Id": "fork",
+							"image2Id": "pan",
+							"image3Id": "glass",
+							"soundId": "chapter3question1",
+							"answers": [{ "answerNo": "1" }]
+						},						
+						{
+							"question": "Βρές ποιο αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkHat",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "hat",
+							"image1Id": "boots",
+							"image2Id": "shirt",
+							"image3Id": "gloves",
+							"soundId": "chapter3question1",
+							"answers": [{ "answerNo": "3" }]
+						}
+					]
+				},
+				{
+					"category": "combinationalProfessions",
+					"categoryName": "Επαγγέλματα",
+					"categoryList": [
+						{
+							"question": "Βρές αυτό που χρειάζεται\nπερισσότερο ο δύτης",
+							"screenId": "chooseImageLinkDiver",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "diver",
+							"image1Id": "boat",
+							"image2Id": "oxygenBottle",
+							"image3Id": "mountain",
+							"soundId": "chapter3question2",
+							"answers": [{ "answerNo": "2" }]
+						},
+						{
+							"question": "Βρές αυτό που χρειάζεται\nπερισσότερο η τραγουδίστρια",
+							"screenId": "chooseImageLinkSinger",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "singer",
+							"image1Id": "chair",
+							"image2Id": "floute",
+							"image3Id": "microphone",
+							"soundId": "chapter3question5",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές αυτό που χρειάζεται\nπερισσότερο ο ακροβάτης",
+							"screenId": "chooseImageLinkAcrobat",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "acrobat",
+							"image1Id": "circus",
+							"image2Id": "pool",
+							"image3Id": "animals",
+							"soundId": "chapter3question4",
+							"answers": [{ "answerNo": "1" }]
+						},
+						{
+							"question": "Βρές αυτό που χρειάζεται\nπερισσότερο η χορεύτρια",
+							"screenId": "chooseImageLinkDancer",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "dancer",
+							"image1Id": "sneakers",
+							"image2Id": "danceShoes",
+							"image3Id": "swimmingSuit",
+							"soundId": "chapter3question3",
+							"answers": [{ "answerNo": "2" }]
+						}
+					]
+				},
+				{
+					"category": "combinationalAction",
+					"categoryName": "Ενέργειες",
+					"categoryList": [
+						{
+							"question": "Βρές ποια αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkDrink",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "drink",
+							"image1Id": "juice",
+							"image2Id": "cow",
+							"image3Id": "banana",
+							"soundId": "chapter3question6",
+							"answers": [{ "answerNo": "1" }]
+						},
+						{
+							"question": "Βρές ποια αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkSleep",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "sleep",
+							"image1Id": "lamp",
+							"image2Id": "seaΜatress",
+							"image3Id": "bed",
+							"soundId": "chapter3question6",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές ποια αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkHurt",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "hurt",
+							"image1Id": "water",
+							"image2Id": "medicine",
+							"image3Id": "orange",
+							"soundId": "chapter3question6",
+							"answers": [{ "answerNo": "2" }]
+						},
+						{
+							"question": "Βρές ποια αντικείμενο ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkPay",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "pay",
+							"image1Id": "money",
+							"image2Id": "wallet",
+							"image3Id": "womanBag",
+							"soundId": "chapter3question6",
+							"answers": [{ "answerNo": "1" }]
+						}
+					]
+				},
+				{
+					"category": "combinationalSequence",
+					"categoryName": "Αλληλουχία Πράξεων",
+					"categoryList": [
+						{
+							"question": "Βρές ποια δραστηριότητα ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkEatPasta",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "eatPasta",
+							"image1Id": "eatFruit",
+							"image2Id": "eatSweet",
+							"image3Id": "eatEgg",
+							"soundId": "chapter3question7",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές ποια δραστηριότητα ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkWipe",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "wipe",
+							"image1Id": "nail",
+							"image2Id": "plant",
+							"image3Id": "mop",
+							"soundId": "chapter3question7",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές ποια δραστηριότητα ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkWashDishes",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "washDishes",
+							"image1Id": "breakDishes",
+							"image2Id": "makeTable",
+							"image3Id": "cleanDishes",
+							"soundId": "chapter3question7",
+							"answers": [{ "answerNo": "3" }]
+						},
+						{
+							"question": "Βρές ποια δραστηριότητα ταιριάζει\nπερισσότερο με την κεντρική εικόνα",
+							"screenId": "chooseImageLinkPlayFootball",
+							"screenType": "chooseImageLink",
+							"bacisImageId": "playFootball",
+							"image1Id": "walk",
+							"image2Id": "paint",
+							"image3Id": "playTennis",
+							"soundId": "chapter3question7",
+							"answers": [{ "answerNo": "3" }]
+						}
+					]
+				}
 			]
 		}
 	]

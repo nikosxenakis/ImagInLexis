@@ -6,42 +6,53 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 
-import javafx.application.Platform;
+import org.json.simple.JSONObject;
+
 import screenController.QuestionScreenController;
-import screenController.ScreenController;
-import screenData.ChooseImageScreenData;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
 
 public class Test{
 
-	HashMap<String,Integer> answers = new HashMap<String, Integer>();
-	HashMap<String,Integer> correctAnswers = new HashMap<String, Integer>();
+	private String chapter;
+	private String category;
+
+	HashMap<String, Set<Integer>> answers = new HashMap<String, Set<Integer>>();
+	HashMap<String, Set<Integer>> correctAnswers = new HashMap<String,Set<Integer>>();
 
 	private Queue<String> screenList = new LinkedList<String>();
 
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
-	
-	public Test(String category){
+
+	public Test(String chapter, String category){
+		this.chapter = chapter;
+		this.category = category;
+
 		answeredQuestions = 0;
 		totalQuestions = JavaFXApplication.parser.getCategoryTotalQuestions(category);
-		System.out.println("totalQuestions = "+totalQuestions);
-		System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
-
+		//System.out.println("totalQuestions = "+totalQuestions);
+		//System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
+        
 		for(String screenId : JavaFXApplication.parser.getCategoriesScreenIdList(category)){
 	        JavaFXApplication.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
 			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-			ChooseImageScreenData sd = (ChooseImageScreenData)screenData;
-			Integer answer = sd.getAnswer();
-			correctAnswers.put(screenId, answer);	
-
+			Set<Integer> answers = screenData.getAnswers();
+			correctAnswers.put(screenId, answers);	
 		}
+
 	}
 	
+	public String getChapter(){
+		return this.chapter;
+	}
 	
+	public String getCategory(){
+		return this.category;
+	}
     
 	public void startTest(){
 		System.out.println("start test");
@@ -85,26 +96,38 @@ public class Test{
 	
 	public void finishTest(){
 		if(totalQuestions != answeredQuestions){
-			System.out.println("error in finishTest answeredQuestions = "+answeredQuestions);
+			System.err.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
-		String results = calculateResults();
-		System.out.println("results= "+results);
+		String score = calculateResults();
+		System.out.println("score= "+score);
 		
-		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
+
 		Date date = new Date();
+		Date time = new Date();
 		String strDate = dateFormat.format(date);
+		String strTime = timeFormat.format(time);
 		System.out.println("date= "+strDate);
+		System.out.println("time= "+strTime);
+
+		JSONObject obj = new JSONObject();
+		obj.put("score", score);
+		obj.put("date", date);
+		obj.put("time", time);
 		
+		JavaFXApplication.parser.addScore(obj,chapter,category);
+        
         String screenId = "homeScreen";
 		JavaFXApplication.mainContainer.setScreen(screenId);
 		//Platform.exit();
 	}
 	
-	public void submitAnswer(ScreenPane myScreenPane, Integer answerNo){
+	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
     	System.out.println("screenList: "+screenList.toString());
 		answeredQuestions++;
-		answers.put(screenList.peek(), answerNo);	
+		answers.put(screenList.peek(), answersNo);	
     	removeScreen();
 
     	String screenId = getNextScreen();
@@ -125,7 +148,11 @@ public class Test{
     	if(!screenList.isEmpty()){
     		String screenId = screenList.remove();
     		screenList.add(screenId);
-    		return screenList.peek();
+    		String retScreenId = screenList.peek();
+            QuestionScreenController screenController = (QuestionScreenController) JavaFXApplication.mainContainer.getController(retScreenId);
+            screenController.setAnsweredQuestions(answeredQuestions);
+            
+    		return retScreenId;
     	}
     	else
     		return null;

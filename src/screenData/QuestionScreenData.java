@@ -1,15 +1,17 @@
 package screenData;
 
+import java.util.Set;
+
 public abstract class QuestionScreenData{
 	
 	private String question;
-	private Integer answer;
+	private Set<Integer> answers;
 	private String chapterName;
 	private String categoryName;
 	
-	QuestionScreenData(String question, String answer2, String chapterName, String categoryName){
+	QuestionScreenData(String question, Set<Integer> answers, String chapterName, String categoryName){
 		this.question = question;
-		this.answer = Integer.valueOf(answer2);
+		this.answers = answers;
 		this.chapterName = chapterName;
 		this.categoryName = categoryName;
 	}
@@ -18,8 +20,8 @@ public abstract class QuestionScreenData{
 		return question;
 	}
 	
-	public Integer getAnswer(){
-		return this.answer;
+	public Set<Integer> getAnswers(){
+		return this.answers;
 	}
 	
 	public String getChapterName(){
@@ -29,5 +31,4 @@ public abstract class QuestionScreenData{
 	public String getCategoryName(){
 		return this.categoryName;
 	}
-
 }

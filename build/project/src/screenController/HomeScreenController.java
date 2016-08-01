@@ -11,12 +11,12 @@ import javafx.scene.input.MouseEvent;
 
 public class HomeScreenController extends ScreenController{
 
-    @FXML
-    private Button startProfessionButton;
-
-    @FXML
+	@FXML
     private Button startAnimalsButton;
 
+    @FXML
+    protected Button startProfessionButton;
+    
     public void setAnsweredQuestions(Integer answeredQuestions){
     	
     }
@@ -34,14 +34,14 @@ public class HomeScreenController extends ScreenController{
         if((Button)e.getSource() == startProfessionButton){
         	System.out.println("startButton clicked");
             
-            Test test = new Test("professions");
+            Test test = new Test("recognizion","professions");
             test.startTest();
 
         }
         else if((Button)e.getSource() == startAnimalsButton){
         	System.out.println("startButton clicked");
             
-            Test test = new Test("animals");
+            Test test = new Test("recognizion","animals");
             test.startTest();
 
         }

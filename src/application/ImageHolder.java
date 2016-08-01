@@ -9,9 +9,11 @@ public class ImageHolder{
     private static ImageHolder instance = new ImageHolder();
     
     private HashMap<String, Image> images;
-    
+    private HashMap<String, String> imagePaths;
+
     private ImageHolder(){
     	this.images = new HashMap<>();
+    	this.imagePaths = new HashMap<>();
     }
 
     public static ImageHolder getInstance(){ 
@@ -19,15 +21,21 @@ public class ImageHolder{
     }
     
     public static Image getImage(String id){
-    	Image image = instance.images.get(id);
-    	if(image == null)
-    		System.err.println("error in getImage");
-    	return image;
+    	Image image = null;
+    	
+    	if(instance.images.get(id) != null){
+    		image = instance.images.get(id);
+    	}
+    	else{
+    		
+    		String path = instance.imagePaths.get(id);
+        	image = new Image(path);
+        	instance.images.put(id, image);
+    	}
+		return image;
     }
     
     public static void addImage(String id, String path){
-    	Image image = new Image(path);
-    	instance.images.put(id, image);
+    	instance.imagePaths.put(id, path);
     }
-    
 }

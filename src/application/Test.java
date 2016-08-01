@@ -6,6 +6,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
+
+import org.json.simple.JSONObject;
 
 import screenController.QuestionScreenController;
 import screenData.QuestionScreenData;
@@ -15,30 +18,32 @@ public class Test{
 
 	private String chapter;
 	private String category;
-
-	HashMap<String,Integer> answers = new HashMap<String, Integer>();
-	HashMap<String,Integer> correctAnswers = new HashMap<String, Integer>();
+	private String menuScreenId;
+	
+	HashMap<String, Set<Integer>> answers = new HashMap<String, Set<Integer>>();
+	HashMap<String, Set<Integer>> correctAnswers = new HashMap<String,Set<Integer>>();
 
 	private Queue<String> screenList = new LinkedList<String>();
 
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
 
-	public Test(String chapter, String category){
+	public Test(String chapter, String category, String menuScreenId){
 		this.chapter = chapter;
 		this.category = category;
-
+		this.menuScreenId = menuScreenId;
+		
 		answeredQuestions = 0;
-		totalQuestions = JavaFXApplication.parser.getCategoryTotalQuestions(category);
+		totalQuestions = ImagInLexis.parser.getCategoryTotalQuestions(category);
 		//System.out.println("totalQuestions = "+totalQuestions);
 		//System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
         
-		for(String screenId : JavaFXApplication.parser.getCategoriesScreenIdList(category)){
-	        JavaFXApplication.mainContainer.loadScreen(screenId, this);
+		for(String screenId : ImagInLexis.parser.getCategoriesScreenIdList(category)){
+	        ImagInLexis.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
 			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-			Integer answer = screenData.getAnswer();
-			correctAnswers.put(screenId, answer);	
+			Set<Integer> answers = screenData.getAnswers();
+			correctAnswers.put(screenId, answers);	
 		}
 
 	}
@@ -55,7 +60,7 @@ public class Test{
 		System.out.println("start test");
 		String nextScreen = screenList.peek();
 		System.out.println(nextScreen);
-		JavaFXApplication.mainContainer.setScreen(nextScreen);
+		ImagInLexis.mainContainer.setScreen(nextScreen);
 	}
     
 	public void nextQuestion(ScreenPane myScreenPane){
@@ -91,35 +96,51 @@ public class Test{
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void finishTest(){
 		if(totalQuestions != answeredQuestions){
 			System.err.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
-		String results = calculateResults();
-		System.out.println("results= "+results);
+		String name = ImagInLexis.userName;
 		
-		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		String score = calculateResults();
+		System.out.println("score= "+score);
+		
+		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
+
 		Date date = new Date();
+		Date time = new Date();
 		String strDate = dateFormat.format(date);
+		String strTime = timeFormat.format(time);
 		System.out.println("date= "+strDate);
+		System.out.println("time= "+strTime);
+
+		JSONObject obj = new JSONObject();
+
+		obj.put("name", name);
+		obj.put("score", score);
+		obj.put("date", strDate);
+		obj.put("time", strTime);
 		
-        String screenId = "homeScreen";
-		JavaFXApplication.mainContainer.setScreen(screenId);
+		ImagInLexis.parser.addScore(obj,chapter,category);
+        
+		ImagInLexis.mainContainer.setScreen(menuScreenId);
 		//Platform.exit();
 	}
 	
-	public void submitAnswer(ScreenPane myScreenPane, Integer answerNo){
+	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
     	System.out.println("screenList: "+screenList.toString());
 		answeredQuestions++;
-		answers.put(screenList.peek(), answerNo);	
+		answers.put(screenList.peek(), answersNo);	
     	removeScreen();
 
     	String screenId = getNextScreen();
     	if(screenId == null)
     		return;
     	
-        QuestionScreenController screenController = (QuestionScreenController) JavaFXApplication.mainContainer.getController(screenId);
+        QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
         screenController.setAnsweredQuestions(answeredQuestions);
 	}
 	
@@ -133,7 +154,11 @@ public class Test{
     	if(!screenList.isEmpty()){
     		String screenId = screenList.remove();
     		screenList.add(screenId);
-    		return screenList.peek();
+    		String retScreenId = screenList.peek();
+            QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(retScreenId);
+            screenController.setAnsweredQuestions(answeredQuestions);
+            
+    		return retScreenId;
     	}
     	else
     		return null;

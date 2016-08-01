@@ -13,9 +13,15 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
+import screenController.ChooseImageLinkScreenController;
 import screenController.ChooseImageScreenController;
+import screenController.ChooseImageScreenController2;
+import screenController.ChooseInImageScreenController;
+import screenController.ChooseLabelFromSoundScreenController;
+import screenController.ChooseLabelScreenController;
 import screenController.QuestionScreenController;
 import screenController.ScreenController;
+import screenController.WhatIsThisScreenController;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
 
@@ -39,7 +45,10 @@ public class ScreenPane extends StackPane{
     }
 	
     public ScreenController getController(String screenId){
-    	return screenControllersList.get(screenId);
+    	ScreenController sc = screenControllersList.get(screenId);
+    	if(sc == null)
+    		System.err.println("error in getController ScreenController is null");
+    	return sc;
     }
     
     public void addController(String screenId, ScreenController screenController){
@@ -50,8 +59,8 @@ public class ScreenPane extends StackPane{
     public boolean loadScreen(String screenId,Test test){
         try{
         	String resource = ResourcePathsHolder.getResourcePaths(screenId);			
-        	
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
+
+        	FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
             Parent loadScreen = (Parent) loader.load();
             
             ScreenController screenControler = ((ScreenController)loader.getController());
@@ -64,13 +73,30 @@ public class ScreenPane extends StackPane{
 
                 if(screenControler instanceof ChooseImageScreenController){
                 	((ChooseImageScreenController)screenControler).setData(screenData,test);
-                }        	
+                } 
+                else if(screenControler instanceof ChooseImageScreenController2){
+                	((ChooseImageScreenController2)screenControler).setData(screenData,test);
+                } 
+                else if(screenControler instanceof ChooseLabelScreenController){
+                	((ChooseLabelScreenController)screenControler).setData(screenData,test);
+                } 
+                else if(screenControler instanceof ChooseLabelFromSoundScreenController){
+                	((ChooseLabelFromSoundScreenController)screenControler).setData(screenData,test);
+                } 
+                else if(screenControler instanceof ChooseInImageScreenController){
+                	((ChooseInImageScreenController)screenControler).setData(screenData,test);
+                }  
+                else if(screenControler instanceof WhatIsThisScreenController){
+                	((WhatIsThisScreenController)screenControler).setData(screenData,test);
+                }
+                else if(screenControler instanceof ChooseImageLinkScreenController){
+                	((ChooseImageLinkScreenController)screenControler).setData(screenData,test);
+                } 
                 else{
-                	System.err.println("not implemented");
+                	System.err.println("not implemented in loadScreen");
                 }
             }
  
-            
             return true;
             
         }catch(Exception e){
@@ -86,56 +112,43 @@ public class ScreenPane extends StackPane{
     
     public boolean setScreen(final String screenId){
 
-        if (screens.get(screenId) != null) {   //screen loaded
-      final DoubleProperty opacity = opacityProperty();
-
-      if (!getChildren().isEmpty()) {    //if there is more than one screen
-        Timeline fade = new Timeline(
-            new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
-            new KeyFrame(new Duration(200), new EventHandler<ActionEvent>() {
-              @Override
-              public void handle(ActionEvent t) {
-                getChildren().remove(0);                    //remove the displayed screen
-        		
-                getChildren().add(0, screens.get(screenId));     //add the screen
-                Timeline fadeIn = new Timeline(
-                  new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                  new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0)));
-                fadeIn.play();
-              }
-            }, new KeyValue(opacity, 0.0)));
-        fade.play();
-        
-      } else {
-        setOpacity(0.0);
-        getChildren().add(screens.get(screenId));       //no one else been displayed, then just show
-
-        Timeline fadeIn = new Timeline(
-            new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-            new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0)));
-        fadeIn.play();
-      }
-      return true;
-    } else {
-      System.err.println("screen hasn't been loaded!!! \n");
-      return false;
-    }
-
-        
-        /*Node screenToRemove;
-        if(screens.get(name) != null){   //screen loaded
-            if(!getChildren().isEmpty()){    //if there is more than one screen
-                getChildren().add(0, screens.get(name));     //add the screen
-                screenToRemove = getChildren().get(1);
-                getChildren().remove(1);                    //remove the displayed screen
-            }else{
-             getChildren().add(screens.get(name));       //no one else been displayed, then just show
-            }
-            return true;
-        }else {
-            System.out.println("screen hasn't been loaded!!! \n");
-            return false;
-        }*/
+    	if (screens.get(screenId) != null) {   //screen loaded
+    		final DoubleProperty opacity = opacityProperty();
+	
+    		if (!getChildren().isEmpty()) {    //if there is more than one screen
+    			Timeline fade = new Timeline(
+    				new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
+    				new KeyFrame(new Duration(200), new EventHandler<ActionEvent>() {
+    					@Override
+    					public void handle(ActionEvent t) {
+    						getChildren().remove(0);                    //remove the displayed screen
+    						getChildren().add(0, screens.get(screenId));     //add the screen
+    						Timeline fadeIn = new Timeline(
+    							new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
+    							new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0))
+    						);
+    						fadeIn.play();
+    					}
+    				}, new KeyValue(opacity, 0.0))
+    			);
+    			fade.play();
+    		}
+    		else{
+    			setOpacity(0.0);
+    			getChildren().add(screens.get(screenId));       //no one else been displayed, then just show
+	
+    			Timeline fadeIn = new Timeline(
+    				new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
+    				new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0))
+    			);
+    			fadeIn.play();
+    		}
+    	return true;
+	    }
+    	else{
+    		System.err.println("screen hasn't been loaded!!! \n");
+    		return false;
+	    }
     }
     
     

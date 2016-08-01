@@ -19,7 +19,7 @@ public class ScreenDataHolder{
     public static QuestionScreenData getScreenData(String id){
     	QuestionScreenData screenData = instance.screenData.get(id);
     	if(screenData == null)
-    		System.out.println("error in getScreenData");
+    		System.err.println("error in getScreenData");
     	return screenData;
     }
     
