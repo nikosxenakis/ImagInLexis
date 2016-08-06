@@ -18,7 +18,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <ImageView fx:id="homeIcon" fitHeight="60.0" fitWidth="70.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="homeImage" fitHeight="60.0" fitWidth="70.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../resources/images/icons/homeIcon.jpg" />
                            </image>
@@ -41,7 +41,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Text>
-                        <ComboBox fx:id="categoryOptions" prefWidth="150.0">
+                        <ComboBox fx:id="categoryOptions" prefHeight="27.0" prefWidth="217.0">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>

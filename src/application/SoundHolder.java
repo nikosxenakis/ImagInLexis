@@ -2,8 +2,6 @@ package application;
 
 import java.net.URL;
 import java.util.HashMap;
-
-import javafx.scene.image.Image;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -11,10 +9,12 @@ public class SoundHolder{
 	
     private static SoundHolder instance = new SoundHolder();
     
-    private HashMap<String, MediaPlayer> sounds;
-    
+    //private HashMap<String, MediaPlayer> sounds;
+    private HashMap<String, String> soundsPath;
+
     private SoundHolder(){
-    	this.sounds = new HashMap<>();
+    	//this.sounds = new HashMap<>();
+    	this.soundsPath = new HashMap<>();
     }
  
     public static SoundHolder getInstance(){ 
@@ -22,25 +22,41 @@ public class SoundHolder{
     }
     
     public static MediaPlayer getSound(String id){
+    	/*
     	MediaPlayer mediaPlayer = instance.sounds.get(id);
-    	if(mediaPlayer == null)
-    		System.err.println("error in getSound");
+    	
+    	if(mediaPlayer == null){
+        	String path = instance.soundsPath.get(id);
+        	URL resource = ImagInLexis.class.getResource(path);
+            Media media = new Media(resource.toString());
+            mediaPlayer = new MediaPlayer(media);
+            instance.sounds.put(id, mediaPlayer);	
+    	}
+    	
     	return mediaPlayer;
+    	*/
+    	
+    	String path = instance.soundsPath.get(id);
+    	URL resource = ImagInLexis.class.getResource(path);
+        Media media = new Media(resource.toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        return mediaPlayer;
     }
 
     public static void playSound(String id){
-    	SoundHolder.getSound(id).play();
+    	getSound(id).play();
     }
     
     public static void addSound(String id, String path){
-    	SoundHolder.instance.add(id, path);
+    	instance.add(id, path);
     }
     
     public void add(String id, String path){
-    	final URL resource = getClass().getResource(path);
-        final Media media = new Media(resource.toString());
-        final MediaPlayer mediaPlayer = new MediaPlayer(media);
-    	this.sounds.put(id, mediaPlayer);
+    	soundsPath.put(id, path);
+    }
+    
+    public static void cleanMemory(){
+    	
     }
     
 }

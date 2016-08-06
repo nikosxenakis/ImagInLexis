@@ -10,6 +10,9 @@ ANAGNVRHSH
 	
 KATONOMASIA
 	3
+	ορισμοι
+	συπληρωση προτασεων
+	hxoi
 
 SUNDIASTIKO - ΣΥΣΧΕΤΙΖΟΜΕΝΕΣ ΕΝΝΟΙΕΣ
 	4

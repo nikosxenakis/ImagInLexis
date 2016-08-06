@@ -27,10 +27,11 @@ public class WhatIsThisScreenController extends QuestionScreenController{
 	private RadioButton wrongOption;
 		
     @FXML
-    private ImageView soundIcon;
+    private ImageView soundImage;
     
     private String soundId = null;    
-    
+    private String questionSoundId = null;    
+
     public void setData(QuestionScreenData screenData, Test test){
     	
     	System.out.println("set Data in WhatIsThisScreenController");
@@ -57,6 +58,9 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	}
 
     	soundId = data.getSoundId();
+    	questionSoundId = data.getQuestionSoundId();
+
+    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
 
     	setAnswer(1);
 
@@ -74,8 +78,16 @@ public class WhatIsThisScreenController extends QuestionScreenController{
         	setAnswer(2);
         }
     }
- 
+    
+    public void imageClicked(){
+    	System.out.println(soundId);
+    	if(soundId != null)
+    		SoundHolder.playSound(soundId);
+    }
+    
     public void soundIconClicked(){
-    	SoundHolder.playSound(soundId);
+    	System.out.println(questionSoundId);
+
+    	SoundHolder.playSound(questionSoundId);
     }
 }

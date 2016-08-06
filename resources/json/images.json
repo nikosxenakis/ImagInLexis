@@ -6,6 +6,10 @@
 			"path": "images/icons/recognitionIcon.jpg"
 		},
 		{
+			"id": "katonomasiaImage",
+			"path": "images/icons/katonomasiaIcon.jpg"
+		},
+		{
 			"id": "combinationalImage",
 			"path": "images/icons/combinationalIcon.jpg"
 		},
@@ -31,8 +35,8 @@
 			"path": "images/icons/bodyIcon.jpg"
 		},
 		{
-			"id": "carsImage",
-			"path": "images/icons/carsIcon.jpg"
+			"id": "carImage",
+			"path": "images/icons/carIcon.jpg"
 		},
 		{
 			"id": "locationImage",
@@ -51,8 +55,8 @@
 			"path": "images/icons/shapeIcon.jpg"
 		},
 		{
-			"id": "appliancesImage",
-			"path": "images/icons/appliancesIcon.jpg"
+			"id": "applianciesImage",
+			"path": "images/icons/applianciesIcon.jpg"
 		},
 		{
 			"id": "actionImage",
@@ -104,70 +108,968 @@
 		},
 
 		{
-			"id": "soundIcon",
+			"id": "soundImage",
 			"path": "images/icons/soundIcon.jpg"
 		},
 		{
-			"id": "homeIcon",
+			"id": "homeImage",
 			"path": "images/icons/homeIcon.jpg"
 		},
 		{
-			"id": "detectIcon",
+			"id": "detectImage",
 			"path": "images/icons/detectIcon.jpg"
 		},
-		
 		{
-			"id": "ippopotamos",
-			"path": "images/animals/ippopotamos.jpg"
+			"id": "katonomasiaDefinitionImage",
+			"path": "images/icons/definitionIcon.jpg"
+		},	
+		{
+			"id": "katonomasiaCompleteSentenceImage",
+			"path": "images/icons/completeSentenceIcon.jpg"
 		},
 		{
-			"id": "alogo",
-			"path": "images/animals/alogo.jpg"
+			"id": "katonomasiaSoundsImage",
+			"path": "images/icons/soundIcon.jpg"
+		},
+
+
+
+		{
+			"id": "camel",
+			"path": "images/recognition/animals/camel.jpg"
 		},
 		{
-			"id": "elefantas",
-			"path": "images/animals/elefantas.jpg"
+			"id": "cat",
+			"path": "images/recognition/animals/cat.jpg"
 		},
 		{
-			"id": "gaidaros",
-			"path": "images/animals/gaidaros.jpg"
+			"id": "chicken",
+			"path": "images/recognition/animals/chicken.jpg"
 		},
 		{
-			"id": "rinokeros",
-			"path": "images/animals/rinokeros.jpg"
+			"id": "dog",
+			"path": "images/recognition/animals/dog.jpg"
 		},
 		{
-			"id": "grammateas",
-			"path": "images/grammateas.jpg"
+			"id": "donkey",
+			"path": "images/recognition/animals/donkey.jpg"
 		},
 		{
-			"id": "mastoras",
-			"path": "images/mastoras.jpg"
+			"id": "elephant",
+			"path": "images/recognition/animals/elephant.jpg"
 		},
 		{
-			"id": "daskala",
-			"path": "images/daskala.jpg"
+			"id": "hippo",
+			"path": "images/recognition/animals/hippo.jpg"
 		},
 		{
-			"id": "daskalaRound",
-			"path": "images/daskalaRound.jpg"
+			"id": "horse",
+			"path": "images/recognition/animals/horse.jpg"
 		},
 		{
-			"id": "kilindros",
-			"path": "images/kilindros.jpg"
+			"id": "lion",
+			"path": "images/recognition/animals/lion.jpg"
 		},
 		{
-			"id": "kivos",
-			"path": "images/kivos.jpg"
+			"id": "panther",
+			"path": "images/recognition/animals/panther.jpg"
 		},
 		{
-			"id": "romvos",
-			"path": "images/romvos.jpg"
+			"id": "rinho",
+			"path": "images/recognition/animals/rinho.jpg"
+		},
+		{
+			"id": "seal",
+			"path": "images/recognition/animals/seal.jpg"
+		},
+		{
+			"id": "sheep",
+			"path": "images/recognition/animals/sheep.jpg"
+		},
+		{
+			"id": "wolf",
+			"path": "images/recognition/animals/wolf.jpg"
+		},
+		{
+			"id": "zebra",
+			"path": "images/recognition/animals/zebra.jpg"
+		},
+		{
+			"id": "fox",
+			"path": "images/recognition/animals/fox.jpg"
+		},
+		{
+			"id": "giraffe",
+			"path": "images/recognition/animals/giraffe.jpg"
+		},
+		{
+			"id": "chicken",
+			"path": "images/recognition/animals/chicken.jpg"
+		},
+		{
+			"id": "tigger",
+			"path": "images/recognition/animals/tigger.jpg"
+		},
+
+
+		{
+			"id": "apple",
+			"path": "images/recognition/fruits/apple.jpg"
+		},
+		{
+			"id": "carrot",
+			"path": "images/recognition/fruits/carrot.jpg"
+		},
+		{
+			"id": "corn",
+			"path": "images/recognition/fruits/corn.jpg"
+		},
+		{
+			"id": "cucamber",
+			"path": "images/recognition/fruits/cucamber.jpg"
+		},
+		{
+			"id": "grape",
+			"path": "images/recognition/fruits/grape.jpg"
+		},
+		{
+			"id": "lemon",
+			"path": "images/recognition/fruits/lemon.jpg"
+		},
+		{
+			"id": "lettuce",
+			"path": "images/recognition/fruits/lettuce.jpg"
+		},
+		{
+			"id": "orange",
+			"path": "images/recognition/fruits/orange.jpg"
+		},
+		{
+			"id": "peach",
+			"path": "images/recognition/fruits/peach.jpg"
+		},
+		{
+			"id": "pomegranate",
+			"path": "images/recognition/fruits/pomegranate.jpg"
+		},
+		{
+			"id": "pumkin",
+			"path": "images/recognition/fruits/pumkin.jpg"
+		},
+		{
+			"id": "strawberry",
+			"path": "images/recognition/fruits/strawberry.jpg"
 		},
 		{
 			"id": "tomato",
-			"path": "images/fruits/tomato.jpg"
+			"path": "images/recognition/fruits/tomato.jpg"
 		},
+		{
+			"id": "asparagus",
+			"path": "images/recognition/fruits/asparagus.jpg"
+		},
+		{
+			"id": "apple",
+			"path": "images/recognition/fruits/apple.jpg"
+		},
+		{
+			"id": "mpamies",
+			"path": "images/recognition/fruits/mpamies.jpg"
+		},
+		{
+			"id": "melitzana",
+			"path": "images/recognition/fruits/melitzana.jpg"
+		},
+		{
+			"id": "mantarini",
+			"path": "images/recognition/fruits/mantarini.jpg"
+		},
+		{
+			"id": "kerasia",
+			"path": "images/recognition/fruits/kerasia.jpg"
+		},
+		{
+			"id": "unknowFruit",
+			"path": "images/recognition/fruits/unknowFruit.jpg"
+		},
+
+
+		{
+			"id": "broom",
+			"path": "images/recognition/objects/broom.jpg"
+		},
+		{
+			"id": "chair",
+			"path": "images/recognition/objects/chair.jpg"
+		},
+		{
+			"id": "flashlight",
+			"path": "images/recognition/objects/flashlight.jpg"
+		},
+		{
+			"id": "frame",
+			"path": "images/recognition/objects/frame.jpg"
+		},
+		{
+			"id": "knife",
+			"path": "images/recognition/objects/knife.jpg"
+		},
+		{
+			"id": "laptop",
+			"path": "images/recognition/objects/laptop.jpg"
+		},
+			{
+			"id": "microphone",
+			"path": "images/recognition/objects/microphone.jpg"
+		},
+		{
+			"id": "opener",
+			"path": "images/recognition/objects/opener.jpg"
+		},
+		{
+			"id": "phone",
+			"path": "images/recognition/objects/phone.jpg"
+		},
+		{
+			"id": "pot",
+			"path": "images/recognition/objects/pot.jpg"
+		},
+		{
+			"id": "ruler",
+			"path": "images/recognition/objects/ruler.jpg"
+		},
+		{
+			"id": "scissor",
+			"path": "images/recognition/objects/scissor.jpg"
+		},
+		{
+			"id": "screwdriver",
+			"path": "images/recognition/objects/screwdriver.jpg"
+		},
+		{
+			"id": "seat",
+			"path": "images/recognition/objects/seat.jpg"
+		},
+		{
+			"id": "stool",
+			"path": "images/recognition/objects/stool.jpg"
+		},
+		{
+			"id": "tablet",
+			"path": "images/recognition/objects/tablet.jpg"
+		},
+		{
+			"id": "telephone",
+			"path": "images/recognition/objects/telephone.jpg"
+		},
+		{
+			"id": "trafficLight",
+			"path": "images/recognition/objects/trafficLight.jpg"
+		},
+
+		{
+			"id": "black",
+			"path": "images/recognition/colors/black.jpg"
+		},
+		{
+			"id": "blue",
+			"path": "images/recognition/colors/blue.jpg"
+		},
+		{
+			"id": "brown",
+			"path": "images/recognition/colors/brown.jpg"
+		},
+		{
+			"id": "darkGreen",
+			"path": "images/recognition/colors/darkGreen.jpg"
+		},
+		{
+			"id": "grey",
+			"path": "images/recognition/colors/grey.jpg"
+		},
+		{
+			"id": "lightBlue",
+			"path": "images/recognition/colors/lightBlue.jpg"
+		},
+		{
+			"id": "lime",
+			"path": "images/recognition/colors/lime.jpg"
+		},
+		{
+			"id": "orangeColor",
+			"path": "images/recognition/colors/orange.jpg"
+		},
+		{
+			"id": "pink",
+			"path": "images/recognition/colors/pink.jpg"
+		},
+		{
+			"id": "purple",
+			"path": "images/recognition/colors/purple.jpg"
+		},
+		{
+			"id": "red",
+			"path": "images/recognition/colors/red.jpg"
+		},
+		{
+			"id": "white",
+			"path": "images/recognition/colors/white.jpg"
+		},
+		{
+			"id": "yellow",
+			"path": "images/recognition/colors/yellow.jpg"
+		},
+
+		{
+			"id": "circle",
+			"path": "images/recognition/shape/circle.jpg"
+		},
+		{
+			"id": "cube",
+			"path": "images/recognition/shape/cube.jpg"
+		},
+		{
+			"id": "cylinder",
+			"path": "images/recognition/shape/cylinder.jpg"
+		},
+		{
+			"id": "decagon",
+			"path": "images/recognition/shape/decagon.jpg"
+		},
+		{
+			"id": "hexagon",
+			"path": "images/recognition/shape/hexagon.jpg"
+		},
+		{
+			"id": "oval",
+			"path": "images/recognition/shape/oval.jpg"
+		},
+		{
+			"id": "pyramid",
+			"path": "images/recognition/shape/pyramid.jpg"
+		},
+		{
+			"id": "rectangular",
+			"path": "images/recognition/shape/rectangular.jpg"
+		},
+		{
+			"id": "simplePolygon",
+			"path": "images/recognition/shape/simplePolygon.jpg"
+		},
+		{
+			"id": "square",
+			"path": "images/recognition/shape/square.jpg"
+		},
+		{
+			"id": "star",
+			"path": "images/recognition/shape/star.jpg"
+		},
+		{
+			"id": "triangle",
+			"path": "images/recognition/shape/triangle.jpg"
+		},
+		{
+			"id": "verticalRectangle",
+			"path": "images/recognition/shape/verticalRectangle.jpg"
+		},
+		{
+			"id": "rhombus",
+			"path": "images/recognition/shape/rhombus.jpg"
+		},
+
+
+		{
+			"id": "actor",
+			"path": "images/recognition/professions/actor.jpg"
+		},
+		{
+			"id": "builder",
+			"path": "images/recognition/professions/builder.jpg"
+		},
+		{
+			"id": "cook",
+			"path": "images/recognition/professions/cook.jpg"
+		},
+		{
+			"id": "doctor",
+			"path": "images/recognition/professions/doctor.jpg"
+		},
+		{
+			"id": "farmer",
+			"path": "images/recognition/professions/farmer.jpg"
+		},
+		{
+			"id": "firefighter",
+			"path": "images/recognition/professions/firefighter.jpg"
+		},
+		{
+			"id": "fisherman",
+			"path": "images/recognition/professions/fisherman.jpg"
+		},
+		{
+			"id": "hunter",
+			"path": "images/recognition/professions/hunter.jpg"
+		},
+		{
+			"id": "lifeguard",
+			"path": "images/recognition/professions/lifeguard.jpg"
+		},
+		{
+			"id": "maid",
+			"path": "images/recognition/professions/maid.jpg"
+		},
+		{
+			"id": "mechanic",
+			"path": "images/recognition/professions/mechanic.jpg"
+		},
+		{
+			"id": "nurse",
+			"path": "images/recognition/professions/nurse.jpg"
+		},
+		{
+			"id": "pilot",
+			"path": "images/recognition/professions/pilot.jpg"
+		},
+		{
+			"id": "policeman",
+			"path": "images/recognition/professions/policeman.jpg"
+		},
+		{
+			"id": "postman",
+			"path": "images/recognition/professions/postman.jpg"
+		},
+		{
+			"id": "salesman",
+			"path": "images/recognition/professions/salesman.jpg"
+		},
+		{
+			"id": "secretary",
+			"path": "images/recognition/professions/secretary.jpg"
+		},
+		{
+			"id": "sewer",
+			"path": "images/recognition/professions/sewer.jpg"
+		},
+		{
+			"id": "swimmer",
+			"path": "images/recognition/professions/swimmer.jpg"
+		},
+		{
+			"id": "teacher",
+			"path": "images/recognition/professions/teacher.jpg"
+		},
+
+
+		{
+			"id": "aircondition",
+			"path": "images/recognition/appliancies/aircondition.jpg"
+		},
+		{
+			"id": "blender",
+			"path": "images/recognition/appliancies/blender.jpg"
+		},
+		{
+			"id": "fan",
+			"path": "images/recognition/appliancies/fan.jpg"
+		},
+		{
+			"id": "fridge",
+			"path": "images/recognition/appliancies/fridge.jpg"
+		},
+		{
+			"id": "grill",
+			"path": "images/recognition/appliancies/grill.jpg"
+		},
+		{
+			"id": "hairDryer",
+			"path": "images/recognition/appliancies/hairDryer.jpg"
+		},
+		{
+			"id": "iron",
+			"path": "images/recognition/appliancies/iron.jpg"
+		},
+		{
+			"id": "oven",
+			"path": "images/recognition/appliancies/oven.jpg"
+		},
+		{
+			"id": "television",
+			"path": "images/recognition/appliancies/television.jpg"
+		},
+		{
+			"id": "vacuumCleaner",
+			"path": "images/recognition/appliancies/vacuumCleaner.jpg"
+		},
+		{
+			"id": "washingMachine",
+			"path": "images/recognition/appliancies/washingMachine.jpg"
+		},
+		{
+			"id": "toastMachine",
+			"path": "images/recognition/appliancies/toastMachine.jpg"
+		},
+
+
+		{
+			"id": "bakeryShop",
+			"path": "images/recognition/location/bakeryShop.jpg"
+		},
+		{
+			"id": "butcherShop",
+			"path": "images/recognition/location/butcherShop.jpg"
+		},
+		{
+			"id": "candyShop",
+			"path": "images/recognition/location/candyShop.jpg"
+		},
+		{
+			"id": "church",
+			"path": "images/recognition/location/church.jpg"
+		},
+		{
+			"id": "court",
+			"path": "images/recognition/location/court.jpg"
+		},
+		{
+			"id": "farmacy",
+			"path": "images/recognition/location/farmacy.jpg"
+		},
+		{
+			"id": "fashionStore",
+			"path": "images/recognition/location/fashionStore.jpg"
+		},
+		{
+			"id": "greengrocers",
+			"path": "images/recognition/location/greengrocers.jpg"
+		},
+		{
+			"id": "hospital",
+			"path": "images/recognition/location/hospital.jpg"
+		},
+		{
+			"id": "hotel",
+			"path": "images/recognition/location/hotel.jpg"
+		},
+		{
+			"id": "museum",
+			"path": "images/recognition/location/museum.jpg"
+		},
+		{
+			"id": "playground",
+			"path": "images/recognition/location/playground.jpg"
+		},
+		{
+			"id": "school",
+			"path": "images/recognition/location/school.jpg"
+		},
+		{
+			"id": "supermarket",
+			"path": "images/recognition/location/supermarket.jpg"
+		},
+		{
+			"id": "zooPark",
+			"path": "images/recognition/location/zooPark.jpg"
+		},
+
+
+		{
+			"id": "airballon",
+			"path": "images/recognition/car/airballon.jpg"
+		},
+		{
+			"id": "airplane",
+			"path": "images/recognition/car/airplane.jpg"
+		},
+		{
+			"id": "ambulance",
+			"path": "images/recognition/car/ambulance.jpg"
+		},
+		{
+			"id": "bike",
+			"path": "images/recognition/car/bike.jpg"
+		},
+		{
+			"id": "bulldozers",
+			"path": "images/recognition/car/bulldozers.jpg"
+		},
+		{
+			"id": "bus",
+			"path": "images/recognition/car/bus.jpg"
+		},
+		{
+			"id": "car",
+			"path": "images/recognition/car/car.jpg"
+		},
+		{
+			"id": "cityBus",
+			"path": "images/recognition/car/cityBus.jpg"
+		},
+		{
+			"id": "fireCar",
+			"path": "images/recognition/car/fireCar.jpg"
+		},
+		{
+			"id": "helicopter",
+			"path": "images/recognition/car/helicopter.jpg"
+		},
+		{
+			"id": "limo",
+			"path": "images/recognition/car/limo.jpg"
+		},
+		{
+			"id": "policeCar",
+			"path": "images/recognition/car/policeCar.jpg"
+		},
+		{
+			"id": "schoolBus",
+			"path": "images/recognition/car/schoolBus.jpg"
+		},
+		{
+			"id": "taxi",
+			"path": "images/recognition/car/taxi.jpg"
+		},
+		{
+			"id": "train",
+			"path": "images/recognition/car/train.jpg"
+		},
+		{
+			"id": "truck",
+			"path": "images/recognition/car/truck.jpg"
+		},
+		{
+			"id": "truck2",
+			"path": "images/recognition/car/truck2.jpg"
+		},
+
+
+		{
+			"id": "acting",
+			"path": "images/recognition/action/acting.jpg"
+		},
+		{
+			"id": "builting",
+			"path": "images/recognition/action/builting.jpg"
+		},
+		{
+			"id": "climbing",
+			"path": "images/recognition/action/climbing.jpg"
+		},
+		{
+			"id": "cooking",
+			"path": "images/recognition/action/cooking.jpg"
+		},
+		{
+			"id": "dancing",
+			"path": "images/recognition/action/dancing.jpg"
+		},
+		{
+			"id": "drawing",
+			"path": "images/recognition/action/drawing.jpg"
+		},
+		{
+			"id": "hanging",
+			"path": "images/recognition/action/hanging.jpg"
+		},
+		{
+			"id": "kneating",
+			"path": "images/recognition/action/kneating.jpg"
+		},
+		{
+			"id": "mopping",
+			"path": "images/recognition/action/mopping.jpg"
+		},
+		{
+			"id": "painting",
+			"path": "images/recognition/action/painting.jpg"
+		},
+		{
+			"id": "planting",
+			"path": "images/recognition/action/planting.jpg"
+		},
+		{
+			"id": "reading",
+			"path": "images/recognition/action/reading.jpg"
+		},
+		{
+			"id": "seeding",
+			"path": "images/recognition/action/seeding.jpg"
+		},
+		{
+			"id": "singing",
+			"path": "images/combinational/professions/singer.jpg"
+		},
+		{
+			"id": "skiing",
+			"path": "images/recognition/action/skiing.jpg"
+		},
+		{
+			"id": "slipping",
+			"path": "images/recognition/action/slipping.jpg"
+		},
+		{
+			"id": "walking",
+			"path": "images/recognition/action/walking.jpg"
+		},
+		{
+			"id": "watering",
+			"path": "images/recognition/action/watering.jpg"
+		},
+		{
+			"id": "writing",
+			"path": "images/recognition/action/writing.jpg"
+		},
+
+
+		{
+			"id": "angry",
+			"path": "images/recognition/emotion/angry.jpg"
+		},
+		{
+			"id": "desgusted",
+			"path": "images/recognition/emotion/desgusted.jpg"
+		},
+		{
+			"id": "happy",
+			"path": "images/recognition/emotion/happy.jpg"
+		},
+		{
+			"id": "nervous",
+			"path": "images/recognition/emotion/nervous.jpg"
+		},
+		{
+			"id": "pleased",
+			"path": "images/recognition/emotion/pleased.jpg"
+		},
+		{
+			"id": "sad",
+			"path": "images/recognition/emotion/sad.jpg"
+		},
+		{
+			"id": "speechless",
+			"path": "images/recognition/emotion/speechless.jpg"
+		},
+		{
+			"id": "suspicious",
+			"path": "images/recognition/emotion/suspicious.jpg"
+		},
+		{
+			"id": "veryHappy",
+			"path": "images/recognition/emotion/veryHappy.jpg"
+		},
+
+	
+		{
+			"id": "autumn1",
+			"path": "images/recognition/season/autumn1.jpg"
+		},
+		{
+			"id": "autumn2",
+			"path": "images/recognition/season/autumn2.jpg"
+		},
+		{
+			"id": "autumn3",
+			"path": "images/recognition/season/autumn3.jpg"
+		},
+		{
+			"id": "spring1",
+			"path": "images/recognition/season/spring1.jpg"
+		},
+		{
+			"id": "spring2",
+			"path": "images/recognition/season/spring2.jpg"
+		},
+		{
+			"id": "spring3",
+			"path": "images/recognition/season/spring3.jpg"
+		},
+		{
+			"id": "summer1",
+			"path": "images/recognition/season/summer1.jpg"
+		},
+		{
+			"id": "summer2",
+			"path": "images/recognition/season/summer2.jpg"
+		},
+		{
+			"id": "summer3",
+			"path": "images/recognition/season/summer3.jpg"
+		},
+		{
+			"id": "winter1",
+			"path": "images/recognition/season/winter1.jpg"
+		},
+		{
+			"id": "winter2",
+			"path": "images/recognition/season/winter2.jpg"
+		},
+		{
+			"id": "winter3",
+			"path": "images/recognition/season/winter3.jpg"
+		},
+
+
+		{
+			"id": "beach",
+			"path": "images/recognition/month/beach.jpg"
+		},
+		{
+			"id": "carnival",
+			"path": "images/recognition/month/carnival.jpg"
+		},
+		{
+			"id": "christmasSocks",
+			"path": "images/recognition/month/christmasSocks.jpg"
+		},
+		{
+			"id": "christmasTree",
+			"path": "images/recognition/month/christmasTree.jpg"
+		},
+		{
+			"id": "easter",
+			"path": "images/recognition/month/easter.jpg"
+		},
+		{
+			"id": "easterTwo",
+			"path": "images/recognition/month/easterTwo.jpg"
+		},
+		{
+			"id": "kite",
+			"path": "images/recognition/month/kite.jpg"
+		},
+		{
+			"id": "march",
+			"path": "images/recognition/month/march.jpg"
+		},
+		{
+			"id": "may",
+			"path": "images/recognition/month/may.jpg"
+		},
+		{
+			"id": "schoolClass",
+			"path": "images/recognition/month/schoolClass.jpg"
+		},
+		{
+			"id": "snowman",
+			"path": "images/recognition/month/snowman.jpg"
+		},
+		{
+			"id": "christmasTriangle",
+			"path": "images/recognition/month/christmasTriangle.jpg"
+		},
+
+
+		{
+			"id": "boyBaby",
+			"path": "images/recognition/opposites/boyBaby.jpg"
+		},
+		{
+			"id": "cleanOther",
+			"path": "images/recognition/opposites/cleanOther.jpg"
+		},
+		{
+			"id": "closeBroken",
+			"path": "images/recognition/opposites/closeBroken.jpg"
+		},
+		{
+			"id": "dayAfternoon",
+			"path": "images/recognition/opposites/dayAfternoon.jpg"
+		},
+		{
+			"id": "dayNight",
+			"path": "images/recognition/opposites/dayNight.jpg"
+		},
+		{
+			"id": "dirtyClean",
+			"path": "images/recognition/opposites/dirtyClean.jpg"
+		},
+		{
+			"id": "dirtyOther",
+			"path": "images/recognition/opposites/dirtyOther.jpg"
+		},
+		{
+			"id": "downNear",
+			"path": "images/recognition/opposites/downNear.jpg"
+		},
+		{
+			"id": "filliedEmpty",
+			"path": "images/recognition/opposites/filliedEmpty.jpg"
+		},
+		{
+			"id": "girlBaby",
+			"path": "images/recognition/opposites/girlBaby.jpg"
+		},
+		{
+			"id": "girlBoy",
+			"path": "images/recognition/opposites/girlBoy.jpg"
+		},
+		{
+			"id": "greyBlack",
+			"path": "images/recognition/opposites/greyBlack.jpg"
+		},
+		{
+			"id": "inOut",
+			"path": "images/recognition/opposites/inOut.jpg"
+		},
+		{
+			"id": "mountainCountry",
+			"path": "images/recognition/opposites/mountainCountry.jpg"
+		},
+		{
+			"id": "nearUp",
+			"path": "images/recognition/opposites/nearUp.jpg"
+		},
+		{
+			"id": "nightAfternoon",
+			"path": "images/recognition/opposites/nightAfternoon.jpg"
+		},
+		{
+			"id": "openBroken",
+			"path": "images/recognition/opposites/openBroken.jpg"
+		},
+		{
+			"id": "openClose",
+			"path": "images/recognition/opposites/openClose.jpg"
+		},
+		{
+			"id": "seaCountry",
+			"path": "images/recognition/opposites/seaCountry.jpg"
+		},
+		{
+			"id": "seaMountain",
+			"path": "images/recognition/opposites/seaMountain.jpg"
+		},
+		{
+			"id": "shortTall",
+			"path": "images/recognition/opposites/shortTall.jpg"
+		},
+		{
+			"id": "upDown2",
+			"path": "images/recognition/opposites/upDown2.jpg"
+		},
+		{
+			"id": "upDown",
+			"path": "images/recognition/opposites/upDown.jpg"
+		},
+		{
+			"id": "whiteBlack",
+			"path": "images/recognition/opposites/whiteBlack.jpg"
+		},
+		{
+			"id": "whiteGrey",
+			"path": "images/recognition/opposites/whiteGrey.jpg"
+		},
+
+
+
+
+		{
+			"id": "radio",
+			"path": "images/recognition/substractiveAbillity/radio.jpg"
+		},
+
+
+
+
 
 
 
@@ -497,5 +1399,73 @@
 			"path": "images/combinational/action/cleanDishes.jpg"
 		},
 
+
+		{
+			"id": "eatPasta",
+			"path": "images/combinational/sequence/eatPasta.jpg"
+		},
+		{
+			"id": "eatFruit",
+			"path": "images/combinational/sequence/eatFruit.jpg"
+		},		
+		{
+			"id": "eatSweet",
+			"path": "images/combinational/sequence/eatSweet.jpg"
+		},		
+		{
+			"id": "eatEgg",
+			"path": "images/combinational/sequence/eatEgg.jpg"
+		},
+
+		{
+			"id": "wipe",
+			"path": "images/combinational/sequence/wipe.jpg"
+		},
+		{
+			"id": "nail",
+			"path": "images/combinational/sequence/nail.jpg"
+		},		
+		{
+			"id": "plant",
+			"path": "images/combinational/sequence/plant.jpg"
+		},		
+		{
+			"id": "mop",
+			"path": "images/combinational/sequence/mop.jpg"
+		},
+
+		{
+			"id": "washDishes",
+			"path": "images/combinational/sequence/washDishes.jpg"
+		},
+		{
+			"id": "breakDishes",
+			"path": "images/combinational/sequence/breakDishes.jpg"
+		},		
+		{
+			"id": "makeTable",
+			"path": "images/combinational/sequence/makeTable.jpg"
+		},		
+		{
+			"id": "cleanDishes",
+			"path": "images/combinational/sequence/cleanDishes.jpg"
+		},
+
+		{
+			"id": "playFootball",
+			"path": "images/combinational/sequence/playFootball.jpg"
+		},
+		{
+			"id": "walk",
+			"path": "images/combinational/sequence/walk.jpg"
+		},		
+		{
+			"id": "paint",
+			"path": "images/combinational/sequence/paint.jpg"
+		},		
+		{
+			"id": "playTennis",
+			"path": "images/combinational/sequence/playTennis.jpg"
+		}
 	]
 }

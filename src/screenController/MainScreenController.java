@@ -53,6 +53,8 @@ public class MainScreenController extends ScreenController{
         else if((Text)e.getSource() == instructionsButton){
         } 	
         else if((Text)e.getSource() == scoreTableButton){
+        	ScoreTableScreenController ctrl = (ScoreTableScreenController) ImagInLexis.mainContainer.getController("ScoreTableScreen");
+        	ctrl.init();
             ImagInLexis.mainContainer.setScreen("ScoreTableScreen");
         }    
         else{

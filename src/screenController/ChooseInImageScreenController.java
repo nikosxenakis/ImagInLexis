@@ -30,6 +30,9 @@ public class ChooseInImageScreenController extends QuestionScreenController{
 	
 	private ArrayList<Circle> circlesList;
 
+    @FXML
+    private ImageView soundImage;
+    
     public void setData(QuestionScreenData screenData, Test test){
     	
     	System.out.println("set Data in ChooseInImageScreenController");
@@ -49,6 +52,8 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     	image.setImage(imageJPG);
 
     	circlesList = data.getCirclesList();
+
+    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
 
     	//get container
         for (Circle cl : circlesList){

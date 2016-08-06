@@ -90,9 +90,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	chapterName.setText(screenData.getChapterName().toString());
     	categoryName.setText(screenData.getCategoryName().toString());
    
+    	System.out.println("loading image: "+test.getChapter().toString()+"Image");
     	Image image = ImageHolder.getImage(test.getChapter().toString()+"Image");
     	chapterImage.setImage(image);
 
+    	System.out.println("loading image: "+test.getCategory()+"Image");
     	image = ImageHolder.getImage(test.getCategory()+"Image");
     	categoryImage.setImage(image);
     
@@ -102,7 +104,7 @@ public abstract class QuestionScreenController extends ScreenController{
     	submitButton.setDisable(true);
     	
     	String style = "-fx-border-width: 10;";
-    	if(chapterName.getText().equals("Αναγνώρηση")){
+    	if(chapterName.getText().equals("Αναγνώριση")){
         	style += "-fx-background-color:  #9ED5DB; -fx-border-color:  #DDE3A8";
         	mainWindow.setStyle(style);	
     	}

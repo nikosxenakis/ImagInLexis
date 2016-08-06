@@ -39,7 +39,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     private Line link3;
     
     @FXML
-    private ImageView soundIcon;
+    private ImageView soundImage;
     
     private ImageView selectedImage = null;
     
@@ -75,6 +75,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	
     	soundId = data.getSoundId();
   
+    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
     }
     
     public void disableImages(){

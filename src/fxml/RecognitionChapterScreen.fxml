@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.RecognitionChapterScreenController">
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.RecognitionChapterScreenController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
-            <AnchorPane prefHeight="555.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+            <AnchorPane fx:id="mainWindow" prefHeight="555.0" prefWidth="770.0" BorderPane.alignment="CENTER">
                <children>
                   <Ellipse fill="#1f93ffb5" layoutX="499.0" layoutY="212.0" radiusX="483.0" radiusY="196.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
@@ -35,7 +35,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="opposite" fill="#2721ffb5" layoutX="630.0" layoutY="608.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="78.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="opposites" fill="#2721ffb5" layoutX="630.0" layoutY="608.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="78.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#ff9270" />
                      </effect>
@@ -71,6 +71,9 @@
                      <effect>
                         <Shadow color="#ffaa00" />
                      </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Ellipse>
                   <Ellipse fill="#1f93ffb5" layoutX="214.0" layoutY="540.0" radiusX="209.0" radiusY="146.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
@@ -149,7 +152,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="question1" fill="#2721ffb5" layoutX="133.0" layoutY="542.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="113.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="closedQuestions" fill="#2721ffb5" layoutX="147.0" layoutY="542.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="127.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -181,7 +184,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="question" fill="#2721ffb5" layoutX="236.0" layoutY="628.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="113.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="detect" fill="#2721ffb5" layoutX="236.0" layoutY="628.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="113.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#ff0808" />
                      </effect>
@@ -209,12 +212,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="258.0" layoutY="76.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="shapeImage" fitHeight="38.0" fitWidth="66.0" layoutX="258.0" layoutY="76.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/shapeIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="448.0" layoutY="63.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="colorImage" fitHeight="38.0" fitWidth="66.0" layoutX="448.0" layoutY="63.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/colorIcon.jpg" />
                      </image>
@@ -229,12 +232,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="660.0" layoutY="85.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="animalsImage" fitHeight="38.0" fitWidth="66.0" layoutX="660.0" layoutY="85.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/animalIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="795.0" layoutY="149.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="objectImage" fitHeight="38.0" fitWidth="66.0" layoutX="795.0" layoutY="149.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/objectIcon.jpg" />
                      </image>
@@ -244,7 +247,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="750.0" layoutY="275.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="fruitsImage" fitHeight="38.0" fitWidth="66.0" layoutX="750.0" layoutY="275.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/fruitsIcon.jpg" />
                      </image>
@@ -254,7 +257,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="549.0" layoutY="320.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="emotionImage" fitHeight="38.0" fitWidth="66.0" layoutX="549.0" layoutY="320.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/emotionIcon.jpg" />
                      </image>
@@ -269,7 +272,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="365.0" layoutY="318.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="actionImage" fitHeight="38.0" fitWidth="66.0" layoutX="365.0" layoutY="318.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/actionIcon.jpg" />
                      </image>
@@ -279,12 +282,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="152.0" layoutY="280.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="professionsImage" fitHeight="38.0" fitWidth="66.0" layoutX="152.0" layoutY="280.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/professionsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="230.0" layoutY="188.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="locationImage" fitHeight="38.0" fitWidth="66.0" layoutX="230.0" layoutY="188.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/locationIcon.jpg" />
                      </image>
@@ -294,14 +297,14 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="429.0" layoutY="187.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="carImage" fitHeight="38.0" fitWidth="66.0" layoutX="429.0" layoutY="187.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../resources/images/icons/carsIcon.jpg" />
+                        <Image url="@../../resources/images/icons/carIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="611.0" layoutY="198.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="applianciesImage" fitHeight="38.0" fitWidth="66.0" layoutX="611.0" layoutY="198.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../resources/images/icons/appliancesIcon.jpg" />
+                        <Image url="@../../resources/images/icons/applianciesIcon.jpg" />
                      </image>
                   </ImageView>
                   <Text fill="WHITE" layoutX="709.0" layoutY="491.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εποχές" wrappingWidth="89.15945434570312">
@@ -309,12 +312,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="662.0" layoutY="465.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="seasonImage" fitHeight="38.0" fitWidth="66.0" layoutX="662.0" layoutY="465.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/seasonIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="874.0" layoutY="494.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="monthImage" fitHeight="38.0" fitWidth="66.0" layoutX="874.0" layoutY="494.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/monthIcon.jpg" />
                      </image>
@@ -329,12 +332,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="769.0" layoutY="595.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="weekImage" fitHeight="38.0" fitWidth="66.0" layoutX="769.0" layoutY="595.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/weekIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="567.0" layoutY="589.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="oppositesImage" fitHeight="38.0" fitWidth="66.0" layoutX="567.0" layoutY="589.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/oppositesIcon.jpg" />
                      </image>
@@ -349,12 +352,12 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="466.0" layoutY="496.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="sustractionImage" fitHeight="38.0" fitWidth="66.0" layoutX="466.0" layoutY="496.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/sustractionIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="103.0" layoutY="436.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="automatedActionsImage" fitHeight="38.0" fitWidth="66.0" layoutX="103.0" layoutY="436.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/automatedActionsIcon.jpg" />
                      </image>
@@ -364,32 +367,32 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fx:id="opposite111" fill="WHITE" layoutX="195.0" layoutY="636.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εντοπισμός" wrappingWidth="178.78604125976562">
+                  <Text fill="WHITE" layoutX="195.0" layoutY="636.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εντοπισμός" wrappingWidth="178.78604125976562">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="79.0" layoutY="144.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bodyImage" fitHeight="38.0" fitWidth="66.0" layoutX="79.0" layoutY="144.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/bodyIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="145.0" layoutY="609.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="detectImage" fitHeight="38.0" fitWidth="66.0" layoutX="145.0" layoutY="609.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/detectIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="homeIcon" fitHeight="74.0" fitWidth="77.0" layoutX="16.0" layoutY="14.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" fitHeight="74.0" fitWidth="77.0" layoutX="16.0" layoutY="14.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/homeIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="42.0" layoutY="523.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="questionImage" fitHeight="38.0" fitWidth="66.0" layoutX="42.0" layoutY="523.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/questionIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fx:id="opposite1111" fill="WHITE" layoutX="92.0" layoutY="550.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ερωτήσεις (.,.)" wrappingWidth="178.78604125976562">
+                  <Text fill="WHITE" layoutX="94.0" layoutY="537.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ερωτήσεις &#10;κλειστού τύπου" wrappingWidth="178.78604125976562">
                      <font>
                         <Font size="20.0" />
                      </font>

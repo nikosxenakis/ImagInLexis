@@ -62,7 +62,7 @@ public class ScreenPane extends StackPane{
 
         	FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
             Parent loadScreen = (Parent) loader.load();
-            
+
             ScreenController screenControler = ((ScreenController)loader.getController());
             screenControler.setScreenPane(this);
             addController(screenId,screenControler);
@@ -154,11 +154,14 @@ public class ScreenPane extends StackPane{
     
     //This method will remove the screen with the given name from the collection of screens
     public boolean unloadScreen(String name){
-        if(screens.remove(name) == null)
-        {    
+        if(screens.remove(name) == null){  
+        	screenControllersList.remove(name);
             System.err.println("Screen didn't exist");
             return false;
-        }else{return true;}
+        }
+        else{
+        	return true;
+        }
     }
   
 }

@@ -54,6 +54,8 @@ public class Parser {
 	//categoryName -> screenId List
 	private HashMap<String,List<String>> categoriesScreenIdList = new HashMap<String, List<String>>();
 	
+	private HashMap<String,String> categoryNames = new HashMap<String, String>(); 
+	
 	Parser(String filePath, String scoresFilePath, String imagesFilePath, String soundsFilePath){
           
 		this.parser = new JSONParser();
@@ -74,7 +76,14 @@ public class Parser {
 	private JSONObject loadObject(String filePath){
 		
 		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
-		BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
+		} catch (UnsupportedEncodingException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+		
         StringBuilder out = new StringBuilder();
         String line;
         try {
@@ -102,11 +111,73 @@ public class Parser {
 		
 	private JSONObject loadScores(String scoresFilePath){
 
+        Object obj = null;
+
+        
+		try {
+			String path = ImagInLexis.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+			String decodedPath = null;
+			decodedPath = URLDecoder.decode(path, "UTF-8");
+			
+
+			boolean endWithJar = false;
+			if(decodedPath.endsWith(".jar")){
+				endWithJar = true;
+			}
+			else{
+				endWithJar = false;
+			}
+		
+			int pos = decodedPath.lastIndexOf("/");
+			decodedPath = decodedPath.substring(0, pos);
+			System.out.println(decodedPath);
+			File file = null;
+			if(endWithJar == true){
+				file = new File(decodedPath+"/files/scores.json");
+			}
+			else{
+				file = new File(decodedPath+"/../files/scores.json");
+			}
+
+			InputStream input = null;
+			input = new FileInputStream(file);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
+
+			StringBuilder out = new StringBuilder();
+	        String line;
+	        try {
+				while ((line = reader.readLine()) != null) {
+				    out.append(line);
+				}
+				reader.close();
+
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+
+			try {
+				obj = parser.parse(out.toString());
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		    
+
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return (JSONObject) obj; 
+
+		/*
 		JSONParser parser = new JSONParser();
 		
 		InputStream input = null;
 		try {
-			input = new FileInputStream(new File("files/scores.json"));
+			input = new FileInputStream(new File(scoresFilePath));
 		} catch (FileNotFoundException e2) {
 			e2.printStackTrace();
 		}
@@ -131,9 +202,23 @@ public class Parser {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		
-		return (JSONObject) obj;
-        
+	    
+		return (JSONObject) obj; 
+		*/       
+	}
+	
+	public void parseCategoryNames(){
+	    JSONArray scores = (JSONArray) ((JSONObject) jsonObject).get("questions");
+    	for (Object scoresChapter : scores){
+    	   	JSONObject tmpScoresChapter = (JSONObject) scoresChapter;
+    		JSONArray chapterList = (JSONArray)(tmpScoresChapter.get("chapterList"));
+        	for (Object scoresCategory : chapterList){
+        	   	JSONObject tmpScoresCategory = (JSONObject) scoresCategory;
+            	String category = (String)(tmpScoresCategory.get("category"));
+            	String categoryName = (String)(tmpScoresCategory.get("categoryName"));
+            	categoryNames.put(category, categoryName);
+        	}
+    	}
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -173,8 +258,27 @@ public class Parser {
 			String path = ImagInLexis.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 			String decodedPath = null;
 			decodedPath = URLDecoder.decode(path, "UTF-8");
+			
+			boolean endWithJar = false;
+			if(decodedPath.endsWith(".jar")){
+				endWithJar = true;
+			}
+			else{
+				endWithJar = false;
+			}
+		
+			int pos = decodedPath.lastIndexOf("/");
+			decodedPath = decodedPath.substring(0, pos);
 			System.out.println(decodedPath);
-			File file = new File(decodedPath+"files/scores.json");
+			File file = null;
+			if(endWithJar == true){
+				file = new File(decodedPath+"/files/scores.json");
+			}
+			else{
+				file = new File(decodedPath+"/../files/scores.json");
+			}
+
+			
 			OutputStream output = new FileOutputStream(file);
 			output.write(ImagInLexis.parser.getScoresJsonObject().toJSONString().getBytes());
 
@@ -237,6 +341,10 @@ public class Parser {
     	return chapterList;
     }
     
+    public String getCategoryNameFromCategory(String category){
+    	return categoryNames.get(category);
+    }
+    
     public List<String> getCategoryList(String chapterName){
     	List<String> categoryList = new ArrayList<String>();
     
@@ -261,6 +369,7 @@ public class Parser {
 		parseQuestions();
         parseScreens();
 
+        parseCategoryNames();
 	}
 
 	private void parseSounds(){
@@ -293,10 +402,11 @@ public class Parser {
     	String imageId = (String)(question.get("imageId"));
     	String soundId = (String)(question.get("soundId"));
     	String questionString = (String)(question.get("question"));
+    	String questionSoundId = (String)(question.get("questionSoundId"));
 
     	answersSet.add(1);
     	
-    	WhatIsThisScreenData whatIsThisScreenData = new WhatIsThisScreenData(questionString,imageId,soundId,answersSet,chapterName,categoryName);
+    	WhatIsThisScreenData whatIsThisScreenData = new WhatIsThisScreenData(questionString,imageId,soundId,questionSoundId,answersSet,chapterName,categoryName);
 
     	ScreenDataHolder.addScreenData(screenId,whatIsThisScreenData);
 	}
@@ -333,21 +443,32 @@ public class Parser {
     	String radioOption1 = (String)(question.get("radioOption1"));
     	String radioOption2 = (String)(question.get("radioOption2"));
     	String radioOption3 = (String)(question.get("radioOption3"));
+    	String radioOption4 = (String)(question.get("radioOption4"));
+    	String soundId = (String)(question.get("soundId"));
+    	String sound1Id = (String)(question.get("sound1Id"));
+    	String sound2Id = (String)(question.get("sound2Id"));
+    	String sound3Id = (String)(question.get("sound3Id"));
+    	String sound4Id = (String)(question.get("sound4Id"));
 
-        ChooseLabelScreenData chooseLabelScreenData = new ChooseLabelScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,answers,chapterName,categoryName);
+        ChooseLabelScreenData chooseLabelScreenData = new ChooseLabelScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,radioOption4,soundId,sound1Id,sound2Id,sound3Id,sound4Id,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseLabelScreenData);
 	}
 	
 	private void createChooseLabelFromSoundQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
 		
     	String screenId = (String)(question.get("screenId"));
-    	String questionString = "Ήχοι από...";
+    	String questionString = (String)(question.get("question"));
     	String imageId = (String)(question.get("imageId"));
     	String radioOption1 = (String)(question.get("radioOption1"));
     	String radioOption2 = (String)(question.get("radioOption2"));
     	String radioOption3 = (String)(question.get("radioOption3"));
+    	String questionSoundId = (String)(question.get("questionSoundId"));
+    	String soundId = (String)(question.get("soundId"));
+    	String sound1Id = (String)(question.get("sound1Id"));
+    	String sound2Id = (String)(question.get("sound2Id"));
+    	String sound3Id = (String)(question.get("sound3Id"));
 
-        ChooseLabelFromSoundScreenData chooseLabelFromSoundScreenData = new ChooseLabelFromSoundScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,answers,chapterName,categoryName);
+        ChooseLabelFromSoundScreenData chooseLabelFromSoundScreenData = new ChooseLabelFromSoundScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,questionSoundId,soundId,sound1Id,sound2Id,sound3Id,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseLabelFromSoundScreenData);
 	}
 	
@@ -357,8 +478,9 @@ public class Parser {
     	String image1Id = (String)(question.get("image1Id"));
     	String image2Id = (String)(question.get("image2Id"));
     	String image3Id = (String)(question.get("image3Id"));
+    	String soundId = (String)(question.get("soundId"));
 
-        ChooseImageScreenData chooseImageScreenData = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,answers,chapterName,categoryName);
+        ChooseImageScreenData chooseImageScreenData = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,soundId,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
 	}
 	
@@ -369,8 +491,9 @@ public class Parser {
     	String image2Id = (String)(question.get("image2Id"));
     	String image3Id = (String)(question.get("image3Id"));
     	String image4Id = (String)(question.get("image4Id"));
+    	String soundId = (String)(question.get("soundId"));
 
-        ChooseImageScreenData2 chooseImageScreenData = new ChooseImageScreenData2(questionString,image1Id,image2Id,image3Id,image4Id,answers,chapterName,categoryName);
+        ChooseImageScreenData2 chooseImageScreenData = new ChooseImageScreenData2(questionString,image1Id,image2Id,image3Id,image4Id,soundId,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
 	}
 	

@@ -4,17 +4,28 @@ import java.util.Set;
 
 public class ChooseLabelFromSoundScreenData extends QuestionScreenData{
 	
-	private String radioOption1;
-	private String radioOption2;
-	private String radioOption3;
-	private String imageId;
+	private String radioOption1 = null;
+	private String radioOption2 = null;
+	private String radioOption3 = null;
+	private String imageId = null;
+	private String questionSoundId = null;
+	private String soundId = null;
+	private String sound1Id = null;
+	private String sound2Id = null;
+	private String sound3Id = null;
 
-	public ChooseLabelFromSoundScreenData(String question,String imageId, String radioOption1, String radioOption2, String radioOption3,  Set<Integer> answers, String chapterName, String categoryName){
+	public ChooseLabelFromSoundScreenData(String question,String imageId, String radioOption1, String radioOption2, String radioOption3, String questionSoundId, String soundId, String sound1Id, String sound2Id, String sound3Id, Set<Integer> answers, String chapterName, String categoryName){
 		super(question,answers,chapterName,categoryName);
 		this.radioOption1 = radioOption1;
 		this.radioOption2 = radioOption2;
 		this.radioOption3 = radioOption3;
 		this.imageId = imageId;
+		this.questionSoundId = questionSoundId;
+		this.soundId = soundId;
+		this.sound1Id = sound1Id;
+		this.sound2Id = sound2Id;
+		this.sound3Id = sound3Id;
+
 	}
 
 	public String getImageId(){
@@ -33,4 +44,23 @@ public class ChooseLabelFromSoundScreenData extends QuestionScreenData{
 		return this.radioOption3;
 	}
 	
+	public String getQuestionSoundId(){
+		return this.questionSoundId;
+	}
+	
+	public String getSoundId(){
+		return this.soundId;
+	}
+	
+	public String getSound1Id(){
+		return this.sound1Id;
+	}
+	
+	public String getSound2Id(){
+		return this.sound2Id;
+	}
+	
+	public String getSound3Id(){
+		return this.sound3Id;
+	}
 }

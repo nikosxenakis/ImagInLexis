@@ -6,6 +6,7 @@ package screenController;
 
 import java.util.List;
 import application.ImagInLexis;
+import application.ImageHolder;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -17,6 +18,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 public class ScoreTableScreenController extends ScreenController{
 
@@ -33,23 +35,26 @@ public class ScoreTableScreenController extends ScreenController{
     private ComboBox<String> categoryOptions;
     
     @FXML
-    private ImageView homeIcon;
+    private ImageView homeImage;
     
+	@FXML 
+	private AnchorPane mainWindow;
+		
     public void homeIconClicked(MouseEvent e){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
     
     @SuppressWarnings("unchecked")
-    public void initialize(java.net.URL location, java.util.ResourceBundle resources) {    	
-    	
-    	List<String> chapterList = ImagInLexis.parser.getChapterList();
+    public void init(){
 
-        chapterOptions.getItems().clear();
-    	
-        chapterOptions.getItems().addAll("Όλα");
-        for(String chapter: chapterList){
-        	chapterOptions.getItems().addAll(chapter);
-        }
+    	if(chapterOptions.getItems().isEmpty()){
+        	List<String> chapterList = ImagInLexis.parser.getChapterList();
+
+            chapterOptions.getItems().addAll("Όλα");
+            for(String chapter: chapterList){
+            	chapterOptions.getItems().addAll(chapter);
+            }    		
+    	}
         
     	chapterOptions.getSelectionModel().select(0);
 
@@ -85,6 +90,15 @@ public class ScoreTableScreenController extends ScreenController{
             	}            
             }    
         });
+    }
+    
+    public void initialize(java.net.URL location, java.util.ResourceBundle resources){  
+    	
+    	homeImage.setImage(ImageHolder.getImage(homeImage.getId()));
+
+        chapterOptions.getItems().clear();
+        
+    	init();
     }
 
     public void renewComboBoxData(String chapterName){

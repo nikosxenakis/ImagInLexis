@@ -5,6 +5,7 @@
 package screenController;
 
 import application.ImageHolder;
+import application.SoundHolder;
 import application.Test;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -27,8 +28,13 @@ public class ChooseImageScreenController2 extends QuestionScreenController{
     @FXML
     private ImageView image4;
     
+    @FXML
+    private ImageView soundImage;
+    
     private ImageView selectedImage = null;
     
+    private String soundId = null;
+
     public void setData(QuestionScreenData screenData, Test test){
     	
     	System.out.println("set Data in ChooseImageScreenController2");
@@ -52,6 +58,10 @@ public class ChooseImageScreenController2 extends QuestionScreenController{
     	
     	image = ImageHolder.getImage(data.getImage4Id());
     	image4.setImage(image);
+    	
+    	soundId = data.getSoundId();
+
+    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
     }
     
     public void disableImages(){
@@ -141,4 +151,7 @@ public class ChooseImageScreenController2 extends QuestionScreenController{
         }
     }
     
+    public void soundIconClicked(){
+    	SoundHolder.playSound(soundId);
+    }
 }

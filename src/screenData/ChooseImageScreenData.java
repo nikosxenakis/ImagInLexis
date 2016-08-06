@@ -7,12 +7,14 @@ public class ChooseImageScreenData extends QuestionScreenData{
 	private String image1Id;
 	private String image2Id;
 	private String image3Id;
+	private String soundId;
 	
-	public ChooseImageScreenData(String question,String image1Id, String image2Id, String image3Id,  Set<Integer> answers, String chapterName, String categoryName){
+	public ChooseImageScreenData(String question,String image1Id, String image2Id, String image3Id, String soundId, Set<Integer> answers, String chapterName, String categoryName){
 		super(question,answers,chapterName,categoryName);
 		this.image1Id = image1Id;
 		this.image2Id = image2Id;
 		this.image3Id = image3Id;
+		this.soundId = soundId;
 	}
 	
 	public String getImage1Id(){
@@ -25,6 +27,10 @@ public class ChooseImageScreenData extends QuestionScreenData{
 	
 	public String getImage3Id(){
 		return this.image3Id;
+	}
+
+	public String getSoundId(){
+		return this.soundId;
 	}
 	
 }

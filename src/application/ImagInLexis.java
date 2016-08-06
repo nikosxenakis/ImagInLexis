@@ -18,7 +18,7 @@ public class ImagInLexis extends Application {
 
 	public static Parser parser;
 	
-	public final static String userName = "name2";
+	public final static String userName = "Nikos Xenakis";
 	
 	@Override
 	public void start(Stage stage){
@@ -48,5 +48,10 @@ public class ImagInLexis extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+	}
+	
+	public static void cleanMemory(){
+		SoundHolder.cleanMemory();
+		ImageHolder.cleanMemory();
 	}
 }

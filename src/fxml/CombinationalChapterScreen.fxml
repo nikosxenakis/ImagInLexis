@@ -11,18 +11,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.CombinationalChapterScreenController">
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.CombinationalChapterScreenController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <AnchorPane prefHeight="520.0" prefWidth="989.0" BorderPane.alignment="CENTER">
+            <AnchorPane fx:id="mainWindow" prefHeight="520.0" prefWidth="989.0" BorderPane.alignment="CENTER">
                <children>
                   <Ellipse fill="#1f93ffb5" layoutX="507.0" layoutY="333.0" radiusX="483.0" radiusY="275.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#29e2e5f7" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalObject" fill="#2721ffb5" layoutX="508.0" layoutY="170.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="93.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalObject" fill="#2721ffb5" layoutX="506.0" layoutY="186.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="175.0" radiusY="68.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#660eff" />
                      </effect>
@@ -30,7 +30,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalProfessions" fill="#2721ffb5" layoutX="810.0" layoutY="313.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="106.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                  <Ellipse fx:id="combinationalProfessions" fill="#2721ffb5" layoutX="777.0" layoutY="335.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="182.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#ffaa00" />
                      </effect>
@@ -38,7 +38,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalSequence" fill="#2721ffb5" layoutX="188.0" layoutY="306.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="99.0" radiusY="46.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalSequence" fill="#2721ffb5" layoutX="230.0" layoutY="334.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -46,7 +46,7 @@
                         <Shadow color="#ff0808" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalAction" fill="#2721ffb5" layoutX="514.0" layoutY="493.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="94.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalAction" fill="#2721ffb5" layoutX="494.0" layoutY="506.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="156.0" radiusY="55.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#79ff0a" />
                      </effect>
@@ -54,49 +54,49 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Text fill="WHITE" layoutX="469.0" layoutY="178.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
+                  <Text fill="WHITE" layoutX="463.0" layoutY="190.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="30.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="724.0" layoutY="293.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="combinationalProfessionsImage" fitHeight="68.0" fitWidth="75.0" layoutX="644.0" layoutY="303.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/professionsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="774.0" layoutY="320.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα" wrappingWidth="129.94955444335938">
+                  <Text fill="WHITE" layoutX="734.0" layoutY="346.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα" wrappingWidth="200.70791625976562">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="30.0" />
                      </font>
                   </Text>
-                  <Text fx:id="opposite111" fill="WHITE" layoutX="486.0" layoutY="501.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες" wrappingWidth="107.7322998046875">
+                  <Text fx:id="opposite111" fill="WHITE" layoutX="449.0" layoutY="514.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες" wrappingWidth="156.7188720703125">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="30.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="429.0" layoutY="151.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="combinationalObjectImage" fitHeight="57.0" fitWidth="60.0" layoutX="385.0" layoutY="151.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/objectIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="442.0" layoutY="474.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="automatedActionsImage" fitHeight="61.0" fitWidth="68.0" layoutX="375.0" layoutY="473.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/actionIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="homeIcon" fitHeight="74.0" fitWidth="77.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" fitHeight="74.0" fitWidth="77.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/homeIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="66.0" layoutX="111.0" layoutY="288.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="combinationalSequenceImage" fitHeight="60.0" fitWidth="68.0" layoutX="89.0" layoutY="303.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/automatedActionsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fx:id="opposite1111" fill="WHITE" layoutX="154.0" layoutY="303.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αλληλουχία πράξεων" wrappingWidth="116.94296264648438">
+                  <Text fx:id="opposite1111" fill="WHITE" layoutX="170.0" layoutY="324.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αλληλουχία πράξεων" wrappingWidth="165.92950439453125">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="30.0" />
                      </font>
                   </Text>
                </children>

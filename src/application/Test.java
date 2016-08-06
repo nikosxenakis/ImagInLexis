@@ -2,6 +2,7 @@ package application;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -19,25 +20,30 @@ public class Test{
 	private String chapter;
 	private String category;
 	private String menuScreenId;
-	
+	private String chapterName;
+	private String categoryName;
+
 	HashMap<String, Set<Integer>> answers = new HashMap<String, Set<Integer>>();
 	HashMap<String, Set<Integer>> correctAnswers = new HashMap<String,Set<Integer>>();
 
 	private Queue<String> screenList = new LinkedList<String>();
+	private ArrayList<String> testScreenList = new ArrayList<String>();
 
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
 
-	public Test(String chapter, String category, String menuScreenId){
+	public Test(String chapter, String category,String chapterName, String categoryName, String menuScreenId){
 		this.chapter = chapter;
 		this.category = category;
+		this.chapterName = chapterName;
+		this.categoryName = categoryName;		
 		this.menuScreenId = menuScreenId;
 		
-		answeredQuestions = 0;
-		totalQuestions = ImagInLexis.parser.getCategoryTotalQuestions(category);
-		//System.out.println("totalQuestions = "+totalQuestions);
-		//System.out.println("categoriesScreenIdList = "+JavaFXApplication.parser.getCategoriesScreenIdList(category));
+		this.answeredQuestions = 0;
+		this.totalQuestions = ImagInLexis.parser.getCategoryTotalQuestions(category);
         
+    	System.out.println("new Test: "+chapter+" "+category+" "+chapterName+" "+categoryName+" "+totalQuestions);
+
 		for(String screenId : ImagInLexis.parser.getCategoriesScreenIdList(category)){
 	        ImagInLexis.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
@@ -124,10 +130,14 @@ public class Test{
 		obj.put("date", strDate);
 		obj.put("time", strTime);
 		
-		ImagInLexis.parser.addScore(obj,chapter,category);
-        
+		ImagInLexis.parser.addScore(obj,chapterName,categoryName);
+		ImagInLexis.parser.submitScores();
+
 		ImagInLexis.mainContainer.setScreen(menuScreenId);
 		//Platform.exit();
+	
+		this.cleanMemory();
+		ImagInLexis.cleanMemory();		
 	}
 	
 	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
@@ -147,6 +157,7 @@ public class Test{
     public void addToScreenList(String screenId){
     	System.out.println("addToScreenList: "+screenId);
     	screenList.add(screenId);
+    	testScreenList.add(screenId);
     }
     
     public String getNextScreen(){
@@ -185,5 +196,20 @@ public class Test{
 			return true;
 		}
 		return false;
+    }
+    
+    private void cleanMemory(){
+    	for(String screenId: testScreenList){
+    		System.out.println("unload screen : "+screenId);
+    		ImagInLexis.mainContainer.unloadScreen(screenId);
+    	}
+    	
+    	this.testScreenList.clear();
+    	
+		this.chapter = null;
+		this.category = null;
+		this.chapterName = null;
+		this.categoryName = null;		
+		this.menuScreenId = null;
     }
 }

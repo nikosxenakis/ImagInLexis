@@ -110,7 +110,7 @@
                                     <Insets right="10.0" />
                                  </HBox.margin>
                               </Text>
-                              <ImageView fx:id="soundIcon" fitHeight="32.0" fitWidth="30.0" nodeOrientation="INHERIT" onMouseClicked="#soundIconClicked" pickOnBounds="true" preserveRatio="true" styleClass="soundIcon">
+                              <ImageView fx:id="soundImage" fitHeight="32.0" fitWidth="30.0" nodeOrientation="INHERIT" onMouseClicked="#soundIconClicked" pickOnBounds="true" preserveRatio="true">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -123,9 +123,9 @@
                               <Insets left="10.0" right="10.0" />
                            </VBox.margin>
                         </HBox>
-                        <ImageView fx:id="image" fitHeight="293.0" fitWidth="354.0" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
+                        <ImageView fx:id="image" fitHeight="293.0" fitWidth="354.0" onMouseClicked="#imageClicked" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
                            <cursor>
-                              <Cursor fx:constant="DEFAULT" />
+                              <Cursor fx:constant="HAND" />
                            </cursor>
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" />
@@ -169,10 +169,7 @@
                                     <Insets right="10.0" />
                                  </HBox.margin>
                               </Text>
-                              <ImageView fx:id="chapterImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="soundIcon">
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
+                              <ImageView fx:id="chapterImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../resources/images/icons/recognitionIcon.jpg" />
                                  </image>
@@ -194,10 +191,7 @@
                                     <Insets right="10.0" />
                                  </HBox.margin>
                               </Text>
-                              <ImageView fx:id="categoryImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="soundIcon">
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
+                              <ImageView fx:id="categoryImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../resources/images/icons/animalIcon.jpg" />
                                  </image>

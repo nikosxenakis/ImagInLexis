@@ -1,12 +1,16 @@
 package screenController;
 
 import application.ImageHolder;
+import application.SoundHolder;
 import application.Test;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import screenData.ChooseLabelScreenData;
 import screenData.QuestionScreenData;
 
@@ -23,7 +27,37 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 	
 	@FXML
 	private RadioButton radioOption3;
+
+	@FXML
+	private RadioButton radioOption4;
 	
+	@FXML
+	private HBox hBox4;
+	
+	@FXML
+	private VBox vBox;
+
+	@FXML
+	private ImageView soundIcon;
+	
+	@FXML
+	private ImageView sound1Icon;
+	
+	@FXML
+	private ImageView sound2Icon;
+	
+	@FXML
+	private ImageView sound3Icon;
+	
+	@FXML
+	private ImageView sound4Icon;
+	
+	private String soundId;
+	private String sound1Id;
+	private String sound2Id;
+	private String sound3Id;
+	private String sound4Id;
+
     public void setData(QuestionScreenData screenData, Test test){
     	
     	System.out.println("set Data in ChooseLabelScreenController");
@@ -46,6 +80,26 @@ public class ChooseLabelScreenController extends QuestionScreenController{
     	setIsSelection(true);
     	setAnswer(1);
     	submitButton.setDisable(false);
+    	
+    	soundId = data.getSoundId();
+    	sound1Id = data.getSound1Id();
+    	sound2Id = data.getSound2Id();
+    	sound3Id = data.getSound3Id();
+		
+    	soundIcon.setImage(ImageHolder.getImage("soundImage"));
+    	sound1Icon.setImage(ImageHolder.getImage("soundImage"));
+    	sound2Icon.setImage(ImageHolder.getImage("soundImage"));
+    	sound3Icon.setImage(ImageHolder.getImage("soundImage"));
+    	
+    	if(data.getRadioOption4() != null && data.getSound4Id() != null){
+        	radioOption4.setText(data.getRadioOption4());
+        	sound4Id = data.getSound4Id();	
+        	sound4Icon.setImage(ImageHolder.getImage("soundImage"));
+    	}
+    	else{
+        	vBox.getChildren().remove(hBox4);
+    	}
+
     }
     
     public void radioClicked(MouseEvent e){
@@ -60,7 +114,33 @@ public class ChooseLabelScreenController extends QuestionScreenController{
         else if((RadioButton)e.getSource() == radioOption3){
         	setAnswer(3);
         }
+        else if((RadioButton)e.getSource() == radioOption4){
+        	setAnswer(4);
+        }
         
+    }
+    
+    public void soundIconClicked(MouseEvent e){
+    	String id = ((Node) e.getSource()).getId();
+
+    	if(id.equals("soundIcon")){
+    		SoundHolder.playSound(soundId);
+    	}
+    	else if(id.equals("sound1Icon")){
+    		SoundHolder.playSound(sound1Id);
+    	}
+    	else if(id.equals("sound2Icon")){
+    		SoundHolder.playSound(sound2Id);
+    	}
+    	else if(id.equals("sound3Icon")){
+    		SoundHolder.playSound(sound3Id);
+    	}
+    	else if(id.equals("sound4Icon")){
+    		SoundHolder.playSound(sound4Id);
+    	}
+    	else{
+    		System.err.println("error in soundIconClicked in ChooseLabelScreenController");
+    	}
     }
     
 }

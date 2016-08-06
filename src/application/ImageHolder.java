@@ -1,6 +1,7 @@
 package application;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 import javafx.scene.image.Image;
 
@@ -21,21 +22,31 @@ public class ImageHolder{
     }
     
     public static Image getImage(String id){
-    	Image image = null;
     	
-    	if(instance.images.get(id) != null){
-    		image = instance.images.get(id);
-    	}
-    	else{
-    		
+    	Image image = instance.images.get(id);
+    	
+    	if(image == null){
     		String path = instance.imagePaths.get(id);
         	image = new Image(path);
-        	instance.images.put(id, image);
+        	instance.images.put(id, image);	
     	}
+    	
 		return image;
     }
     
     public static void addImage(String id, String path){
     	instance.imagePaths.put(id, path);
+    }
+    
+    public static void cleanMemory(){
+    	System.out.println("ImageHolder cleanMemory images size = "+instance.images.size());
+    	
+    	for(Entry<String, Image> entry : instance.images.entrySet()) {
+    		entry.setValue(null);
+    		//Image value = entry.getValue();
+    		//value.
+    	}
+
+    	instance.images.clear();
     }
 }
