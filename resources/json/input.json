@@ -22,6 +22,12 @@
 			"chapterName": "Αναγνώριση",
 			"chapterList": [
 				{
+					"category": "body",
+					"categoryName": "Σώμα",
+					"categoryList": [
+					]
+				},
+				{
 					"category": "animals",
 					"categoryName": "Ζώα",
 					"categoryList": [
@@ -2030,6 +2036,71 @@
 					"category": "substractiveAbillity",
 					"categoryName": "Αφαιρετική Ικανότητα",
 					"categoryList": [
+						{
+							"screenId": "chooseImage2ToastMachine",
+							"screenType": "chooseImage2",
+							"question": "Διάλεξε την εικόνα που δεν ταιριάζει",
+							"soundId": "chapter1SubstractiveAbillityQuestion1",
+							"image1Id": "television",
+							"image2Id": "radio",
+							"image3Id": "pc",
+							"image4Id": "toastMachine",
+							"answers": [{
+								"answerNo": "4"
+							}]
+						},
+						{
+							"screenId": "chooseImage2Teleferic",
+							"screenType": "chooseImage2",
+							"question": "Διάλεξε την εικόνα που δεν ταιριάζει",
+							"soundId": "chapter1SubstractiveAbillityQuestion1",
+							"image1Id": "steamroller",
+							"image2Id": "truck",
+							"image3Id": "teleferic",
+							"image4Id": "bulldozers",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseImage2Vase",
+							"screenType": "chooseImage2",
+							"question": "Διάλεξε την εικόνα που δεν ταιριάζει",
+							"soundId": "chapter1SubstractiveAbillityQuestion1",
+							"image1Id": "vase",
+							"image2Id": "glass",
+							"image3Id": "cupTea",
+							"image4Id": "cup",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseImage2Table",
+							"screenType": "chooseImage2",
+							"question": "Διάλεξε την εικόνα που δεν ταιριάζει",
+							"soundId": "chapter1SubstractiveAbillityQuestion1",
+							"image1Id": "sofa",
+							"image2Id": "armchair",
+							"image3Id": "table",
+							"image4Id": "substractiveAbillityChair",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseImage2Pen",
+							"screenType": "chooseImage2",
+							"question": "Διάλεξε την εικόνα που δεν ταιριάζει",
+							"soundId": "chapter1SubstractiveAbillityQuestion1",
+							"image1Id": "notebook",
+							"image2Id": "pen",
+							"image3Id": "book",
+							"image4Id": "newspaper",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
 					]
 				},
 				{
@@ -2037,16 +2108,121 @@
 					"categoryName": "Αυτοματοποιημένες Πράξεις",
 					"categoryList": [
 						{
-							"screenId": "chooseLabelFromSoundKuriaki",
+							"screenId": "chooseLabelFromSoundOdontovourtsa",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Πλένω τα δόντια μου με την...",
-							"questionSoundId": "chapter1WeekProposal4",
-							"sound1Id": "savvato",
-							"sound2Id": "deutera",
-							"sound3Id": "paraskeuh",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal1",
+							"sound1Id": "odontovourtsa",
+							"sound2Id": "xtena",
+							"sound3Id": "sfouggari",
 							"radioOption1": "οδοντόβουρτσα",
 							"radioOption2": "χτένα",
 							"radioOption3": "σφουγγάρι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundKrevati",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Το βράδυ κοιμάμαι στο...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal2",
+							"sound1Id": "skampo",
+							"sound2Id": "krevati",
+							"sound3Id": "trapezi",
+							"radioOption1": "σκαμπό",
+							"radioOption2": "κρεβάτι",
+							"radioOption3": "τραπέζι",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundKrevati",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Πίνω νερό από το...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal3",
+							"sound1Id": "vazo",
+							"sound2Id": "vareli",
+							"sound3Id": "pothri",
+							"radioOption1": "βάζο",
+							"radioOption2": "βαρέλι",
+							"radioOption3": "ποτήρι",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundVourtsa",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Χτενίζω τα μαλλιά μου με τη...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal4",
+							"sound1Id": "pistolaki",
+							"sound2Id": "vourtsa",
+							"sound3Id": "tsougkrana",
+							"radioOption1": "πιστολάκι",
+							"radioOption2": "βούρτσα",
+							"radioOption3": "τσουγκράνα",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundPiato",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Τρώω το φαγητό μου από το...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal5",
+							"sound1Id": "piato",
+							"sound2Id": "tigani",
+							"sound3Id": "diskos",
+							"radioOption1": "πιάτο",
+							"radioOption2": "τηγάνι",
+							"radioOption3": "δίσκος",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundMpaniera",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Κάνω μπάνιο στην...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal6",
+							"sound1Id": "aulh",
+							"sound2Id": "mpaniera",
+							"sound3Id": "veranta",
+							"radioOption1": "αυλή",
+							"radioOption2": "μπανιέρα",
+							"radioOption3": "βεράντα",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundFagito",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Όταν πεινάω τρώω...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal7",
+							"sound1Id": "maxairopirouna",
+							"sound2Id": "nero",
+							"sound3Id": "faghto",
+							"radioOption1": "μαχαιροπίρουνα",
+							"radioOption2": "νερό",
+							"radioOption3": "φαγητό",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundNero",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Όταν διψάω πίνω...",
+							"questionSoundId": "chapter1AutomatedActionsTask1Proposal8",
+							"sound1Id": "nero",
+							"sound2Id": "pothri",
+							"sound3Id": "pagos",
+							"radioOption1": "νερό",
+							"radioOption2": "ποτήρι",
+							"radioOption3": "πάγος",
 							"answers": [{
 								"answerNo": "1"
 							}]
@@ -2057,89 +2233,161 @@
 					"category": "closedQuestions",
 					"categoryName": "Ερωτήσεις Κλειστού Τύπου",
 					"categoryList": [
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Ένα βιβλίο είναι ζώο;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Πετούν τα αυτοκίνητα;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Τα τραίνα μεταφέρουν ανθρώπους;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Ένας σκύλος είναι ζώο;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Τα ψάρια περπατάνε;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Κάθεσαι σε τραπέζι;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Πληρώνουμε με τα λεφτά;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Το νερό γίνεται πάγος;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Πίνετε το σαπούνι;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundΒοοκ",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Ξαπλώνουμε στο κρεβάτι;",
+							"questionSoundId": "",
+							"sound1Id": "",
+							"sound2Id": "",
+							"radioOption1": "Ναι",
+							"radioOption2": "Όχι",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						}
 					]
 				},
 				{
 					"category": "detect",
 					"categoryName": "Εντοπισμός",
 					"categoryList": [
-					]
-				},
-
-				{
-					"category": "body",
-					"categoryName": "Σώμα",
-					"categoryList": [
 						{
-							"screenId": "chooseLabelFromSound_22",
-							"screenType": "chooseLabelFromSound",
-							"question" : "question",
-							"questionSoundId": "ianouarios",
-							"soundId": "ianouarios",
-							"sound1Id": "ianouarios",
-							"sound2Id": "ianouarios",
-							"sound3Id": "ianouarios",
-							"radioOption1": "Ρόμβος",
-							"radioOption2": "Κύλινδρος",
-							"radioOption3": "Κύβος",
-							"answers": [{
-								"answerNo": "1"
-							}]
-						},
-						{
-							"screenId": "chooseLabelFromSound_2321",
-							"screenType": "chooseLabelFromSound",
-							"question" : "question",
-							"questionSoundId": "ianouarios",
-							"imageId": "schoolClass",
-							"soundId": "ianouarios",
-							"sound1Id": "ianouarios",
-							"sound2Id": "ianouarios",
-							"sound3Id": "ianouarios",
-
-							"radioOption1": "Ρόμβος",
-							"radioOption2": "Κύλινδρος",
-							"radioOption3": "Κύβος",
-							"answers": [{
-								"answerNo": "1"
-							}]
-						},
-						{
-							"screenId": "WhatIsThisTomato",
-							"screenType": "whatIsThis"
-						},
-						{
-							"screenId": "WhatIsThisTomato2",
-							"screenType": "whatIsThis",
-							"imageId": "tomato"
-						},
-						{
-							"screenId": "chooseLabelFromSound_1",
-							"screenType": "chooseLabelFromSound",
-							"radioOption1": "Ρόμβος",
-							"radioOption2": "Κύλινδρος",
-							"radioOption3": "Κύβος",
-							"answers": [{
-								"answerNo": "1"
-							}]
-						},
-						{
-							"screenId": "ScreenChooseInImageKid",
+							"screenId": "chooseInImageKitchenRoom",
 							"screenType": "chooseInImage",
-							"question": "Bres ton...",
-							"imageId": "elefantas",
+							"question": "Εντόπισε στην εικόνα την τσαγιέρα και την φρουτιέρα\nκαι ύστερα πατά πάνω στα αντικείμενα",
+							"questionSoundId": "chapter1DetectQuestion1",
+							"imageId": "kitchenRoom",
+							"absolute": "true",
 							"circlesList": [
 								{
-									"circleX": "300",
-									"circleY": "100",
-									"circleW": "60",
-									"circleH": "60"
+									"circleX": "470",
+									"circleY": "110",
+									"circleW": "30",
+									"circleH": "30"
 								},
 								{
-									"circleX": "400",
-									"circleY": "250",
-									"circleW": "60",
-									"circleH": "60"
+									"circleX": "525",
+									"circleY": "240",
+									"circleW": "40",
+									"circleH": "40"
 								}
 							],
 							"answers": [{
@@ -2151,11 +2399,7 @@
 							]
 						}
 					]
-				},
-
-
-
-
+				}
 			]
 		},
 		{
@@ -2171,70 +2415,70 @@
 							"screenId": "whatIsThisBottle",
 							"screenType": "whatIsThis",
 							"imageId": "bottle",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisUmbrella",
 							"screenType": "whatIsThis",
 							"imageId": "umbrella",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisSuitcase",
 							"screenType": "whatIsThis",
 							"imageId": "suitcase",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisSaw",
 							"screenType": "whatIsThis",
 							"imageId": "saw",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisStairs",
 							"screenType": "whatIsThis",
 							"imageId": "stairs",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisSwing",
 							"screenType": "whatIsThis",
 							"imageId": "swing",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisFireplace",
 							"screenType": "whatIsThis",
 							"imageId": "fireplace",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisTrolley",
 							"screenType": "whatIsThis",
 							"imageId": "trolley",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisWashBasin",
 							"screenType": "whatIsThis",
 							"imageId": "washBasin",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						},
 						{
 							"question": "Τι είναι αυτό που βλέπεις;",
 							"screenId": "whatIsThisSpaceship",
 							"screenType": "whatIsThis",
 							"imageId": "spaceship",
-							"soundId": "chapter2question1"
+							"questionSoundId": "chapter2question1"
 						}
 					]
 				},
@@ -2242,6 +2486,336 @@
 					"category": "katonomasiaCompleteSentence",
 					"categoryName": "Συμπλήρωση προτάσεων",
 					"categoryList": [
+						{
+							"screenId": "WhatIsThisPen",
+							"screenType": "whatIsThis",
+							"imageId": "katonomasiaPen",
+							"question": "Γράφεις με",
+							"questionSoundId": "chapter2proposal1",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisShoes",
+							"screenType": "whatIsThis",
+							"imageId": "shoes",
+							"question": "Φοράω στα πόδια μου τα",
+							"questionSoundId": "chapter2proposal2",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisTomato",
+							"screenType": "whatIsThis",
+							"imageId": "tomato",
+							"question": "Έβαλα στην σαλάτα αγγούρι και",
+							"questionSoundId": "chapter2proposal3",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisStairs",
+							"screenType": "whatIsThis",
+							"imageId": "stairs",
+							"question": "Ανέβηκα στο πατάρι με την",
+							"questionSoundId": "chapter2proposal4",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisSoap",
+							"screenType": "whatIsThis",
+							"imageId": "soap",
+							"question": "Έπλυνα τα χέρια μου με το",
+							"questionSoundId": "chapter2proposal5",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisKatonomasiaKnife",
+							"screenType": "whatIsThis",
+							"imageId": "katonomasiaKnife",
+							"question": "Έκοψα το ψωμί με το",
+							"questionSoundId": "chapter2proposal6",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisRadiator",
+							"screenType": "whatIsThis",
+							"imageId": "radiator",
+							"question": "Κρύωνα και άναψα το",
+							"questionSoundId": "chapter2proposal7",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisWashBasin",
+							"screenType": "whatIsThis",
+							"imageId": "washBasin",
+							"question": "Έπλυνα τα πιάτα στον",
+							"questionSoundId": "chapter2proposal8",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisFloor",
+							"screenType": "whatIsThis",
+							"imageId": "floor",
+							"question": "Σκούπισα και σφουγγάρισα το",
+							"questionSoundId": "chapter2proposal9",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+						{
+							"screenId": "WhatIsThisCuddles",
+							"screenType": "whatIsThis",
+							"imageId": "cuddles",
+							"question": "Κόπηκε το ρεύμα και ανάψαμε",
+							"questionSoundId": "chapter2proposal10",
+							"mainQuestion": "Συμπλήρωσε την πρόταση με αυτό που βλέπεις στην εικόνα",
+							"mainQuestionSoundId": "chapter2question2"
+						},
+												{
+							"screenId": "WhatIsThisFourno",
+							"screenType": "whatIsThis",
+							"question": "Ψήνω το φαγητό στο φου...",
+							"questionSoundId": "chapter2proposal11",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisMallia",
+							"screenType": "whatIsThis",
+							"question": "Λούζω τα μα...",
+							"questionSoundId": "chapter2proposal12",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisMplouza",
+							"screenType": "whatIsThis",
+							"question": "Φόρεσα μια κοντομάνικη μπλου...",
+							"questionSoundId": "chapter2proposal13",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisFortigo",
+							"screenType": "whatIsThis",
+							"question": "Φόρτωσα όλα τα έπιπλα στο φο...",
+							"questionSoundId": "chapter2proposal14",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisTraumaties",
+							"screenType": "whatIsThis",
+							"question": "Στο τροχαίο ατύχημα δεν υπήρχαν πολλοί τραυ...",
+							"questionSoundId": "chapter2proposal15",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisZwni",
+							"screenType": "whatIsThis",
+							"question": "Μόλις μπούμε στο αυτοκίνητο φοράμε τη ζω...",
+							"questionSoundId": "chapter2proposal16",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisPezodromio",
+							"screenType": "whatIsThis",
+							"question": "Δεν περπατάμε στο δρόμο, περπατάμε στο πε...",
+							"questionSoundId": "chapter2proposal17",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisVitho",
+							"screenType": "whatIsThis",
+							"question": "Στη θάλασσα φοράω την μάσκα\nκαι εξερευνώ τον βυ...",
+							"questionSoundId": "chapter2proposal18",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisKostoumi",
+							"screenType": "whatIsThis",
+							"question": "Η νύφη  φορούσε νυφικό και ο γαμπρός κο...",
+							"questionSoundId": "chapter2proposal19",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisApokriatiko",
+							"screenType": "whatIsThis",
+							"question": " Όλοι ήταν μασκαρεμένοι γιατί\nτο πάρτι ήταν απο...",
+							"questionSoundId": "chapter2proposal20",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την λέξη",
+							"mainQuestionSoundId": "chapter2question3"
+						},
+						{
+							"screenId": "WhatIsThisVivlio",
+							"screenType": "whatIsThis",
+							"question": "Διάβασα ένα .....",
+							"questionSoundId": "chapter2proposal21",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisKleidia",
+							"screenType": "whatIsThis",
+							"question": "Κλείδωσα την πόρτα με τα .....",
+							"questionSoundId": "chapter2proposal22",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisPetseta",
+							"screenType": "whatIsThis",
+							"question": "Βγήκα από το μπάνιο\nκαι σκουπίστηκα με την  .....",
+							"questionSoundId": "chapter2proposal23",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisKounia",
+							"screenType": "whatIsThis",
+							"question": "Το μωρό κοιμάται στην .....",
+							"questionSoundId": "chapter2proposal24",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisOmprela",
+							"screenType": "whatIsThis",
+							"question": "Βρέχει και άνοιξα την .....",
+							"questionSoundId": "chapter2proposal25",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisAima",
+							"screenType": "whatIsThis",
+							"question": "Στις φλέβες μας κυλάει .....",
+							"questionSoundId": "chapter2proposal26",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisDonti",
+							"screenType": "whatIsThis",
+							"question": "Πήγα στον οδοντίατρο\nγιατί με πονούσε το .....",
+							"questionSoundId": "chapter2proposal27",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisKlwsti",
+							"screenType": "whatIsThis",
+							"question": "Έραψα τη μπλούζα με βελόνα και .....",
+							"questionSoundId": "chapter2proposal28",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisGeusi",
+							"screenType": "whatIsThis",
+							"question": "Η σοκολάτα έχει γλυκιά .....",
+							"questionSoundId": "chapter2proposal29",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+						{
+							"screenId": "WhatIsThisTileorasi",
+							"screenType": "whatIsThis",
+							"question": "Είδα τις ειδήσεις στην .....",
+							"questionSoundId": "chapter2proposal30",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με την κατάλληλη λέξη",
+							"mainQuestionSoundId": "chapter2question4"
+						},
+												{
+							"screenId": "WhatIsThisPsithei",
+							"screenType": "whatIsThis",
+							"question": "Έβαλα το φαγητό στο φούρνο για να .....",
+							"questionSoundId": "chapter2proposal31",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisAplwsei",
+							"screenType": "whatIsThis",
+							"question": "Έβγαλε τα ρούχα από το πλυντήριο για να τα .....",
+							"questionSoundId": "chapter2proposal32",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisTrww",
+							"screenType": "whatIsThis",
+							"question": ".....  πρωινό κάθε μέρα",
+							"questionSoundId": "chapter2proposal33",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisDiavasw",
+							"screenType": "whatIsThis",
+							"question": "Άνοιξα το βιβλίο για να το .....",
+							"questionSoundId": "chapter2proposal34",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisKoimithoume",
+							"screenType": "whatIsThis",
+							"question": "Στρώσαμε  το κρεβάτι για να .....",
+							"questionSoundId": "chapter2proposal35",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisAkousw",
+							"screenType": "whatIsThis",
+							"question": "Ανοίγω το ραδιόφωνο για να .....",
+							"questionSoundId": "chapter2proposal36",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisKsekourastoume",
+							"screenType": "whatIsThis",
+							"question": "Θα πάμε διακοπές για να .....",
+							"questionSoundId": "chapter2proposal37",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisPiga",
+							"screenType": "whatIsThis",
+							"question": "Χθες εγώ ..... σε ένα μουσείο",
+							"questionSoundId": "chapter2proposal38",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisPigainw",
+							"screenType": "whatIsThis",
+							"question": "..... κάθε μέρα στην δουλειά, με το αμάξι μου",
+							"questionSoundId": "chapter2proposal39",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						},
+						{
+							"screenId": "WhatIsThisAkousame",
+							"screenType": "whatIsThis",
+							"question": "Στην παράσταση ..... πολλά τραγούδια με την χορωδία",
+							"questionSoundId": "chapter2proposal40",
+							"mainQuestion": "Άκουσε την πρόταση και συμπλήρωσε την με το κατάλληλο ρήμα",
+							"mainQuestionSoundId": "chapter2question5"
+						}
 					]
 				},
 				{
@@ -2250,7 +2824,7 @@
 					"categoryList": [
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundSea",
 							"screenType": "whatIsThis",
 							"soundId": "sea",
@@ -2258,7 +2832,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundFire",
 							"screenType": "whatIsThis",
 							"soundId": "fire",
@@ -2266,7 +2840,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundRain",
 							"screenType": "whatIsThis",
 							"soundId": "rain",
@@ -2274,7 +2848,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundAir",
 							"screenType": "whatIsThis",
 							"soundId": "air",
@@ -2282,7 +2856,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundCar",
 							"screenType": "whatIsThis",
 							"soundId": "car",
@@ -2290,7 +2864,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundMachine",
 							"screenType": "whatIsThis",
 							"soundId": "machine",
@@ -2298,7 +2872,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundShip",
 							"screenType": "whatIsThis",
 							"soundId": "ship",
@@ -2306,7 +2880,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundTraffic",
 							"screenType": "whatIsThis",
 							"soundId": "traffic",
@@ -2314,7 +2888,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundDog",
 							"screenType": "whatIsThis",
 							"soundId": "dog",
@@ -2322,7 +2896,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundBird",
 							"screenType": "whatIsThis",
 							"soundId": "bird",
@@ -2330,7 +2904,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundWolf",
 							"screenType": "whatIsThis",
 							"soundId": "wolf",
@@ -2338,7 +2912,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundMonkey",
 							"screenType": "whatIsThis",
 							"soundId": "monkey",
@@ -2346,7 +2920,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundCat",
 							"screenType": "whatIsThis",
 							"soundId": "cat",
@@ -2354,7 +2928,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundLion",
 							"screenType": "whatIsThis",
 							"soundId": "lion",
@@ -2362,7 +2936,7 @@
 						},
 						{
 							"question": "Άκουσε τον ήχο και βρες τι είναι",
-							"imageId": "soundIcon",
+							"imageId": "soundImage",
 							"screenId": "WhatIsThisSoundFly",
 							"screenType": "whatIsThis",
 							"soundId": "fly",

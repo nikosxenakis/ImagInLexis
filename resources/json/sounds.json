@@ -1,12 +1,39 @@
 {
 	"sounds": [
 
+
+		{
+			"id": "completeSound",
+			"path": "/sounds/programSounds/completeSound.mp3"
+		},
+		{
+			"id": "correctSound",
+			"path": "/sounds/programSounds/correctSound.mp3"
+		},
+		{
+			"id": "endProgramSound",
+			"path": "/sounds/programSounds/endProgramSound.mp3"
+		},
+		{
+			"id": "startProgramSound",
+			"path": "/sounds/programSounds/startProgramSound.mp3"
+		},
+		{
+			"id": "wrongSound",
+			"path": "/sounds/programSounds/wrongSound.mp3"
+		},
+
+
 		
 		{
 			"id": "chapter1Anagnorisi",
 			"path": "/sounds/chapter1/anagnorisi.mp3"
 		},
 
+		{
+			"id": "animalsSound",
+			"path": "/sounds/chapter1/animals/tazwa.mp3"
+		},
 		{
 			"id": "chapter1AnagnorisiAgelada",
 			"path": "/sounds/chapter1/animals/agelada.mp3"
@@ -88,6 +115,11 @@
 			"path": "/sounds/chapter1/animals/tigris.mp3"
 		},
 
+
+		{
+			"id": "fruitsSound",
+			"path": "/sounds/chapter1/fruits/tafroutakaitalaxanika.mp3"
+		},
 		{
 			"id": "aggouria",
 			"path": "/sounds/chapter1/fruits/aggouria.mp3"
@@ -159,10 +191,6 @@
 		{
 			"id": "sparaggia",
 			"path": "/sounds/chapter1/fruits/sparaggia.mp3"
-		},
-		{
-			"id": "tafroutakaitalaxanika",
-			"path": "/sounds/chapter1/fruits/tafroutakaitalaxanika.mp3"
 		},
 		{
 			"id": "vatomouro",
@@ -247,7 +275,7 @@
 			"path": "/sounds/chapter1/objects/skoupa.mp3"
 		},
 		{
-			"id": "taantikeimena",
+			"id": "objectsSound",
 			"path": "/sounds/chapter1/objects/taantikeimena.mp3"
 		},
 		{
@@ -313,7 +341,7 @@
 			"path": "/sounds/chapter1/colors/question5.mp3"
 		},
 		{
-			"id": "taxrwmata",
+			"id": "colorsSound",
 			"path": "/sounds/chapter1/colors/taxrwmata.mp3"
 		},
 		{
@@ -375,7 +403,7 @@
 			"path": "/sounds/chapter1/shape/romvos.mp3"
 		},
 		{
-			"id": "tasximata",
+			"id": "shapeSound",
 			"path": "/sounds/chapter1/shape/tasximata.mp3"
 		},
 		{
@@ -388,6 +416,10 @@
 		},
 
 
+		{
+			"id": "professionsSound",
+			"path": "/sounds/chapter1/professions/taepaggelmata.mp3"
+		},
 		{
 			"id": "akrovaths",
 			"path": "/sounds/chapter1/professions/akrovaths.mp3"
@@ -491,7 +523,7 @@
 			"path": "/sounds/chapter1/appliancies/ntoylapa.mp3"
 		},
 		{
-			"id": "oihlektrikessuskeues",
+			"id": "applianciesSound",
 			"path": "/sounds/chapter1/appliancies/oihlektrikessuskeues.mp3"
 		},
 		{
@@ -597,7 +629,7 @@
 			"path": "/sounds/chapter1/location/sxoleio.mp3"
 		},
 		{
-			"id": "taktiriakaioitopothesies",
+			"id": "locationSound",
 			"path": "/sounds/chapter1/location/taktiriakaioitopothesies.mp3"
 		},
 		{
@@ -683,7 +715,7 @@
 			"path": "/sounds/chapter1/car/purosvestikooxima.mp3"
 		},
 		{
-			"id": "tamesametaforaskaitaoximata",
+			"id": "carSound",
 			"path": "/sounds/chapter1/car/tamesametaforaskaitaoximata.mp3"
 		},
 		{
@@ -720,6 +752,10 @@
 		},
 
 
+		{
+			"id": "actionSound",
+			"path": "/sounds/chapter1/action/energies.mp3"
+		},
 		{
 			"id": "kaneieleytherhptwsh",
 			"path": "/sounds/chapter1/action/kaneieleytherhptwsh.mp3"
@@ -823,7 +859,7 @@
 			"path": "/sounds/chapter1/emotion/lipimenos.mp3"
 		},
 		{
-			"id": "tasunaisthimata",
+			"id": "emotionSound",
 			"path": "/sounds/chapter1/emotion/tasunaisthimata.mp3"
 		},
 		{
@@ -860,6 +896,10 @@
 		},
 
 
+		{
+			"id": "seasonSound",
+			"path": "/sounds/chapter1/season/oiepoxes.mp3"
+		},
 		{
 			"id": "anoiksh",
 			"path": "/sounds/chapter1/season/anoiksh.mp3"
@@ -999,7 +1039,7 @@
 			"path": "/sounds/chapter1/month/noemvrios.mp3"
 		},
 		{
-			"id": "oimhnes",
+			"id": "monthSound",
 			"path": "/sounds/chapter1/month/oimhnes.mp3"
 		},
 		{
@@ -1081,7 +1121,7 @@
 			"path": "/sounds/chapter1/week/kuriakh.mp3"
 		},
 		{
-			"id": "oihmeresthsevdomadas",
+			"id": "weekSound",
 			"path": "/sounds/chapter1/week/oihmeresthsevdomadas.mp3"
 		},
 		{
@@ -1239,7 +1279,7 @@
 			"path": "/sounds/chapter1/opposites/hkornizaeinai3.mp3"
 		},
 		{
-			"id": "oiantithetikoiprosdiorismoi",
+			"id": "oppositesSound",
 			"path": "/sounds/chapter1/opposites/oiantithetikoiprosdiorismoi.mp3"
 		},
 		{
@@ -1285,7 +1325,17 @@
 
 
 		{
-			"id": "oiautomatopoihmenesprakseis",
+			"id": "substractiveAbillitySound",
+			"path": "/sounds/chapter1/substractiveAbillity/hafairetikhikanothta.mp3"
+		},
+		{
+			"id": "chapter1SubstractiveAbillityQuestion1",
+			"path": "/sounds/chapter1/substractiveAbillity/question1.mp3"
+		},
+
+
+		{
+			"id": "automatedActionsSound",
 			"path": "/sounds/chapter1/automatedActions/oiautomatopoihmenesprakseis.mp3"
 		},
 		{
@@ -1363,6 +1413,14 @@
 		{
 			"id": "tsougkrana",
 			"path": "/sounds/chapter1/automatedActions/task1/tsougkrana.mp3"
+		},
+		{
+			"id": "vazo",
+			"path": "/sounds/chapter1/automatedActions/task1/vazo.mp3"
+		},
+		{
+			"id": "vareli",
+			"path": "/sounds/chapter1/automatedActions/task1/vareli.mp3"
 		},
 		{
 			"id": "veranta",
@@ -1450,7 +1508,43 @@
 		},
 
 
+		{
+			"id": "detectSound",
+			"path": "/sounds/chapter1/detect/entopismosstoixeiwn.mp3"
+		},
+		{
+			"id": "chapter1DetectQuestion1",
+			"path": "/sounds/chapter1/detect/question1.mp3"
+		},
+		{
+			"id": "chapter1DetectQuestion2",
+			"path": "/sounds/chapter1/detect/question2.mp3"
+		},
+		{
+			"id": "chapter1DetectQuestion3",
+			"path": "/sounds/chapter1/detect/question3.mp3"
+		},
+		{
+			"id": "chapter1DetectQuestion4",
+			"path": "/sounds/chapter1/detect/question4.mp3"
+		},
 
+
+
+
+		{
+			"id": "katonomasiaDefinitionSound",
+			"path": "/sounds/chapter2/orismoi.mp3"
+		},
+		{
+			"id": "katonomasiaSoundsSound",
+			"path": "/sounds/chapter2/ixi.mp3"
+		},
+		{
+			"id": "katonomasiaCompleteSentenceSound",
+			"path": "/sounds/chapter2/simplirwsiProtasewn.mp3"
+		},
+		
 		{
 			"id": "chapter2Katonomasia",
 			"path": "/sounds/chapter2/katonomasia.mp3"
@@ -1520,7 +1614,7 @@
 			"path": "/sounds/chapter2/proposal10.mp3"
 		},
 		{
-			"id": "chapter2proposal111",
+			"id": "chapter2proposal11",
 			"path": "/sounds/chapter2/proposal11.mp3"
 		},
 		{
@@ -1710,6 +1804,23 @@
 		},
 
 
+
+		{
+			"id": "combinationalSequenceSound",
+			"path": "/sounds/chapter3/allilouxiaPraksewn.mp3"
+		},
+		{
+			"id": "combinationalProfessionsSound",
+			"path": "/sounds/chapter1/professions/taepaggelmata.mp3"
+		},
+		{
+			"id": "combinationalObjectSound",
+			"path": "/sounds/chapter1/objects/taantikeimena.mp3"
+		},
+		{
+			"id": "combinationalActionSound",
+			"path": "/sounds/chapter1/action/energies.mp3"
+		},
 
 		{
 			"id": "chapter3Sisxetizomenesennoies",

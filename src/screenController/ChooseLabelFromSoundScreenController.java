@@ -8,6 +8,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import screenData.ChooseLabelFromSoundScreenData;
 import screenData.QuestionScreenData;
 
@@ -43,6 +44,12 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
 	@FXML
 	private HBox mainHBox;
 	
+	@FXML
+	private VBox radioVBox;
+	
+	@FXML
+	private HBox radioHBox3;	
+	
 	private String imageId = null;
 	private String questionSoundId = null;
 	private String soundId = null;
@@ -66,12 +73,23 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
 
     	radioOption1.setText(data.getRadioOption1());
     	radioOption2.setText(data.getRadioOption2());
-    	radioOption3.setText(data.getRadioOption3());
-
+    	
     	sound1Id = data.getSound1Id();
     	sound2Id = data.getSound2Id();
-    	sound3Id = data.getSound3Id();
 
+    	questionSoundImage.setImage(ImageHolder.getImage("soundImage"));    	
+    	sound1Image.setImage(ImageHolder.getImage("soundImage"));
+    	sound2Image.setImage(ImageHolder.getImage("soundImage"));
+    	
+    	if(data.getRadioOption3() != null && data.getSound3Id() != null){
+        	radioOption3.setText(data.getRadioOption3());
+        	sound3Id = data.getSound3Id();
+        	sound3Image.setImage(ImageHolder.getImage("soundImage"));
+    	}
+    	else{
+    		System.out.println("remove radioHBox3");
+        	radioVBox.getChildren().remove(radioHBox3);
+    	}
     	
     	imageId = data.getImageId();
     	if(imageId == null){
@@ -92,12 +110,6 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
         	System.out.println("soundId : "+soundId);
         	soundImage.setImage(ImageHolder.getImage("soundImage"));
     	}
-    	
-
-    	questionSoundImage.setImage(ImageHolder.getImage("soundImage"));    	
-    	sound1Image.setImage(ImageHolder.getImage("soundImage"));
-    	sound2Image.setImage(ImageHolder.getImage("soundImage"));
-    	sound3Image.setImage(ImageHolder.getImage("soundImage"));
 
     	setIsSelection(true);
     	setAnswer(1);

@@ -8,10 +8,12 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.json.simple.JSONObject;
 
 import screenController.QuestionScreenController;
+import screenData.ChooseInImageScreenData;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
 
@@ -25,6 +27,8 @@ public class Test{
 
 	HashMap<String, Set<Integer>> answers = new HashMap<String, Set<Integer>>();
 	HashMap<String, Set<Integer>> correctAnswers = new HashMap<String,Set<Integer>>();
+
+    private HashMap<String, Boolean> absoluteAnswers = new HashMap<String, Boolean>();
 
 	private Queue<String> screenList = new LinkedList<String>();
 	private ArrayList<String> testScreenList = new ArrayList<String>();
@@ -44,14 +48,20 @@ public class Test{
         
     	System.out.println("new Test: "+chapter+" "+category+" "+chapterName+" "+categoryName+" "+totalQuestions);
 
+    	//SoundHolder.playSound(category+"Sound");
+    	
 		for(String screenId : ImagInLexis.parser.getCategoriesScreenIdList(category)){
 	        ImagInLexis.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
 			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
+			
+			if(screenData instanceof ChooseInImageScreenData){
+				absoluteAnswers.put(screenId, ((ChooseInImageScreenData) screenData).getAbsolute());
+			}
+			
 			Set<Integer> answers = screenData.getAnswers();
-			correctAnswers.put(screenId, answers);	
+			correctAnswers.put(screenId, answers);
 		}
-
 	}
 	
 	public String getChapter(){
@@ -85,19 +95,26 @@ public class Test{
 		
 		System.out.println("answers: "+answers.toString());
 		System.out.println("correctAnswers: "+correctAnswers.toString());
-		
-			
+					
 		double correct = 0;
-		double wrong = 0;
 
 		for (String key : answers.keySet()) {
-			if(answers.get(key).equals(correctAnswers.get(key)))
-				correct++;
-			else
-				wrong++;
+			
+			//if it is not absolute
+			if(absoluteAnswers.get(key) != null && absoluteAnswers.get(key) == false){
+				if(correctAnswers.get(key).containsAll(answers.get(key)) && answers.get(key).size() > 0){
+					correct++;
+				}					
+			}
+			else{
+				Set<Integer> mutualAnswers = new TreeSet<Integer>(correctAnswers.get(key));
+		    	mutualAnswers.retainAll(answers.get(key));
+		    	correct += mutualAnswers.size()/correctAnswers.get(key).size();
+			}
+			
 		}
 
-		Integer res = (int) (((correct)/(correct+wrong))*100);
+		Integer res = (int) (((correct)/(this.totalQuestions))*100);
 		return Integer.toString(res)+"%";
 		
 	}

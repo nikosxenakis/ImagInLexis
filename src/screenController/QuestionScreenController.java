@@ -2,6 +2,7 @@ package screenController;
 
 import java.util.HashSet;
 import java.util.Set;
+
 import application.ImageHolder;
 import application.Test;
 import javafx.fxml.FXML;
@@ -52,7 +53,7 @@ public abstract class QuestionScreenController extends ScreenController{
     private Test test;
     private boolean isSelection = false;
     private Set<Integer> answers = new HashSet<Integer>();
-
+    
 	public Test getTest(){
 		return test;
 	}
@@ -102,6 +103,10 @@ public abstract class QuestionScreenController extends ScreenController{
     	progressBar.setProgress((double)(getTest().getAnsweredQuestions()/(double)getTest().getTotalQuestions()));
     	
     	submitButton.setDisable(true);
+	
+    	if(test.getTotalQuestions().equals(1)){
+    		nextButton.setDisable(true);
+    	}
     	
     	String style = "-fx-border-width: 10;";
     	if(chapterName.getText().equals("Αναγνώριση")){
@@ -129,6 +134,7 @@ public abstract class QuestionScreenController extends ScreenController{
     	if(getTest().isLastQuestion()){
     		nextButton.setDisable(true);
     	}
+
     }
     
     public void clicked(MouseEvent e){
@@ -161,4 +167,5 @@ public abstract class QuestionScreenController extends ScreenController{
         }
         
     }
+
 }

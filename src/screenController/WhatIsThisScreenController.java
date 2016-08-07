@@ -8,7 +8,10 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import screenData.QuestionScreenData;
 import screenData.WhatIsThisScreenData;
 
@@ -16,7 +19,10 @@ public class WhatIsThisScreenController extends QuestionScreenController{
         
 	@FXML
 	private ImageView image;
-
+	
+	@FXML
+	private BorderPane mainBorderPane;
+	
 	@FXML
 	private VBox mainBox;
 	
@@ -29,8 +35,18 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     @FXML
     private ImageView soundImage;
     
+    @FXML
+    private HBox mainQuestionHBox; 
+    
+    @FXML
+    private Text mainQuestion;
+    
+    @FXML
+    private ImageView mainQuestionSoundImage;
+    
     private String soundId = null;    
     private String questionSoundId = null;    
+    private String mainQuestionSoundId = null;
 
     public void setData(QuestionScreenData screenData, Test test){
     	
@@ -60,6 +76,15 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	soundId = data.getSoundId();
     	questionSoundId = data.getQuestionSoundId();
 
+    	if(data.getMainQuestion() != null && data.getMainQuestionSoundId() != null){
+        	mainQuestion.setText(data.getMainQuestion());
+        	mainQuestionSoundId = data.getMainQuestionSoundId();
+        	mainQuestionSoundImage.setImage(ImageHolder.getImage("soundImage"));
+    	}
+    	else{
+    		mainBorderPane.getChildren().remove(mainQuestionHBox);
+    	}
+        
     	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
 
     	setAnswer(1);
@@ -90,4 +115,11 @@ public class WhatIsThisScreenController extends QuestionScreenController{
 
     	SoundHolder.playSound(questionSoundId);
     }
+    
+    public void mainQuestionSoundIconClicked(){
+    	System.out.println(mainQuestionSoundId);
+
+    	SoundHolder.playSound(mainQuestionSoundId);
+    }
+    
 }

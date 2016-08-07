@@ -352,7 +352,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fx:id="sustractionImage" fitHeight="38.0" fitWidth="66.0" layoutX="466.0" layoutY="496.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="substractiveAbillityImage" fitHeight="38.0" fitWidth="66.0" layoutX="466.0" layoutY="496.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/sustractionIcon.jpg" />
                      </image>
@@ -387,9 +387,9 @@
                         <Image url="@../../resources/images/icons/homeIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="questionImage" fitHeight="38.0" fitWidth="66.0" layoutX="42.0" layoutY="523.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="closedQuestionsImage" fitHeight="38.0" fitWidth="66.0" layoutX="42.0" layoutY="523.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../resources/images/icons/questionIcon.jpg" />
+                        <Image url="@../../resources/images/icons/closedQuestionsIcon.jpg" />
                      </image>
                   </ImageView>
                   <Text fill="WHITE" layoutX="94.0" layoutY="537.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ερωτήσεις &#10;κλειστού τύπου" wrappingWidth="178.78604125976562">

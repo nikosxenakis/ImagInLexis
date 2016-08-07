@@ -1,6 +1,7 @@
 package application;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,8 +9,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -251,7 +253,6 @@ public class Parser {
         }
 	}
 	
-	@SuppressWarnings("resource")
 	public void submitScores(){
 
 		try {
@@ -278,10 +279,11 @@ public class Parser {
 				file = new File(decodedPath+"/../files/scores.json");
 			}
 
-			
-			OutputStream output = new FileOutputStream(file);
-			output.write(ImagInLexis.parser.getScoresJsonObject().toJSONString().getBytes());
-
+			Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF8"));
+			out.append(ImagInLexis.parser.getScoresJsonObject().toString());
+			out.flush();
+			out.close();
+		
 		} catch (UnsupportedEncodingException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -403,10 +405,12 @@ public class Parser {
     	String soundId = (String)(question.get("soundId"));
     	String questionString = (String)(question.get("question"));
     	String questionSoundId = (String)(question.get("questionSoundId"));
-
+    	String mainQuestion = (String)(question.get("mainQuestion"));
+    	String mainQuestionSoundId = (String)(question.get("mainQuestionSoundId"));
+    	
     	answersSet.add(1);
     	
-    	WhatIsThisScreenData whatIsThisScreenData = new WhatIsThisScreenData(questionString,imageId,soundId,questionSoundId,answersSet,chapterName,categoryName);
+    	WhatIsThisScreenData whatIsThisScreenData = new WhatIsThisScreenData(questionString,mainQuestion,mainQuestionSoundId,imageId,soundId,questionSoundId,answersSet,chapterName,categoryName);
 
     	ScreenDataHolder.addScreenData(screenId,whatIsThisScreenData);
 	}
@@ -415,6 +419,8 @@ public class Parser {
     	String screenId = (String)(question.get("screenId"));
     	String questionString = (String)(question.get("question"));
     	String imageId = (String)(question.get("imageId"));
+    	String questionSoundId = (String)(question.get("questionSoundId"));
+    	String absolute = (String)(question.get("absolute"));
 
     	JSONArray circlesList = (JSONArray)(question.get("circlesList"));
     	ArrayList<Circle> circlesArrayList = new ArrayList<Circle>();
@@ -431,7 +437,7 @@ public class Parser {
         	circlesArrayList.add(circle);
         }
         
-        ChooseInImageScreenData chooseInImageScreenData = new ChooseInImageScreenData(questionString,imageId,circlesArrayList,answers,chapterName,categoryName);
+        ChooseInImageScreenData chooseInImageScreenData = new ChooseInImageScreenData(questionString,questionSoundId,imageId,circlesArrayList,absolute,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseInImageScreenData);
 	}
 	

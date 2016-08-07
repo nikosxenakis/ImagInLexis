@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import application.Circle;
 import application.ImageHolder;
+import application.SoundHolder;
 import application.Test;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -26,12 +27,14 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     private ImageView image;
 
 	@FXML
+    private ImageView questionSoundImage;
+	
+	@FXML
 	private Pane circleContainer;
 	
 	private ArrayList<Circle> circlesList;
-
-    @FXML
-    private ImageView soundImage;
+    
+    private String questionSoundId;
     
     public void setData(QuestionScreenData screenData, Test test){
     	
@@ -53,12 +56,18 @@ public class ChooseInImageScreenController extends QuestionScreenController{
 
     	circlesList = data.getCirclesList();
 
-    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
+    	questionSoundImage.setImage(ImageHolder.getImage("soundImage"));
+
+    	questionSoundId = data.getQuestionSoundId();
+    	    	
+    	
+    	System.out.println("main image: "+image.getX()+" "+image.getY()+" "+image.getFitWidth()+" "+image.getFitHeight());
 
     	//get container
         for (Circle cl : circlesList){
+        	
         	//create and add circles
-        	System.out.println(cl.x.toString()+cl.y.toString()+cl.w.toString()+cl.h.toString());
+        	System.out.println("new Ellipse: "+cl.x.toString()+" "+cl.y.toString()+" "+cl.w.toString()+" "+cl.h.toString());
         	Ellipse ellipse = new Ellipse(cl.x,cl.y,cl.w,cl.h);
         	cl.addEllipse(ellipse);
         	
@@ -66,7 +75,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
         	ellipse.setStyle("-fx-effect:  dropshadow(three-pass-box, rgba(250,250,250,0.8), 10, 0, 0, 0)");
         	ellipse.setFill(Paint.valueOf("transparent"));
         	ellipse.setStroke(Paint.valueOf("#00ff0d"));
-        	ellipse.setStrokeWidth(0);
+        	ellipse.setStrokeWidth(10);
 
         	ellipse.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
         	     @Override
@@ -91,4 +100,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
         
     }
 
+    public void questionSoundIconClicked(){
+    	SoundHolder.playSound(this.questionSoundId);
+    }
 }

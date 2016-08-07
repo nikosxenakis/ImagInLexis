@@ -83,8 +83,8 @@
 			"path": "images/icons/weekIcon.jpg"
 		},
 		{
-			"id": "sustractionImage",
-			"path": "images/icons/sustractionIcon.jpg"
+			"id": "substractiveAbillityImage",
+			"path": "images/icons/substractiveAbillityIcon.jpg"
 		},
 		{
 			"id": "oppositesImage",
@@ -99,8 +99,8 @@
 			"path": "images/icons/automatedActionsIcon.jpg"
 		},
 		{
-			"id": "questionImage",
-			"path": "images/icons/questionIcon.jpg"
+			"id": "closedQuestionsImage",
+			"path": "images/icons/closedQuestionsIcon.jpg"
 		},
 		{
 			"id": "combinationalSequenceImage",
@@ -1061,13 +1061,104 @@
 
 
 
-
+		{
+			"id": "armchair",
+			"path": "images/recognition/substractiveAbillity/armchair.jpg"
+		},
+		{
+			"id": "book",
+			"path": "images/recognition/substractiveAbillity/book.jpg"
+		},
+		{
+			"id": "bulldozers",
+			"path": "images/recognition/substractiveAbillity/bulldozers.jpg"
+		},
+		{
+			"id": "substractiveAbillityChair",
+			"path": "images/recognition/substractiveAbillity/chair.jpg"
+		},
+		{
+			"id": "cup",
+			"path": "images/recognition/substractiveAbillity/cup.jpg"
+		},
+		{
+			"id": "cupTea",
+			"path": "images/recognition/substractiveAbillity/cupTea.jpg"
+		},
+		{
+			"id": "glass",
+			"path": "images/recognition/substractiveAbillity/glass.jpg"
+		},
+		{
+			"id": "newspaper",
+			"path": "images/recognition/substractiveAbillity/newspaper.jpg"
+		},
+		{
+			"id": "notebook",
+			"path": "images/recognition/substractiveAbillity/notebook.jpg"
+		},
+		{
+			"id": "pc",
+			"path": "images/recognition/substractiveAbillity/pc.jpg"
+		},
+		{
+			"id": "pen",
+			"path": "images/recognition/substractiveAbillity/pen.jpg"
+		},
 		{
 			"id": "radio",
 			"path": "images/recognition/substractiveAbillity/radio.jpg"
 		},
+		{
+			"id": "sofa",
+			"path": "images/recognition/substractiveAbillity/sofa.jpg"
+		},
+		{
+			"id": "steamroller",
+			"path": "images/recognition/substractiveAbillity/steamroller.jpg"
+		},
+		{
+			"id": "table",
+			"path": "images/recognition/substractiveAbillity/table.jpg"
+		},
+		{
+			"id": "teleferic",
+			"path": "images/recognition/substractiveAbillity/teleferic.jpg"
+		},
+		{
+			"id": "television",
+			"path": "images/recognition/substractiveAbillity/television.jpg"
+		},
+		{
+			"id": "toastMachine",
+			"path": "images/recognition/substractiveAbillity/toastMachine.jpg"
+		},
+		{
+			"id": "truck",
+			"path": "images/recognition/substractiveAbillity/truck.jpg"
+		},
+		{
+			"id": "vase",
+			"path": "images/recognition/substractiveAbillity/vase.jpg"
+		},
 
 
+		{
+			"id": "artisticHall",
+			"path": "images/recognition/detect/artisticHall.jpg"
+		},
+		{
+			"id": "kitchenRoom",
+			"path": "images/recognition/detect/kitchenRoom.jpg"
+		},
+		{
+			"id": "studio",
+			"path": "images/recognition/detect/studio.jpg"
+		},
+		{
+			"id": "warehouse",
+			"path": "images/recognition/detect/warehouse.jpg"
+		},
 
 
 
@@ -1130,7 +1221,7 @@
 			"path": "images/katonomasia/task2/katonomasiaKnife.jpg"
 		},
 		{
-			"id": "pen",
+			"id": "katonomasiaPen",
 			"path": "images/katonomasia/task2/pen.jpg"
 		},
 		{

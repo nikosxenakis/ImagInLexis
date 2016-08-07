@@ -64,7 +64,7 @@
                               <Insets left="20.0" right="20.0" />
                            </HBox.margin>
                         </Text>
-                        <ImageView fx:id="soundImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="questionSoundImage" fitHeight="25.0" fitWidth="25.0" nodeOrientation="INHERIT" onMouseClicked="#questionSoundIconClicked" pickOnBounds="true" preserveRatio="true">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -85,9 +85,9 @@
                            <children>
                               <Pane>
                                  <children>
-                                    <ImageView fx:id="image" fitHeight="341.0" fitWidth="532.0" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" styleClass="image">
+                                    <ImageView fx:id="image" fitHeight="370.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" styleClass="image">
                                        <image>
-                                          <Image url="@../../resources/images/grammateas.jpg" />
+                                          <Image url="@../../resources/images/recognition/body/bodyParts.jpg" />
                                        </image>
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
