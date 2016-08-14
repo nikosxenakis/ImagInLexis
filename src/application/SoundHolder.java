@@ -9,11 +9,11 @@ public class SoundHolder{
 	
     private static SoundHolder instance = new SoundHolder();
     
-    //private HashMap<String, MediaPlayer> sounds;
+    private HashMap<String, MediaPlayer> sounds;
     private HashMap<String, String> soundsPath;
 
     private SoundHolder(){
-    	//this.sounds = new HashMap<>();
+    	this.sounds = new HashMap<>();
     	this.soundsPath = new HashMap<>();
     }
  
@@ -22,29 +22,31 @@ public class SoundHolder{
     }
     
     public static MediaPlayer getSound(String id){
-    	/*
+
     	MediaPlayer mediaPlayer = instance.sounds.get(id);
     	
     	if(mediaPlayer == null){
-        	String path = instance.soundsPath.get(id);
-        	URL resource = ImagInLexis.class.getResource(path);
-            Media media = new Media(resource.toString());
-            mediaPlayer = new MediaPlayer(media);
-            instance.sounds.put(id, mediaPlayer);	
+	    	String path = instance.soundsPath.get(id);
+	    	URL resource = ImagInLexis.class.getResource(path);
+	        Media media = new Media(resource.toString());
+	        mediaPlayer = new MediaPlayer(media);
+	        instance.sounds.put(id, mediaPlayer);
     	}
-    	
-    	return mediaPlayer;
-    	*/
-    	
-    	String path = instance.soundsPath.get(id);
-    	URL resource = ImagInLexis.class.getResource(path);
-        Media media = new Media(resource.toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+
         return mediaPlayer;
     }
 
     public static void playSound(String id){
     	getSound(id).play();
+    }
+    
+    public static void stopSound(String id){
+    	
+    	MediaPlayer mediaPlayer = instance.sounds.get(id);
+    	if(mediaPlayer != null){
+    		mediaPlayer.stop();  
+    		instance.sounds.remove(id);
+    	}
     }
     
     public static void addSound(String id, String path){

@@ -12,7 +12,10 @@ import java.util.TreeSet;
 
 import org.json.simple.JSONObject;
 
+import screenController.PostTestScreenController;
+import screenController.PreTestScreenController;
 import screenController.QuestionScreenController;
+import screenController.ScreenController;
 import screenData.ChooseInImageScreenData;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
@@ -24,6 +27,13 @@ public class Test{
 	private String menuScreenId;
 	private String chapterName;
 	private String categoryName;
+	private String mainWindowStyle;
+	private String mainPaneStyle;
+	private String infoPaneStyle;
+	private Integer scoreNum;
+	
+	private Integer correctAnswersNum;
+	private Integer wrongAnswersNum;
 
 	HashMap<String, Set<Integer>> answers = new HashMap<String, Set<Integer>>();
 	HashMap<String, Set<Integer>> correctAnswers = new HashMap<String,Set<Integer>>();
@@ -37,19 +47,49 @@ public class Test{
 	private Integer answeredQuestions;
 
 	public Test(String chapter, String category,String chapterName, String categoryName, String menuScreenId){
+		
 		this.chapter = chapter;
 		this.category = category;
 		this.chapterName = chapterName;
 		this.categoryName = categoryName;		
 		this.menuScreenId = menuScreenId;
 		
+		this.mainWindowStyle = "-fx-border-width: 10;";
+		this.mainPaneStyle = "-fx-background-radius: 15;";
+    	this.infoPaneStyle = "-fx-background-radius: 15;";
+
+    	if(chapterName.equals("Αναγνώριση")){
+        	this.mainWindowStyle += "-fx-background-color:  #9ED5DB; -fx-border-color:  #DDE3A8";
+        	this.mainPaneStyle+= "-fx-background-color:  #7ECCC7;";
+        	this.infoPaneStyle+= "-fx-background-color:  #7ECCA4;";
+    	}
+    	else if(chapterName.equals("Κατονομασία")){
+        	this.mainWindowStyle += "-fx-background-color:  #AFD6A9; -fx-border-color:  #CF903B";
+        	this.mainPaneStyle+= "-fx-background-color:  #80DBBB;";
+        	this.infoPaneStyle+= "-fx-background-color:  #BADB80;";
+    	}
+    	else if(chapterName.equals("Συνδιαστικό")){
+        	this.mainWindowStyle += "-fx-background-color:  #E39DCC; -fx-border-color:  #E08E70";
+        	this.mainPaneStyle+= "-fx-background-color:  #AE99C2;";
+        	this.infoPaneStyle+= "-fx-background-color:  #E39DAD;";
+    	}
+    	else{
+    		System.err.println("error in Test Screen no such a chapter");
+    		return;
+    	}
+
 		this.answeredQuestions = 0;
 		this.totalQuestions = ImagInLexis.parser.getCategoryTotalQuestions(category);
-        
+                
     	System.out.println("new Test: "+chapter+" "+category+" "+chapterName+" "+categoryName+" "+totalQuestions);
 
-    	//SoundHolder.playSound(category+"Sound");
     	
+    	//load PreTestScreen
+        ImagInLexis.mainContainer.setScreen("PreTestScreen");
+        ScreenController sc = (ScreenController) ImagInLexis.mainContainer.getController("PreTestScreen");
+        PreTestScreenController sc2 = (PreTestScreenController) sc;
+        sc2.init(this);
+            	
 		for(String screenId : ImagInLexis.parser.getCategoriesScreenIdList(category)){
 	        ImagInLexis.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
@@ -62,6 +102,7 @@ public class Test{
 			Set<Integer> answers = screenData.getAnswers();
 			correctAnswers.put(screenId, answers);
 		}
+		
 	}
 	
 	public String getChapter(){
@@ -71,11 +112,36 @@ public class Test{
 	public String getCategory(){
 		return this.category;
 	}
-    
+   
+	public String getChapterName(){
+		return this.chapterName;
+	}
+	
+	public String getCategoryName(){
+		return this.categoryName;
+	}
+	
+	public String getMenuScreenId(){
+		return this.menuScreenId;
+	}
+	
+	public Integer getScoreNum(){
+		return this.scoreNum;
+	}
+	
+	public Integer getCorrectAnswers(){
+		return correctAnswersNum;
+	}
+	
+	public Integer getWrongAnswers(){
+		return wrongAnswersNum;
+	}
+	
 	public void startTest(){
-		System.out.println("start test");
 		String nextScreen = screenList.peek();
-		System.out.println(nextScreen);
+		System.out.println("next screenId = "+nextScreen);
+		
+		SoundHolder.playSound("completeSound");
 		ImagInLexis.mainContainer.setScreen(nextScreen);
 	}
     
@@ -115,6 +181,8 @@ public class Test{
 		}
 
 		Integer res = (int) (((correct)/(this.totalQuestions))*100);
+		this.correctAnswersNum = new Integer((int) correct);
+		this.wrongAnswersNum = this.totalQuestions - this.correctAnswersNum;
 		return Integer.toString(res)+"%";
 		
 	}
@@ -150,25 +218,34 @@ public class Test{
 		ImagInLexis.parser.addScore(obj,chapterName,categoryName);
 		ImagInLexis.parser.submitScores();
 
-		ImagInLexis.mainContainer.setScreen(menuScreenId);
-		//Platform.exit();
-	
+		this.scoreNum = new Integer(score.substring(0, score.length()-1));
+		
+    	//load PostTestScreen
+        ImagInLexis.mainContainer.setScreen("PostTestScreen");
+        ScreenController sc = (ScreenController) ImagInLexis.mainContainer.getController("PostTestScreen");
+        PostTestScreenController sc2 = (PostTestScreenController) sc;
+        sc2.init(this);
+        			
 		this.cleanMemory();
 		ImagInLexis.cleanMemory();		
 	}
 	
 	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
-    	System.out.println("screenList: "+screenList.toString());
 		answeredQuestions++;
 		answers.put(screenList.peek(), answersNo);	
     	removeScreen();
 
-    	String screenId = getNextScreen();
-    	if(screenId == null)
+    	String screenId = screenList.peek();
+    	if(screenId == null){
+    		finishTest();
     		return;
+    	}
     	
         QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
         screenController.setAnsweredQuestions(answeredQuestions);
+        
+    	System.out.println("next screenId = "+screenId);
+    	myScreenPane.setScreen(screenId);
 	}
 	
     public void addToScreenList(String screenId){
@@ -178,14 +255,17 @@ public class Test{
     }
     
     public String getNextScreen(){
-    	
+    	System.out.println("screenList before: "+screenList.toString());
+
     	if(!screenList.isEmpty()){
     		String screenId = screenList.remove();
     		screenList.add(screenId);
     		String retScreenId = screenList.peek();
             QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(retScreenId);
             screenController.setAnsweredQuestions(answeredQuestions);
-            
+        	
+            System.out.println("screenList after: "+screenList.toString());
+        	
     		return retScreenId;
     	}
     	else
@@ -227,6 +307,19 @@ public class Test{
 		this.category = null;
 		this.chapterName = null;
 		this.categoryName = null;		
-		this.menuScreenId = null;
     }
+    
+    public String getMainWindowStyle(){
+    	return this.mainWindowStyle;
+    }
+    
+    public String getMainPaneStyle(){
+    	return this.mainPaneStyle;
+    }
+    
+    public String getInfoPaneStyle(){
+    	return this.infoPaneStyle;
+    }
+    
+    
 }

@@ -172,41 +172,7 @@ public class Parser {
 			e.printStackTrace();
 		}
 		
-		return (JSONObject) obj; 
-
-		/*
-		JSONParser parser = new JSONParser();
-		
-		InputStream input = null;
-		try {
-			input = new FileInputStream(new File(scoresFilePath));
-		} catch (FileNotFoundException e2) {
-			e2.printStackTrace();
-		}
-		
-		BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-		
-		StringBuilder out = new StringBuilder();
-        String line;
-        try {
-			while ((line = reader.readLine()) != null) {
-			    out.append(line);
-			}
-			reader.close();
-
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-
-        Object obj = null;
-		try {
-			obj = parser.parse(out.toString());
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-	    
-		return (JSONObject) obj; 
-		*/       
+		return (JSONObject) obj;     
 	}
 	
 	public void parseCategoryNames(){
@@ -295,7 +261,6 @@ public class Parser {
 			e.printStackTrace();
 		}
 	
-		 
 	}
 	
 	public List<Score> getScoreList(String chapterName, String categoryName){
@@ -468,13 +433,15 @@ public class Parser {
     	String radioOption1 = (String)(question.get("radioOption1"));
     	String radioOption2 = (String)(question.get("radioOption2"));
     	String radioOption3 = (String)(question.get("radioOption3"));
+    	String radioOption4 = (String)(question.get("radioOption4"));
     	String questionSoundId = (String)(question.get("questionSoundId"));
     	String soundId = (String)(question.get("soundId"));
     	String sound1Id = (String)(question.get("sound1Id"));
     	String sound2Id = (String)(question.get("sound2Id"));
     	String sound3Id = (String)(question.get("sound3Id"));
+    	String sound4Id = (String)(question.get("sound4Id"));
 
-        ChooseLabelFromSoundScreenData chooseLabelFromSoundScreenData = new ChooseLabelFromSoundScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,questionSoundId,soundId,sound1Id,sound2Id,sound3Id,answers,chapterName,categoryName);
+        ChooseLabelFromSoundScreenData chooseLabelFromSoundScreenData = new ChooseLabelFromSoundScreenData(questionString,imageId,radioOption1,radioOption2,radioOption3,radioOption4,questionSoundId,soundId,sound1Id,sound2Id,sound3Id,sound4Id,answers,chapterName,categoryName);
         ScreenDataHolder.addScreenData(screenId,chooseLabelFromSoundScreenData);
 	}
 	

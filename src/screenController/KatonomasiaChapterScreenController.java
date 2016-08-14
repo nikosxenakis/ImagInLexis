@@ -19,7 +19,16 @@ public class KatonomasiaChapterScreenController extends ScreenController{
 	@FXML 
 	private AnchorPane mainWindow;
 		
+    @FXML
+    private ImageView backgroundImage;
+    
+    @FXML
+    private ImageView homeImage;
+    
     public void initialize(java.net.URL location, java.util.ResourceBundle resources) {   
+    	
+    	homeImage.setImage(ImageHolder.getImage("logo"));
+    	backgroundImage.setImage(ImageHolder.getImage("background"));
     	
         for (Node node : mainWindow.getChildrenUnmodifiable()) {
         	if(node instanceof ImageView){
@@ -30,6 +39,16 @@ public class KatonomasiaChapterScreenController extends ScreenController{
         	}
         }  
     }
+    
+    public void homeIconEntered(){
+    	String enabledImageStyle = "-fx-effect: dropshadow(three-pass-box, rgba(255,100,100,0.8), 10, 0, 0, 0)";
+    	homeImage.setStyle(enabledImageStyle);	
+    }
+    
+    public void homeIconExited(){
+    	homeImage.setStyle(null);
+    }
+    
     public void homeIconClicked(MouseEvent e){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
@@ -63,8 +82,6 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-        Test test = new Test("katonomasia",category,"Κατονομασία",ImagInLexis.parser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
-        test.startTest();
-
+        new Test("katonomasia",category,"Κατονομασία",ImagInLexis.parser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
     }
 }

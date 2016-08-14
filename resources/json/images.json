@@ -2,6 +2,47 @@
 	"images": [
 
 		{
+			"id": "logo",
+			"path": "images/logo/imagInLexisLogo.png"
+		},
+		{
+			"id": "background",
+			"path": "images/logo/background.png"
+		},
+		{
+			"id": "mainMenu",
+			"path": "images/logo/mainMenu.png"
+		},
+		{
+			"id": "homeImage",
+			"path": "images/logo/imagInLexisLogo.png"
+		},
+
+
+
+		{
+			"id": "questionmarkIcon",
+			"path": "images/icons/questionmarkIcon.png"
+		},
+		{
+			"id": "scoreTableIcon",
+			"path": "images/icons/scoreTableIcon.png"
+		},
+		{
+			"id": "informationIcon",
+			"path": "images/icons/informationIcon.png"
+		},
+		
+		{
+			"id": "happyIcon",
+			"path": "images/icons/happyIcon.png"
+		},
+		{
+			"id": "sadIcon",
+			"path": "images/icons/sadIcon.png"
+		},
+
+		{
 			"id": "recognitionImage",
 			"path": "images/icons/recognitionIcon.jpg"
 		},
@@ -112,10 +153,6 @@
 			"path": "images/icons/soundIcon.jpg"
 		},
 		{
-			"id": "homeImage",
-			"path": "images/icons/homeIcon.jpg"
-		},
-		{
 			"id": "detectImage",
 			"path": "images/icons/detectIcon.jpg"
 		},
@@ -131,7 +168,37 @@
 			"id": "katonomasiaSoundsImage",
 			"path": "images/icons/soundIcon.jpg"
 		},
+		
 
+
+		{
+			"id": "astragalos",
+			"path": "images/recognition/body/astragalos.jpg"
+		},
+		{
+			"id": "auti",
+			"path": "images/recognition/body/auti.jpg"
+		},
+		{
+			"id": "bodyParts",
+			"path": "images/recognition/body/bodyParts.jpg"
+		},
+		{
+			"id": "koilia",
+			"path": "images/recognition/body/koilia.jpg"
+		},
+		{
+			"id": "metwpo",
+			"path": "images/recognition/body/metwpo.jpg"
+		},
+		{
+			"id": "stoma",
+			"path": "images/recognition/body/stoma.jpg"
+		},
+		{
+			"id": "xeri",
+			"path": "images/recognition/body/xeri.jpg"
+		},
 
 
 		{

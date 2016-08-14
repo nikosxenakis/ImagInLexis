@@ -8,7 +8,6 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -19,10 +18,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
         
 	@FXML
 	private ImageView image;
-	
-	@FXML
-	private BorderPane mainBorderPane;
-	
+		
 	@FXML
 	private VBox mainBox;
 	
@@ -82,7 +78,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
         	mainQuestionSoundImage.setImage(ImageHolder.getImage("soundImage"));
     	}
     	else{
-    		mainBorderPane.getChildren().remove(mainQuestionHBox);
+    		mainPane.getChildren().remove(mainQuestionHBox);
     	}
         
     	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));

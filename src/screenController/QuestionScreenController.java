@@ -12,6 +12,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import screenData.QuestionScreenData;
 
@@ -50,6 +52,12 @@ public abstract class QuestionScreenController extends ScreenController{
     @FXML
     protected ImageView categoryImage;
     
+    @FXML
+    protected VBox infoPane;
+    
+    @FXML
+    protected BorderPane mainPane;
+    
     private Test test;
     private boolean isSelection = false;
     private Set<Integer> answers = new HashSet<Integer>();
@@ -80,7 +88,7 @@ public abstract class QuestionScreenController extends ScreenController{
 	}
 	
     public void setData(QuestionScreenData screenData, Test test){
-    	System.out.println("set Data in QuestionScreenController");
+    	//System.out.println("set Data in QuestionScreenController");
 
     	this.test = test;
 
@@ -91,11 +99,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	chapterName.setText(screenData.getChapterName().toString());
     	categoryName.setText(screenData.getCategoryName().toString());
    
-    	System.out.println("loading image: "+test.getChapter().toString()+"Image");
+    	//System.out.println("loading image: "+test.getChapter().toString()+"Image");
     	Image image = ImageHolder.getImage(test.getChapter().toString()+"Image");
     	chapterImage.setImage(image);
 
-    	System.out.println("loading image: "+test.getCategory()+"Image");
+    	//System.out.println("loading image: "+test.getCategory()+"Image");
     	image = ImageHolder.getImage(test.getCategory()+"Image");
     	categoryImage.setImage(image);
     
@@ -107,24 +115,10 @@ public abstract class QuestionScreenController extends ScreenController{
     	if(test.getTotalQuestions().equals(1)){
     		nextButton.setDisable(true);
     	}
-    	
-    	String style = "-fx-border-width: 10;";
-    	if(chapterName.getText().equals("Αναγνώριση")){
-        	style += "-fx-background-color:  #9ED5DB; -fx-border-color:  #DDE3A8";
-        	mainWindow.setStyle(style);	
-    	}
-    	else if(chapterName.getText().equals("Κατονομασία")){
-        	style += "-fx-background-color:  #8CDB80; -fx-border-color:  #CF903B";
-        	mainWindow.setStyle(style);	
-    	}
-    	else if(chapterName.getText().equals("Συνδιαστικό")){
-        	style += "-fx-background-color:  #E39DCC; -fx-border-color:  #E08E70";
-        	mainWindow.setStyle(style);	
-    	}
-    	else{
-    		System.err.println("error in setData in Question Screen no such a chapter");
-    	}
 
+    	mainWindow.setStyle(test.getMainWindowStyle());	
+    	mainPane.setStyle(test.getMainPaneStyle());
+    	infoPane.setStyle(test.getInfoPaneStyle());
     }
     
     public void setAnsweredQuestions(Integer answeredQuestions){
@@ -139,14 +133,6 @@ public abstract class QuestionScreenController extends ScreenController{
     
     public void clicked(MouseEvent e){
     	
-    	//play sound
-    	/*
-    	String musicFile = "/sounds/horn.mp3";
-   	 	Media sound= new Media(getClass().getResource(musicFile).toExternalForm());
-    	MediaPlayer mediaPlayer = new MediaPlayer(sound);
-    	mediaPlayer.play();
-    	*/
-	
         if((Button)e.getSource() == submitButton){
         	if(getIsSelection() == false){
         		System.err.println("error in clicked there is no selection");
@@ -156,7 +142,6 @@ public abstract class QuestionScreenController extends ScreenController{
         	System.out.println("submitButton clicked");
             
         	getTest().submitAnswer(getScreenPane(), getAnswer());
-        	getTest().nextQuestion(getScreenPane());
 
         }
         if((Button)e.getSource() == nextButton){

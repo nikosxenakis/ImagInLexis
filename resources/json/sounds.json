@@ -11,24 +11,139 @@
 			"path": "/sounds/programSounds/correctSound.mp3"
 		},
 		{
-			"id": "endProgramSound",
-			"path": "/sounds/programSounds/endProgramSound.mp3"
+			"id": "wrongSound",
+			"path": "/sounds/programSounds/wrongSound.mp3"
 		},
 		{
 			"id": "startProgramSound",
 			"path": "/sounds/programSounds/startProgramSound.mp3"
 		},
 		{
-			"id": "wrongSound",
-			"path": "/sounds/programSounds/wrongSound.mp3"
+			"id": "endProgramSound",
+			"path": "/sounds/programSounds/endProgramSound.mp3"
 		},
-
 
 		
 		{
 			"id": "chapter1Anagnorisi",
 			"path": "/sounds/chapter1/anagnorisi.mp3"
 		},
+
+
+
+		{
+			"id": "bodySound",
+			"path": "/sounds/chapter1/body/tameritouswmatos.mp3"
+		},
+		{
+			"id": "agkwnas",
+			"path": "/sounds/chapter1/body/agkwnas.mp3"
+		},
+		{
+			"id": "astragalos",
+			"path": "/sounds/chapter1/body/astragalos.mp3"
+		},
+		{
+			"id": "auti",
+			"path": "/sounds/chapter1/body/auti.mp3"
+		},
+		{
+			"id": "dontia",
+			"path": "/sounds/chapter1/body/dontia.mp3"
+		},
+		{
+			"id": "gonato",
+			"path": "/sounds/chapter1/body/gonato.mp3"
+		},
+		{
+			"id": "karpos",
+			"path": "/sounds/chapter1/body/karpos.mp3"
+		},
+		{
+			"id": "koilia",
+			"path": "/sounds/chapter1/body/koilia.mp3"
+		},
+		{
+			"id": "laimos",
+			"path": "/sounds/chapter1/body/laimos.mp3"
+		},
+		{
+			"id": "magoulo",
+			"path": "/sounds/chapter1/body/magoulo.mp3"
+		},
+		{
+			"id": "metwpo",
+			"path": "/sounds/chapter1/body/metwpo.mp3"
+		},
+		{
+			"id": "palami",
+			"path": "/sounds/chapter1/body/palami.mp3"
+		},
+		{
+			"id": "patousa",
+			"path": "/sounds/chapter1/body/patousa.mp3"
+		},
+		{
+			"id": "plath",
+			"path": "/sounds/chapter1/body/plath.mp3"
+		},
+		{
+			"id": "podi",
+			"path": "/sounds/chapter1/body/podi.mp3"
+		},
+		{
+			"id": "sagoni",
+			"path": "/sounds/chapter1/body/sagoni.mp3"
+		},
+		{
+			"id": "stoma",
+			"path": "/sounds/chapter1/body/stoma.mp3"
+		},
+		{
+			"id": "thwrakas",
+			"path": "/sounds/chapter1/body/thwrakas.mp3"
+		},
+		{
+			"id": "xeri",
+			"path": "/sounds/chapter1/body/xeri.mp3"
+		},		
+		{
+			"id": "chapter1BodyQuestion1",
+			"path": "/sounds/chapter1/body/question1.mp3"
+		},	
+		{
+			"id": "chapter1BodyQuestion2",
+			"path": "/sounds/chapter1/body/question2.mp3"
+		},	
+		{
+			"id": "chapter1BodyQuestion3",
+			"path": "/sounds/chapter1/body/question3.mp3"
+		},	
+		{
+			"id": "chapter1BodyQuestion4",
+			"path": "/sounds/chapter1/body/question4.mp3"
+		},
+		{
+			"id": "chapter1BodyQuestion5",
+			"path": "/sounds/chapter1/body/question5.mp3"
+		},	
+		{
+			"id": "chapter1BodyQuestion6",
+			"path": "/sounds/chapter1/body/question6.mp3"
+		},
+		{
+			"id": "chapter1BodyQuestion7",
+			"path": "/sounds/chapter1/body/question7.mp3"
+		},	
+		{
+			"id": "chapter1BodyQuestion8",
+			"path": "/sounds/chapter1/body/question8.mp3"
+		},
+		{
+			"id": "chapter1BodyQuestion9",
+			"path": "/sounds/chapter1/body/question9.mp3"
+		},
+
 
 		{
 			"id": "animalsSound",
@@ -199,6 +314,10 @@
 
 
 		{
+			"id": "objectSound",
+			"path": "/sounds/chapter1/objects/taantikeimena.mp3"
+		},
+		{
 			"id": "biblio",
 			"path": "/sounds/chapter1/objects/biblio.mp3"
 		},
@@ -341,7 +460,7 @@
 			"path": "/sounds/chapter1/colors/question5.mp3"
 		},
 		{
-			"id": "colorsSound",
+			"id": "colorSound",
 			"path": "/sounds/chapter1/colors/taxrwmata.mp3"
 		},
 		{
@@ -1339,6 +1458,10 @@
 			"path": "/sounds/chapter1/automatedActions/oiautomatopoihmenesprakseis.mp3"
 		},
 		{
+			"id": "closedQuestionsSound",
+			"path": "/sounds/chapter1/automatedActions/erwthseisKleistoutupou.mp3"
+		},
+		{
 			"id": "chapter1AutomatedActionsQuestion1",
 			"path": "/sounds/chapter1/automatedActions/question1.mp3"
 		},
@@ -1506,6 +1629,14 @@
 			"id": "chapter1AutomatedActionsTask2Proposal10",
 			"path": "/sounds/chapter1/automatedActions/task2/proposal10.mp3"
 		},
+		{
+			"id": "yesSound",
+			"path": "/sounds/chapter1/automatedActions/task2/yes.mp3"
+		},
+		{
+			"id": "noSound",
+			"path": "/sounds/chapter1/automatedActions/task2/no.mp3"
+		},
 
 
 		{
@@ -1538,7 +1669,7 @@
 		},
 		{
 			"id": "katonomasiaSoundsSound",
-			"path": "/sounds/chapter2/ixi.mp3"
+			"path": "/sounds/chapter2/hxoi.mp3"
 		},
 		{
 			"id": "katonomasiaCompleteSentenceSound",

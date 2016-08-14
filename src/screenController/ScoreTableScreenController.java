@@ -37,6 +37,9 @@ public class ScoreTableScreenController extends ScreenController{
     private ComboBox<String> categoryOptions;
     
     @FXML
+    private ImageView backgroundImage;
+    
+    @FXML
     private ImageView homeImage;
     
 	@FXML 
@@ -124,13 +127,23 @@ public class ScoreTableScreenController extends ScreenController{
     
     public void initialize(java.net.URL location, java.util.ResourceBundle resources){  
     	
-    	homeImage.setImage(ImageHolder.getImage(homeImage.getId()));
-
+    	homeImage.setImage(ImageHolder.getImage("logo"));
+    	backgroundImage.setImage(ImageHolder.getImage("background"));
+    	
         chapterOptions.getItems().clear();
         
     	init();
     }
 
+    public void homeIconEntered(){
+    	String enabledImageStyle = "-fx-effect: dropshadow(three-pass-box, rgba(255,100,100,0.8), 10, 0, 0, 0)";
+    	homeImage.setStyle(enabledImageStyle);	
+    }
+    
+    public void homeIconExited(){
+    	homeImage.setStyle(null);
+    }
+    
     public void renewComboBoxData(String chapterName){
     	
         List<String> categoryList = ImagInLexis.parser.getCategoryList(chapterName);

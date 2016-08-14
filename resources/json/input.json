@@ -14,6 +14,15 @@
 		},
 		{
 			"screenId": "MainScreen"
+		},
+		{
+			"screenId": "WhatIsThisMainScreen"
+		},
+		{
+			"screenId": "PreTestScreen"
+		},
+		{
+			"screenId": "PostTestScreen"
 		}
 	],
 	"questions": [
@@ -25,6 +34,237 @@
 					"category": "body",
 					"categoryName": "Σώμα",
 					"categoryList": [
+						{
+							"screenId": "chooseInImageFace",
+							"screenType": "chooseInImage",
+							"question": "Δείξε το πρόσωπο",
+							"questionSoundId": "chapter1BodyQuestion1",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "533",
+									"circleY": "42",
+									"circleW": "25",
+									"circleH": "25"
+								}
+							],
+							"answers": [{ "answerNo": "1" }]
+						},
+						{
+							"screenId": "chooseInImageLaimos",
+							"screenType": "chooseInImage",
+							"question": "Δείξε τον λαιμό",
+							"questionSoundId": "chapter1BodyQuestion2",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "533",
+									"circleY": "70",
+									"circleW": "17",
+									"circleH": "17"
+								}
+							],
+							"answers": [{ "answerNo": "1" }]
+						},
+						{
+							"screenId": "chooseInImageOmoi",
+							"screenType": "chooseInImage",
+							"question": "Δείξε τους ώμους",
+							"questionSoundId": "chapter1BodyQuestion3",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "490",
+									"circleY": "90",
+									"circleW": "20",
+									"circleH": "20"
+								},
+								{
+									"circleX": "570",
+									"circleY": "90",
+									"circleW": "20",
+									"circleH": "20"
+								}
+							],
+							"answers": [{ "answerNo": "1" },{ "answerNo": "2" }]
+						},
+						{
+							"screenId": "chooseInImageMiti",
+							"screenType": "chooseInImage",
+							"question": "Δείξε τη μύτη",
+							"questionSoundId": "chapter1BodyQuestion4",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "535",
+									"circleY": "42",
+									"circleW": "10",
+									"circleH": "10"
+								}
+							],
+							"answers": [{ "answerNo": "1" }]
+						},
+						{
+							"screenId": "chooseInImageGonata",
+							"screenType": "chooseInImage",
+							"question": "Δείξε τα γόνατα",
+							"questionSoundId": "chapter1BodyQuestion5",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "505",
+									"circleY": "290",
+									"circleW": "20",
+									"circleH": "20"
+								},
+								{
+									"circleX": "570",
+									"circleY": "290",
+									"circleW": "20",
+									"circleH": "20"
+								}
+							],
+							"answers": [{ "answerNo": "1" },{ "answerNo": "2" }]
+						},
+						{
+							"screenId": "chooseInImageAgkwnes",
+							"screenType": "chooseInImage",
+							"question": "Δείξε τους αγκώνες",
+							"questionSoundId": "chapter1BodyQuestion6",
+							"imageId": "bodyParts",
+							"absolute": "false",
+							"circlesList": [
+								{
+									"circleX": "490",
+									"circleY": "150",
+									"circleW": "20",
+									"circleH": "20"
+								},
+								{
+									"circleX": "590",
+									"circleY": "130",
+									"circleW": "20",
+									"circleH": "20"
+								}
+							],
+							"answers": [{ "answerNo": "1" },{ "answerNo": "2" }]
+						},
+
+
+						{
+							"screenId": "chooseLabelFromSoundAstragalos",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι ένας .....",
+							"questionSoundId": "chapter1BodyQuestion7",
+							"imageId": "astragalos",
+							"sound1Id": "agkwnas",
+							"sound2Id": "astragalos",
+							"sound3Id": "patousa",
+							"radioOption1": "αγκώνας",
+							"radioOption2": "αστράγαλος",
+							"radioOption3": "πατούσα",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundAuti",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι ένα .....",
+							"questionSoundId": "chapter1BodyQuestion9",
+							"imageId": "auti",
+							"sound1Id": "auti",
+							"sound2Id": "magoulo",
+							"sound3Id": "sagoni",
+							"radioOption1": "αυτί",
+							"radioOption2": "μάγουλο",
+							"radioOption3": "σαγόνι",
+							"circlesList": [
+								{
+									"circleX": "520",
+									"circleY": "42",
+									"circleW": "10",
+									"circleH": "10"
+								}
+							],
+							"answers": [{ "answerNo": "1" },{ "answerNo": "2" }]
+						},
+						{
+							"screenId": "chooseLabelFromSoundKoilia",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι μια .....",
+							"questionSoundId": "chapter1BodyQuestion8",
+							"imageId": "koilia",
+							"sound1Id": "thwrakas",
+							"sound2Id": "plath",
+							"sound3Id": "koilia",
+							"radioOption1": "θώρακας",
+							"radioOption2": "πλάτη",
+							"radioOption3": "κοιλιά",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundMetwpo",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι ένα .....",
+							"questionSoundId": "chapter1BodyQuestion9",
+							"imageId": "metwpo",
+							"sound1Id": "gonato",
+							"sound2Id": "karpos",
+							"sound3Id": "metwpo",
+							"sound4Id": "laimos",
+							"radioOption1": "γόνατο",
+							"radioOption2": "καρπός",
+							"radioOption3": "μέτωπο",
+							"radioOption4": "λαιμός",
+							"answers": [{
+								"answerNo": "3"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundStoma",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι ένα .....",
+							"questionSoundId": "chapter1BodyQuestion9",
+							"imageId": "stoma",
+							"sound1Id": "stoma",
+							"sound2Id": "magoulo",
+							"sound3Id": "metwpo",
+							"sound4Id": "dontia",
+							"radioOption1": "στόμα",
+							"radioOption2": "μάγουλο",
+							"radioOption3": "μέτωπο",
+							"radioOption4": "δόντια",
+							"answers": [{
+								"answerNo": "1"
+							}]
+						},
+						{
+							"screenId": "chooseLabelFromSoundXeri",
+							"screenType": "chooseLabelFromSound",
+							"question" : "Αυτό είναι ένα .....",
+							"questionSoundId": "chapter1BodyQuestion9",
+							"imageId": "xeri",
+							"sound1Id": "podi",
+							"sound2Id": "xeri",
+							"sound3Id": "karpos",
+							"sound4Id": "palami",
+							"radioOption1": "πόδι",
+							"radioOption2": "χέρι",
+							"radioOption3": "καρπός",
+							"radioOption4": "παλάμη",
+							"answers": [{
+								"answerNo": "2"
+							}]
+						},
+						
 					]
 				},
 				{
@@ -1966,7 +2206,7 @@
 								"answerNo": "2"
 							}]
 						},
-												{
+						{
 							"screenId": "chooseLabelFromSoundUpDown",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Η κορνίζα είναι ... στο ράφι, ... από τα βιβλία",
@@ -2138,7 +2378,7 @@
 							}]
 						},
 						{
-							"screenId": "chooseLabelFromSoundKrevati",
+							"screenId": "chooseLabelFromSoundPotiri",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Πίνω νερό από το...",
 							"questionSoundId": "chapter1AutomatedActionsTask1Proposal3",
@@ -2237,9 +2477,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Ένα βιβλίο είναι ζώο;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal1",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2250,9 +2490,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Πετούν τα αυτοκίνητα;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal2",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2263,9 +2503,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Τα τραίνα μεταφέρουν ανθρώπους;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal3",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2276,9 +2516,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Ένας σκύλος είναι ζώο;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal4",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2289,9 +2529,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Τα ψάρια περπατάνε;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal5",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2302,9 +2542,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Κάθεσαι σε τραπέζι;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal16",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2315,9 +2555,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Πληρώνουμε με τα λεφτά;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal7",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2328,9 +2568,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Το νερό γίνεται πάγος;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal18",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2341,9 +2581,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Πίνετε το σαπούνι;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal9",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2354,9 +2594,9 @@
 							"screenId": "chooseLabelFromSoundΒοοκ",
 							"screenType": "chooseLabelFromSound",
 							"question" : "Ξαπλώνουμε στο κρεβάτι;",
-							"questionSoundId": "",
-							"sound1Id": "",
-							"sound2Id": "",
+							"questionSoundId": "chapter1AutomatedActionsTask2Proposal10",
+							"sound1Id": "yesSound",
+							"sound2Id": "noSound",
 							"radioOption1": "Ναι",
 							"radioOption2": "Όχι",
 							"answers": [{
@@ -2370,34 +2610,135 @@
 					"categoryName": "Εντοπισμός",
 					"categoryList": [
 						{
+							"screenId": "chooseInImageArtisticHall",
+							"screenType": "chooseInImage",
+							"question": "Εντόπισε στην εικόνα τα μολύβια που είναι μέσα στην μολυβοθήκη, τις ποδιές,\nτον χάρακα, τα αγάλματα και τα πινέλα και ύστερα πάτα πάνω στα αντικείμενα",
+							"questionSoundId": "chapter1DetectQuestion4",
+							"imageId": "artisticHall",
+							"absolute": "true",
+							"circlesList": [
+								{
+									"circleX": "513",
+									"circleY": "237",
+									"circleW": "20",
+									"circleH": "20"
+								},
+								{
+									"circleX": "635",
+									"circleY": "146",
+									"circleW": "23",
+									"circleH": "40"
+								},
+								{
+									"circleX": "555",
+									"circleY": "285",
+									"circleW": "15",
+									"circleH": "25"
+								},
+								{
+									"circleX": "355",
+									"circleY": "200",
+									"circleW": "60",
+									"circleH": "30"
+								},
+								{
+									"circleX": "758",
+									"circleY": "280",
+									"circleW": "30",
+									"circleH": "30"
+								}
+								
+							],
+							"answers": [{"answerNo": "1"},{"answerNo": "2"},{"answerNo": "3"},{"answerNo": "4"},{"answerNo": "5"}]
+						},
+						{
 							"screenId": "chooseInImageKitchenRoom",
 							"screenType": "chooseInImage",
-							"question": "Εντόπισε στην εικόνα την τσαγιέρα και την φρουτιέρα\nκαι ύστερα πατά πάνω στα αντικείμενα",
+							"question": "Εντόπισε στην εικόνα την τσαγιέρα και την φρουτιέρα και ύστερα\nπατά πάνω στα αντικείμενα",
 							"questionSoundId": "chapter1DetectQuestion1",
 							"imageId": "kitchenRoom",
 							"absolute": "true",
 							"circlesList": [
 								{
-									"circleX": "470",
-									"circleY": "110",
+									"circleX": "552",
+									"circleY": "100",
 									"circleW": "30",
 									"circleH": "30"
 								},
 								{
-									"circleX": "525",
-									"circleY": "240",
+									"circleX": "624",
+									"circleY": "250",
 									"circleW": "40",
 									"circleH": "40"
 								}
 							],
-							"answers": [{
-									"answerNo": "1"
+							"answers": [{"answerNo": "1"},{"answerNo": "2"}]
+						},
+						{
+							"screenId": "chooseInImageStudio",
+							"screenType": "chooseInImage",
+							"question": "Εντόπισε στο χώρο την ραπτομηχανή, τις καρφίτσες και τον καθρέφτη\nκαι ύστερα πατά πάνω στα αντικείμενα",
+							"questionSoundId": "chapter1DetectQuestion2",
+							"imageId": "studio",
+							"absolute": "true",
+							"circlesList": [
+								{
+									"circleX": "685",
+									"circleY": "290",
+									"circleW": "50",
+									"circleH": "50"
 								},
 								{
-									"answerNo": "2"
+									"circleX": "340",
+									"circleY": "225",
+									"circleW": "20",
+									"circleH": "20"
+								},
+								{
+									"circleX": "635",
+									"circleY": "190",
+									"circleW": "20",
+									"circleH": "75"
 								}
-							]
-						}
+							],
+							"answers": [{"answerNo": "1"},{"answerNo": "2"},{"answerNo": "3"}]
+						},
+						{
+							"screenId": "chooseInImageWarehouse",
+							"screenType": "chooseInImage",
+							"question": "Εντόπισε στο χώρο το μέτρο, το πριόνι, το φτυάρι και το αλυσοπρίονο\nκαι ύστερα πάτα επάνω στα αντικείμενα",
+							"questionSoundId": "chapter1DetectQuestion3",
+							"imageId": "warehouse",
+							"absolute": "true",
+							"circlesList": [
+								{
+									"circleX": "415",
+									"circleY": "225",
+									"circleW": "20",
+									"circleH": "60"
+								},
+								{
+									"circleX": "457",
+									"circleY": "165",
+									"circleW": "23",
+									"circleH": "47"
+								},
+								{
+									"circleX": "725",
+									"circleY": "175",
+									"circleW": "22",
+									"circleH": "88"
+								},
+								{
+									"circleX": "570",
+									"circleY": "93",
+									"circleW": "60",
+									"circleH": "30"
+								}
+							],
+							"answers": [{"answerNo": "1"},{"answerNo": "2"},{"answerNo": "3"},{"answerNo": "4"}]
+						},
+						
 					]
 				}
 			]

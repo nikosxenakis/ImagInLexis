@@ -52,6 +52,7 @@ public class ScreenPane extends StackPane{
     }
     
     public void addController(String screenId, ScreenController screenController){
+    	//System.out.println("addController: "+screenId+" "+screenController);
     	screenControllersList.put(screenId, screenController);
     }
     //Loads the fxml file, add the screen to the screens collection and
@@ -153,15 +154,11 @@ public class ScreenPane extends StackPane{
     
     
     //This method will remove the screen with the given name from the collection of screens
-    public boolean unloadScreen(String name){
-        if(screens.remove(name) == null){  
-        	screenControllersList.remove(name);
-            System.err.println("Screen didn't exist");
-            return false;
-        }
-        else{
-        	return true;
-        }
+    public void unloadScreen(String name){
+    	
+    	if(screens.get(name) != null)
+    		screens.remove(name);
+ 
     }
   
 }

@@ -46,12 +46,14 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	    	  	    	
     	Image image = ImageHolder.getImage(data.getImage1Id());
     	image1.setImage(image);
-
+        
     	image = ImageHolder.getImage(data.getImage2Id());
     	image2.setImage(image);
     	
     	image = ImageHolder.getImage(data.getImage3Id());
     	image3.setImage(image);
+    	image3.setSmooth(true); 
+    	image3.setCache(true); 
     	
     	soundId = data.getSoundId();
 

@@ -11,8 +11,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.KatonomasiaChapterScreenController">
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.KatonomasiaChapterScreenController">
    <children>
+      <BorderPane layoutX="20.0" layoutY="20.0" prefHeight="685.0" prefWidth="1059.0">
+         <center>
+            <ImageView fx:id="backgroundImage" fitHeight="706.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../resources/images/logo/background.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
             <AnchorPane fx:id="mainWindow" prefHeight="520.0" prefWidth="989.0" BorderPane.alignment="CENTER">
@@ -66,9 +75,9 @@
                         <Image url="@../../resources/images/icons/completeSentenceIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="homeImage" fitHeight="74.0" fitWidth="77.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" fitHeight="116.0" fitWidth="198.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../resources/images/icons/homeIcon.jpg" />
+                        <Image url="@../../resources/images/logo/imagInLexisLogo.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="soundImage" fitHeight="59.0" fitWidth="69.0" layoutX="131.0" layoutY="354.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">

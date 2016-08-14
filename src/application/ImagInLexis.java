@@ -20,19 +20,26 @@ public class ImagInLexis extends Application {
 	
 	public final static String userName = "Nikos Xenakis";
 	
+	public static Stage mainStage = null;
+	
 	@Override
 	public void start(Stage stage){
+		mainStage = stage;
         mainContainer = new ScreenPane();
         
-        stage.setMinWidth(1080);
-        stage.setMinHeight(720);
-      		
+        stage.setMinWidth(1130);
+        stage.setMinHeight(750);
+        stage.setMaxWidth(1130);
+        stage.setMaxHeight(750);
+        
         parser = new Parser(inputFilePath,scoresFilePath,imagesFilePath,soundsFilePath);
         parser.initialize();
             	
         Scene scene = new Scene(mainContainer);
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());    
         
+		SoundHolder.playSound("startProgramSound");
+
         ImagInLexis.mainContainer.setScreen("MainScreen");
         
         stage.setScene(scene);

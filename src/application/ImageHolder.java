@@ -27,8 +27,8 @@ public class ImageHolder{
     	
     	if(image == null){
     		String path = instance.imagePaths.get(id);
-        	image = new Image(path);
-        	instance.images.put(id, image);	
+        	image = new Image(path);    		
+    		instance.images.put(id, image);	
     	}
     	
 		return image;
