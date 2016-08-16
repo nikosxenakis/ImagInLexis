@@ -28,7 +28,9 @@ public class CombinationalChapterScreenController extends ScreenController{
     public void initialize(java.net.URL location, java.util.ResourceBundle resources) {   
     	
     	homeImage.setImage(ImageHolder.getImage("logo"));
-    	backgroundImage.setImage(ImageHolder.getImage("background"));
+    	//backgroundImage.setImage(ImageHolder.getImage("background"));
+    	backgroundImage.setImage(null);
+
         for (Node node : mainWindow.getChildrenUnmodifiable()) {
         	if(node instanceof ImageView){
         		ImageView image = (ImageView) node;
@@ -81,6 +83,6 @@ public class CombinationalChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-        new Test("combinational",category,"Συνδιαστικό",ImagInLexis.parser.getCategoryNameFromCategory(category),"CombinationalChapterScreen");
+        new Test("combinational",category,"Συσχετιζόμενες Έννοιες",ImagInLexis.parser.getCategoryNameFromCategory(category),"CombinationalChapterScreen");
     }
 }

@@ -40,7 +40,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Text>
-                        <ComboBox fx:id="chapterOptions" prefWidth="150.0">
+                        <ComboBox fx:id="chapterOptions" prefHeight="27.0" prefWidth="242.0">
                            <HBox.margin>
                               <Insets right="20.0" />
                            </HBox.margin>

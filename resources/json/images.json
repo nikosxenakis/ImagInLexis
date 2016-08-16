@@ -308,7 +308,7 @@
 			"path": "images/recognition/fruits/lettuce.jpg"
 		},
 		{
-			"id": "orange",
+			"id": "orangeFruits",
 			"path": "images/recognition/fruits/orange.jpg"
 		},
 		{
@@ -448,7 +448,7 @@
 		},
 		{
 			"id": "darkGreen",
-			"path": "images/recognition/colors/darkGreen.jpg"
+			"path": "images/recognition/colors/darkGreen.png"
 		},
 		{
 			"id": "grey",
@@ -1329,11 +1329,11 @@
 		},
 		{
 			"id": "pan",
-			"path": "images/combinational/object/pan.jpg"
+			"path": "images/combinational/object/pan.png"
 		},
 		{
-			"id": "glass",
-			"path": "images/combinational/object/glass.jpg"
+			"id": "glassRound",
+			"path": "images/combinational/object/glass.png"
 		},
 
 		{
@@ -1342,15 +1342,15 @@
 		},
 		{
 			"id": "sponge",
-			"path": "images/combinational/object/sponge.jpg"
+			"path": "images/combinational/object/sponge.png"
 		},
 		{
 			"id": "carpet",
-			"path": "images/combinational/object/carpet.jpg"
+			"path": "images/combinational/object/carpet.png"
 		},
 		{
 			"id": "washbasin",
-			"path": "images/combinational/object/washbasin.jpg"
+			"path": "images/combinational/object/washbasin.png"
 		},
 
 		{
@@ -1358,16 +1358,16 @@
 			"path": "images/combinational/object/bag.jpg"
 		},
 		{
-			"id": "book",
-			"path": "images/combinational/object/book.jpg"
+			"id": "bookRound",
+			"path": "images/combinational/object/book.png"
 		},
 		{
 			"id": "canvas",
-			"path": "images/combinational/object/canvas.jpg"
+			"path": "images/combinational/object/canvas.png"
 		},
 		{
-			"id": "newspaper",
-			"path": "images/combinational/object/newspaper.jpg"
+			"id": "newspaperRound",
+			"path": "images/combinational/object/newspaper.png"
 		},
 
 		{
@@ -1376,32 +1376,36 @@
 		},
 		{
 			"id": "gloves",
-			"path": "images/combinational/object/gloves.jpg"
+			"path": "images/combinational/object/gloves.png"
 		},
 		{
 			"id": "boots",
-			"path": "images/combinational/object/boots.jpg"
+			"path": "images/combinational/object/boots.png"
 		},
 		{
 			"id": "shirt",
-			"path": "images/combinational/object/shirt.jpg"
+			"path": "images/combinational/object/shirt.png"
 		},
 
+		{
+			"id": "chairRound",
+			"path": "images/combinational/professions/chair.png"
+		},
 		{
 			"id": "diver",
 			"path": "images/combinational/professions/diver.jpg"
 		},
 		{
 			"id": "oxygenBottle",
-			"path": "images/combinational/professions/oxygenBottle.jpg"
+			"path": "images/combinational/professions/oxygenBottle.png"
 		},
 		{
 			"id": "boat",
-			"path": "images/combinational/professions/boat.jpg"
+			"path": "images/combinational/professions/boat.png"
 		},
 		{
 			"id": "mountain",
-			"path": "images/combinational/professions/mountain.jpg"
+			"path": "images/combinational/professions/mountain.png"
 		},
 
 		{
@@ -1410,15 +1414,15 @@
 		},
 		{
 			"id": "sneakers",
-			"path": "images/combinational/professions/sneakers.jpg"
+			"path": "images/combinational/professions/sneakers.png"
 		},
 		{
 			"id": "danceShoes",
-			"path": "images/combinational/professions/danceShoes.jpg"
+			"path": "images/combinational/professions/danceShoes.png"
 		},
 		{
 			"id": "swimmingSuit",
-			"path": "images/combinational/professions/swimmingSuit.jpg"
+			"path": "images/combinational/professions/swimmingSuit.png"
 		},
 
 		{
@@ -1427,15 +1431,15 @@
 		},
 		{
 			"id": "circus",
-			"path": "images/combinational/professions/circus.jpg"
+			"path": "images/combinational/professions/circus.png"
 		},
 		{
 			"id": "animals",
-			"path": "images/combinational/professions/animals.jpg"
+			"path": "images/combinational/professions/animals.png"
 		},
 		{
 			"id": "pool",
-			"path": "images/combinational/professions/pool.jpg"
+			"path": "images/combinational/professions/pool.png"
 		},
 
 		{
@@ -1443,16 +1447,12 @@
 			"path": "images/combinational/professions/singer.jpg"
 		},
 		{
-			"id": "microphone",
-			"path": "images/combinational/professions/microphone.jpg"
+			"id": "microphoneRound",
+			"path": "images/combinational/professions/microphone.png"
 		},
 		{
 			"id": "floute",
-			"path": "images/combinational/professions/floute.jpg"
-		},
-		{
-			"id": "chair",
-			"path": "images/combinational/professions/chair.jpg"
+			"path": "images/combinational/professions/floute.png"
 		},
 
 		{
@@ -1461,15 +1461,15 @@
 		},
 		{
 			"id": "juice",
-			"path": "images/combinational/action/juice.jpg"
+			"path": "images/combinational/action/juice.png"
 		},
 		{
 			"id": "banana",
-			"path": "images/combinational/action/banana.jpg"
+			"path": "images/combinational/action/banana.png"
 		},
 		{
 			"id": "cow",
-			"path": "images/combinational/action/cow.jpg"
+			"path": "images/combinational/action/cow.png"
 		},
 
 		{
@@ -1478,15 +1478,15 @@
 		},
 		{
 			"id": "bed",
-			"path": "images/combinational/action/bed.jpg"
+			"path": "images/combinational/action/bed.png"
 		},
 		{
-			"id": "seaΜatress",
-			"path": "images/combinational/action/seaΜatress.jpg"
+			"id": "seaMatress",
+			"path": "images/combinational/action/seaMatress.png"
 		},
 		{
 			"id": "lamp",
-			"path": "images/combinational/action/lamp.jpg"
+			"path": "images/combinational/action/lamp.png"
 		},
 
 		{
@@ -1495,15 +1495,15 @@
 		},
 		{
 			"id": "water",
-			"path": "images/combinational/action/water.jpg"
+			"path": "images/combinational/action/water.png"
 		},		
 		{
 			"id": "medicine",
-			"path": "images/combinational/action/medicine.jpg"
+			"path": "images/combinational/action/medicine.png"
 		},		
 		{
 			"id": "orange",
-			"path": "images/combinational/action/orange.jpg"
+			"path": "images/combinational/action/orange.png"
 		},
 
 		{
@@ -1512,49 +1512,49 @@
 		},
 		{
 			"id": "money",
-			"path": "images/combinational/action/money.jpg"
+			"path": "images/combinational/action/money.png"
 		},		
 		{
 			"id": "wallet",
-			"path": "images/combinational/action/wallet.jpg"
+			"path": "images/combinational/action/wallet.png"
 		},		
 		{
 			"id": "womanBag",
-			"path": "images/combinational/action/womanBag.jpg"
+			"path": "images/combinational/action/womanBag.png"
 		},
 
 		{
 			"id": "wipe",
-			"path": "images/combinational/action/wipe.jpg"
+			"path": "images/combinational/action/wipe.png"
 		},
 		{
 			"id": "nail",
-			"path": "images/combinational/action/nail.jpg"
+			"path": "images/combinational/action/nail.png"
 		},		
 		{
 			"id": "plant",
-			"path": "images/combinational/action/plant.jpg"
+			"path": "images/combinational/action/plant.png"
 		},		
 		{
 			"id": "mop",
-			"path": "images/combinational/action/mop.jpg"
+			"path": "images/combinational/action/mop.png"
 		},
 
 		{
 			"id": "washDishes",
-			"path": "images/combinational/action/washDishes.jpg"
+			"path": "images/combinational/action/washDishes.png"
 		},
 		{
 			"id": "breakDishes",
-			"path": "images/combinational/action/breakDishes.jpg"
+			"path": "images/combinational/action/breakDishes.png"
 		},		
 		{
 			"id": "makeTable",
-			"path": "images/combinational/action/makeTable.jpg"
+			"path": "images/combinational/action/makeTable.png"
 		},		
 		{
 			"id": "cleanDishes",
-			"path": "images/combinational/action/cleanDishes.jpg"
+			"path": "images/combinational/action/cleanDishes.png"
 		},
 
 
@@ -1564,15 +1564,15 @@
 		},
 		{
 			"id": "eatFruit",
-			"path": "images/combinational/sequence/eatFruit.jpg"
+			"path": "images/combinational/sequence/eatFruit.png"
 		},		
 		{
 			"id": "eatSweet",
-			"path": "images/combinational/sequence/eatSweet.jpg"
+			"path": "images/combinational/sequence/eatSweet.png"
 		},		
 		{
 			"id": "eatEgg",
-			"path": "images/combinational/sequence/eatEgg.jpg"
+			"path": "images/combinational/sequence/eatEgg.png"
 		},
 
 		{
@@ -1581,15 +1581,15 @@
 		},
 		{
 			"id": "nail",
-			"path": "images/combinational/sequence/nail.jpg"
+			"path": "images/combinational/sequence/nail.png"
 		},		
 		{
 			"id": "plant",
-			"path": "images/combinational/sequence/plant.jpg"
+			"path": "images/combinational/sequence/plant.png"
 		},		
 		{
 			"id": "mop",
-			"path": "images/combinational/sequence/mop.jpg"
+			"path": "images/combinational/sequence/mop.png"
 		},
 
 		{
@@ -1598,15 +1598,15 @@
 		},
 		{
 			"id": "breakDishes",
-			"path": "images/combinational/sequence/breakDishes.jpg"
+			"path": "images/combinational/sequence/breakDishes.png"
 		},		
 		{
 			"id": "makeTable",
-			"path": "images/combinational/sequence/makeTable.jpg"
+			"path": "images/combinational/sequence/makeTable.png"
 		},		
 		{
 			"id": "cleanDishes",
-			"path": "images/combinational/sequence/cleanDishes.jpg"
+			"path": "images/combinational/sequence/cleanDishes.png"
 		},
 
 		{
@@ -1615,15 +1615,15 @@
 		},
 		{
 			"id": "walk",
-			"path": "images/combinational/sequence/walk.jpg"
+			"path": "images/combinational/sequence/walk.png"
 		},		
 		{
 			"id": "paint",
-			"path": "images/combinational/sequence/paint.jpg"
+			"path": "images/combinational/sequence/paint.png"
 		},		
 		{
 			"id": "playTennis",
-			"path": "images/combinational/sequence/playTennis.jpg"
+			"path": "images/combinational/sequence/playTennis.png"
 		}
 	]
 }

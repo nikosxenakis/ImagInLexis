@@ -95,7 +95,7 @@ public class ScoreTableScreenController extends ScreenController{
             	}            
             }    
         });
-        
+        /*
         scoreTable.setRowFactory(new Callback<TableView<Score>, TableRow<Score>>() {
             @Override
             public TableRow<Score> call(TableView<Score> paramP) {
@@ -123,6 +123,7 @@ public class ScoreTableScreenController extends ScreenController{
                 };
             }
         });
+        */
     }
     
     public void initialize(java.net.URL location, java.util.ResourceBundle resources){  

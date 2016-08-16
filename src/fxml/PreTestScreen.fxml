@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.PreTestScreenController">
+<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.PreTestScreenController">
    <children>
       <BorderPane prefHeight="657.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -27,7 +27,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <center>
-            <VBox fx:id="infoPane" alignment="CENTER" prefHeight="318.0" prefWidth="528.0" style="-fx-background-color: rgb(195,227,168); -fx-background-radius: 15; -fx-opacity: ;" BorderPane.alignment="CENTER">
+            <VBox fx:id="infoPane" alignment="CENTER" prefHeight="297.0" prefWidth="464.0" style="-fx-background-color: rgb(195,227,168); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER">
                      <children>
@@ -109,7 +109,7 @@
                   </Button>
                </children>
                <BorderPane.margin>
-                  <Insets bottom="160.0" left="170.0" right="170.0" top="160.0" />
+                  <Insets bottom="160.0" left="210.0" right="210.0" top="160.0" />
                </BorderPane.margin>
             </VBox>
          </center>

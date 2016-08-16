@@ -106,7 +106,6 @@ public abstract class QuestionScreenController extends ScreenController{
     	//System.out.println("loading image: "+test.getCategory()+"Image");
     	image = ImageHolder.getImage(test.getCategory()+"Image");
     	categoryImage.setImage(image);
-    
 
     	progressBar.setProgress((double)(getTest().getAnsweredQuestions()/(double)getTest().getTotalQuestions()));
     	
@@ -115,10 +114,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	if(test.getTotalQuestions().equals(1)){
     		nextButton.setDisable(true);
     	}
-
+    	
     	mainWindow.setStyle(test.getMainWindowStyle());	
     	mainPane.setStyle(test.getMainPaneStyle());
     	infoPane.setStyle(test.getInfoPaneStyle());
+    	
     }
     
     public void setAnsweredQuestions(Integer answeredQuestions){

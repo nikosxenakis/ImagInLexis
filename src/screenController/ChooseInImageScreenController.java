@@ -15,7 +15,6 @@ import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Ellipse;
@@ -29,9 +28,6 @@ public class ChooseInImageScreenController extends QuestionScreenController{
 
 	@FXML
     private ImageView questionSoundImage;
-	
-	@FXML
-	private BorderPane mainBorderPane;
 	
 	@FXML
 	private Pane circleContainer;
@@ -49,7 +45,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
         	System.err.println("screenData is not ChooseInImageScreenData");
     		return;
     	}
-    	
+
     	submitButton.setDisable(false);
     	setIsSelection(true);
     	

@@ -47,9 +47,16 @@ public class MainScreenController extends ScreenController{
     
     @FXML
     private ImageView backgroundImage;
+  
+    @FXML
+    private ImageView logoImage;
     
     public void initialize(java.net.URL location, java.util.ResourceBundle resources) {    	
     	backgroundImage.setImage(ImageHolder.getImage("mainMenu"));
+    	whatIsThisMainButton.setImage(ImageHolder.getImage("questionmarkIcon"));
+    	instructionsButton.setImage(ImageHolder.getImage("informationIcon"));
+    	scoreTableButton.setImage(ImageHolder.getImage("scoreTableIcon"));
+    	logoImage.setImage(ImageHolder.getImage("logo"));
     }
     
     public void mouseOver(MouseEvent e){
@@ -119,6 +126,7 @@ public class MainScreenController extends ScreenController{
     }
     
     public void rotateImage(MouseEvent e){
+    	/*
     	ImageView image = (ImageView)e.getSource();
     	
         RotateTransition rt = new RotateTransition(Duration.millis(10), image);
@@ -129,14 +137,6 @@ public class MainScreenController extends ScreenController{
 
 
         rt.setToAngle(0);
-
+		*/
     }
-    /*
-     * 
-     *      Rectangle rect = new Rectangle (100, 40, 100, 100);
-     rect.setArcHeight(50);
-     rect.setArcWidth(50);
-     rect.setFill(Color.VIOLET);
- 
-*/
 }

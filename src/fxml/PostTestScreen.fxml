@@ -82,7 +82,7 @@
                   </HBox>
                   <HBox alignment="CENTER">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Λανθσμένες Απαντήσεις:" textAlignment="CENTER" wrappingWidth="233.275146484375">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Λανθασμένες Απαντήσεις:" textAlignment="CENTER" wrappingWidth="233.275146484375">
                            <font>
                               <Font size="18.0" />
                            </font>

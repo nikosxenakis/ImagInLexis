@@ -44,7 +44,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="opposites" fill="#2721ffb5" layoutX="670.0" layoutY="601.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="78.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="opposites" fill="#2721ffb5" layoutX="679.0" layoutY="601.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="109.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#ff9270" />
                      </effect>
@@ -52,7 +52,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="week" fill="#2721ffb5" layoutX="854.0" layoutY="606.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="week" fill="#2721ffb5" layoutX="870.0" layoutY="589.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="69.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#ffbc70" />
                      </effect>
@@ -137,7 +137,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="automatedActions" fill="#2721ffb5" layoutX="229.0" layoutY="415.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="123.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="automatedActions" fill="#2721ffb5" layoutX="239.0" layoutY="415.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="133.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#fa4c20" />
                      </effect>
@@ -153,7 +153,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="appliancies" fill="#21b1ffb5" layoutX="742.0" layoutY="198.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="79.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="appliancies" fill="#21b1ffb5" layoutX="747.0" layoutY="198.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="84.0" radiusY="39.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
                      <effect>
                         <Shadow color="#70fffd" />
                      </effect>
@@ -201,22 +201,22 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Text fill="WHITE" layoutX="541.0" layoutY="194.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="οχήματα">
+                  <Text fill="WHITE" layoutX="541.0" layoutY="194.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Οχήματα">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="184.0" layoutY="152.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="σώμα">
+                  <Text fill="WHITE" layoutX="184.0" layoutY="152.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Σώμα">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="367.0" layoutY="83.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="σχήματα">
+                  <Text fill="WHITE" layoutX="367.0" layoutY="83.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Σχήματα">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="715.0" layoutY="205.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="συσκευές">
+                  <Text fill="WHITE" layoutX="717.0" layoutY="193.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Ηλεκτρικές&#10;Συσκευές" textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -231,7 +231,7 @@
                         <Image url="@../../resources/images/icons/colorIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="560.0" layoutY="70.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="χρώματα" wrappingWidth="89.15945434570312">
+                  <Text fill="WHITE" layoutX="560.0" layoutY="70.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Χρώματα" wrappingWidth="89.15945434570312">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -251,7 +251,7 @@
                         <Image url="@../../resources/images/icons/objectIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="902.0" layoutY="154.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
+                  <Text fill="WHITE" layoutX="902.0" layoutY="154.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Αντικείμενα">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -261,7 +261,7 @@
                         <Image url="@../../resources/images/icons/fruitsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="851.0" layoutY="281.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="φρούτα">
+                  <Text fill="WHITE" layoutX="851.0" layoutY="281.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Φρούτα">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -271,12 +271,12 @@
                         <Image url="@../../resources/images/icons/emotionIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="654.0" layoutY="326.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="συναισθήματα">
+                  <Text fill="WHITE" layoutX="654.0" layoutY="326.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Συναισθήματα">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="466.0" layoutY="324.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες">
+                  <Text fill="WHITE" layoutX="466.0" layoutY="324.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Ενέργειες">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -286,7 +286,7 @@
                         <Image url="@../../resources/images/icons/actionIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="253.0" layoutY="286.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα">
+                  <Text fill="WHITE" layoutX="253.0" layoutY="286.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Επαγγέλματα">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -301,7 +301,7 @@
                         <Image url="@../../resources/images/icons/locationIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="333.0" layoutY="194.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="τοποθεσίες">
+                  <Text fill="WHITE" layoutX="333.0" layoutY="194.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Τοποθεσίες">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -316,7 +316,7 @@
                         <Image url="@../../resources/images/icons/applianciesIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="749.0" layoutY="484.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εποχές" wrappingWidth="89.15945434570312">
+                  <Text fill="WHITE" layoutX="749.0" layoutY="484.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Εποχές" wrappingWidth="89.15945434570312">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -331,32 +331,32 @@
                         <Image url="@../../resources/images/icons/monthIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="961.0" layoutY="513.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="μήνες" wrappingWidth="89.15945434570312">
+                  <Text fill="WHITE" layoutX="961.0" layoutY="513.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Μήνες" wrappingWidth="89.15945434570312">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="856.0" layoutY="614.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="μέρες" wrappingWidth="89.15945434570312">
+                  <Text fill="WHITE" layoutX="872.0" layoutY="597.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Μέρες" wrappingWidth="89.15945434570312">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fx:id="weekImage" fitHeight="38.0" fitWidth="66.0" layoutX="809.0" layoutY="588.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="weekImage" fitHeight="38.0" fitWidth="66.0" layoutX="825.0" layoutY="571.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/weekIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="oppositesImage" fitHeight="38.0" fitWidth="66.0" layoutX="607.0" layoutY="582.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="oppositesImage" fitHeight="38.0" fitWidth="66.0" layoutX="588.0" layoutY="583.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/images/icons/oppositesIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="654.0" layoutY="608.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντίθετα" wrappingWidth="89.15945434570312">
+                  <Text fill="WHITE" layoutX="630.0" layoutY="597.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Αντιθετικοί&#10;Προσδιορισμοί">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="550.0" layoutY="500.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αφαιρετική &#10;ικανότητα" wrappingWidth="117.67703247070312">
+                  <Text fill="WHITE" layoutX="548.0" layoutY="503.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Αφαιρετική &#10;Ικανότητα" textAlignment="CENTER" wrappingWidth="117.67703247070312">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -371,12 +371,12 @@
                         <Image url="@../../resources/images/icons/automatedActionsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="165.0" layoutY="411.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αυτοματοποιημές &#10;πράξεις" wrappingWidth="178.78604125976562">
+                  <Text fill="WHITE" layoutX="169.0" layoutY="410.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Αυτοματοποιημένες &#10;Πράξεις" textAlignment="CENTER" wrappingWidth="197.78604125976562">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="217.0" layoutY="600.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="εντοπισμός" wrappingWidth="178.78604125976562">
+                  <Text fill="WHITE" layoutX="217.0" layoutY="600.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Εντοπισμός" wrappingWidth="178.78604125976562">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -401,7 +401,7 @@
                         <Image url="@../../resources/images/icons/closedQuestionsIcon.jpg" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="116.0" layoutY="501.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ερωτήσεις &#10;κλειστού τύπου" wrappingWidth="178.78604125976562">
+                  <Text fill="WHITE" layoutX="97.0" layoutY="502.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Ερωτήσεις &#10;Κλειστού Τύπου" textAlignment="CENTER" wrappingWidth="178.78604125976562">
                      <font>
                         <Font size="20.0" />
                      </font>

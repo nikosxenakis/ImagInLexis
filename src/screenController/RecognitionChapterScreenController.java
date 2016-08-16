@@ -28,7 +28,8 @@ public class RecognitionChapterScreenController extends ScreenController{
     public void initialize(java.net.URL location, java.util.ResourceBundle resources) {   
     	
     	homeImage.setImage(ImageHolder.getImage("logo"));
-    	backgroundImage.setImage(ImageHolder.getImage("background"));
+    	//backgroundImage.setImage(ImageHolder.getImage("background"));
+    	backgroundImage.setImage(null);
 
     	
         for (Node node : mainWindow.getChildrenUnmodifiable()) {

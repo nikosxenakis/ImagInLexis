@@ -59,17 +59,17 @@ public class Test{
     	this.infoPaneStyle = "-fx-background-radius: 15;";
 
     	if(chapterName.equals("Αναγνώριση")){
-        	this.mainWindowStyle += "-fx-background-color:  #9ED5DB; -fx-border-color:  #DDE3A8";
+        	this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
         	this.mainPaneStyle+= "-fx-background-color:  #7ECCC7;";
         	this.infoPaneStyle+= "-fx-background-color:  #7ECCA4;";
     	}
     	else if(chapterName.equals("Κατονομασία")){
-        	this.mainWindowStyle += "-fx-background-color:  #AFD6A9; -fx-border-color:  #CF903B";
+        	this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
         	this.mainPaneStyle+= "-fx-background-color:  #80DBBB;";
         	this.infoPaneStyle+= "-fx-background-color:  #BADB80;";
     	}
-    	else if(chapterName.equals("Συνδιαστικό")){
-        	this.mainWindowStyle += "-fx-background-color:  #E39DCC; -fx-border-color:  #E08E70";
+    	else if(chapterName.equals("Συσχετιζόμενες Έννοιες")){
+        	this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
         	this.mainPaneStyle+= "-fx-background-color:  #AE99C2;";
         	this.infoPaneStyle+= "-fx-background-color:  #E39DAD;";
     	}
@@ -306,7 +306,9 @@ public class Test{
 		this.chapter = null;
 		this.category = null;
 		this.chapterName = null;
-		this.categoryName = null;		
+		this.categoryName = null;
+		
+		System.gc();
     }
     
     public String getMainWindowStyle(){

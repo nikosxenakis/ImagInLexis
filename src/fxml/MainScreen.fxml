@@ -14,10 +14,56 @@
 <AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.MainScreenController">
    <children>
       <BorderPane prefHeight="657.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <right>
-            <VBox alignment="TOP_CENTER" prefHeight="393.0" prefWidth="223.0" BorderPane.alignment="CENTER_RIGHT">
+         <center>
+            <AnchorPane prefHeight="608.0" prefWidth="956.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                  <ImageView fx:id="backgroundImage" fitHeight="472.0" fitWidth="1023.0" layoutX="96.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/logo/mainMenu.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="chapter3Button" layoutX="285.0" layoutY="277.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Συσχετιζόμενες&#10;Έννοιες" textAlignment="CENTER">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <effect>
+                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                  </Text>
+                  <Text fx:id="chapter2Button" layoutX="602.0" layoutY="248.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Κατονομασία">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <effect>
+                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                  </Text>
+                  <Text fx:id="chapter1Button" layoutX="466.0" layoutY="119.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Αναγνώριση">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <effect>
+                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                     </effect>
+                  </Text>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="100.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="logoImage" fitHeight="154.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/logo/imagInLexisLogo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="500.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
                      <children>
                         <Text fx:id="instructionsLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Οδηγίες Χρήσης" textAlignment="CENTER" wrappingWidth="108.93118286132812">
                            <font>
@@ -36,28 +82,8 @@
                            </cursor>
                         </ImageView>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Text fx:id="whatIsThisMainLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Πληροφορίες" textAlignment="CENTER" wrappingWidth="151.39974975585938">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Text>
-                        <ImageView fx:id="whatIsThisMainButton" fitHeight="57.0" fitWidth="115.0" onMouseClicked="#start" onMouseEntered="#rotateImage" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../resources/images/icons/questionmarkIcon.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
                      <children>
                         <Text fx:id="scoreTableLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Πίνακας Αποτελεσμάτων" textAlignment="CENTER" wrappingWidth="165.25692749023438">
                            <font>
@@ -76,60 +102,30 @@
                            </cursor>
                         </ImageView>
                      </children>
-                  </HBox>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Text fx:id="whatIsThisMainLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Πληροφορίες" textAlignment="CENTER" wrappingWidth="151.39974975585938">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <ImageView fx:id="whatIsThisMainButton" fitHeight="57.0" fitWidth="115.0" onMouseClicked="#start" onMouseEntered="#rotateImage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/images/icons/questionmarkIcon.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </VBox>
                </children>
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-            </VBox>
-         </right>
-         <top>
-            <ImageView fx:id="logoImage" fitHeight="154.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
-               <image>
-                  <Image url="@../../resources/images/logo/imagInLexisLogo.png" />
-               </image>
-            </ImageView>
+            </HBox>
          </top>
-      </BorderPane>
-      <BorderPane prefHeight="657.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <center>
-            <AnchorPane prefHeight="477.0" prefWidth="883.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fx:id="backgroundImage" fitHeight="476.0" fitWidth="943.0" layoutX="13.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../resources/images/logo/mainMenu.png" />
-                     </image>
-                  </ImageView>
-                  <Text fx:id="chapter3Button" layoutX="219.0" layoutY="366.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Συνδιαστικό">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-                  <Text fx:id="chapter2Button" layoutX="507.0" layoutY="336.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Κατονομασία">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-                  <Text fx:id="chapter1Button" layoutX="366.0" layoutY="204.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Αναγνώριση">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-               </children>
-               <BorderPane.margin>
-                  <Insets top="100.0" />
-               </BorderPane.margin>
-            </AnchorPane>
-         </center>
       </BorderPane>
    </children>
 </AnchorPane>

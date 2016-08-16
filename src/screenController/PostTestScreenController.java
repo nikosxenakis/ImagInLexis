@@ -48,19 +48,31 @@ public class PostTestScreenController extends ScreenController{
     	correctAnswers.setText(test.getCorrectAnswers().toString());
     	wrongAnswers.setText(test.getWrongAnswers().toString());
 
-		if(test.getScoreNum() >= 90){
+    	boolean passed = false;
+    	
+    	if(
+    			(test.getChapterName().equals("Αναγνώριση") && test.getScoreNum() >= 80) ||
+    			(test.getChapterName().equals("Κατονομασία") && test.getScoreNum() >= 90) ||
+    			(test.getChapterName().equals("Συσχετιζόμενες Έννοιες") && test.getScoreNum() >= 90)
+    	){
+    		passed = true;
+    	}
+    	
+		if(passed == true){
 			SoundHolder.playSound("correctSound");
 			resultText.setText("Επιτυχία");
-	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightgreen;");
+	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightgreen; -fx-opacity: 0.9;");
 	    	emotionImage.setImage(ImageHolder.getImage("happyIcon"));
 
 		}
 		else{
 			resultText.setText("Αποτυχία");
 			SoundHolder.playSound("wrongSound");
-	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightcoral;");
+	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightcoral; -fx-opacity: 0.9;");
 	    	emotionImage.setImage(ImageHolder.getImage("sadIcon"));
 		}
+		
+    	infoPane.setMaxWidth(500);
 
     }
     

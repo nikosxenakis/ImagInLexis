@@ -53,8 +53,9 @@ public class PreTestScreenController extends ScreenController{
     	SoundHolder.playSound(test.getCategory()+"Sound");
     	
     	mainWindow.setStyle(test.getMainWindowStyle());	
-    	infoPane.setStyle(test.getInfoPaneStyle());
+    	infoPane.setStyle(test.getInfoPaneStyle()+" -fx-opacity: 0.9;");
     	
+    	infoPane.setMaxWidth(500);
     }
     
     public void startTest(MouseEvent e){
