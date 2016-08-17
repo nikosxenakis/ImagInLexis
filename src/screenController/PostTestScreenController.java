@@ -38,6 +38,9 @@ public class PostTestScreenController extends ScreenController{
 	@FXML
 	private Text wrongAnswers;
     
+	@FXML
+	private ImageView backgroundImage;
+	
 	Test test = null;
 
     public void init(Test test){
@@ -47,6 +50,8 @@ public class PostTestScreenController extends ScreenController{
     	score.setText(test.getScoreNum().toString()+"%");
     	correctAnswers.setText(test.getCorrectAnswers().toString());
     	wrongAnswers.setText(test.getWrongAnswers().toString());
+
+    	backgroundImage.setImage(ImageHolder.getImage("background"));
 
     	boolean passed = false;
     	

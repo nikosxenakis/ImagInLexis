@@ -37,6 +37,9 @@ public class PreTestScreenController extends ScreenController{
 	@FXML
 	private Text totalQuestions;
     
+	@FXML
+	private ImageView backgroundImage;
+	
 	Test test = null;
 	
     public void init(Test test){
@@ -48,6 +51,7 @@ public class PreTestScreenController extends ScreenController{
     	categoryImage.setImage(ImageHolder.getImage(test.getCategory()+"Image"));
     	totalQuestions.setText(test.getTotalQuestions().toString());
 
+    	backgroundImage.setImage(ImageHolder.getImage("background"));
     	
     	SoundHolder.stopSound("startProgramSound");
     	SoundHolder.playSound(test.getCategory()+"Sound");

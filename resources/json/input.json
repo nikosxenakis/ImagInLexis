@@ -1,6 +1,9 @@
 {
 	"screens": [
 		{
+			"screenId": "AboutUsMainScreen"
+		},
+		{
 			"screenId": "ScoreTableScreen"
 		},
 		{
@@ -2580,7 +2583,7 @@
 						{
 							"screenId": "chooseLabelFromSoundSoap",
 							"screenType": "chooseLabelFromSound",
-							"question" : "Πίνετε το σαπούνι;",
+							"question" : "Πίνεται το σαπούνι;",
 							"questionSoundId": "chapter1AutomatedActionsTask2Proposal9",
 							"sound1Id": "yesSound",
 							"sound2Id": "noSound",

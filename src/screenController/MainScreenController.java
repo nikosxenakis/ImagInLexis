@@ -109,6 +109,7 @@ public class MainScreenController extends ScreenController{
                 ImagInLexis.mainContainer.setScreen("WhatIsThisMainScreen");
             } 	
             else if((ImageView)e.getSource() == instructionsButton){
+                ImagInLexis.mainContainer.setScreen("AboutUsMainScreen");
             } 	
             else if((ImageView)e.getSource() == scoreTableButton){
             	ScoreTableScreenController ctrl = (ScoreTableScreenController) ImagInLexis.mainContainer.getController("ScoreTableScreen");

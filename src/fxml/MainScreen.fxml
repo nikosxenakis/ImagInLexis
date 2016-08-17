@@ -65,7 +65,7 @@
                   </ImageView>
                   <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
                      <children>
-                        <Text fx:id="instructionsLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Οδηγίες Χρήσης" textAlignment="CENTER" wrappingWidth="108.93118286132812">
+                        <Text fx:id="instructionsLabel" onMousePressed="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="Σχετικά&#10;Με Εμάς" textAlignment="CENTER" wrappingWidth="108.93118286132812">
                            <font>
                               <Font size="20.0" />
                            </font>
