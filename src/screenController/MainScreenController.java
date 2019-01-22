@@ -7,14 +7,12 @@ package screenController;
 import application.ImagInLexis;
 import application.ImageHolder;
 import application.SoundHolder;
-import javafx.animation.RotateTransition;
 import javafx.fxml.FXML;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.util.Duration;
 
 public class MainScreenController extends ScreenController{
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.KatonomasiaChapterScreenController">
+   <children>
+      <BorderPane layoutX="20.0" layoutY="20.0" prefHeight="685.0" prefWidth="1059.0">
+         <center>
+            <ImageView fx:id="backgroundImage" fitHeight="706.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../resources/images/logo/background.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="mainWindow" prefHeight="520.0" prefWidth="989.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Ellipse fill="#1f93ffb5" layoutX="563.0" layoutY="376.0" radiusX="483.0" radiusY="275.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <effect>
+                        <Shadow color="#29e2e5f7" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fx:id="katonomasiaDefinition" fill="#2721ffb5" layoutX="553.0" layoutY="227.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="146.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#660eff" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Ellipse fx:id="katonomasiaSounds" fill="#2721ffb5" layoutX="346.0" layoutY="468.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Shadow color="#ff0808" />
+                     </effect>
+                  </Ellipse>
+                  <Ellipse fx:id="katonomasiaCompleteSentence" fill="#2721ffb5" layoutX="766.0" layoutY="459.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="173.0" radiusY="61.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                     <effect>
+                        <Shadow color="#79ff0a" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Ellipse>
+                  <Text fill="WHITE" layoutX="533.0" layoutY="234.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ορισμοί">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="670.0" layoutY="447.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="συμπλήρωση προτάσεων" textAlignment="CENTER" wrappingWidth="258.18109130859375">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="katonomasiaDefinitionImage" fitHeight="66.0" fitWidth="66.0" layoutX="458.0" layoutY="192.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/definitionIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="katonomasiaCompleteSentenceImage" fitHeight="68.0" fitWidth="66.0" layoutX="616.0" layoutY="423.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/completeSentenceIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="homeImage" fitHeight="116.0" fitWidth="198.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/logo/imagInLexisLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="soundImage" fitHeight="59.0" fitWidth="69.0" layoutX="205.0" layoutY="437.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/icons/soundIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="315.0" layoutY="479.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ήχοι" wrappingWidth="61.92950439453125">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

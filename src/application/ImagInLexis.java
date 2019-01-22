@@ -18,7 +18,7 @@ public class ImagInLexis extends Application {
 
 	public static Parser parser;
 	
-	public final static String userName = "Nikos Xenakis";
+	public final static String userName = "unknown user";
 	
 	public static Stage mainStage = null;
 	

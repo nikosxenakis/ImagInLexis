@@ -1,17 +1,6 @@
 package application;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
-import java.util.TreeSet;
-
 import org.json.simple.JSONObject;
-
 import screenController.PostTestScreenController;
 import screenController.PreTestScreenController;
 import screenController.QuestionScreenController;
@@ -19,6 +8,10 @@ import screenController.ScreenController;
 import screenData.ChooseInImageScreenData;
 import screenData.QuestionScreenData;
 import screenData.ScreenDataHolder;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Test{
 

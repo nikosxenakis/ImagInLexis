@@ -1,39 +1,16 @@
 package application;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.net.URLDecoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.Map.Entry;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 import screenController.ScoreTableScreenController.Score;
-import screenData.ChooseImageLinkScreenData;
-import screenData.ChooseImageScreenData;
-import screenData.ChooseImageScreenData2;
-import screenData.ChooseInImageScreenData;
-import screenData.ChooseLabelFromSoundScreenData;
-import screenData.ChooseLabelScreenData;
-import screenData.ScreenDataHolder;
-import screenData.WhatIsThisScreenData;
+import screenData.*;
+
+import java.io.*;
+import java.net.URLDecoder;
+import java.util.*;
+import java.util.Map.Entry;
 
 public class Parser {
 	
@@ -138,7 +115,8 @@ public class Parser {
 				file = new File(decodedPath+"/files/scores.json");
 			}
 			else{
-				file = new File(decodedPath+"/../files/scores.json");
+				//based on the IDE
+				file = new File(decodedPath+"/../../../files/scores.json");
 			}
 
 			InputStream input = null;
@@ -242,7 +220,7 @@ public class Parser {
 				file = new File(decodedPath+"/files/scores.json");
 			}
 			else{
-				file = new File(decodedPath+"/../files/scores.json");
+				file = new File(decodedPath+"/../../../files/scores.json");
 			}
 
 			Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF8"));
