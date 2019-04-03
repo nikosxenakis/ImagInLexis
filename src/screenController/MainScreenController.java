@@ -8,11 +8,14 @@ import application.ImagInLexis;
 import application.ImageHolder;
 import application.SoundHolder;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import org.jetbrains.annotations.NotNull;
 
 public class MainScreenController extends ScreenController{
 
@@ -48,6 +51,9 @@ public class MainScreenController extends ScreenController{
   
     @FXML
     private ImageView logoImage;
+
+    @FXML
+    private TextField username;
     
     public void initialize(java.net.URL location, java.util.ResourceBundle resources) {    	
     	backgroundImage.setImage(ImageHolder.getImage("mainMenu"));
@@ -71,8 +77,9 @@ public class MainScreenController extends ScreenController{
     	Text item = (Text)e.getSource();
     	item.setEffect(null);
     }
-    
-    public void start(MouseEvent e){
+
+    @FXML
+    public void start(@NotNull MouseEvent e){
     	
     	if(e.getSource() instanceof Text){
             if((Text)e.getSource() == chapter1Button){
@@ -117,7 +124,7 @@ public class MainScreenController extends ScreenController{
             else{
             	System.err.println("unknown source in main screen controller");
             }
-    	} 	
+    	}
     	else{
         	System.err.println("unknown source in main screen controller");
     	}
@@ -138,4 +145,11 @@ public class MainScreenController extends ScreenController{
         rt.setToAngle(0);
 		*/
     }
+
+    @FXML
+    public void inputChanged(KeyEvent event) {
+        System.out.println(username.getText());
+        ImagInLexis.setUserName(username.getText());
+    }
+
 }
