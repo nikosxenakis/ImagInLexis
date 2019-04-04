@@ -201,6 +201,8 @@ public class Test{
 		System.out.println("date= "+strDate);
 		System.out.println("time= "+strTime);
 
+//		Database.insert(ImagInLexis.userName, strTime, strDate, score, chapterName, categoryName);
+
 		JSONObject obj = new JSONObject();
 
 		obj.put("name", name);

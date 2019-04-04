@@ -75,7 +75,7 @@
                               <Insets bottom="10.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField fx:id="username" alignment="CENTER" maxWidth="-Infinity" onKeyTyped="#inputChanged" prefHeight="25.0" prefWidth="240.0" promptText="Εισάγετε όνομα χρήστη..">
+                        <TextField fx:id="username" alignment="CENTER" maxWidth="-Infinity" onInputMethodTextChanged="#inputChanged" onKeyPressed="#inputChanged" onKeyReleased="#inputChanged" onKeyTyped="#inputChanged" prefHeight="25.0" prefWidth="240.0" promptText="Εισάγετε όνομα χρήστη..">
                            <font>
                               <Font size="12.0" />
                            </font>

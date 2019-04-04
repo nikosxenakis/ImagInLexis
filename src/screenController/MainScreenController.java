@@ -15,7 +15,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import org.jetbrains.annotations.NotNull;
 
 public class MainScreenController extends ScreenController{
 
@@ -79,7 +78,7 @@ public class MainScreenController extends ScreenController{
     }
 
     @FXML
-    public void start(@NotNull MouseEvent e){
+    public void start(MouseEvent e){
     	
     	if(e.getSource() instanceof Text){
             if((Text)e.getSource() == chapter1Button){

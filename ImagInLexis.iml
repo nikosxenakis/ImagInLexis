@@ -22,7 +22,24 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar!/" />
+          <root url="file:///Library/Java/JavaFX/javafx-sdk-11.0.2/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file:///Library/Java/JavaFX/javafx-sdk-11.0.2/lib" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file:///Library/Java/JavaFX/javafx-sdk-11.0.2/lib" />
+        </SOURCES>
+        <jarDirectory url="file:///Library/Java/JavaFX/javafx-sdk-11.0.2/lib" recursive="false" />
+        <jarDirectory url="file:///Library/Java/JavaFX/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="sqlite-jdbc-3.27.2" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/sqlite-jdbc-3.27.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

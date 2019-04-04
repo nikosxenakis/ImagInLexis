@@ -51,7 +51,32 @@ public class Parser {
         this.soundsJsonObject = this.loadObject(soundsFilePath);
 
 	}
-	
+
+	public StringBuilder getPath(String filePath){
+
+		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
+		} catch (UnsupportedEncodingException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+
+		StringBuilder out = new StringBuilder();
+		String line;
+		try {
+			while ((line = reader.readLine()) != null) {
+				out.append(line);
+			}
+			reader.close();
+
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		return out;
+	}
+
 	private JSONObject loadObject(String filePath){
 		
 		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
@@ -243,15 +268,27 @@ public class Parser {
 	
 	public List<Score> getScoreList(String chapterName, String categoryName){
 
-	    List<Score> scoreList = new ArrayList<Score>();
-				
+	    List<Score> scoreList = new ArrayList<>();
+
+
+//		if(chapterName == "Όλα") {
+//			scoreList = Database.select(null, null);
+//		}
+//		else if(categoryName == "Όλα") {
+//			scoreList = Database.select(chapterName, null);
+//		}
+//		else {
+//			scoreList = Database.select(chapterName, categoryName);
+//		}
+
+
         JSONArray scores = (JSONArray) scoresJsonObject.get("scores");
 
         for (Object c : scores){
         	JSONObject c1 = (JSONObject) c;
             JSONArray chapterList = (JSONArray) c1.get("chapterList");
         	String currChapterName = (String)(c1.get("chapterName"));
-        	
+
         	if(currChapterName.equals(chapterName) || chapterName.equals("Όλα")){
                 for (Object cc : chapterList){
                 	JSONObject cc1 = (JSONObject) cc;
@@ -268,7 +305,7 @@ public class Parser {
                         	scoreList.add( new Score(name,score,date,time) );
                         }
                 	}
-                } 		
+                }
         	}
         }
         
