@@ -45,17 +45,6 @@ public class ImagInLexis extends Application {
         stage.setScene(scene);
         stage.show();
 
-//		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-//		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
-//
-//		Date date = new Date();
-//		Date time = new Date();
-//		String strDate = dateFormat.format(date);
-//		String strTime = timeFormat.format(time);
-//
-//		Database.insert(ImagInLexis.userName, strTime, strDate, "0%", "Αναγνώριση", "Φρούτα");
-//		Database.insert(ImagInLexis.userName, strTime, strDate, "2%", "Αναγνώριση", "Χρώματα");
-
 	}
 	
 	@Override

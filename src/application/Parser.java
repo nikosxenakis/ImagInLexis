@@ -52,31 +52,6 @@ public class Parser {
 
 	}
 
-	public StringBuilder getPath(String filePath){
-
-		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
-		BufferedReader reader = null;
-		try {
-			reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
-		} catch (UnsupportedEncodingException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
-
-		StringBuilder out = new StringBuilder();
-		String line;
-		try {
-			while ((line = reader.readLine()) != null) {
-				out.append(line);
-			}
-			reader.close();
-
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		return out;
-	}
-
 	private JSONObject loadObject(String filePath){
 		
 		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
@@ -111,8 +86,7 @@ public class Parser {
 		
 		return (JSONObject) obj;
 	}
-	
-		
+
 	private JSONObject loadScores(String scoresFilePath){
 
         Object obj = null;
@@ -268,46 +242,47 @@ public class Parser {
 	
 	public List<Score> getScoreList(String chapterName, String categoryName){
 
-	    List<Score> scoreList = new ArrayList<>();
+//	    List<Score> scoreList = new ArrayList<>();
+		List<Score> scoreList;
 
 
-//		if(chapterName == "Όλα") {
-//			scoreList = Database.select(null, null);
-//		}
-//		else if(categoryName == "Όλα") {
-//			scoreList = Database.select(chapterName, null);
-//		}
-//		else {
-//			scoreList = Database.select(chapterName, categoryName);
-//		}
+		if(chapterName == "Όλα") {
+			scoreList = Database.select(null, null);
+		}
+		else if(categoryName == "Όλα") {
+			scoreList = Database.select(chapterName, null);
+		}
+		else {
+			scoreList = Database.select(chapterName, categoryName);
+		}
 
 
-        JSONArray scores = (JSONArray) scoresJsonObject.get("scores");
-
-        for (Object c : scores){
-        	JSONObject c1 = (JSONObject) c;
-            JSONArray chapterList = (JSONArray) c1.get("chapterList");
-        	String currChapterName = (String)(c1.get("chapterName"));
-
-        	if(currChapterName.equals(chapterName) || chapterName.equals("Όλα")){
-                for (Object cc : chapterList){
-                	JSONObject cc1 = (JSONObject) cc;
-                    JSONArray categoryList = (JSONArray) cc1.get("categoryList");
-                	String currCategoryName = (String)(cc1.get("categoryName"));
-
-                	if(currCategoryName.equals(categoryName) || categoryName.equals("Όλα")){
-                        for (Object ccc : categoryList){
-                        	JSONObject ccc1 = (JSONObject) ccc;
-                        	String name = (String)(ccc1.get("name"));
-                        	String score = (String)(ccc1.get("score"));
-                        	String date = (String)(ccc1.get("date"));
-                        	String time = (String)(ccc1.get("time"));
-                        	scoreList.add( new Score(name,score,date,time) );
-                        }
-                	}
-                }
-        	}
-        }
+//        JSONArray scores = (JSONArray) scoresJsonObject.get("scores");
+//
+//        for (Object c : scores){
+//        	JSONObject c1 = (JSONObject) c;
+//            JSONArray chapterList = (JSONArray) c1.get("chapterList");
+//        	String currChapterName = (String)(c1.get("chapterName"));
+//
+//        	if(currChapterName.equals(chapterName) || chapterName.equals("Όλα")){
+//                for (Object cc : chapterList){
+//                	JSONObject cc1 = (JSONObject) cc;
+//                    JSONArray categoryList = (JSONArray) cc1.get("categoryList");
+//                	String currCategoryName = (String)(cc1.get("categoryName"));
+//
+//                	if(currCategoryName.equals(categoryName) || categoryName.equals("Όλα")){
+//                        for (Object ccc : categoryList){
+//                        	JSONObject ccc1 = (JSONObject) ccc;
+//                        	String name = (String)(ccc1.get("name"));
+//                        	String score = (String)(ccc1.get("score"));
+//                        	String date = (String)(ccc1.get("date"));
+//                        	String time = (String)(ccc1.get("time"));
+//                        	scoreList.add( new Score(name,score,date,time) );
+//                        }
+//                	}
+//                }
+//        	}
+//        }
         
 	    return scoreList;
 	}
@@ -590,8 +565,7 @@ public class Parser {
     		parseCategory(category,chapterName);	
         }
 	}
-	
-	
+
 	private void parseQuestions(){
 
         // loop array

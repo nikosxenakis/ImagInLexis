@@ -8,20 +8,23 @@ import java.util.List;
 
 public class Database {
 
-//    private static final String url = "jdbc:sqlite:resources/database/database.db";
-//    String url = "jdbc:sqlite::resource:notes_app.db";
-//    private static final String url = "jdbc:sqlite::resources:database/database.db";
 
-
-
+    public static void testDB() {
+//		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+//		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
+//
+//        Date date = new Date();
+//        Date time = new Date();
+//		String strDate = dateFormat.format(date);
+//		String strTime = timeFormat.format(time);
+//
+//		Database.insert(ImagInLexis.userName, strTime, strDate, "0%", "Αναγνώριση", "Φρούτα");
+//		Database.insert(ImagInLexis.userName, strTime, strDate, "2%", "Αναγνώριση", "Χρώματα");
+    }
 
     public static Connection connect() {
 
-//        String url = "jar:file:/Users/xenis656/Desktop/ImagInLexis.jar!/database/database.db";
-    String url = "jdbc:sqlite:resources/database/database.db";
-
-//        url = new URL("jar:file:/Users/xenis656/Desktop/ImagInLexis.jar!/");
-
+        String url = "jdbc:sqlite::resource:database/database.db";
 
         Connection conn = null;
 

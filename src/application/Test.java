@@ -1,6 +1,5 @@
 package application;
 
-import org.json.simple.JSONObject;
 import screenController.PostTestScreenController;
 import screenController.PreTestScreenController;
 import screenController.QuestionScreenController;
@@ -201,16 +200,16 @@ public class Test{
 		System.out.println("date= "+strDate);
 		System.out.println("time= "+strTime);
 
-//		Database.insert(ImagInLexis.userName, strTime, strDate, score, chapterName, categoryName);
+		Database.insert(ImagInLexis.userName, strTime, strDate, score, chapterName, categoryName);
 
-		JSONObject obj = new JSONObject();
-
-		obj.put("name", name);
-		obj.put("score", score);
-		obj.put("date", strDate);
-		obj.put("time", strTime);
-		
-		ImagInLexis.parser.addScore(obj,chapterName,categoryName);
+//		JSONObject obj = new JSONObject();
+//
+//		obj.put("name", name);
+//		obj.put("score", score);
+//		obj.put("date", strDate);
+//		obj.put("time", strTime);
+//
+//		ImagInLexis.parser.addScore(obj,chapterName,categoryName);
 		ImagInLexis.parser.submitScores();
 
 		this.scoreNum = new Integer(score.substring(0, score.length()-1));
