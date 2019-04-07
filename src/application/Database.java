@@ -57,7 +57,7 @@ public class Database {
         }
     }
 
-    public static void insert(String username, String time, String date, String score, String chapter, String category) {
+    public static void insert(String username, String time, String date, int score, String chapter, String category) {
         String sql = "INSERT INTO scores(username, time, date, score, chapter, category) VALUES(?,?,?,?,?,?)";
         Connection conn = null;
         try{
@@ -66,9 +66,24 @@ public class Database {
             statement.setString(1, username);
             statement.setString(2, time);
             statement.setString(3, date);
-            statement.setString(4, score);
+            statement.setInt(4, score);
             statement.setString(5, chapter);
             statement.setString(6, category);
+            System.out.println(statement.toString());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        Database.closeConnection(conn);
+    }
+
+    public static void removeAll() {
+        String sql = "DELETE FROM scores;";
+        Connection conn = null;
+        try{
+            conn = Database.connect();
+            PreparedStatement statement = conn.prepareStatement(sql);
             System.out.println(statement.toString());
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -136,7 +151,7 @@ public class Database {
             try {
                 while (rs.next()) {
                     String username = rs.getString("username");
-                    String score = rs.getString("score");
+                    int score = rs.getInt("score");
                     String time = rs.getString("time");
                     String date = rs.getString("date");
                     scoreList.add( new ScoreTableScreenController.Score(username,score,date,time) );

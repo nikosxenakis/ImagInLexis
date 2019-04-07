@@ -4,23 +4,20 @@
  */
 package screenController;
 
-import java.util.List;
+import application.Database;
 import application.ImagInLexis;
 import application.ImageHolder;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ScrollBar;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableRow;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Callback;
+
+import java.util.List;
 
 public class ScoreTableScreenController extends ScreenController{
 
@@ -44,7 +41,10 @@ public class ScoreTableScreenController extends ScreenController{
     
 	@FXML 
 	private AnchorPane mainWindow;
-		
+
+	@FXML
+    private Button removeAllButton;
+
     public void homeIconClicked(MouseEvent e){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
@@ -179,9 +179,9 @@ public class ScoreTableScreenController extends ScreenController{
     	private final SimpleStringProperty date;
     	private final SimpleStringProperty time;
     	
-    	public Score(String name, String score, String date, String time){
+    	public Score(String name, int score, String date, String time){
     		this.name = new SimpleStringProperty(name);
-    		this.score = new SimpleStringProperty(score);
+    		this.score = new SimpleStringProperty(Integer.toString(score));
     		this.date = new SimpleStringProperty(date);
     		this.time = new SimpleStringProperty(time);
     	}
@@ -202,5 +202,10 @@ public class ScoreTableScreenController extends ScreenController{
             return time.get();
         }
     }
-    
+
+    public void removeAll() {
+        Database.removeAll();
+        this.renewScoreInfo();
+    }
+
 }

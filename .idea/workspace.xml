@@ -7,27 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="username added">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ImagInLexis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ImagInLexis_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImagInLexis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ImagInLexis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-simple-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ImagInLexis/ImagInLexis.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ImagInLexis/ImagInLexis.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ImagInLexis/files/scores.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ImagInLexis/files/scores_empty.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/application/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/application/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/application/ImagInLexis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/application/ImagInLexis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/application/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/application/Parser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/application/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/application/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/fxml/ScoreTableScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/fxml/ScoreTableScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController$Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagInLexis/screenController/ScoreTableScreenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/database/test.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite-jdbc-3.27.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/ImagInLexis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/ImagInLexis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/ScoreTableScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/ScoreTableScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screenController/ScoreTableScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screenController/ScoreTableScreenController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,24 +86,12 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/ImagInLexis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="189" column="39" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="39" />
+            <state relative-caret-position="290">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,53 +100,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Parser.java">
+        <entry file="file://$PROJECT_DIR$/src/application/SoundHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="246" selection-start-line="246" selection-end-line="246" />
+            <state relative-caret-position="45">
+              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Parser#0;class#Parser#0" />
-                <element signature="method#loadObject#0;class#Parser#0" />
-                <element signature="method#parseCategoryNames#0;class#Parser#0" />
-                <element signature="method#addScore#0;class#Parser#0" />
-                <element signature="method#submitScores#0;class#Parser#0" />
-                <element signature="method#getChapterList#0;class#Parser#0" />
-                <element signature="method#getCategoryList#0;class#Parser#0" />
-                <element signature="method#initialize#0;class#Parser#0" />
-                <element signature="method#parseSounds#0;class#Parser#0" />
-                <element signature="method#parseImages#0;class#Parser#0" />
-                <element signature="method#createWhatIsThisQuestion#0;class#Parser#0" />
-                <element signature="method#createChooseInImageQuestion#0;class#Parser#0" />
-                <element signature="method#createChooseLabelQuestion#0;class#Parser#0" />
-                <element signature="method#createChooseLabelFromSoundQuestion#0;class#Parser#0" />
-                <element signature="method#createChooseImageQuestion#0;class#Parser#0" />
-                <element signature="method#createChooseImage2Question#0;class#Parser#0" />
-                <element signature="method#createChooseImageLinkQuestion#0;class#Parser#0" />
-                <element signature="method#parseQuestion#0;class#Parser#0" />
-                <element signature="method#parseCategory#0;class#Parser#0" />
-                <element signature="method#parseChapter#0;class#Parser#0" />
-                <element signature="method#parseQuestions#0;class#Parser#0" />
-                <element signature="method#parseScreens#0;class#Parser#0" />
-                <element signature="method#addtoChaptersCategoryList#0;class#Parser#0" />
-                <element signature="method#addtoCategoriesScreenIdList#0;class#Parser#0" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Database.java">
+        <entry file="file://$PROJECT_DIR$/src/screenController/MainScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="1905">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#testDB#0;class#Database#0" />
-                <element signature="method#connect#0;class#Database#0" />
-                <element signature="method#closeConnection#0;class#Database#0" />
-                <element signature="method#insert#0;class#Database#0" />
-                <element signature="method#select#0;class#Database#0" />
               </folding>
             </state>
           </provider>
@@ -198,8 +152,10 @@
       <find>Database.select</find>
       <find>loadObject</find>
       <find>jar</find>
-      <find>scoresFilePath</find>
       <find>Database</find>
+      <find>scoresFilePath</find>
+      <find>calculateResults</find>
+      <find>playSound</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -217,10 +173,12 @@
         <option value="$PROJECT_DIR$/src/application/SoundHolder.java" />
         <option value="$PROJECT_DIR$/src/screenController/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/fxml/MainScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/application/Test.java" />
         <option value="$PROJECT_DIR$/src/application/Parser.java" />
-        <option value="$PROJECT_DIR$/src/application/ImagInLexis.java" />
+        <option value="$PROJECT_DIR$/src/application/Test.java" />
+        <option value="$PROJECT_DIR$/src/fxml/ScoreTableScreen.fxml" />
         <option value="$PROJECT_DIR$/src/application/Database.java" />
+        <option value="$PROJECT_DIR$/src/screenController/ScoreTableScreenController.java" />
+        <option value="$PROJECT_DIR$/src/application/ImagInLexis.java" />
       </list>
     </option>
   </component>
@@ -258,6 +216,12 @@
               <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sounds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
@@ -432,7 +396,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28540772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Favorites" order="2" weight="0.3297568" />
       <window_info id="Designer" order="3" />
@@ -440,9 +404,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -532,14 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxml/AboutUsMainScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/screenController/WhatIsThisScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -553,18 +509,6 @@
           <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/SoundHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,23 +580,13 @@
     <entry file="file://$PROJECT_DIR$/module_imaginlexis.xml" />
     <entry file="file://$PROJECT_DIR$/imaginlexis.xml" />
     <entry file="file://$PROJECT_DIR$/imaginlexis.properties" />
-    <entry file="file://$PROJECT_DIR$/src/screenController/MainScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fxml/MainScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="77" column="215" selection-start-line="77" selection-start-column="215" selection-end-line="77" selection-end-column="215" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
@@ -661,33 +595,56 @@
     <entry file="file://$PROJECT_DIR$/ImagInLexis.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screenController/ScoreTableScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding>
-            <element signature="method#initialize#0;class#ScoreTableScreenController#0" />
-            <element signature="method#homeIconEntered#0;class#ScoreTableScreenController#0" />
-            <element signature="method#renewComboBoxData#0;class#ScoreTableScreenController#0" />
-            <element signature="method#renewScoreInfo#0;class#ScoreTableScreenController#0" />
-            <element signature="class#Score#0;class#ScoreTableScreenController#0" />
-            <element signature="e#6437#6438#0" expanded="true" />
-            <element signature="e#6478#6479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/database/database.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/ImagInLexis.java">
+    <entry file="file://$PROJECT_DIR$/src/fxml/AboutUsMainScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="165">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screenController/AboutUsMainScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxml/ScoreTableScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screenController/ScoreTableScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="203" column="5" lean-forward="true" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
+          <folding>
+            <element signature="method#initialize#0;class#ScoreTableScreenController#0" />
+            <element signature="method#homeIconEntered#0;class#ScoreTableScreenController#0" />
+            <element signature="method#renewComboBoxData#0;class#ScoreTableScreenController#0" />
+            <element signature="method#renewScoreInfo#0;class#ScoreTableScreenController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#testDB#0;class#Database#0" />
+            <element signature="method#connect#0;class#Database#0" />
+            <element signature="method#closeConnection#0;class#Database#0" />
           </folding>
         </state>
       </provider>
@@ -726,25 +683,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="480">
+          <caret line="216" column="29" selection-start-line="216" selection-start-column="29" selection-end-line="216" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testDB#0;class#Database#0" />
-            <element signature="method#connect#0;class#Database#0" />
-            <element signature="method#closeConnection#0;class#Database#0" />
-            <element signature="method#insert#0;class#Database#0" />
-            <element signature="method#select#0;class#Database#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/screenController/MainScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="189" column="39" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="39" />
+        <state relative-caret-position="1905">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/SoundHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/ImagInLexis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

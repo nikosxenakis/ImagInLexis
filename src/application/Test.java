@@ -149,7 +149,7 @@ public class Test{
     	myScreenPane.setScreen(screenId);
 	}
 	
-	private String calculateResults(){
+	private int calculateResults(){
 		
 		System.out.println("answers: "+answers.toString());
 		System.out.println("correctAnswers: "+correctAnswers.toString());
@@ -175,7 +175,8 @@ public class Test{
 		Integer res = (int) (((correct)/(this.totalQuestions))*100);
 		this.correctAnswersNum = new Integer((int) correct);
 		this.wrongAnswersNum = this.totalQuestions - this.correctAnswersNum;
-		return Integer.toString(res)+"%";
+//		return Integer.toString(res)+"%";
+		return res;
 		
 	}
 	
@@ -187,7 +188,7 @@ public class Test{
 
 		String name = ImagInLexis.userName;
 		
-		String score = calculateResults();
+		int score = calculateResults();
 		System.out.println("score= "+score);
 		
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
@@ -212,9 +213,10 @@ public class Test{
 //		ImagInLexis.parser.addScore(obj,chapterName,categoryName);
 		ImagInLexis.parser.submitScores();
 
-		this.scoreNum = new Integer(score.substring(0, score.length()-1));
-		
-    	//load PostTestScreen
+//		this.scoreNum = new Integer(score.substring(0, score.length()-1));
+		this.scoreNum = score;
+
+		//load PostTestScreen
         ImagInLexis.mainContainer.setScreen("PostTestScreen");
         ScreenController sc = (ScreenController) ImagInLexis.mainContainer.getController("PostTestScreen");
         PostTestScreenController sc2 = (PostTestScreenController) sc;

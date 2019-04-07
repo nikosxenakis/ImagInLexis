@@ -38,12 +38,12 @@ public class ImagInLexis extends Application {
         Scene scene = new Scene(mainContainer);
         //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
-		SoundHolder.playSound("startProgramSound");
-
         ImagInLexis.mainContainer.setScreen("MainScreen");
 
         stage.setScene(scene);
         stage.show();
+
+		SoundHolder.playSound("startProgramSound");
 
 	}
 	

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.ScoreTableScreenController">
+<AnchorPane style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screenController.ScoreTableScreenController">
    <children>
       <BorderPane layoutX="30.0" layoutY="30.0" prefHeight="685.0" prefWidth="1059.0">
          <center>
@@ -40,7 +43,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Text>
-                        <ComboBox fx:id="chapterOptions" prefHeight="27.0" prefWidth="242.0">
+                        <ComboBox fx:id="chapterOptions" prefHeight="28.0" prefWidth="191.0">
                            <HBox.margin>
                               <Insets right="20.0" />
                            </HBox.margin>
@@ -50,11 +53,12 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Text>
-                        <ComboBox fx:id="categoryOptions" prefHeight="27.0" prefWidth="217.0">
+                        <ComboBox fx:id="categoryOptions" prefHeight="28.0" prefWidth="174.0">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                         </ComboBox>
+                        <Button fx:id="removeAllButton" mnemonicParsing="false" onMouseClicked="#removeAll" text="Καθαρισμός Όλων" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -64,7 +68,7 @@
                               <TableView fx:id="scoreTable" prefHeight="444.0" prefWidth="891.0">
                                 <columns>
                                     <TableColumn prefWidth="231.57469940185547" text="Όνομα" />
-                                  <TableColumn prefWidth="166.6168670654297" text="Σκορ" />
+                                  <TableColumn prefWidth="166.6168670654297" text="Σκορ (%)" />
                                   <TableColumn prefWidth="261.09625244140625" text="Ημερομηνία" />
                                     <TableColumn prefWidth="187.90380859375" text="Ώρα" />
                                 </columns>
