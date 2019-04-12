@@ -1,0 +1,1629 @@
+{
+	"images": [
+
+		{
+			"id": "logo",
+			"path": "images/logo/imagInLexisLogo.png"
+		},
+		{
+			"id": "background",
+			"path": "images/logo/background.png"
+		},
+		{
+			"id": "mainMenu",
+			"path": "images/logo/mainMenu.png"
+		},
+		{
+			"id": "homeImage",
+			"path": "images/logo/imagInLexisLogo.png"
+		},
+
+
+
+		{
+			"id": "questionmarkIcon",
+			"path": "images/icons/questionmarkIcon.png"
+		},
+		{
+			"id": "scoreTableIcon",
+			"path": "images/icons/scoreTableIcon.png"
+		},
+		{
+			"id": "informationIcon",
+			"path": "images/icons/informationIcon.png"
+		},
+		
+		{
+			"id": "happyIcon",
+			"path": "images/icons/happyIcon.png"
+		},
+		{
+			"id": "sadIcon",
+			"path": "images/icons/sadIcon.png"
+		},
+
+		{
+			"id": "recognitionImage",
+			"path": "images/icons/recognitionIcon.jpg"
+		},
+		{
+			"id": "katonomasiaImage",
+			"path": "images/icons/katonomasiaIcon.jpg"
+		},
+		{
+			"id": "combinationalImage",
+			"path": "images/icons/combinationalIcon.jpg"
+		},
+
+		{
+			"id": "animalsImage",
+			"path": "images/icons/animalIcon.jpg"
+		},
+		{
+			"id": "professionsImage",
+			"path": "images/icons/professionsIcon.jpg"
+		},
+		{
+			"id": "combinationalProfessionsImage",
+			"path": "images/icons/professionsIcon.jpg"
+		},
+		{
+			"id": "fruitsImage",
+			"path": "images/icons/fruitsIcon.jpg"
+		},
+		{
+			"id": "bodyImage",
+			"path": "images/icons/bodyIcon.jpg"
+		},
+		{
+			"id": "carImage",
+			"path": "images/icons/carIcon.jpg"
+		},
+		{
+			"id": "locationImage",
+			"path": "images/icons/locationIcon.jpg"
+		},
+		{
+			"id": "objectImage",
+			"path": "images/icons/objectIcon.jpg"
+		},
+		{
+			"id": "combinationalObjectImage",
+			"path": "images/icons/objectIcon.jpg"
+		},
+		{
+			"id": "shapeImage",
+			"path": "images/icons/shapeIcon.jpg"
+		},
+		{
+			"id": "applianciesImage",
+			"path": "images/icons/applianciesIcon.jpg"
+		},
+		{
+			"id": "actionImage",
+			"path": "images/icons/actionIcon.jpg"
+		},
+		{
+			"id": "combinationalActionImage",
+			"path": "images/icons/actionIcon.jpg"
+		},
+		{
+			"id": "emotionImage",
+			"path": "images/icons/emotionIcon.jpg"
+		},
+		{
+			"id": "colorImage",
+			"path": "images/icons/colorIcon.jpg"
+		},
+		{
+			"id": "seasonImage",
+			"path": "images/icons/seasonIcon.jpg"
+		},
+		{
+			"id": "weekImage",
+			"path": "images/icons/weekIcon.jpg"
+		},
+		{
+			"id": "substractiveAbillityImage",
+			"path": "images/icons/substractiveAbillityIcon.jpg"
+		},
+		{
+			"id": "oppositesImage",
+			"path": "images/icons/oppositesIcon.jpg"
+		},
+		{
+			"id": "monthImage",
+			"path": "images/icons/monthIcon.jpg"
+		},
+		{
+			"id": "automatedActionsImage",
+			"path": "images/icons/automatedActionsIcon.jpg"
+		},
+		{
+			"id": "closedQuestionsImage",
+			"path": "images/icons/closedQuestionsIcon.jpg"
+		},
+		{
+			"id": "combinationalSequenceImage",
+			"path": "images/icons/sequenceIcon.jpg"
+		},
+
+		{
+			"id": "soundImage",
+			"path": "images/icons/soundIcon.jpg"
+		},
+		{
+			"id": "detectImage",
+			"path": "images/icons/detectIcon.jpg"
+		},
+		{
+			"id": "katonomasiaDefinitionImage",
+			"path": "images/icons/definitionIcon.jpg"
+		},	
+		{
+			"id": "katonomasiaCompleteSentenceImage",
+			"path": "images/icons/completeSentenceIcon.jpg"
+		},
+		{
+			"id": "katonomasiaSoundsImage",
+			"path": "images/icons/soundIcon.jpg"
+		},
+		
+
+
+		{
+			"id": "astragalos",
+			"path": "images/recognition/body/astragalos.jpg"
+		},
+		{
+			"id": "auti",
+			"path": "images/recognition/body/auti.jpg"
+		},
+		{
+			"id": "bodyParts",
+			"path": "images/recognition/body/bodyParts.jpg"
+		},
+		{
+			"id": "koilia",
+			"path": "images/recognition/body/koilia.jpg"
+		},
+		{
+			"id": "metwpo",
+			"path": "images/recognition/body/metwpo.jpg"
+		},
+		{
+			"id": "stoma",
+			"path": "images/recognition/body/stoma.jpg"
+		},
+		{
+			"id": "xeri",
+			"path": "images/recognition/body/xeri.jpg"
+		},
+
+
+		{
+			"id": "camel",
+			"path": "images/recognition/animals/camel.jpg"
+		},
+		{
+			"id": "cat",
+			"path": "images/recognition/animals/cat.jpg"
+		},
+		{
+			"id": "chicken",
+			"path": "images/recognition/animals/chicken.jpg"
+		},
+		{
+			"id": "dog",
+			"path": "images/recognition/animals/dog.jpg"
+		},
+		{
+			"id": "donkey",
+			"path": "images/recognition/animals/donkey.jpg"
+		},
+		{
+			"id": "elephant",
+			"path": "images/recognition/animals/elephant.jpg"
+		},
+		{
+			"id": "hippo",
+			"path": "images/recognition/animals/hippo.jpg"
+		},
+		{
+			"id": "horse",
+			"path": "images/recognition/animals/horse.jpg"
+		},
+		{
+			"id": "lion",
+			"path": "images/recognition/animals/lion.jpg"
+		},
+		{
+			"id": "panther",
+			"path": "images/recognition/animals/panther.jpg"
+		},
+		{
+			"id": "rinho",
+			"path": "images/recognition/animals/rinho.jpg"
+		},
+		{
+			"id": "seal",
+			"path": "images/recognition/animals/seal.jpg"
+		},
+		{
+			"id": "sheep",
+			"path": "images/recognition/animals/sheep.jpg"
+		},
+		{
+			"id": "wolf",
+			"path": "images/recognition/animals/wolf.jpg"
+		},
+		{
+			"id": "zebra",
+			"path": "images/recognition/animals/zebra.jpg"
+		},
+		{
+			"id": "fox",
+			"path": "images/recognition/animals/fox.jpg"
+		},
+		{
+			"id": "giraffe",
+			"path": "images/recognition/animals/giraffe.jpg"
+		},
+		{
+			"id": "chicken",
+			"path": "images/recognition/animals/chicken.jpg"
+		},
+		{
+			"id": "tigger",
+			"path": "images/recognition/animals/tigger.jpg"
+		},
+
+
+		{
+			"id": "apple",
+			"path": "images/recognition/fruits/apple.jpg"
+		},
+		{
+			"id": "carrot",
+			"path": "images/recognition/fruits/carrot.jpg"
+		},
+		{
+			"id": "corn",
+			"path": "images/recognition/fruits/corn.jpg"
+		},
+		{
+			"id": "cucamber",
+			"path": "images/recognition/fruits/cucamber.jpg"
+		},
+		{
+			"id": "grape",
+			"path": "images/recognition/fruits/grape.jpg"
+		},
+		{
+			"id": "lemon",
+			"path": "images/recognition/fruits/lemon.jpg"
+		},
+		{
+			"id": "lettuce",
+			"path": "images/recognition/fruits/lettuce.jpg"
+		},
+		{
+			"id": "orangeFruits",
+			"path": "images/recognition/fruits/orange.jpg"
+		},
+		{
+			"id": "peach",
+			"path": "images/recognition/fruits/peach.jpg"
+		},
+		{
+			"id": "pomegranate",
+			"path": "images/recognition/fruits/pomegranate.jpg"
+		},
+		{
+			"id": "pumkin",
+			"path": "images/recognition/fruits/pumkin.jpg"
+		},
+		{
+			"id": "strawberry",
+			"path": "images/recognition/fruits/strawberry.jpg"
+		},
+		{
+			"id": "tomato",
+			"path": "images/recognition/fruits/tomato.jpg"
+		},
+		{
+			"id": "asparagus",
+			"path": "images/recognition/fruits/asparagus.jpg"
+		},
+		{
+			"id": "apple",
+			"path": "images/recognition/fruits/apple.jpg"
+		},
+		{
+			"id": "mpamies",
+			"path": "images/recognition/fruits/mpamies.jpg"
+		},
+		{
+			"id": "melitzana",
+			"path": "images/recognition/fruits/melitzana.jpg"
+		},
+		{
+			"id": "mantarini",
+			"path": "images/recognition/fruits/mantarini.jpg"
+		},
+		{
+			"id": "kerasia",
+			"path": "images/recognition/fruits/kerasia.jpg"
+		},
+		{
+			"id": "unknowFruit",
+			"path": "images/recognition/fruits/unknowFruit.jpg"
+		},
+
+
+		{
+			"id": "broom",
+			"path": "images/recognition/objects/broom.jpg"
+		},
+		{
+			"id": "chair",
+			"path": "images/recognition/objects/chair.jpg"
+		},
+		{
+			"id": "flashlight",
+			"path": "images/recognition/objects/flashlight.jpg"
+		},
+		{
+			"id": "frame",
+			"path": "images/recognition/objects/frame.jpg"
+		},
+		{
+			"id": "knife",
+			"path": "images/recognition/objects/knife.jpg"
+		},
+		{
+			"id": "laptop",
+			"path": "images/recognition/objects/laptop.jpg"
+		},
+			{
+			"id": "microphone",
+			"path": "images/recognition/objects/microphone.jpg"
+		},
+		{
+			"id": "opener",
+			"path": "images/recognition/objects/opener.jpg"
+		},
+		{
+			"id": "phone",
+			"path": "images/recognition/objects/phone.jpg"
+		},
+		{
+			"id": "pot",
+			"path": "images/recognition/objects/pot.jpg"
+		},
+		{
+			"id": "ruler",
+			"path": "images/recognition/objects/ruler.jpg"
+		},
+		{
+			"id": "scissor",
+			"path": "images/recognition/objects/scissor.jpg"
+		},
+		{
+			"id": "screwdriver",
+			"path": "images/recognition/objects/screwdriver.jpg"
+		},
+		{
+			"id": "seat",
+			"path": "images/recognition/objects/seat.jpg"
+		},
+		{
+			"id": "stool",
+			"path": "images/recognition/objects/stool.jpg"
+		},
+		{
+			"id": "tablet",
+			"path": "images/recognition/objects/tablet.jpg"
+		},
+		{
+			"id": "telephone",
+			"path": "images/recognition/objects/telephone.jpg"
+		},
+		{
+			"id": "trafficLight",
+			"path": "images/recognition/objects/trafficLight.jpg"
+		},
+
+		{
+			"id": "black",
+			"path": "images/recognition/colors/black.jpg"
+		},
+		{
+			"id": "blue",
+			"path": "images/recognition/colors/blue.jpg"
+		},
+		{
+			"id": "brown",
+			"path": "images/recognition/colors/brown.jpg"
+		},
+		{
+			"id": "darkGreen",
+			"path": "images/recognition/colors/darkGreen.png"
+		},
+		{
+			"id": "grey",
+			"path": "images/recognition/colors/grey.jpg"
+		},
+		{
+			"id": "lightBlue",
+			"path": "images/recognition/colors/lightBlue.jpg"
+		},
+		{
+			"id": "lime",
+			"path": "images/recognition/colors/lime.jpg"
+		},
+		{
+			"id": "orangeColor",
+			"path": "images/recognition/colors/orange.jpg"
+		},
+		{
+			"id": "pink",
+			"path": "images/recognition/colors/pink.jpg"
+		},
+		{
+			"id": "purple",
+			"path": "images/recognition/colors/purple.jpg"
+		},
+		{
+			"id": "red",
+			"path": "images/recognition/colors/red.jpg"
+		},
+		{
+			"id": "white",
+			"path": "images/recognition/colors/white.jpg"
+		},
+		{
+			"id": "yellow",
+			"path": "images/recognition/colors/yellow.jpg"
+		},
+
+		{
+			"id": "circle",
+			"path": "images/recognition/shape/circle.jpg"
+		},
+		{
+			"id": "cube",
+			"path": "images/recognition/shape/cube.jpg"
+		},
+		{
+			"id": "cylinder",
+			"path": "images/recognition/shape/cylinder.jpg"
+		},
+		{
+			"id": "decagon",
+			"path": "images/recognition/shape/decagon.jpg"
+		},
+		{
+			"id": "hexagon",
+			"path": "images/recognition/shape/hexagon.jpg"
+		},
+		{
+			"id": "oval",
+			"path": "images/recognition/shape/oval.jpg"
+		},
+		{
+			"id": "pyramid",
+			"path": "images/recognition/shape/pyramid.jpg"
+		},
+		{
+			"id": "rectangular",
+			"path": "images/recognition/shape/rectangular.jpg"
+		},
+		{
+			"id": "simplePolygon",
+			"path": "images/recognition/shape/simplePolygon.jpg"
+		},
+		{
+			"id": "square",
+			"path": "images/recognition/shape/square.jpg"
+		},
+		{
+			"id": "star",
+			"path": "images/recognition/shape/star.jpg"
+		},
+		{
+			"id": "triangle",
+			"path": "images/recognition/shape/triangle.jpg"
+		},
+		{
+			"id": "verticalRectangle",
+			"path": "images/recognition/shape/verticalRectangle.jpg"
+		},
+		{
+			"id": "rhombus",
+			"path": "images/recognition/shape/rhombus.jpg"
+		},
+
+
+		{
+			"id": "actor",
+			"path": "images/recognition/professions/actor.jpg"
+		},
+		{
+			"id": "builder",
+			"path": "images/recognition/professions/builder.jpg"
+		},
+		{
+			"id": "cook",
+			"path": "images/recognition/professions/cook.jpg"
+		},
+		{
+			"id": "doctor",
+			"path": "images/recognition/professions/doctor.jpg"
+		},
+		{
+			"id": "farmer",
+			"path": "images/recognition/professions/farmer.jpg"
+		},
+		{
+			"id": "firefighter",
+			"path": "images/recognition/professions/firefighter.jpg"
+		},
+		{
+			"id": "fisherman",
+			"path": "images/recognition/professions/fisherman.jpg"
+		},
+		{
+			"id": "hunter",
+			"path": "images/recognition/professions/hunter.jpg"
+		},
+		{
+			"id": "lifeguard",
+			"path": "images/recognition/professions/lifeguard.jpg"
+		},
+		{
+			"id": "maid",
+			"path": "images/recognition/professions/maid.jpg"
+		},
+		{
+			"id": "mechanic",
+			"path": "images/recognition/professions/mechanic.jpg"
+		},
+		{
+			"id": "nurse",
+			"path": "images/recognition/professions/nurse.jpg"
+		},
+		{
+			"id": "pilot",
+			"path": "images/recognition/professions/pilot.jpg"
+		},
+		{
+			"id": "policeman",
+			"path": "images/recognition/professions/policeman.jpg"
+		},
+		{
+			"id": "postman",
+			"path": "images/recognition/professions/postman.jpg"
+		},
+		{
+			"id": "salesman",
+			"path": "images/recognition/professions/salesman.jpg"
+		},
+		{
+			"id": "secretary",
+			"path": "images/recognition/professions/secretary.jpg"
+		},
+		{
+			"id": "sewer",
+			"path": "images/recognition/professions/sewer.jpg"
+		},
+		{
+			"id": "swimmer",
+			"path": "images/recognition/professions/swimmer.jpg"
+		},
+		{
+			"id": "teacher",
+			"path": "images/recognition/professions/teacher.jpg"
+		},
+
+
+		{
+			"id": "aircondition",
+			"path": "images/recognition/appliancies/aircondition.jpg"
+		},
+		{
+			"id": "blender",
+			"path": "images/recognition/appliancies/blender.jpg"
+		},
+		{
+			"id": "fan",
+			"path": "images/recognition/appliancies/fan.jpg"
+		},
+		{
+			"id": "fridge",
+			"path": "images/recognition/appliancies/fridge.jpg"
+		},
+		{
+			"id": "grill",
+			"path": "images/recognition/appliancies/grill.jpg"
+		},
+		{
+			"id": "hairDryer",
+			"path": "images/recognition/appliancies/hairDryer.jpg"
+		},
+		{
+			"id": "iron",
+			"path": "images/recognition/appliancies/iron.jpg"
+		},
+		{
+			"id": "oven",
+			"path": "images/recognition/appliancies/oven.jpg"
+		},
+		{
+			"id": "television",
+			"path": "images/recognition/appliancies/television.jpg"
+		},
+		{
+			"id": "vacuumCleaner",
+			"path": "images/recognition/appliancies/vacuumCleaner.jpg"
+		},
+		{
+			"id": "washingMachine",
+			"path": "images/recognition/appliancies/washingMachine.jpg"
+		},
+		{
+			"id": "toastMachine",
+			"path": "images/recognition/appliancies/toastMachine.jpg"
+		},
+
+
+		{
+			"id": "bakeryShop",
+			"path": "images/recognition/location/bakeryShop.jpg"
+		},
+		{
+			"id": "butcherShop",
+			"path": "images/recognition/location/butcherShop.jpg"
+		},
+		{
+			"id": "candyShop",
+			"path": "images/recognition/location/candyShop.jpg"
+		},
+		{
+			"id": "church",
+			"path": "images/recognition/location/church.jpg"
+		},
+		{
+			"id": "court",
+			"path": "images/recognition/location/court.jpg"
+		},
+		{
+			"id": "farmacy",
+			"path": "images/recognition/location/farmacy.jpg"
+		},
+		{
+			"id": "fashionStore",
+			"path": "images/recognition/location/fashionStore.jpg"
+		},
+		{
+			"id": "greengrocers",
+			"path": "images/recognition/location/greengrocers.jpg"
+		},
+		{
+			"id": "hospital",
+			"path": "images/recognition/location/hospital.jpg"
+		},
+		{
+			"id": "hotel",
+			"path": "images/recognition/location/hotel.jpg"
+		},
+		{
+			"id": "museum",
+			"path": "images/recognition/location/museum.jpg"
+		},
+		{
+			"id": "playground",
+			"path": "images/recognition/location/playground.jpg"
+		},
+		{
+			"id": "school",
+			"path": "images/recognition/location/school.jpg"
+		},
+		{
+			"id": "supermarket",
+			"path": "images/recognition/location/supermarket.jpg"
+		},
+		{
+			"id": "zooPark",
+			"path": "images/recognition/location/zooPark.jpg"
+		},
+
+
+		{
+			"id": "airballon",
+			"path": "images/recognition/car/airballon.jpg"
+		},
+		{
+			"id": "airplane",
+			"path": "images/recognition/car/airplane.jpg"
+		},
+		{
+			"id": "ambulance",
+			"path": "images/recognition/car/ambulance.jpg"
+		},
+		{
+			"id": "bike",
+			"path": "images/recognition/car/bike.jpg"
+		},
+		{
+			"id": "bulldozers",
+			"path": "images/recognition/car/bulldozers.jpg"
+		},
+		{
+			"id": "bus",
+			"path": "images/recognition/car/bus.jpg"
+		},
+		{
+			"id": "car",
+			"path": "images/recognition/car/car.jpg"
+		},
+		{
+			"id": "cityBus",
+			"path": "images/recognition/car/cityBus.jpg"
+		},
+		{
+			"id": "fireCar",
+			"path": "images/recognition/car/fireCar.jpg"
+		},
+		{
+			"id": "helicopter",
+			"path": "images/recognition/car/helicopter.jpg"
+		},
+		{
+			"id": "limo",
+			"path": "images/recognition/car/limo.jpg"
+		},
+		{
+			"id": "policeCar",
+			"path": "images/recognition/car/policeCar.jpg"
+		},
+		{
+			"id": "schoolBus",
+			"path": "images/recognition/car/schoolBus.jpg"
+		},
+		{
+			"id": "taxi",
+			"path": "images/recognition/car/taxi.jpg"
+		},
+		{
+			"id": "train",
+			"path": "images/recognition/car/train.jpg"
+		},
+		{
+			"id": "truck",
+			"path": "images/recognition/car/truck.jpg"
+		},
+		{
+			"id": "truck2",
+			"path": "images/recognition/car/truck2.jpg"
+		},
+
+
+		{
+			"id": "acting",
+			"path": "images/recognition/action/acting.jpg"
+		},
+		{
+			"id": "builting",
+			"path": "images/recognition/action/builting.jpg"
+		},
+		{
+			"id": "climbing",
+			"path": "images/recognition/action/climbing.jpg"
+		},
+		{
+			"id": "cooking",
+			"path": "images/recognition/action/cooking.jpg"
+		},
+		{
+			"id": "dancing",
+			"path": "images/recognition/action/dancing.jpg"
+		},
+		{
+			"id": "drawing",
+			"path": "images/recognition/action/drawing.jpg"
+		},
+		{
+			"id": "hanging",
+			"path": "images/recognition/action/hanging.jpg"
+		},
+		{
+			"id": "kneating",
+			"path": "images/recognition/action/kneating.jpg"
+		},
+		{
+			"id": "mopping",
+			"path": "images/recognition/action/mopping.jpg"
+		},
+		{
+			"id": "painting",
+			"path": "images/recognition/action/painting.jpg"
+		},
+		{
+			"id": "planting",
+			"path": "images/recognition/action/planting.jpg"
+		},
+		{
+			"id": "reading",
+			"path": "images/recognition/action/reading.jpg"
+		},
+		{
+			"id": "seeding",
+			"path": "images/recognition/action/seeding.jpg"
+		},
+		{
+			"id": "singing",
+			"path": "images/combinational/professions/singer.jpg"
+		},
+		{
+			"id": "skiing",
+			"path": "images/recognition/action/skiing.jpg"
+		},
+		{
+			"id": "slipping",
+			"path": "images/recognition/action/slipping.jpg"
+		},
+		{
+			"id": "walking",
+			"path": "images/recognition/action/walking.jpg"
+		},
+		{
+			"id": "watering",
+			"path": "images/recognition/action/watering.jpg"
+		},
+		{
+			"id": "writing",
+			"path": "images/recognition/action/writing.jpg"
+		},
+
+
+		{
+			"id": "angry",
+			"path": "images/recognition/emotion/angry.jpg"
+		},
+		{
+			"id": "desgusted",
+			"path": "images/recognition/emotion/desgusted.jpg"
+		},
+		{
+			"id": "happy",
+			"path": "images/recognition/emotion/happy.jpg"
+		},
+		{
+			"id": "nervous",
+			"path": "images/recognition/emotion/nervous.jpg"
+		},
+		{
+			"id": "pleased",
+			"path": "images/recognition/emotion/pleased.jpg"
+		},
+		{
+			"id": "sad",
+			"path": "images/recognition/emotion/sad.jpg"
+		},
+		{
+			"id": "speechless",
+			"path": "images/recognition/emotion/speechless.jpg"
+		},
+		{
+			"id": "suspicious",
+			"path": "images/recognition/emotion/suspicious.jpg"
+		},
+		{
+			"id": "veryHappy",
+			"path": "images/recognition/emotion/veryHappy.jpg"
+		},
+
+	
+		{
+			"id": "autumn1",
+			"path": "images/recognition/season/autumn1.jpg"
+		},
+		{
+			"id": "autumn2",
+			"path": "images/recognition/season/autumn2.jpg"
+		},
+		{
+			"id": "autumn3",
+			"path": "images/recognition/season/autumn3.jpg"
+		},
+		{
+			"id": "spring1",
+			"path": "images/recognition/season/spring1.jpg"
+		},
+		{
+			"id": "spring2",
+			"path": "images/recognition/season/spring2.jpg"
+		},
+		{
+			"id": "spring3",
+			"path": "images/recognition/season/spring3.jpg"
+		},
+		{
+			"id": "summer1",
+			"path": "images/recognition/season/summer1.jpg"
+		},
+		{
+			"id": "summer2",
+			"path": "images/recognition/season/summer2.jpg"
+		},
+		{
+			"id": "summer3",
+			"path": "images/recognition/season/summer3.jpg"
+		},
+		{
+			"id": "winter1",
+			"path": "images/recognition/season/winter1.jpg"
+		},
+		{
+			"id": "winter2",
+			"path": "images/recognition/season/winter2.jpg"
+		},
+		{
+			"id": "winter3",
+			"path": "images/recognition/season/winter3.jpg"
+		},
+
+
+		{
+			"id": "beach",
+			"path": "images/recognition/month/beach.jpg"
+		},
+		{
+			"id": "carnival",
+			"path": "images/recognition/month/carnival.jpg"
+		},
+		{
+			"id": "christmasSocks",
+			"path": "images/recognition/month/christmasSocks.jpg"
+		},
+		{
+			"id": "christmasTree",
+			"path": "images/recognition/month/christmasTree.jpg"
+		},
+		{
+			"id": "easter",
+			"path": "images/recognition/month/easter.jpg"
+		},
+		{
+			"id": "easterTwo",
+			"path": "images/recognition/month/easterTwo.jpg"
+		},
+		{
+			"id": "kite",
+			"path": "images/recognition/month/kite.jpg"
+		},
+		{
+			"id": "march",
+			"path": "images/recognition/month/march.jpg"
+		},
+		{
+			"id": "may",
+			"path": "images/recognition/month/may.jpg"
+		},
+		{
+			"id": "schoolClass",
+			"path": "images/recognition/month/schoolClass.jpg"
+		},
+		{
+			"id": "snowman",
+			"path": "images/recognition/month/snowman.jpg"
+		},
+		{
+			"id": "christmasTriangle",
+			"path": "images/recognition/month/christmasTriangle.jpg"
+		},
+
+
+		{
+			"id": "boyBaby",
+			"path": "images/recognition/opposites/boyBaby.jpg"
+		},
+		{
+			"id": "cleanOther",
+			"path": "images/recognition/opposites/cleanOther.jpg"
+		},
+		{
+			"id": "closeBroken",
+			"path": "images/recognition/opposites/closeBroken.jpg"
+		},
+		{
+			"id": "dayAfternoon",
+			"path": "images/recognition/opposites/dayAfternoon.jpg"
+		},
+		{
+			"id": "dayNight",
+			"path": "images/recognition/opposites/dayNight.jpg"
+		},
+		{
+			"id": "dirtyClean",
+			"path": "images/recognition/opposites/dirtyClean.jpg"
+		},
+		{
+			"id": "dirtyOther",
+			"path": "images/recognition/opposites/dirtyOther.jpg"
+		},
+		{
+			"id": "downNear",
+			"path": "images/recognition/opposites/downNear.jpg"
+		},
+		{
+			"id": "filliedEmpty",
+			"path": "images/recognition/opposites/filliedEmpty.jpg"
+		},
+		{
+			"id": "girlBaby",
+			"path": "images/recognition/opposites/girlBaby.jpg"
+		},
+		{
+			"id": "girlBoy",
+			"path": "images/recognition/opposites/girlBoy.jpg"
+		},
+		{
+			"id": "greyBlack",
+			"path": "images/recognition/opposites/greyBlack.jpg"
+		},
+		{
+			"id": "inOut",
+			"path": "images/recognition/opposites/inOut.jpg"
+		},
+		{
+			"id": "mountainCountry",
+			"path": "images/recognition/opposites/mountainCountry.jpg"
+		},
+		{
+			"id": "nearUp",
+			"path": "images/recognition/opposites/nearUp.jpg"
+		},
+		{
+			"id": "nightAfternoon",
+			"path": "images/recognition/opposites/nightAfternoon.jpg"
+		},
+		{
+			"id": "openBroken",
+			"path": "images/recognition/opposites/openBroken.jpg"
+		},
+		{
+			"id": "openClose",
+			"path": "images/recognition/opposites/openClose.jpg"
+		},
+		{
+			"id": "seaCountry",
+			"path": "images/recognition/opposites/seaCountry.jpg"
+		},
+		{
+			"id": "seaMountain",
+			"path": "images/recognition/opposites/seaMountain.jpg"
+		},
+		{
+			"id": "shortTall",
+			"path": "images/recognition/opposites/shortTall.jpg"
+		},
+		{
+			"id": "upDown2",
+			"path": "images/recognition/opposites/upDown2.jpg"
+		},
+		{
+			"id": "upDown",
+			"path": "images/recognition/opposites/upDown.jpg"
+		},
+		{
+			"id": "whiteBlack",
+			"path": "images/recognition/opposites/whiteBlack.jpg"
+		},
+		{
+			"id": "whiteGrey",
+			"path": "images/recognition/opposites/whiteGrey.jpg"
+		},
+
+
+
+		{
+			"id": "armchair",
+			"path": "images/recognition/substractiveAbillity/armchair.jpg"
+		},
+		{
+			"id": "book",
+			"path": "images/recognition/substractiveAbillity/book.jpg"
+		},
+		{
+			"id": "bulldozers",
+			"path": "images/recognition/substractiveAbillity/bulldozers.jpg"
+		},
+		{
+			"id": "substractiveAbillityChair",
+			"path": "images/recognition/substractiveAbillity/chair.jpg"
+		},
+		{
+			"id": "cup",
+			"path": "images/recognition/substractiveAbillity/cup.jpg"
+		},
+		{
+			"id": "cupTea",
+			"path": "images/recognition/substractiveAbillity/cupTea.jpg"
+		},
+		{
+			"id": "glass",
+			"path": "images/recognition/substractiveAbillity/glass.jpg"
+		},
+		{
+			"id": "newspaper",
+			"path": "images/recognition/substractiveAbillity/newspaper.jpg"
+		},
+		{
+			"id": "notebook",
+			"path": "images/recognition/substractiveAbillity/notebook.jpg"
+		},
+		{
+			"id": "pc",
+			"path": "images/recognition/substractiveAbillity/pc.jpg"
+		},
+		{
+			"id": "pen",
+			"path": "images/recognition/substractiveAbillity/pen.jpg"
+		},
+		{
+			"id": "radio",
+			"path": "images/recognition/substractiveAbillity/radio.jpg"
+		},
+		{
+			"id": "sofa",
+			"path": "images/recognition/substractiveAbillity/sofa.jpg"
+		},
+		{
+			"id": "steamroller",
+			"path": "images/recognition/substractiveAbillity/steamroller.jpg"
+		},
+		{
+			"id": "table",
+			"path": "images/recognition/substractiveAbillity/table.jpg"
+		},
+		{
+			"id": "teleferic",
+			"path": "images/recognition/substractiveAbillity/teleferic.jpg"
+		},
+		{
+			"id": "television",
+			"path": "images/recognition/substractiveAbillity/television.jpg"
+		},
+		{
+			"id": "toastMachine",
+			"path": "images/recognition/substractiveAbillity/toastMachine.jpg"
+		},
+		{
+			"id": "truck",
+			"path": "images/recognition/substractiveAbillity/truck.jpg"
+		},
+		{
+			"id": "vase",
+			"path": "images/recognition/substractiveAbillity/vase.jpg"
+		},
+
+
+		{
+			"id": "artisticHall",
+			"path": "images/recognition/detect/artisticHall.jpg"
+		},
+		{
+			"id": "kitchenRoom",
+			"path": "images/recognition/detect/kitchenRoom.jpg"
+		},
+		{
+			"id": "studio",
+			"path": "images/recognition/detect/studio.jpg"
+		},
+		{
+			"id": "warehouse",
+			"path": "images/recognition/detect/warehouse.jpg"
+		},
+
+
+
+
+
+		{
+			"id": "bottle",
+			"path": "images/katonomasia/task1/bottle.jpg"
+		},
+		{
+			"id": "fireplace",
+			"path": "images/katonomasia/task1/fireplace.jpg"
+		},
+		{
+			"id": "saw",
+			"path": "images/katonomasia/task1/saw.jpg"
+		},
+		{
+			"id": "spaceship",
+			"path": "images/katonomasia/task1/spaceship.jpg"
+		},
+		{
+			"id": "stairs",
+			"path": "images/katonomasia/task1/stairs.jpg"
+		},
+		{
+			"id": "suitcase",
+			"path": "images/katonomasia/task1/suitcase.jpg"
+		},
+		{
+			"id": "swing",
+			"path": "images/katonomasia/task1/swing.jpg"
+		},
+				{
+			"id": "bottle",
+			"path": "images/katonomasia/task1/bottle.jpg"
+		},
+		{
+			"id": "trolley",
+			"path": "images/katonomasia/task1/trolley.jpg"
+		},
+		{
+			"id": "umbrella",
+			"path": "images/katonomasia/task1/umbrella.jpg"
+		},
+		{
+			"id": "washBasin",
+			"path": "images/katonomasia/task1/washBasin.jpg"
+		},
+		{
+			"id": "cuddles",
+			"path": "images/katonomasia/task2/cuddles.jpg"
+		},
+		{
+			"id": "floor",
+			"path": "images/katonomasia/task2/floor.jpg"
+		},
+		{
+			"id": "katonomasiaKnife",
+			"path": "images/katonomasia/task2/katonomasiaKnife.jpg"
+		},
+		{
+			"id": "katonomasiaPen",
+			"path": "images/katonomasia/task2/pen.jpg"
+		},
+		{
+			"id": "radiator",
+			"path": "images/katonomasia/task2/radiator.jpg"
+		},
+		{
+			"id": "shoes",
+			"path": "images/katonomasia/task2/shoes.jpg"
+		},
+		{
+			"id": "sink",
+			"path": "images/katonomasia/task2/sink.jpg"
+		},
+		{
+			"id": "soap",
+			"path": "images/katonomasia/task2/soap.jpg"
+		},
+		{
+			"id": "staircase",
+			"path": "images/katonomasia/task2/staircase.jpg"
+		},
+		{
+			"id": "tomato",
+			"path": "images/katonomasia/task2/tomato.jpg"
+		},
+
+
+
+
+		{
+			"id": "fork",
+			"path": "images/combinational/object/fork.jpg"
+		},
+		{
+			"id": "knife",
+			"path": "images/combinational/object/knife.jpg"
+		},
+		{
+			"id": "pan",
+			"path": "images/combinational/object/pan.png"
+		},
+		{
+			"id": "glassRound",
+			"path": "images/combinational/object/glass.png"
+		},
+
+		{
+			"id": "bath",
+			"path": "images/combinational/object/bath.jpg"
+		},
+		{
+			"id": "sponge",
+			"path": "images/combinational/object/sponge.png"
+		},
+		{
+			"id": "carpet",
+			"path": "images/combinational/object/carpet.png"
+		},
+		{
+			"id": "washbasin",
+			"path": "images/combinational/object/washbasin.png"
+		},
+
+		{
+			"id": "bag",
+			"path": "images/combinational/object/bag.jpg"
+		},
+		{
+			"id": "bookRound",
+			"path": "images/combinational/object/book.png"
+		},
+		{
+			"id": "canvas",
+			"path": "images/combinational/object/canvas.png"
+		},
+		{
+			"id": "newspaperRound",
+			"path": "images/combinational/object/newspaper.png"
+		},
+
+		{
+			"id": "hat",
+			"path": "images/combinational/object/hat.jpg"
+		},
+		{
+			"id": "gloves",
+			"path": "images/combinational/object/gloves.png"
+		},
+		{
+			"id": "boots",
+			"path": "images/combinational/object/boots.png"
+		},
+		{
+			"id": "shirt",
+			"path": "images/combinational/object/shirt.png"
+		},
+
+		{
+			"id": "chairRound",
+			"path": "images/combinational/professions/chair.png"
+		},
+		{
+			"id": "diver",
+			"path": "images/combinational/professions/diver.jpg"
+		},
+		{
+			"id": "oxygenBottle",
+			"path": "images/combinational/professions/oxygenBottle.png"
+		},
+		{
+			"id": "boat",
+			"path": "images/combinational/professions/boat.png"
+		},
+		{
+			"id": "mountain",
+			"path": "images/combinational/professions/mountain.png"
+		},
+
+		{
+			"id": "dancer",
+			"path": "images/combinational/professions/dancer.jpg"
+		},
+		{
+			"id": "sneakers",
+			"path": "images/combinational/professions/sneakers.png"
+		},
+		{
+			"id": "danceShoes",
+			"path": "images/combinational/professions/danceShoes.png"
+		},
+		{
+			"id": "swimmingSuit",
+			"path": "images/combinational/professions/swimmingSuit.png"
+		},
+
+		{
+			"id": "acrobat",
+			"path": "images/combinational/professions/acrobat.jpg"
+		},
+		{
+			"id": "circus",
+			"path": "images/combinational/professions/circus.png"
+		},
+		{
+			"id": "animals",
+			"path": "images/combinational/professions/animals.png"
+		},
+		{
+			"id": "pool",
+			"path": "images/combinational/professions/pool.png"
+		},
+
+		{
+			"id": "singer",
+			"path": "images/combinational/professions/singer.jpg"
+		},
+		{
+			"id": "microphoneRound",
+			"path": "images/combinational/professions/microphone.png"
+		},
+		{
+			"id": "floute",
+			"path": "images/combinational/professions/floute.png"
+		},
+
+		{
+			"id": "drink",
+			"path": "images/combinational/action/drink.jpg"
+		},
+		{
+			"id": "juice",
+			"path": "images/combinational/action/juice.png"
+		},
+		{
+			"id": "banana",
+			"path": "images/combinational/action/banana.png"
+		},
+		{
+			"id": "cow",
+			"path": "images/combinational/action/cow.png"
+		},
+
+		{
+			"id": "sleep",
+			"path": "images/combinational/action/sleep.jpg"
+		},
+		{
+			"id": "bed",
+			"path": "images/combinational/action/bed.png"
+		},
+		{
+			"id": "seaMatress",
+			"path": "images/combinational/action/seaMatress.png"
+		},
+		{
+			"id": "lamp",
+			"path": "images/combinational/action/lamp.png"
+		},
+
+		{
+			"id": "hurt",
+			"path": "images/combinational/action/hurt.jpg"
+		},
+		{
+			"id": "water",
+			"path": "images/combinational/action/water.png"
+		},		
+		{
+			"id": "medicine",
+			"path": "images/combinational/action/medicine.png"
+		},		
+		{
+			"id": "orange",
+			"path": "images/combinational/action/orange.png"
+		},
+
+		{
+			"id": "pay",
+			"path": "images/combinational/action/pay.jpg"
+		},
+		{
+			"id": "money",
+			"path": "images/combinational/action/money.png"
+		},		
+		{
+			"id": "wallet",
+			"path": "images/combinational/action/wallet.png"
+		},		
+		{
+			"id": "womanBag",
+			"path": "images/combinational/action/womanBag.png"
+		},
+
+		{
+			"id": "wipe",
+			"path": "images/combinational/action/wipe.png"
+		},
+		{
+			"id": "nail",
+			"path": "images/combinational/action/nail.png"
+		},		
+		{
+			"id": "plant",
+			"path": "images/combinational/action/plant.png"
+		},		
+		{
+			"id": "mop",
+			"path": "images/combinational/action/mop.png"
+		},
+
+		{
+			"id": "washDishes",
+			"path": "images/combinational/action/washDishes.png"
+		},
+		{
+			"id": "breakDishes",
+			"path": "images/combinational/action/breakDishes.png"
+		},		
+		{
+			"id": "makeTable",
+			"path": "images/combinational/action/makeTable.png"
+		},		
+		{
+			"id": "cleanDishes",
+			"path": "images/combinational/action/cleanDishes.png"
+		},
+
+
+		{
+			"id": "eatPasta",
+			"path": "images/combinational/sequence/eatPasta.jpg"
+		},
+		{
+			"id": "eatFruit",
+			"path": "images/combinational/sequence/eatFruit.png"
+		},		
+		{
+			"id": "eatSweet",
+			"path": "images/combinational/sequence/eatSweet.png"
+		},		
+		{
+			"id": "eatEgg",
+			"path": "images/combinational/sequence/eatEgg.png"
+		},
+
+		{
+			"id": "wipe",
+			"path": "images/combinational/sequence/wipe.jpg"
+		},
+		{
+			"id": "nail",
+			"path": "images/combinational/sequence/nail.png"
+		},		
+		{
+			"id": "plant",
+			"path": "images/combinational/sequence/plant.png"
+		},		
+		{
+			"id": "mop",
+			"path": "images/combinational/sequence/mop.png"
+		},
+
+		{
+			"id": "washDishes",
+			"path": "images/combinational/sequence/washDishes.jpg"
+		},
+		{
+			"id": "breakDishes",
+			"path": "images/combinational/sequence/breakDishes.png"
+		},		
+		{
+			"id": "makeTable",
+			"path": "images/combinational/sequence/makeTable.png"
+		},		
+		{
+			"id": "cleanDishes",
+			"path": "images/combinational/sequence/cleanDishes.png"
+		},
+
+		{
+			"id": "playFootball",
+			"path": "images/combinational/sequence/playFootball.jpg"
+		},
+		{
+			"id": "walk",
+			"path": "images/combinational/sequence/walk.png"
+		},		
+		{
+			"id": "paint",
+			"path": "images/combinational/sequence/paint.png"
+		},		
+		{
+			"id": "playTennis",
+			"path": "images/combinational/sequence/playTennis.png"
+		}
+	]
+}
