@@ -20,7 +20,6 @@ com/xenakis/screenController/ScoreTableScreenController.class
 com/xenakis/application/SoundHolder.class
 com/xenakis/ImagInLexis.class
 com/xenakis/screenController/ChooseImageScreenController2.class
-module-info.class
 com/xenakis/screenData/ChooseImageScreenData2.class
 com/xenakis/screenController/AboutUsMainScreenController.class
 com/xenakis/screenController/CombinationalChapterScreenController.class

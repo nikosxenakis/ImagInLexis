@@ -1,37 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-
-<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.AboutUsMainScreenController">
-    <children>
-        <BorderPane prefHeight="657.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <center>
-                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="  Δημιουργοί:  &#10;&#9;&#10;&#9;Στυλιανομανωλάκη Άννα, Λογοθεραπεύτρια &#10;&#9;email: stylianomanolaki@gmail.com &#10;&#10;&#9;Κουφοκώστα Δήμητρα, Λογοθεραπευτρια&#10;&#9;email:  d.koufokosta@hotmail.gr&#10;&#10;&#10;Ανάπτυξη προγραμματιστικού περιβάλλοντος: &#10;&#10;&#9;Ξενάκης  Νικόλαος, Μηχανικός Λογισμικού&#10;&#9;email: xenis656@gmail.com&#10;&#10;&#10;Επόπτης Έργου: &#10;&#10;&#9;Μακρής Γεώργιος, Λογοθεραπευτής, Msc&#10;        Επιστημονικός συνεργάτης του ΑΤΕΙ Πελοποννήσου,&#10;&#9;της Σχολής Επαγγελμάτων Υγείας και Πρόνοιας στο τμήμα Λογοθεραπείας&#10;&#9; email: glog_makris@yahoo.gr&#10;&#10;Η ομάδα." BorderPane.alignment="CENTER">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                    <BorderPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" />
-                    </BorderPane.margin>
-                </Text>
-            </center>
-            <top>
-                <HBox alignment="CENTER" prefHeight="154.0" prefWidth="883.0" BorderPane.alignment="CENTER">
-                    <children>
-                        <ImageView fx:id="homeImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../images/logo/imagInLexisLogo.png" />
-                            </image>
-                            <HBox.margin>
-                                <Insets left="20.0" right="20.0" top="20.0" />
-                            </HBox.margin>
-                        </ImageView>
-                    </children>
-                </HBox>
-            </top>
-        </BorderPane>
-    </children>
-</AnchorPane>

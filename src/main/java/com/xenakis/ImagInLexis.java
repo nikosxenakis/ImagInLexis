@@ -45,7 +45,7 @@ public class ImagInLexis extends Application {
         stage.setScene(scene);
         stage.show();
 
-        SoundHolder.playSound("endProgramSound");
+//        SoundHolder.playSound("endProgramSound");
     }
 
     @Override
