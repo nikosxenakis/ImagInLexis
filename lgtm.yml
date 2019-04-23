@@ -1,8 +1,16 @@
+# extraction:
+#   java:
+#     before_index:
+#       export BUILD_MODE=release
+#     index:
+#       maven:
+#         version: 4.0.0
+#         settings_file: $LGTM_SRC/pom.xml
+
+
 extraction:
   java:
-    before_index:
-      export BUILD_MODE=release
     index:
-      maven:
-        version: 4.0.0
-        settings_file: pom.xml
+      build_command:
+      - ./compile-main.sh
+      - ./compile-tests.sh
