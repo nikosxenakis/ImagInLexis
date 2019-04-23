@@ -4,5 +4,5 @@ extraction:
       export BUILD_MODE=release
     index:
       maven:
-        version: 3.5.2
+        version: 4.0.0
         settings_file: pom.xml
