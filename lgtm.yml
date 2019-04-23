@@ -5,4 +5,4 @@ extraction:
     index:
       maven:
         version: 3.5.2
-        settings_file: build-info/settings.xml
+        settings_file: pom.xml
