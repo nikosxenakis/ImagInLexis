@@ -12,5 +12,4 @@ extraction:
   java:
     index:
       build_command:
-      - ./compile-main.sh
-      - ./compile-tests.sh
+      - mvn clean compile jar:jar install -f pom.xml
