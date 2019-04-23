@@ -13,7 +13,7 @@ mvn clean compile jar:jar install -f pom.xml
 
 ## Prerequisites
 
-* Java: [java](https://www.mpich.org/static/docs/v3.1/www1/mpicxx.html)
+* Java 8: This is the official website to download [java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 
 ## Testing
 
