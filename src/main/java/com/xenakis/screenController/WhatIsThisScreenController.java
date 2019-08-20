@@ -65,7 +65,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
         	image.setImage(tmpImage); 		
     	}
     	else{
-    		System.out.println("delete imagee");
+    		System.out.println("delete image");
     		mainBox.getChildren().remove(image);
     	}
 

@@ -5,7 +5,6 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -15,6 +14,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class MainScreenController extends ScreenController{
 
@@ -69,10 +70,16 @@ public class MainScreenController extends ScreenController{
     	item.setEffect(null);
     }
 
-//    @FXML
+    @FXML
+    public void initialize(URL url, ResourceBundle rb) {
+        SoundHolder.playSound("endProgramSound");
+//        SoundHolder.playSound("startProgramSound");
+    }
+
     public void start(MouseEvent e){
 
-    	if(e.getSource() instanceof Text){
+
+        if(e.getSource() instanceof Text){
             if((Text)e.getSource() == chapter1Button){
             	SoundHolder.playSound("chapter1Anagnorisi");
                 ImagInLexis.mainContainer.setScreen("RecognitionChapterScreen");
@@ -119,6 +126,7 @@ public class MainScreenController extends ScreenController{
     	else{
         	System.err.println("unknown source in main screen controller");
     	}
+        SoundHolder.stopSound("endProgramSound");
 
     }
 

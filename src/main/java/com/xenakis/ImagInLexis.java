@@ -26,6 +26,9 @@ public class ImagInLexis extends Application {
 
     @Override
     public void start(Stage stage){
+
+        imagInLexisParser = new ImagInLexisParser(inputFilePath,imagesFilePath,soundsFilePath);
+
         mainStage = stage;
         mainContainer = new ScreenPane();
 
@@ -34,7 +37,6 @@ public class ImagInLexis extends Application {
         stage.setMaxWidth(1130);
         stage.setMaxHeight(750);
 
-        imagInLexisParser = new ImagInLexisParser(inputFilePath,imagesFilePath,soundsFilePath);
         imagInLexisParser.initialize();
 
         Scene scene = new Scene(mainContainer);
@@ -44,8 +46,6 @@ public class ImagInLexis extends Application {
 
         stage.setScene(scene);
         stage.show();
-
-//        SoundHolder.playSound("endProgramSound");
     }
 
     @Override

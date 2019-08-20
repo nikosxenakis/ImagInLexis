@@ -27,14 +27,14 @@ public class SoundHolder{
 
     	MediaPlayer mediaPlayer = instance.sounds.get(id);
     	
-    	if(mediaPlayer == null){
+//    	if(mediaPlayer == null){
 	    	String path = instance.soundsPath.get(id);
 	    	System.out.println(path);
 	    	URL resource = ImagInLexis.class.getResource(path);
 	        Media media = new Media(resource.toString());
 	        mediaPlayer = new MediaPlayer(media);
 	        instance.sounds.put(id, mediaPlayer);
-    	}
+//    	}
 
         return mediaPlayer;
     }
