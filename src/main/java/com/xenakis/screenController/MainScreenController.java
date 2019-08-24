@@ -78,7 +78,6 @@ public class MainScreenController extends ScreenController{
 
     public void start(MouseEvent e){
 
-
         if(e.getSource() instanceof Text){
             if((Text)e.getSource() == chapter1Button){
             	SoundHolder.playSound("chapter1Anagnorisi");

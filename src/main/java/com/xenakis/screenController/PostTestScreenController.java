@@ -82,7 +82,7 @@ public class PostTestScreenController extends ScreenController{
     }
     
     public void endTest(MouseEvent e){
-    	SoundHolder.playSound("startProgramSound");
+    	SoundHolder.playSound("endProgramSound");
     	ImagInLexis.mainContainer.setScreen(test.getMenuScreenId());
     }
 }

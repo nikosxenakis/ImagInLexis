@@ -85,69 +85,6 @@ public class ImagInLexisParser {
 		return (JSONObject) obj;
 	}
 
-	private JSONObject loadScores(String scoresFilePath){
-
-        Object obj = null;
-
-        
-		try {
-			String path = ImagInLexis.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-			String decodedPath = URLDecoder.decode(path, "UTF-8");
-			
-
-			boolean endWithJar = false;
-			if(decodedPath.endsWith(".jar")){
-				endWithJar = true;
-			}
-			else{
-				endWithJar = false;
-			}
-		
-			int pos = decodedPath.lastIndexOf("/");
-			decodedPath = decodedPath.substring(0, pos);
-			System.out.println(decodedPath);
-			File file = null;
-			if(endWithJar == true){
-				file = new File(decodedPath+"/files/scores.json");
-			}
-			else{
-				//based on the IDE
-				file = new File(decodedPath+"/../../../files/scores.json");
-			}
-
-			InputStream input = new FileInputStream(file);
-			BufferedReader reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
-
-			StringBuilder out = new StringBuilder();
-	        String line;
-	        try {
-				while ((line = reader.readLine()) != null) {
-				    out.append(line);
-				}
-				reader.close();
-
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			try {
-				obj = parser.parse(out.toString());
-			} catch (ParseException e) {
-				e.printStackTrace();
-			}
-		    
-
-		} catch (UnsupportedEncodingException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return (JSONObject) obj;     
-	}
-	
 	public void parseCategoryNames(){
 	    JSONArray scores = (JSONArray) jsonObject.get("questions");
     	for (Object scoresChapter : scores){
@@ -164,47 +101,17 @@ public class ImagInLexisParser {
 	
 	public List<Score> getScoreList(String chapterName, String categoryName){
 
-//	    List<Score> scoreList = new ArrayList<>();
 		List<Score> scoreList;
 
-
-		if(chapterName == "Όλα") {
+		if(chapterName.equals("Όλα")) {
 			scoreList = Database.select(null, null);
 		}
-		else if(categoryName == "Όλα") {
+		else if(categoryName.equals("Όλα")) {
 			scoreList = Database.select(chapterName, null);
 		}
 		else {
 			scoreList = Database.select(chapterName, categoryName);
 		}
-
-
-//        JSONArray scores = (JSONArray) scoresJsonObject.get("scores");
-//
-//        for (Object c : scores){
-//        	JSONObject c1 = (JSONObject) c;
-//            JSONArray chapterList = (JSONArray) c1.get("chapterList");
-//        	String currChapterName = (String)(c1.get("chapterName"));
-//
-//        	if(currChapterName.equals(chapterName) || chapterName.equals("Όλα")){
-//                for (Object cc : chapterList){
-//                	JSONObject cc1 = (JSONObject) cc;
-//                    JSONArray categoryList = (JSONArray) cc1.get("categoryList");
-//                	String currCategoryName = (String)(cc1.get("categoryName"));
-//
-//                	if(currCategoryName.equals(categoryName) || categoryName.equals("Όλα")){
-//                        for (Object ccc : categoryList){
-//                        	JSONObject ccc1 = (JSONObject) ccc;
-//                        	String name = (String)(ccc1.get("name"));
-//                        	String score = (String)(ccc1.get("score"));
-//                        	String date = (String)(ccc1.get("date"));
-//                        	String time = (String)(ccc1.get("time"));
-//                        	scoreList.add( new Score(name,score,date,time) );
-//                        }
-//                	}
-//                }
-//        	}
-//        }
         
 	    return scoreList;
 	}

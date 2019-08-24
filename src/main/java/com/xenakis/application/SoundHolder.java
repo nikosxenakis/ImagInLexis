@@ -25,22 +25,18 @@ public class SoundHolder{
     
     public static MediaPlayer getSound(String id){
 
-    	MediaPlayer mediaPlayer = instance.sounds.get(id);
-    	
-//    	if(mediaPlayer == null){
-	    	String path = instance.soundsPath.get(id);
-	    	System.out.println(path);
-	    	URL resource = ImagInLexis.class.getResource(path);
-	        Media media = new Media(resource.toString());
-	        mediaPlayer = new MediaPlayer(media);
-	        instance.sounds.put(id, mediaPlayer);
-//    	}
+        String path = instance.soundsPath.get(id);
+        System.out.println(path);
+        URL resource = ImagInLexis.class.getResource(path);
+        Media media = new Media(resource.toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        instance.sounds.put(id, mediaPlayer);
 
         return mediaPlayer;
     }
 
     public static void playSound(String id){
-    	getSound(id).play();
+        getSound(id).play();
     }
     
     public static void stopSound(String id){

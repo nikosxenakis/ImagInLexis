@@ -12,6 +12,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Ellipse;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 public class KatonomasiaChapterScreenController extends ScreenController{
 
@@ -82,6 +84,6 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-        new Test("katonomasia",category,"Κατονομασία",ImagInLexis.imagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
+		new Test("katonomasia",category,"Κατονομασία",ImagInLexis.imagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
     }
 }

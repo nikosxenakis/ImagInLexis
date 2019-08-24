@@ -157,7 +157,6 @@ public class ScreenPane extends StackPane{
 	    }
     }
     
-    
     //This method will remove the screen with the given name from the collection of screens
     public void unloadScreen(String name){
     	
