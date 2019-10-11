@@ -195,7 +195,7 @@
 									"circleH": "10"
 								}
 							],
-							"answers": [{ "answerNo": "1" },{ "answerNo": "2" }]
+							"answers": [{ "answerNo": "1" }]
 						},
 						{
 							"screenId": "chooseLabelFromSoundKoilia",
