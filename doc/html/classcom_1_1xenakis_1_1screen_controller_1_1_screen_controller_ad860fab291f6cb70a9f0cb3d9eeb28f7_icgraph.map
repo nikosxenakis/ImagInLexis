@@ -1,0 +1,7 @@
+<map id="com.xenakis.screenController.ScreenController.setScreenPane" name="com.xenakis.screenController.ScreenController.setScreenPane">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#abc6f8b9c79dcd27b9237cb9c0e327acd" title="com.xenakis.application.\lScreenPane.loadScreen" alt="" coords="269,37,435,76"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a23a2e89ead537679544536eeb2113bdd" title="com.xenakis.application.\lImagInLexisParser.parseScreens" alt="" coords="483,5,701,44"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="509,68,676,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#abfb611e538ecb22ce2fdbc36f71b4081" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="749,5,932,44"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#a416f55b58a7e19c832ab973b8c8c78ca" title="com.xenakis.ImagInLexis.start" alt="" coords="980,12,1181,37"/>
+</map>

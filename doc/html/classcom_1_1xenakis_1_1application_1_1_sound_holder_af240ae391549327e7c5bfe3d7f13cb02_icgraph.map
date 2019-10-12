@@ -1,0 +1,5 @@
+<map id="com.xenakis.application.SoundHolder.stopSound" name="com.xenakis.application.SoundHolder.stopSound">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller.html#a7b3e90dd6fa6737d5e2b19d0683443de" title="com.xenakis.screenController.\lMainScreenController.start" alt="" coords="220,5,420,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html#a7fea0c04b8d356e9a771a452a1923328" title="com.xenakis.screenController.\lPreTestScreenController.init" alt="" coords="220,68,420,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="468,68,634,107"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="com.xenakis.screenController.QuestionScreenController.setData" name="com.xenakis.screenController.QuestionScreenController.setData">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html#adc92ed52a5df355a761232606e39be37" title="com.xenakis.screenData.Question\lScreenData.getQuestion" alt="" coords="277,5,501,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#af5643343905a5512ad70acabf2cd548f" title="com.xenakis.application.\lTest.getAnsweredQuestions" alt="" coords="296,68,483,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a5eebb396860a336bd81e3226a13d8c2b" title="com.xenakis.application.\lTest.getTotalQuestions" alt="" coords="306,131,472,169"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html#a9818b47afa504eeb3dd3c8747bc502cf" title="com.xenakis.screenData.Question\lScreenData.getChapterName" alt="" coords="277,193,501,232"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html#af9fdab733ad43f481fada4501717d9f6" title="com.xenakis.screenData.Question\lScreenData.getCategoryName" alt="" coords="277,256,501,295"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#aa589c628b41bd338d9f03729f5afcbcc" title="com.xenakis.application.\lImageHolder.getImage" alt="" coords="306,319,472,357"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a26688c0e9ab9a99cfc5bc79a414c73ef" title="com.xenakis.application.\lTest.getChapter" alt="" coords="306,381,472,420"/>
+<area shape="rect" id="node9" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ad45818064dc1cfa08041b36d07364b84" title="com.xenakis.application.\lTest.getCategory" alt="" coords="306,444,472,483"/>
+<area shape="rect" id="node10" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a4f942406d41dde64fff66c87f6efacba" title="com.xenakis.screenController.\lQuestionScreenController.getTest" alt="" coords="279,507,500,545"/>
+<area shape="rect" id="node11" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a525cb1f1505b21d799a1fe0bf41c3aaf" title="com.xenakis.application.\lTest.getMainWindowStyle" alt="" coords="302,569,476,608"/>
+<area shape="rect" id="node12" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a2f5606e9459940e898eb6beb5cd4aa71" title="com.xenakis.application.\lTest.getMainPaneStyle" alt="" coords="306,632,472,671"/>
+<area shape="rect" id="node13" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aabf2b7a2de0ec9e71a01540c8d2ce683" title="com.xenakis.application.\lTest.getInfoPaneStyle" alt="" coords="306,695,472,733"/>
+</map>

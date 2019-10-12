@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
+            <version>13.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -125,9 +125,26 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
+            <plugin>
+                <groupId>com.soebes.maven.plugins</groupId>
+                <artifactId>doxygen-maven-plugin</artifactId>
+                <version>1.1.0</version>
+                <configuration>
+                    <configurationFile>${basedir}/Doxyfile</configurationFile>
+                </configuration>
+            </plugin>
         </plugins>
 
     </build>
 
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>com.soebes.maven.plugins</groupId>
+                <artifactId>doxygen-maven-plugin</artifactId>
+                <version>1.1.0</version>
+            </plugin>
+        </plugins>
+    </reporting>
 
 </project>

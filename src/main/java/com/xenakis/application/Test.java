@@ -150,7 +150,19 @@ public class Test{
     	System.out.println("next screenId = "+screenId);
     	myScreenPane.setScreen(screenId);
 	}
-	
+
+	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
+		answeredQuestions++;
+		answers.put(screenList.peek(), answersNo);
+		removeScreen();
+
+		String screenId = screenList.peek();
+		QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
+		screenController.setAnsweredQuestions(answeredQuestions);
+
+		this.nextQuestion(myScreenPane);
+	}
+
 	private int calculateResults(){
 		
 		System.out.println("answers: "+answers.toString());
@@ -225,24 +237,6 @@ public class Test{
         			
 		this.cleanMemory();
 		ImagInLexis.cleanMemory();		
-	}
-	
-	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
-		answeredQuestions++;
-		answers.put(screenList.peek(), answersNo);	
-    	removeScreen();
-
-    	String screenId = screenList.peek();
-    	if(screenId == null){
-    		finishTest();
-    		return;
-    	}
-    	
-        QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
-        screenController.setAnsweredQuestions(answeredQuestions);
-        
-    	System.out.println("next screenId = "+screenId);
-    	myScreenPane.setScreen(screenId);
 	}
 	
     public void addToScreenList(String screenId){

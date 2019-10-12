@@ -1,0 +1,10 @@
+<map id="com.xenakis.screenController.QuestionScreenController" name="com.xenakis.screenController.QuestionScreenController">
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_image_link_screen_controller.html" title="com.xenakis.screenController.\lChooseImageLinkScreenController" alt="" coords="657,5,886,44"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_image_screen_controller.html" title="com.xenakis.screenController.\lChooseImageScreenController" alt="" coords="669,68,874,107"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_image_screen_controller2.html" title="com.xenakis.screenController.\lChooseImageScreenController2" alt="" coords="665,131,877,169"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_in_image_screen_controller.html" title="com.xenakis.screenController.\lChooseInImageScreenController" alt="" coords="664,193,879,232"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_label_from_sound_screen_controller.html" title="com.xenakis.screenController.\lChooseLabelFromSoundScreenController" alt="" coords="636,256,906,295"/>
+<area shape="rect" id="node9" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_label_screen_controller.html" title="com.xenakis.screenController.\lChooseLabelScreenController" alt="" coords="671,319,871,357"/>
+<area shape="rect" id="node10" href="$classcom_1_1xenakis_1_1screen_controller_1_1_what_is_this_screen_controller.html" title="com.xenakis.screenController.\lWhatIsThisScreenController" alt="" coords="671,381,871,420"/>
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller.html" title="com.xenakis.screenController.\lScreenController" alt="" coords="141,193,341,232"/>
+</map>

@@ -1,0 +1,61 @@
+DOXYFILE_ENCODING      = UTF-8
+
+PROJECT_NAME           = "ImagInLexis"
+
+OUTPUT_DIRECTORY       = doc
+
+OPTIMIZE_OUTPUT_JAVA   = YES
+
+INPUT                  += ./src/main/java/com/xenakis
+INPUT                  += ./src/main/java/application
+INPUT                  += ./README.md
+
+FILE_PATTERNS = *.java
+
+RECURSIVE              = YES
+
+EXCLUDE                =
+
+GENERATE_LATEX         = NO
+
+SHOW_DIRECTORIES       = YES
+
+SHOW_FILES             = YES
+
+SHOW_NAMESPACES        = YES
+
+EXTRACT_ALL            = YES
+
+EXTRACT_PRIVATE        = YES
+
+HAVE_DOT               = YES
+
+COLLABORATION_GRAPH    = YES
+
+GROUP_GRAPHS           = YES
+
+INCLUDE_GRAPH          = YES
+
+INCLUDED_BY_GRAPH      = YES
+
+CALL_GRAPH             = YES
+
+# If the CALLER_GRAPH and HAVE_DOT tags are set to YES then
+# doxygen will generate a caller dependency graph for every global function
+# or class method. Note that enabling this option will significantly increase
+# the time of a run. So in most cases it will be better to enable caller
+# graphs for selected functions only using the \callergraph command.
+
+CALLER_GRAPH           = YES
+
+# If the GRAPHICAL_HIERARCHY and HAVE_DOT tags are set to YES then doxygen
+# will generate a graphical hierarchy of all classes instead of a textual one.
+
+GRAPHICAL_HIERARCHY    = YES
+
+# If the DIRECTORY_GRAPH, SHOW_DIRECTORIES and HAVE_DOT tags are set to YES
+# then doxygen will show the dependencies a directory has on other directories
+# in a graphical way. The dependency relations are determined by the #include
+# relations between the files in the directories.
+
+DIRECTORY_GRAPH        = YES

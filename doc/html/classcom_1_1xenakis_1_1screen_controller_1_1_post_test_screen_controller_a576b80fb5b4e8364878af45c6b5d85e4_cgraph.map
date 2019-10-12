@@ -1,0 +1,10 @@
+<map id="com.xenakis.screenController.PostTestScreenController.init" name="com.xenakis.screenController.PostTestScreenController.init">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a525cb1f1505b21d799a1fe0bf41c3aaf" title="com.xenakis.application.\lTest.getMainWindowStyle" alt="" coords="253,5,427,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ae04626ffe5b2b1ee9865337ebdf2696a" title="com.xenakis.application.\lTest.getScoreNum" alt="" coords="257,68,424,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a7b1dd49d49202a714d0f03a768129ae5" title="com.xenakis.application.\lTest.getCorrectAnswers" alt="" coords="257,131,424,169"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ad940c7cac7c69b830ae61b0aa040431e" title="com.xenakis.application.\lTest.getWrongAnswers" alt="" coords="257,193,424,232"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#aa589c628b41bd338d9f03729f5afcbcc" title="com.xenakis.application.\lImageHolder.getImage" alt="" coords="257,256,424,295"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ae0659c6851b9f0c870439a199accbc1d" title="com.xenakis.application.\lTest.getChapterName" alt="" coords="257,319,424,357"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a3e071129a8a8b55f68d37fca88854cbd" title="com.xenakis.application.\lSoundHolder.playSound" alt="" coords="257,381,424,420"/>
+<area shape="rect" id="node9" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a1b7075ce3cfcd5f750dc73f679ebe427" title="com.xenakis.application.\lSoundHolder.getSound" alt="" coords="475,381,642,420"/>
+</map>

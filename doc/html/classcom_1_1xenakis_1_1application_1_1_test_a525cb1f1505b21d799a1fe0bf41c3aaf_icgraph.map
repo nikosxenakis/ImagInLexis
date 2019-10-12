@@ -1,0 +1,10 @@
+<map id="com.xenakis.application.Test.getMainWindowStyle" name="com.xenakis.application.Test.getMainWindowStyle">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html#a576b80fb5b4e8364878af45c6b5d85e4" title="com.xenakis.screenController.\lPostTestScreenController.init" alt="" coords="239,35,439,73"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html#a7fea0c04b8d356e9a771a452a1923328" title="com.xenakis.screenController.\lPreTestScreenController.init" alt="" coords="239,97,439,136"/>
+<area shape="rect" id="node9" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#ad2b31bfaa3b727eac6b16db88fad6428" title="com.xenakis.screenController.\lQuestionScreenController.setData" alt="" coords="227,160,451,199"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aa4817eb628da33278e92c2b60b0208ce" title="com.xenakis.application.\lTest.finishTest" alt="" coords="499,35,666,73"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a961baa9ff4ed30685e4950533ba0f661" title="com.xenakis.application.\lTest.nextQuestion" alt="" coords="714,35,880,73"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="928,5,1095,44"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59" title="com.xenakis.screenController.\lQuestionScreenController.clicked" alt="" coords="1143,35,1361,73"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="499,97,666,136"/>
+</map>

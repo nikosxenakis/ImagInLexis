@@ -1,0 +1,22 @@
+<map id="com.xenakis.application.Test.finishTest" name="com.xenakis.application.Test.finishTest">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a0ac45e119118fdd0fbd92d00a5f76223" title="com.xenakis.application.\lTest.calculateResults" alt="" coords="256,33,422,72"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a34d0a4549ff6943dc93b775dabfdb0a2" title="com.xenakis.service.Database.insert" alt="" coords="220,96,458,121"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#ae8b7ceae87f65e4c807fc887fdcbf52d" title="com.xenakis.application.\lScreenPane.setScreen" alt="" coords="256,180,422,219"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#aa159afd819a5bffe2ad425d54b349a2f" title="com.xenakis.application.\lScreenPane.getController" alt="" coords="252,243,427,281"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html#a576b80fb5b4e8364878af45c6b5d85e4" title="com.xenakis.screenController.\lPostTestScreenController.init" alt="" coords="239,305,439,344"/>
+<area shape="rect" id="node17" href="$classcom_1_1xenakis_1_1application_1_1_test.html#af6ef2ca88f0c28c05bba972b8f2f0208" title="com.xenakis.application.\lTest.cleanMemory" alt="" coords="256,461,422,500"/>
+<area shape="rect" id="node19" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#af6f9841058cea0f3642525706814b4f9" title="com.xenakis.ImagInLexis.clean\lMemory" alt="" coords="236,619,442,657"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a758c49605ba55f4de19b09124d394bb6" title="com.xenakis.service.Database.connect" alt="" coords="506,5,759,31"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a4df977abe7e04b7c00eabb9ea52a1c2c" title="com.xenakis.service.Database.close\lConnection" alt="" coords="514,55,751,93"/>
+<area shape="rect" id="node9" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a525cb1f1505b21d799a1fe0bf41c3aaf" title="com.xenakis.application.\lTest.getMainWindowStyle" alt="" coords="546,117,720,156"/>
+<area shape="rect" id="node10" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ae04626ffe5b2b1ee9865337ebdf2696a" title="com.xenakis.application.\lTest.getScoreNum" alt="" coords="549,180,716,219"/>
+<area shape="rect" id="node11" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a7b1dd49d49202a714d0f03a768129ae5" title="com.xenakis.application.\lTest.getCorrectAnswers" alt="" coords="549,243,716,281"/>
+<area shape="rect" id="node12" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ad940c7cac7c69b830ae61b0aa040431e" title="com.xenakis.application.\lTest.getWrongAnswers" alt="" coords="549,305,716,344"/>
+<area shape="rect" id="node13" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#aa589c628b41bd338d9f03729f5afcbcc" title="com.xenakis.application.\lImageHolder.getImage" alt="" coords="549,368,716,407"/>
+<area shape="rect" id="node14" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ae0659c6851b9f0c870439a199accbc1d" title="com.xenakis.application.\lTest.getChapterName" alt="" coords="549,431,716,469"/>
+<area shape="rect" id="node15" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a3e071129a8a8b55f68d37fca88854cbd" title="com.xenakis.application.\lSoundHolder.playSound" alt="" coords="549,493,716,532"/>
+<area shape="rect" id="node16" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a1b7075ce3cfcd5f750dc73f679ebe427" title="com.xenakis.application.\lSoundHolder.getSound" alt="" coords="807,493,974,532"/>
+<area shape="rect" id="node18" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#a5c477d784d632d154267b5e0a54065b1" title="com.xenakis.application.\lScreenPane.unloadScreen" alt="" coords="542,556,723,595"/>
+<area shape="rect" id="node20" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#ae35ce5708fbc16d60ef9912f809c6f30" title="com.xenakis.application.\lSoundHolder.cleanMemory" alt="" coords="542,619,724,657"/>
+<area shape="rect" id="node21" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#a0fa4a36916ea1592d5b8e0e78f56c980" title="com.xenakis.application.\lImageHolder.cleanMemory" alt="" coords="542,681,723,720"/>
+</map>

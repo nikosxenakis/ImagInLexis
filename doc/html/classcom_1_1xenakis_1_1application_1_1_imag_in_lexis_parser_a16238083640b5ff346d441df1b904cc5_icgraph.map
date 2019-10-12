@@ -1,0 +1,6 @@
+<map id="com.xenakis.application.ImagInLexisParser.getScoreList" name="com.xenakis.application.ImagInLexisParser.getScoreList">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html#ae0db7491e31955b56b010a32a8debb31" title="com.xenakis.screenController.\lScoreTableScreenController.renew\lScoreInfo" alt="" coords="263,31,490,83"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html#a675989e0127f5c4a347d5ac1c49b69ad" title="com.xenakis.screenController.\lScoreTableScreenController.init" alt="" coords="559,5,768,44"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html#a6fd8dbda489ff7ab70aca01c39e08f4d" title="com.xenakis.screenController.\lScoreTableScreenController.removeAll" alt="" coords="538,68,789,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller.html#a7b3e90dd6fa6737d5e2b19d0683443de" title="com.xenakis.screenController.\lMainScreenController.start" alt="" coords="837,5,1037,44"/>
+</map>

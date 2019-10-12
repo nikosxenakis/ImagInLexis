@@ -1,0 +1,8 @@
+<map id="com.xenakis.application.ImagInLexisParser.createChooseLabelFromSoundQuestion" name="com.xenakis.application.ImagInLexisParser.createChooseLabelFromSoundQuestion">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a78a69be05ed245d3b0e65770a4d61afa" title="com.xenakis.application.\lImagInLexisParser.parseQuestion" alt="" coords="272,12,494,51"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a418fcb00ce639c9dd9120f9fa9437d7f" title="com.xenakis.application.\lImagInLexisParser.parseCategory" alt="" coords="542,12,765,51"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a5b3c5f01cc0ca06191e41a6f27ba9f60" title="com.xenakis.application.\lImagInLexisParser.parseChapter" alt="" coords="813,12,1029,51"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#ae3a1a7f2331cb3df1df09d2ee363292a" title="com.xenakis.application.\lImagInLexisParser.parseQuestions" alt="" coords="1077,12,1306,51"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#abfb611e538ecb22ce2fdbc36f71b4081" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="1354,12,1537,51"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#a416f55b58a7e19c832ab973b8c8c78ca" title="com.xenakis.ImagInLexis.start" alt="" coords="1585,19,1786,44"/>
+</map>

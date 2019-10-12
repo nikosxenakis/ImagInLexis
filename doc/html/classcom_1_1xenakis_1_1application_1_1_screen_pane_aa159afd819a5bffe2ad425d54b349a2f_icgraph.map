@@ -1,0 +1,9 @@
+<map id="com.xenakis.application.ScreenPane.getController" name="com.xenakis.application.ScreenPane.getController">
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="245,5,411,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="691,63,857,101"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aa4817eb628da33278e92c2b60b0208ce" title="com.xenakis.application.\lTest.finishTest" alt="" coords="245,120,411,159"/>
+<area shape="rect" id="node7" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a9fb77305992009aec26e9588af795913" title="com.xenakis.application.\lTest.getNextScreen" alt="" coords="245,183,411,221"/>
+<area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller.html#a7b3e90dd6fa6737d5e2b19d0683443de" title="com.xenakis.screenController.\lMainScreenController.start" alt="" coords="228,245,428,284"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59" title="com.xenakis.screenController.\lQuestionScreenController.clicked" alt="" coords="905,92,1124,131"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a961baa9ff4ed30685e4950533ba0f661" title="com.xenakis.application.\lTest.nextQuestion" alt="" coords="476,120,643,159"/>
+</map>
