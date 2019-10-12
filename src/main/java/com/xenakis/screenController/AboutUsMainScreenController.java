@@ -9,7 +9,7 @@ import com.xenakis.application.ImageHolder;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 
-public class AboutUsMainScreenController extends ScreenController{
+public class AboutUsMainScreenController extends ScreenController {
 
     @FXML
     private ImageView homeImage;

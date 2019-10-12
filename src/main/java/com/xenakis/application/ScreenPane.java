@@ -15,15 +15,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
-import com.xenakis.screenController.ChooseImageLinkScreenController;
-import com.xenakis.screenController.ChooseImageScreenController;
-import com.xenakis.screenController.ChooseImageScreenController2;
-import com.xenakis.screenController.ChooseInImageScreenController;
-import com.xenakis.screenController.ChooseLabelFromSoundScreenController;
-import com.xenakis.screenController.ChooseLabelScreenController;
 import com.xenakis.screenController.QuestionScreenController;
 import com.xenakis.screenController.ScreenController;
-import com.xenakis.screenController.WhatIsThisScreenController;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
 
@@ -68,39 +61,15 @@ public class ScreenPane extends StackPane{
             FXMLLoader loader = new FXMLLoader(url);
             Parent loadScreen = loader.load();
 
-            ScreenController screenControler = loader.getController();
+            ScreenController screenController = loader.getController();
 
-            screenControler.setScreenPane(this);
-            addController(screenId,screenControler);
+			screenController.setScreenPane(this);
+            addController(screenId,screenController);
             addScreen(screenId, loadScreen);  
             
-            if(screenControler instanceof QuestionScreenController){
+            if(screenController instanceof QuestionScreenController){
     			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-
-                if(screenControler instanceof ChooseImageScreenController){
-                	((ChooseImageScreenController)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof ChooseImageScreenController2){
-                	((ChooseImageScreenController2)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof ChooseLabelScreenController){
-                	((ChooseLabelScreenController)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof ChooseLabelFromSoundScreenController){
-                	((ChooseLabelFromSoundScreenController)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof ChooseInImageScreenController){
-                	((ChooseInImageScreenController)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof WhatIsThisScreenController){
-                	((WhatIsThisScreenController)screenControler).setData(screenData,test);
-                }
-                else if(screenControler instanceof ChooseImageLinkScreenController){
-                	((ChooseImageLinkScreenController)screenControler).setData(screenData,test);
-                }
-                else{
-                	System.err.println("not implemented in loadScreen");
-                }
+				((QuestionScreenController)screenController).setData(screenData,test);
             }
  
             return true;

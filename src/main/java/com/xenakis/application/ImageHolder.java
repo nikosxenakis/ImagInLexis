@@ -19,10 +19,10 @@ public class ImageHolder{
     	this.imagePaths = new HashMap<>();
     }
 
-    public static ImageHolder getInstance(){ 
+    public static ImageHolder getInstance(){
         return instance;
     }
-    
+
     public static Image getImage(String id){
     	
     	Image image = instance.images.get(id);

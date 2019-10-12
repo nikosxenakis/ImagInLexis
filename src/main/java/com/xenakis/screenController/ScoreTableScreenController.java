@@ -4,7 +4,7 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.application.Database;
+import com.xenakis.service.Database;
 import com.xenakis.ImagInLexis;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;

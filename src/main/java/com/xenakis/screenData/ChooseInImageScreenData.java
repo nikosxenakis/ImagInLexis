@@ -3,7 +3,7 @@ package com.xenakis.screenData;
 import java.util.ArrayList;
 import java.util.Set;
 
-import com.xenakis.application.Circle;
+import com.xenakis.model.Circle;
 
 public class ChooseInImageScreenData extends QuestionScreenData{
 	

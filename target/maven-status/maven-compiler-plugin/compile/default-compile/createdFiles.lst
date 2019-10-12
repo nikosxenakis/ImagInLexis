@@ -1,7 +1,7 @@
 com/xenakis/application/Test.class
+com/xenakis/model/Circle.class
 com/xenakis/application/ResourcePathsHolder.class
 com/xenakis/screenData/ScreenDataHolder.class
-com/xenakis/application/Database.class
 com/xenakis/screenData/QuestionScreenData.class
 com/xenakis/screenData/ChooseImageLinkScreenData.class
 com/xenakis/screenController/ChooseLabelScreenController.class
@@ -31,9 +31,9 @@ com/xenakis/screenData/WhatIsThisScreenData.class
 com/xenakis/screenData/ChooseImageScreenData.class
 com/xenakis/screenController/ChooseInImageScreenController$1.class
 com/xenakis/screenController/QuestionScreenController.class
-com/xenakis/application/Circle.class
 com/xenakis/screenData/ChooseLabelScreenData.class
 com/xenakis/screenController/PreTestScreenController.class
+com/xenakis/service/Database.class
 com/xenakis/screenController/WhatIsThisScreenController.class
 com/xenakis/application/ImagInLexisParser.class
 com/xenakis/application/ScreenPane$1.class

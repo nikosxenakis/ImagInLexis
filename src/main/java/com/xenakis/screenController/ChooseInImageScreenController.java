@@ -6,7 +6,7 @@ package com.xenakis.screenController;
 
 import java.util.ArrayList;
 
-import com.xenakis.application.Circle;
+import com.xenakis.model.Circle;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
 import com.xenakis.application.Test;

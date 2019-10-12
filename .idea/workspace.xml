@@ -1,44 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edd1e44c-8adf-4428-9e83-f9455f7445b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="edd1e44c-8adf-4428-9e83-f9455f7445b2" name="Default Changelist" comment="issues fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/model/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/service/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/AboutUsMainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/AboutUsMainScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseInImageScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseInImageScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScoreTableScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScoreTableScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/screenData/ChooseInImageScreenData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/screenData/ChooseInImageScreenData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/Database.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImageHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ResourcePathsHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ResourcePathsHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/SoundHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/SoundHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/astragalos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/astragalos.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/auti.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/auti.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/koilia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/koilia.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/metwpo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/metwpo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/stoma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/stoma.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/xeri.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/images/recognition/body/xeri.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/json/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/json/input.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageLinkScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageLinkScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/database/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelFromSoundScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelFromSoundScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/CombinationalChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/CombinationalChapterScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/KatonomasiaChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/KatonomasiaChapterScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/MainScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PostTestScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PostTestScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/RecognitionChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/RecognitionChapterScreenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScreenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseInImageScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseInImageScreenData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ScreenDataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ScreenDataHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-ImagInLexis-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-ImagInLexis-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-ImagInLexis-1.0.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,60 +48,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            <state relative-caret-position="208">
+              <caret line="220" column="35" selection-start-line="220" selection-start-column="35" selection-end-line="220" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="510">
+              <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScoreTableScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-end-line="1" />
+            <state relative-caret-position="75">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lgtm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="22">
+              <caret line="37" column="44" selection-start-line="37" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -137,6 +120,7 @@
       <find>imagesJsonObject</find>
       <find>getSound(</find>
       <find>exec</find>
+      <find>target</find>
       <find>surefire</find>
     </findStrings>
   </component>
@@ -148,7 +132,6 @@
       <list>
         <option value="$PROJECT_DIR$/ImagInLexis.iml" />
         <option value="$PROJECT_DIR$/IdeaProjects.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/WhatIsThisScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" />
@@ -156,15 +139,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/KatonomasiaChapterScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/SoundHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/MainScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/PostTestScreenController.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/EmptyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/service/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/model/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/TestScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/AboutUsMainScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java" />
       </list>
     </option>
   </component>
@@ -202,42 +195,6 @@
       </expand>
       <select />
     </treeState>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/ImagInLexis.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/ImagInLexis.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_mac_11_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_27_2_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
@@ -288,6 +245,39 @@
               <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
+              <item name="screenController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,6 +305,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32801595" />
@@ -323,6 +314,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.xenakis.model" />
+      <recent name="com.xenakis.service" />
       <recent name="com.xenakis" />
     </key>
   </component>
@@ -338,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.ImagInLexis test">
+  <component name="RunManager" selected="Maven.ImagInLexis run">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -528,7 +521,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,12 +530,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37831324" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -555,6 +548,9 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="issues fixed" />
@@ -614,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/RecognitionChapterScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -638,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -659,20 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="225" column="36" lean-forward="true" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -690,31 +648,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/ImagInLexisMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -725,13 +662,6 @@
           <folding>
             <element signature="e#0#2501#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScoreTableScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -749,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="168" column="23" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/SoundHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -767,17 +690,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="197" column="59" selection-start-line="197" selection-start-column="59" selection-end-line="197" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -790,41 +739,149 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/database/database.db">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-end-line="1" />
+        <state relative-caret-position="44">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenData/ChooseImageLinkScreenData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="15">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2955">
+          <caret line="225" column="27" lean-forward="true" selection-start-line="225" selection-start-column="27" selection-end-line="225" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/model/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/application.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/service/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="2234" column="17" selection-start-line="2234" selection-start-column="17" selection-end-line="2234" selection-end-column="17" />
+          <folding>
+            <element signature="e#83880#83881#0" expanded="true" />
+            <element signature="e#83916#83917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScoreTableScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="220" column="35" selection-start-line="220" selection-start-column="35" selection-end-line="220" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/TestScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="37" column="44" selection-start-line="37" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/AboutUsMainScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/QuestionScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -96,11 +96,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	
     	answeredQuestions.setText(test.getAnsweredQuestions().toString());
     	totalQuestions.setText(test.getTotalQuestions().toString());
-    	chapterName.setText(screenData.getChapterName().toString());
-    	categoryName.setText(screenData.getCategoryName().toString());
+    	chapterName.setText(screenData.getChapterName());
+    	categoryName.setText(screenData.getCategoryName());
    
     	//System.out.println("loading image: "+test.getChapter().toString()+"Image");
-    	Image image = ImageHolder.getImage(test.getChapter().toString()+"Image");
+    	Image image = ImageHolder.getImage(test.getChapter()+"Image");
     	chapterImage.setImage(image);
 
     	//System.out.println("loading image: "+test.getCategory()+"Image");
@@ -133,7 +133,7 @@ public abstract class QuestionScreenController extends ScreenController{
     
     public void clicked(MouseEvent e){
     	
-        if((Button)e.getSource() == submitButton){
+        if(e.getSource() == submitButton){
         	if(getIsSelection() == false){
         		System.err.println("error in clicked there is no selection");
         		return;
@@ -144,7 +144,7 @@ public abstract class QuestionScreenController extends ScreenController{
         	getTest().submitAnswer(getScreenPane(), getAnswer());
 
         }
-        if((Button)e.getSource() == nextButton){
+        else if(e.getSource() == nextButton){
         	System.out.println("nextButton clicked");
 
         	getTest().nextQuestion(getScreenPane());

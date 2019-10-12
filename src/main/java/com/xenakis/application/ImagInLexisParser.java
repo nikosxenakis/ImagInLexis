@@ -1,6 +1,8 @@
 package com.xenakis.application;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.model.Circle;
+import com.xenakis.service.Database;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -9,7 +11,6 @@ import com.xenakis.screenController.ScoreTableScreenController.Score;
 import com.xenakis.screenData.*;
 
 import java.io.*;
-import java.net.URLDecoder;
 import java.util.*;
 import java.util.Map.Entry;
 
