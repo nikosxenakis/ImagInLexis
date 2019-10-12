@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.KatonomasiaChapterScreenController">
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xenakis.screenController.KatonomasiaChapterScreenController">
    <children>
       <BorderPane layoutX="20.0" layoutY="20.0" prefHeight="685.0" prefWidth="1059.0">
          <center>
@@ -31,7 +30,7 @@
                         <Shadow color="#29e2e5f7" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaDefinition" fill="#2721ffb5" layoutX="553.0" layoutY="227.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="146.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="katonomasiaDefinition" fill="#2721ffb5" layoutX="553.0" layoutY="227.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="146.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
                      <effect>
                         <Shadow color="#660eff" />
                      </effect>
@@ -39,7 +38,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaSounds" fill="#2721ffb5" layoutX="346.0" layoutY="468.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="katonomasiaSounds" fill="#2721ffb5" layoutX="346.0" layoutY="468.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -47,7 +46,7 @@
                         <Shadow color="#ff0808" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaCompleteSentence" fill="#2721ffb5" layoutX="766.0" layoutY="459.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="173.0" radiusY="61.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="katonomasiaCompleteSentence" fill="#2721ffb5" layoutX="766.0" layoutY="459.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="173.0" radiusY="61.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
                      <effect>
                         <Shadow color="#79ff0a" />
                      </effect>

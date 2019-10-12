@@ -40,7 +40,8 @@ public class ImagInLexis extends Application {
         imagInLexisParser.initialize();
 
         Scene scene = new Scene(mainContainer);
-//        scene.getStylesheets().add(getClass().getResource("com.xenakis.xenakis.css").toExternalForm());
+//        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//        scene.getStylesheets().add("com/xenakis/application/application.css");
 
         ImagInLexis.mainContainer.setScreen("MainScreen");
 

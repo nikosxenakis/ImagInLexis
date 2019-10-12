@@ -58,7 +58,7 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     public void mouseOverCircle(MouseEvent e){
     	
     	Ellipse el = (Ellipse)e.getSource();
-    	
+
     	if(el instanceof Ellipse){
     		el.setStyle("-fx-opacity: 1");
     	}
@@ -70,13 +70,13 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     public void mouseOutCircle(MouseEvent e){
     	
     	Ellipse el = (Ellipse)e.getSource();
-    	
+
     	if(el instanceof Ellipse){
     		el.setStyle("-fx-opacity: 0.7");
     	}
     	else{
         	System.err.println("error in mouseOutCircle in CombinationalChapterScreenController");
-    	}	
+    	}
     }
     
     public void start(MouseEvent e){

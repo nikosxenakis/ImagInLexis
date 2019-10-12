@@ -1,6 +1,8 @@
 package com.xenakis.service;
 
 import com.xenakis.screenController.ScoreTableScreenController;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -8,57 +10,42 @@ import java.util.List;
 
 public class Database {
 
+    static Logger logger;
 
-    public static void testDB() {
-//		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-//		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
-//
-//        Date date = new Date();
-//        Date time = new Date();
-//		String strDate = dateFormat.format(date);
-//		String strTime = timeFormat.format(time);
-//
-//		Database.insert(ImagInLexis.userName, strTime, strDate, "0%", "Αναγνώριση", "Φρούτα");
-//		Database.insert(ImagInLexis.userName, strTime, strDate, "2%", "Αναγνώριση", "Χρώματα");
-    }
-
-    public static Connection connect() {
+    private static Connection connect() {
 
         String db_path = "jdbc:sqlite::resource:com/xenakis/database/database.db";
-        System.out.println(db_path);
-
-
         Connection conn = null;
+        logger = Logger.getLogger(Database.class);
+        BasicConfigurator.configure();
 
         try {
             Class.forName("org.sqlite.JDBC");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            logger.error(e.getMessage());
         }
 
         try {
-            // db parameters
-            // create a connection to the database
             conn = DriverManager.getConnection(db_path);
-            System.out.println("Connection to SQLite has been established.");
-
+            logger.info("Connection to SQLite has been established.");
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         return conn;
     }
 
-    public static void closeConnection(Connection conn) {
+    private static void closeConnection(Connection conn) {
         try {
             if (conn != null) {
                 conn.close();
-                System.out.println("Connection to SQLite has been closed.");
+                logger.info("Connection to SQLite has been closed.");
             }
         } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
+            logger.error(ex.getMessage());
         }
     }
 
@@ -74,10 +61,10 @@ public class Database {
             statement.setInt(4, score);
             statement.setString(5, chapter);
             statement.setString(6, category);
-            System.out.println(statement.toString());
+            logger.info(statement.toString());
             statement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
 
         Database.closeConnection(conn);
@@ -89,10 +76,10 @@ public class Database {
         try{
             conn = Database.connect();
             PreparedStatement statement = conn.prepareStatement(sql);
-            System.out.println(statement.toString());
+            logger.info(statement.toString());
             statement.executeUpdate();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
 
         Database.closeConnection(conn);
@@ -166,7 +153,7 @@ public class Database {
             }
 
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         Database.closeConnection(conn);
         return scoreList;
