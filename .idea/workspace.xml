@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edd1e44c-8adf-4428-9e83-f9455f7445b2" name="Default Changelist" comment="issues fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java" afterDir="false" />
+    <list default="true" id="edd1e44c-8adf-4428-9e83-f9455f7445b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/ImagInLexis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/ImagInLexis.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" afterDir="false" />
@@ -57,19 +52,61 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="310" column="8" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="8" />
+            <state relative-caret-position="491">
+              <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
               <folding>
                 <element signature="method#ImagInLexisParser#0;class#ImagInLexisParser#0" />
+                <element signature="method#loadObject#0;class#ImagInLexisParser#0" />
+                <element signature="e#1691#1767#0" />
+                <element signature="e#1808#1876#0" />
+                <element signature="e#1962#2065#0" />
+                <element signature="e#2010#2041#1" />
+                <element signature="e#2089#2119#0" />
+                <element signature="e#2162#2207#0" />
+                <element signature="e#2233#2262#0" />
                 <element signature="method#parseCategoryNames#0;class#ImagInLexisParser#0" />
+                <element signature="e#2440#2947#1" />
+                <element signature="e#2639#2940#1" />
                 <element signature="method#getScoreList#0;class#ImagInLexisParser#0" />
+                <element signature="e#3087#3136#1" />
+                <element signature="e#3175#3231#1" />
+                <element signature="e#3239#3303#1" />
                 <element signature="method#getChapterList#0;class#ImagInLexisParser#0" />
+                <element signature="e#3519#3596#1" />
+                <element signature="method#getCategoryList#0;class#ImagInLexisParser#0" />
+                <element signature="e#3990#4209#1" />
+                <element signature="e#4105#4202#1" />
+                <element signature="method#initialize#0;class#ImagInLexisParser#0" />
                 <element signature="method#parseSounds#0;class#ImagInLexisParser#0" />
+                <element signature="e#4623#4830#1" />
                 <element signature="method#parseImages#0;class#ImagInLexisParser#0" />
+                <element signature="e#4992#5199#1" />
+                <element signature="method#parseQuestion#0;class#ImagInLexisParser#0" />
+                <element signature="e#12823#12989#1" />
+                <element signature="e#13091#13270#1" />
+                <element signature="e#13318#13499#1" />
+                <element signature="e#13546#13725#1" />
+                <element signature="e#13774#13957#1" />
+                <element signature="e#14003#14180#1" />
+                <element signature="e#14231#14418#1" />
+                <element signature="e#14474#14671#1" />
+                <element signature="e#14681#14761#1" />
+                <element signature="method#parseCategory#0;class#ImagInLexisParser#0" />
+                <element signature="e#14878#14932#1" />
+                <element signature="e#15357#15436#1" />
                 <element signature="method#parseChapter#0;class#ImagInLexisParser#0" />
+                <element signature="e#15525#15578#1" />
+                <element signature="e#15874#15929#1" />
                 <element signature="method#parseQuestions#0;class#ImagInLexisParser#0" />
-                <element signature="e#16970#16971#0" expanded="true" />
-                <element signature="e#17020#17021#0" expanded="true" />
+                <element signature="e#16100#16141#1" />
+                <element signature="method#parseScreens#0;class#ImagInLexisParser#0" />
+                <element signature="e#16303#16559#1" />
+                <element signature="n#!!block;n#getCategoryTotalQuestions#0;n#ImagInLexisParser#0" />
+                <element signature="n#!!block;n#getCategoriesScreenIdList#0;n#ImagInLexisParser#0" />
+                <element signature="method#addtoChaptersCategoryList#0;class#ImagInLexisParser#0" />
+                <element signature="e#17187#17274#1" />
+                <element signature="method#addtoCategoriesScreenIdList#0;class#ImagInLexisParser#0" />
+                <element signature="e#17522#17609#1" />
               </folding>
             </state>
           </provider>
@@ -120,19 +157,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="204" column="39" lean-forward="true" selection-start-line="204" selection-start-column="39" selection-end-line="204" selection-end-column="39" />
+            <state relative-caret-position="390">
+              <caret line="159" column="13" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
               <folding>
-                <element signature="e#9055#9056#0" expanded="true" />
-                <element signature="e#9089#9090#0" expanded="true" />
-                <element signature="e#9137#9138#0" expanded="true" />
-                <element signature="e#9174#9175#0" expanded="true" />
-                <element signature="e#9801#9802#0" expanded="true" />
-                <element signature="e#9841#9842#0" expanded="true" />
-                <element signature="e#9884#9885#0" expanded="true" />
-                <element signature="e#9922#9923#0" expanded="true" />
-                <element signature="e#9965#9966#0" expanded="true" />
-                <element signature="e#10003#10004#0" expanded="true" />
+                <element signature="method#Test#0;class#Test#0" />
+                <element signature="e#1782#2640#0" />
+                <element signature="e#3349#3787#1" />
+                <element signature="e#3591#3686#1" />
+                <element signature="n#!!block;n#getCategory#0;n#Test#0" />
+                <element signature="n#!!block;n#getChapterName#0;n#Test#0" />
+                <element signature="n#!!block;n#getCategoryName#0;n#Test#0" />
+                <element signature="n#!!block;n#getScoreNum#0;n#Test#0" />
+                <element signature="n#!!block;n#getCorrectAnswers#0;n#Test#0" />
+                <element signature="method#nextQuestion#0;class#Test#0" />
+                <element signature="e#5366#5388#1" />
+                <element signature="e#5748#6666#0" />
+                <element signature="e#5459#5918#1" />
+                <element signature="e#5568#5695#1" />
+                <element signature="e#5662#5685#1" />
+                <element signature="e#5703#5910#1" />
+                <element signature="e#6670#8083#0" />
+                <element signature="e#6256#6346#1" />
+                <element signature="e#6900#6938#0" />
+                <element signature="e#8090#8262#0" />
+                <element signature="e#8272#8905#0" />
+                <element signature="e#7891#8351#1" />
+                <element signature="e#8915#9011#0" />
+                <element signature="n#!!block;n#getTotalQuestions#0;n#Test#0" />
+                <element signature="n#!!block;n#getAnsweredQuestions#0;n#Test#0" />
+                <element signature="e#9185#9387#0" />
+                <element signature="e#9397#9757#0" />
+                <element signature="e#8953#9072#1" />
+                <element signature="n#!!block;n#getMainWindowStyle#0;n#Test#0" />
+                <element signature="n#!!block;n#getMainPaneStyle#0;n#Test#0" />
+                <element signature="n#!!block;n#getInfoPaneStyle#0;n#Test#0" />
               </folding>
             </state>
           </provider>
@@ -612,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566649548327</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="issues fixed">
+      <created>1571001988698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571001988699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -627,7 +692,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -643,8 +708,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.16867469" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1050,38 +1115,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="310" column="8" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="8" />
+        <state relative-caret-position="491">
+          <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
           <folding>
             <element signature="method#ImagInLexisParser#0;class#ImagInLexisParser#0" />
+            <element signature="method#loadObject#0;class#ImagInLexisParser#0" />
+            <element signature="e#1691#1767#0" />
+            <element signature="e#1808#1876#0" />
+            <element signature="e#1962#2065#0" />
+            <element signature="e#2010#2041#1" />
+            <element signature="e#2089#2119#0" />
+            <element signature="e#2162#2207#0" />
+            <element signature="e#2233#2262#0" />
             <element signature="method#parseCategoryNames#0;class#ImagInLexisParser#0" />
+            <element signature="e#2440#2947#1" />
+            <element signature="e#2639#2940#1" />
             <element signature="method#getScoreList#0;class#ImagInLexisParser#0" />
+            <element signature="e#3087#3136#1" />
+            <element signature="e#3175#3231#1" />
+            <element signature="e#3239#3303#1" />
             <element signature="method#getChapterList#0;class#ImagInLexisParser#0" />
+            <element signature="e#3519#3596#1" />
+            <element signature="method#getCategoryList#0;class#ImagInLexisParser#0" />
+            <element signature="e#3990#4209#1" />
+            <element signature="e#4105#4202#1" />
+            <element signature="method#initialize#0;class#ImagInLexisParser#0" />
             <element signature="method#parseSounds#0;class#ImagInLexisParser#0" />
+            <element signature="e#4623#4830#1" />
             <element signature="method#parseImages#0;class#ImagInLexisParser#0" />
+            <element signature="e#4992#5199#1" />
+            <element signature="method#parseQuestion#0;class#ImagInLexisParser#0" />
+            <element signature="e#12823#12989#1" />
+            <element signature="e#13091#13270#1" />
+            <element signature="e#13318#13499#1" />
+            <element signature="e#13546#13725#1" />
+            <element signature="e#13774#13957#1" />
+            <element signature="e#14003#14180#1" />
+            <element signature="e#14231#14418#1" />
+            <element signature="e#14474#14671#1" />
+            <element signature="e#14681#14761#1" />
+            <element signature="method#parseCategory#0;class#ImagInLexisParser#0" />
+            <element signature="e#14878#14932#1" />
+            <element signature="e#15357#15436#1" />
             <element signature="method#parseChapter#0;class#ImagInLexisParser#0" />
+            <element signature="e#15525#15578#1" />
+            <element signature="e#15874#15929#1" />
             <element signature="method#parseQuestions#0;class#ImagInLexisParser#0" />
-            <element signature="e#16970#16971#0" expanded="true" />
-            <element signature="e#17020#17021#0" expanded="true" />
+            <element signature="e#16100#16141#1" />
+            <element signature="method#parseScreens#0;class#ImagInLexisParser#0" />
+            <element signature="e#16303#16559#1" />
+            <element signature="n#!!block;n#getCategoryTotalQuestions#0;n#ImagInLexisParser#0" />
+            <element signature="n#!!block;n#getCategoriesScreenIdList#0;n#ImagInLexisParser#0" />
+            <element signature="method#addtoChaptersCategoryList#0;class#ImagInLexisParser#0" />
+            <element signature="e#17187#17274#1" />
+            <element signature="method#addtoCategoriesScreenIdList#0;class#ImagInLexisParser#0" />
+            <element signature="e#17522#17609#1" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="204" column="39" lean-forward="true" selection-start-line="204" selection-start-column="39" selection-end-line="204" selection-end-column="39" />
+        <state relative-caret-position="390">
+          <caret line="159" column="13" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
           <folding>
-            <element signature="e#9055#9056#0" expanded="true" />
-            <element signature="e#9089#9090#0" expanded="true" />
-            <element signature="e#9137#9138#0" expanded="true" />
-            <element signature="e#9174#9175#0" expanded="true" />
-            <element signature="e#9801#9802#0" expanded="true" />
-            <element signature="e#9841#9842#0" expanded="true" />
-            <element signature="e#9884#9885#0" expanded="true" />
-            <element signature="e#9922#9923#0" expanded="true" />
-            <element signature="e#9965#9966#0" expanded="true" />
-            <element signature="e#10003#10004#0" expanded="true" />
+            <element signature="method#Test#0;class#Test#0" />
+            <element signature="e#1782#2640#0" />
+            <element signature="e#3349#3787#1" />
+            <element signature="e#3591#3686#1" />
+            <element signature="n#!!block;n#getCategory#0;n#Test#0" />
+            <element signature="n#!!block;n#getChapterName#0;n#Test#0" />
+            <element signature="n#!!block;n#getCategoryName#0;n#Test#0" />
+            <element signature="n#!!block;n#getScoreNum#0;n#Test#0" />
+            <element signature="n#!!block;n#getCorrectAnswers#0;n#Test#0" />
+            <element signature="method#nextQuestion#0;class#Test#0" />
+            <element signature="e#5366#5388#1" />
+            <element signature="e#5748#6666#0" />
+            <element signature="e#5459#5918#1" />
+            <element signature="e#5568#5695#1" />
+            <element signature="e#5662#5685#1" />
+            <element signature="e#5703#5910#1" />
+            <element signature="e#6670#8083#0" />
+            <element signature="e#6256#6346#1" />
+            <element signature="e#6900#6938#0" />
+            <element signature="e#8090#8262#0" />
+            <element signature="e#8272#8905#0" />
+            <element signature="e#7891#8351#1" />
+            <element signature="e#8915#9011#0" />
+            <element signature="n#!!block;n#getTotalQuestions#0;n#Test#0" />
+            <element signature="n#!!block;n#getAnsweredQuestions#0;n#Test#0" />
+            <element signature="e#9185#9387#0" />
+            <element signature="e#9397#9757#0" />
+            <element signature="e#8953#9072#1" />
+            <element signature="n#!!block;n#getMainWindowStyle#0;n#Test#0" />
+            <element signature="n#!!block;n#getMainPaneStyle#0;n#Test#0" />
+            <element signature="n#!!block;n#getInfoPaneStyle#0;n#Test#0" />
           </folding>
         </state>
       </provider>

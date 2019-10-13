@@ -133,11 +133,8 @@ public class Test{
 	}
 	
 	public void startTest(){
-		String nextScreen = screenList.peek();
-		System.out.println("next screenId = "+nextScreen);
-		
+		this.nextQuestion(ImagInLexis.mainContainer);
 		SoundHolder.playSound("completeSound");
-		ImagInLexis.mainContainer.setScreen(nextScreen);
 	}
     
 	public void nextQuestion(ScreenPane myScreenPane){
@@ -160,9 +157,8 @@ public class Test{
 		QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
 		screenController.setAnsweredQuestions(answeredQuestions);
 
-		nextQuestion(myScreenPane);
+		this.nextQuestion(myScreenPane);
 	}
-
 
 	private int calculateResults(){
 		
@@ -310,6 +306,5 @@ public class Test{
     public String getInfoPaneStyle(){
     	return this.infoPaneStyle;
     }
-    
-    
+
 }
