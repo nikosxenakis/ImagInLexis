@@ -12,7 +12,7 @@ public class ImagInLexis extends Application {
 
     public static ScreenPane mainContainer = null;
 
-    public final static String inputFilePath = "json/input.json";
+    private final static String inputFilePath = "json/input.json";
 
     public final static String imagesFilePath = "json/images.json";
 
@@ -22,7 +22,7 @@ public class ImagInLexis extends Application {
 
     public static String userName = "unknown user";
 
-    public static Stage mainStage = null;
+    private static Stage mainStage = null;
 
     @Override
     public void start(Stage stage){
@@ -40,8 +40,7 @@ public class ImagInLexis extends Application {
         imagInLexisParser.initialize();
 
         Scene scene = new Scene(mainContainer);
-//        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-//        scene.getStylesheets().add("com/xenakis/application/application.css");
+        scene.getStylesheets().add("src/application.css");
 
         ImagInLexis.mainContainer.setScreen("MainScreen");
 

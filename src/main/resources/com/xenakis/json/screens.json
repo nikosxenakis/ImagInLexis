@@ -1,0 +1,23 @@
+{
+  "screens": [
+    {
+      "id": "chooseImage",
+      "path": "fxml/ChooseImageScreen.fxml"
+    }, {
+      "id": "chooseImage2",
+      "path": "fxml/ChooseImageScreen2.fxml"
+    }, {
+      "id": "chooseInImage",
+      "path": "fxml/ChooseInImageScreen.fxml"
+    }, {
+      "id": "whatIsThis",
+      "path": "fxml/WhatIsThisScreen.fxml"
+    }, {
+      "id": "chooseImageLink",
+      "path": "fxml/ChooseImageLinkScreen.fxml"
+    }, {
+      "id": "chooseLabelFromSound",
+      "path": "fxml/ChooseLabelFromSoundScreen.fxml"
+    }
+  ]
+}

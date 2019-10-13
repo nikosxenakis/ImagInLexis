@@ -29,8 +29,8 @@ public class Test{
 	private Integer correctAnswersNum;
 	private Integer wrongAnswersNum;
 
-	HashMap<String, Set<Integer>> answers = new HashMap<>();
-	HashMap<String, Set<Integer>> correctAnswers = new HashMap<>();
+	private HashMap<String, Set<Integer>> answers = new HashMap<>();
+	private HashMap<String, Set<Integer>> correctAnswers = new HashMap<>();
 
     private HashMap<String, Boolean> absoluteAnswers = new HashMap<>();
 
@@ -52,25 +52,26 @@ public class Test{
 		this.mainPaneStyle = "-fx-background-radius: 15;";
     	this.infoPaneStyle = "-fx-background-radius: 15;";
 
-    	if(chapterName.equals("Αναγνώριση")){
-        	this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
-        	this.mainPaneStyle+= "-fx-background-color:  #7ECCC7;";
-        	this.infoPaneStyle+= "-fx-background-color:  #7ECCA4;";
-    	}
-    	else if(chapterName.equals("Κατονομασία")){
-        	this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
-        	this.mainPaneStyle+= "-fx-background-color:  #80DBBB;";
-        	this.infoPaneStyle+= "-fx-background-color:  #BADB80;";
-    	}
-    	else if(chapterName.equals("Συσχετιζόμενες Έννοιες")){
-        	this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
-        	this.mainPaneStyle+= "-fx-background-color:  #AE99C2;";
-        	this.infoPaneStyle+= "-fx-background-color:  #E39DAD;";
-    	}
-    	else{
-    		System.err.println("error in Test Screen no such a chapter");
-    		return;
-    	}
+		switch (chapterName) {
+			case "Αναγνώριση":
+				this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
+				this.mainPaneStyle += "-fx-background-color:  #7ECCC7;";
+				this.infoPaneStyle += "-fx-background-color:  #7ECCA4;";
+				break;
+			case "Κατονομασία":
+				this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
+				this.mainPaneStyle += "-fx-background-color:  #80DBBB;";
+				this.infoPaneStyle += "-fx-background-color:  #BADB80;";
+				break;
+			case "Συσχετιζόμενες Έννοιες":
+				this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
+				this.mainPaneStyle += "-fx-background-color:  #AE99C2;";
+				this.infoPaneStyle += "-fx-background-color:  #E39DAD;";
+				break;
+			default:
+				System.err.println("error in Test Screen no such a chapter");
+				return;
+		}
 
 		this.answeredQuestions = 0;
 		this.totalQuestions = ImagInLexis.imagInLexisParser.getCategoryTotalQuestions(category);
@@ -141,14 +142,8 @@ public class Test{
     
 	public void nextQuestion(ScreenPane myScreenPane){
     	String screenId = this.getNextScreen();
-    	
-    	if(screenId == null){
-    		finishTest();
-    		return;
-    	}
-    		
-    	System.out.println("next screenId = "+screenId);
-    	myScreenPane.setScreen(screenId);
+		System.out.println("next screenId = "+screenId);
+		myScreenPane.setScreen(screenId);
 	}
 
 	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
@@ -156,12 +151,18 @@ public class Test{
 		answers.put(screenList.peek(), answersNo);
 		removeScreen();
 
+		if(screenList.size() == 0) {
+			finishTest();
+			return;
+		}
+
 		String screenId = screenList.peek();
 		QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
 		screenController.setAnsweredQuestions(answeredQuestions);
 
-		this.nextQuestion(myScreenPane);
+		nextQuestion(myScreenPane);
 	}
+
 
 	private int calculateResults(){
 		
@@ -173,20 +174,20 @@ public class Test{
 		for (String key : answers.keySet()) {
 			
 			//if it is not absolute
-			if(absoluteAnswers.get(key) != null && absoluteAnswers.get(key) == false){
+			if(absoluteAnswers.get(key) != null && !absoluteAnswers.get(key)){
 				if(correctAnswers.get(key).containsAll(answers.get(key)) && answers.get(key).size() > 0){
 					correct++;
 				}					
 			}
 			else{
-				Set<Integer> mutualAnswers = new TreeSet<Integer>(correctAnswers.get(key));
+				Set<Integer> mutualAnswers = new TreeSet<>(correctAnswers.get(key));
 		    	mutualAnswers.retainAll(answers.get(key));
 		    	correct += mutualAnswers.size()/correctAnswers.get(key).size();
 			}
 			
 		}
 
-		Integer res = (int) (((correct)/(this.totalQuestions))*100);
+		int res = (int) (((correct)/(this.totalQuestions))*100);
 		this.correctAnswersNum = (int) correct;
 		this.wrongAnswersNum = this.totalQuestions - this.correctAnswersNum;
 //		return Integer.toString(res)+"%";
@@ -194,9 +195,8 @@ public class Test{
 		
 	}
 	
-	@SuppressWarnings("unchecked")
 	public void finishTest(){
-		if(totalQuestions != answeredQuestions){
+		if(!totalQuestions.equals(answeredQuestions)){
 			System.err.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
@@ -239,7 +239,7 @@ public class Test{
 		ImagInLexis.cleanMemory();		
 	}
 	
-    public void addToScreenList(String screenId){
+    private void addToScreenList(String screenId){
     	System.out.println("addToScreenList: "+screenId);
     	screenList.add(screenId);
     	testScreenList.add(screenId);
@@ -280,10 +280,7 @@ public class Test{
     
     public boolean isLastQuestion(){
     	System.out.println(totalQuestions.toString()+answeredQuestions.toString());
-		if(totalQuestions - 1 == answeredQuestions){
-			return true;
-		}
-		return false;
+    	return totalQuestions - 1 == answeredQuestions;
     }
     
     private void cleanMemory(){
