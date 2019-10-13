@@ -1,20 +1,7 @@
 language: java
 jdk:
-  - oraclejdk8
-  - oraclejdk9
   - oraclejdk11
-  - openjdk8
   - openjdk-ea
 os:
   - linux
   - osx
-  - windows
-
-#before_script:
-#  - npm install
-#cache:
-#  directories:
-#    - "node_modules"
-
-
-#  mvn test -B
