@@ -1,26 +1,23 @@
 package com.xenakis.application;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.model.Circle;
 import com.xenakis.service.Database;
+import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import com.xenakis.screenController.ScoreTableScreenController.Score;
-import com.xenakis.screenData.*;
 
-import java.io.*;
 import java.util.*;
 import java.util.Map.Entry;
 
 public class ImagInLexisParser {
 	
-	private JSONParser parser;
 
 	private JSONObject jsonObject;
 	private JSONObject imagesJsonObject;
 	private JSONObject soundsJsonObject;
+	private JSONObject screensJsonObject;
+	private final String screensPath = "json/screens.json";
 
 	//chapterName -> chapterTotalQuestions
 	private HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
@@ -38,52 +35,18 @@ public class ImagInLexisParser {
 	
 	public ImagInLexisParser(String filePath, String imagesFilePath, String soundsFilePath){
           
-		this.parser = new JSONParser();
 		this.jsonObject = null;
 		this.imagesJsonObject = null;
+		this.screensJsonObject = null;
 
-		this.jsonObject = this.loadObject(filePath);
+		this.jsonObject = JsonParser.loadObject(filePath);
 
-		this.imagesJsonObject = this.loadObject(imagesFilePath);
+		this.imagesJsonObject = JsonParser.loadObject(imagesFilePath);
 
-        this.soundsJsonObject = this.loadObject(soundsFilePath);
+        this.soundsJsonObject = JsonParser.loadObject(soundsFilePath);
 
-	}
+		this.screensJsonObject = JsonParser.loadObject(this.screensPath);
 
-	private JSONObject loadObject(String filePath){
-
-		InputStream input = ImagInLexis.class.getResourceAsStream(filePath);
-		BufferedReader reader = null;
-		try {
-			reader = new BufferedReader(new InputStreamReader(input,"UTF-8"));
-
-		} catch (UnsupportedEncodingException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
-		
-        StringBuilder out = new StringBuilder();
-        String line;
-        try {
-			while ((line = reader.readLine()) != null) {
-			    out.append(line);
-			}
-			reader.close();
-
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-        
-        Object obj = null;
-		try {
-
-			obj = parser.parse(out.toString());
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		
-		
-		return (JSONObject) obj;
 	}
 
 	public void parseCategoryNames(){
@@ -152,8 +115,8 @@ public class ImagInLexisParser {
 		parseSounds();
 		parseImages();
 		parseQuestions();
-        parseScreens();
-
+		parseMainScreens();
+//		parseScreens();
         parseCategoryNames();
 	}
 
@@ -181,7 +144,17 @@ public class ImagInLexisParser {
         }        
 	}
 
-	private void parseQuestion(Object question, String chapterName,String category, String categoryName){
+//	private void parseScreens() {
+//		ResourcePathsHolder.addResourcePaths("chooseImage", "fxml/ChooseImageScreen.fxml");
+//		ResourcePathsHolder.addResourcePaths("chooseImage2", "fxml/ChooseImageScreen2.fxml");
+//		ResourcePathsHolder.addResourcePaths("chooseLabel", "fxml/ChooseLabelScreen.fxml");
+//		ResourcePathsHolder.addResourcePaths("chooseInImage", "fxml/ChooseInImageScreen.fxml");
+//		ResourcePathsHolder.addResourcePaths("whatIsThis", "fxml/WhatIsThisScreen.fxml");
+//		ResourcePathsHolder.addResourcePaths("chooseImageLink", "fxml/ChooseImageLinkScreen.fxml");
+//		ResourcePathsHolder.addResourcePaths("chooseLabelFromSound", "fxml/ChooseLabelFromSoundScreen.fxml");
+//	}
+
+	private void parseQuestion(Object question, String chapterName, String category, String categoryName){
         
     	JSONObject questionObj = (JSONObject) question;
     	String screenType = (String)(questionObj.get("screenType"));
@@ -199,44 +172,49 @@ public class ImagInLexisParser {
         
 		addtoCategoriesScreenIdList(category,screenId);
 
-    	if(screenType.equals("chooseImage")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageScreen.fxml");
+//		JSONArray screensArr = (JSONArray) this.screensJsonObject.get("screens");
+//
+//		if(screensArr != null)
+//			for (Object screenObj : screensArr){
+//				JSONObject screen = (JSONObject) screenObj;
+//				String screenIdTmp = (String)screen.get("id");
+//				String screenPathTmp = (String)screen.get("path");
+//				if(screenType.equals(screenIdTmp)) {
+//					ResourcePathsHolder.addResourcePaths(screenId, screenPathTmp);
+//					break;
+//				}
+//
+//			}
 
-			QuestionFactory.createChooseImageQuestion(questionObj,chapterName,categoryName,answersSet);
+
+
+		if(screenType.equals("chooseImage")){
+        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageScreen.fxml");
     	}
     	else if(screenType.equals("chooseImage2")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageScreen2.fxml");
-
-			QuestionFactory.createChooseImage2Question(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("chooseLabel")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseLabelScreen.fxml");
-
-			QuestionFactory.createChooseLabelQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("chooseInImage")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseInImageScreen.fxml");
-
-			QuestionFactory.createChooseInImageQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("whatIsThis")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/WhatIsThisScreen.fxml");
-
-			QuestionFactory.createWhatIsThisQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("chooseImageLink")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageLinkScreen.fxml");
-
-			QuestionFactory.createChooseImageLinkQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else if(screenType.equals("chooseLabelFromSound")){
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseLabelFromSoundScreen.fxml");
-
-			QuestionFactory.createChooseLabelFromSoundQuestion(questionObj,chapterName,categoryName,answersSet);
     	}
     	else{
     		System.err.println("error in parseQuestion not implemented yet");
     	}
+
+		QuestionFactory.createQuestion(screenType,questionObj,chapterName,categoryName,answersSet);
+
 	}
 	
 	private void parseCategory(Object categoryObj, String chapterName){
@@ -276,7 +254,6 @@ public class ImagInLexisParser {
 
 	private void parseQuestions(){
 
-        // loop array
 		JSONArray questions = (JSONArray) jsonObject.get("questions");
         
     	for (Object chapter : questions){
@@ -284,12 +261,12 @@ public class ImagInLexisParser {
         }
 	}
 
-	private void parseScreens(){
+	private void parseMainScreens(){
 
-		JSONArray screens = (JSONArray) jsonObject.get("screens");
+		JSONArray mainScreens = (JSONArray) jsonObject.get("mainScreens");
         
-    	for (Object screen : screens){
-    		JSONObject s = (JSONObject) screen;
+    	for (Object mainScreen : mainScreens){
+    		JSONObject s = (JSONObject) mainScreen;
     		String screenId = (String) s.get("screenId");
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/" +screenId+".fxml");
 
@@ -319,7 +296,7 @@ public class ImagInLexisParser {
 
 	private void addtoCategoriesScreenIdList(String category, String screenId){
 		List<String> list = categoriesScreenIdList.get(category);
-		
+
 		if(list == null){
 			list = new ArrayList<>();
 			categoriesScreenIdList.put(category,list);

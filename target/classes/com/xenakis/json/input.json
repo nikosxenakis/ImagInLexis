@@ -1,5 +1,5 @@
 {
-	"screens": [
+	"mainScreens": [
 		{
 			"screenId": "AboutUsMainScreen"
 		},

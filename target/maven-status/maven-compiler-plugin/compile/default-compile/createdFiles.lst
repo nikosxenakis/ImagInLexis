@@ -37,5 +37,6 @@ com/xenakis/service/Database.class
 com/xenakis/screenController/WhatIsThisScreenController.class
 com/xenakis/application/ImagInLexisParser.class
 com/xenakis/application/QuestionFactory.class
+com/xenakis/service/JsonParser.class
 com/xenakis/application/ScreenPane$1.class
 com/xenakis/screenController/ChooseInImageScreenController.class

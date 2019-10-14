@@ -9,7 +9,35 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class QuestionFactory {
-    public static void createWhatIsThisQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answersSet){
+
+    public static void createQuestion(String screenId, JSONObject questionObj, String chapterName, String categoryName, Set<Integer> answersSet){
+        if(screenId.equals("chooseImage")){
+            QuestionFactory.createChooseImageQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("chooseImage2")){
+            QuestionFactory.createChooseImage2Question(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("chooseLabel")){
+            QuestionFactory.createChooseLabelQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("chooseInImage")){
+            QuestionFactory.createChooseInImageQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("whatIsThis")){
+            QuestionFactory.createWhatIsThisQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("chooseImageLink")){
+            QuestionFactory.createChooseImageLinkQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else if(screenId.equals("chooseLabelFromSound")){
+            QuestionFactory.createChooseLabelFromSoundQuestion(questionObj,chapterName,categoryName,answersSet);
+        }
+        else{
+            System.err.println("error in parseQuestion not implemented yet");
+        }
+    }
+
+    private static void createWhatIsThisQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answersSet){
 
         String screenId = (String)(question.get("screenId"));
         String imageId = (String)(question.get("imageId"));
@@ -26,7 +54,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,whatIsThisScreenData);
     }
 
-    public static void createChooseInImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseInImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
         String imageId = (String)(question.get("imageId"));
@@ -52,7 +80,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,chooseInImageScreenData);
     }
 
-    public static void createChooseLabelQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseLabelQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
 
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
@@ -71,7 +99,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,chooseLabelScreenData);
     }
 
-    public static void createChooseLabelFromSoundQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseLabelFromSoundQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
 
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
@@ -91,7 +119,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,chooseLabelFromSoundScreenData);
     }
 
-    public static void createChooseImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseImageQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
         String image1Id = (String)(question.get("image1Id"));
@@ -103,7 +131,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
     }
 
-    public static void createChooseImage2Question(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseImage2Question(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
         String image1Id = (String)(question.get("image1Id"));
@@ -116,7 +144,7 @@ public class QuestionFactory {
         ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
     }
 
-    public static void createChooseImageLinkQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
+    private static void createChooseImageLinkQuestion(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
         String screenId = (String)(question.get("screenId"));
         String questionString = (String)(question.get("question"));
         String basicImageId = (String)(question.get("bacisImageId"));
