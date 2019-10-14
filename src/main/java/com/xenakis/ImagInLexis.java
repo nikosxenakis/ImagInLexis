@@ -12,11 +12,7 @@ public class ImagInLexis extends Application {
 
     public static ScreenPane mainContainer = null;
 
-    private final static String inputFilePath = "json/input.json";
-
-    public final static String imagesFilePath = "json/images.json";
-
-    public final static String soundsFilePath = "json/sounds.json";
+    private final static String inputFilePath = "json/data.json";
 
     public static ImagInLexisParser imagInLexisParser;
 
@@ -27,8 +23,6 @@ public class ImagInLexis extends Application {
     @Override
     public void start(Stage stage){
 
-        imagInLexisParser = new ImagInLexisParser(inputFilePath,imagesFilePath,soundsFilePath);
-
         mainStage = stage;
         mainContainer = new ScreenPane();
 
@@ -37,7 +31,7 @@ public class ImagInLexis extends Application {
         stage.setMaxWidth(1130);
         stage.setMaxHeight(750);
 
-        imagInLexisParser.initialize();
+        ImagInLexisParser.initialize();
 
         Scene scene = new Scene(mainContainer);
         scene.getStylesheets().add("src/application.css");
