@@ -1,7 +1,6 @@
 <map id="com.xenakis.application.ScreenPane.unloadScreen" name="com.xenakis.application.ScreenPane.unloadScreen">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#af6ef2ca88f0c28c05bba972b8f2f0208" title="com.xenakis.application.\lTest.cleanMemory" alt="" coords="234,35,401,73"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aa4817eb628da33278e92c2b60b0208ce" title="com.xenakis.application.\lTest.finishTest" alt="" coords="449,35,615,73"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a961baa9ff4ed30685e4950533ba0f661" title="com.xenakis.application.\lTest.nextQuestion" alt="" coords="663,35,830,73"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="878,5,1044,44"/>
-<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59" title="com.xenakis.screenController.\lQuestionScreenController.clicked" alt="" coords="1092,35,1311,73"/>
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#af6ef2ca88f0c28c05bba972b8f2f0208" title="com.xenakis.application.\lTest.cleanMemory" alt="" coords="234,5,401,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aa4817eb628da33278e92c2b60b0208ce" title="com.xenakis.application.\lTest.finishTest" alt="" coords="449,5,615,44"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="663,5,830,44"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59" title="com.xenakis.screenController.\lQuestionScreenController.clicked" alt="" coords="878,5,1096,44"/>
 </map>

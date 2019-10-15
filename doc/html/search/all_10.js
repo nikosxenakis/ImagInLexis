@@ -1,6 +1,8 @@
 var searchData=
 [
   ['question',['question',['../classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a7eec1a88b741cf2f610352483b00a669',1,'com.xenakis.screenController.QuestionScreenController.question()'],['../classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html#a30ef46bb4fb041fd1aebf7fc150b1623',1,'com.xenakis.screenData.QuestionScreenData.question()']]],
+  ['questionfactory',['QuestionFactory',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html',1,'com::xenakis::application']]],
+  ['questionfactory_2ejava',['QuestionFactory.java',['../_question_factory_8java.html',1,'']]],
   ['questionscreencontroller',['QuestionScreenController',['../classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html',1,'com::xenakis::screenController']]],
   ['questionscreencontroller_2ejava',['QuestionScreenController.java',['../_question_screen_controller_8java.html',1,'']]],
   ['questionscreendata',['QuestionScreenData',['../classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html',1,'com::xenakis::screenData']]],

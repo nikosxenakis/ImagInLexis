@@ -17,7 +17,7 @@ var searchData=
   ['renewcomboboxdata',['renewComboBoxData',['../classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html#a1ae35c9ccf2e2f9a6a10cda2de50b666',1,'com::xenakis::screenController::ScoreTableScreenController']]],
   ['renewscoreinfo',['renewScoreInfo',['../classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html#ae0db7491e31955b56b010a32a8debb31',1,'com::xenakis::screenController::ScoreTableScreenController']]],
   ['resourcepaths',['resourcePaths',['../classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html#a028804be1cae7bb053184c37ec6df33d',1,'com::xenakis::application::ResourcePathsHolder']]],
-  ['resourcepathsholder',['ResourcePathsHolder',['../classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html',1,'com.xenakis.application.ResourcePathsHolder'],['../classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html#ae689e1f820893bb4497cb67de8ecc775',1,'com.xenakis.application.ResourcePathsHolder.ResourcePathsHolder()']]],
+  ['resourcepathsholder',['ResourcePathsHolder',['../classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html',1,'com::xenakis::application']]],
   ['resourcepathsholder_2ejava',['ResourcePathsHolder.java',['../_resource_paths_holder_8java.html',1,'']]],
   ['resulttext',['resultText',['../classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html#aabb5813f1942ecb735b5b8f3a196b84b',1,'com::xenakis::screenController::PostTestScreenController']]]
 ];

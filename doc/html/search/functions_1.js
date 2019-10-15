@@ -12,11 +12,12 @@ var searchData=
   ['clicked',['clicked',['../classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59',1,'com::xenakis::screenController::QuestionScreenController']]],
   ['closeconnection',['closeConnection',['../classcom_1_1xenakis_1_1service_1_1_database.html#a4df977abe7e04b7c00eabb9ea52a1c2c',1,'com::xenakis::service::Database']]],
   ['connect',['connect',['../classcom_1_1xenakis_1_1service_1_1_database.html#a758c49605ba55f4de19b09124d394bb6',1,'com::xenakis::service::Database']]],
-  ['createchooseimage2question',['createChooseImage2Question',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#aca3862499c9ef0982359a96f39af5530',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createchooseimagelinkquestion',['createChooseImageLinkQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#aa3f3cb3b9744e566e88225e074a8f005',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createchooseimagequestion',['createChooseImageQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a9f370c84f2989e29afc64b72942524fd',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createchooseinimagequestion',['createChooseInImageQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a9d3ab4190e630cf5dbb028aba2fa5eaa',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createchooselabelfromsoundquestion',['createChooseLabelFromSoundQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a6cc8803d44dc24362220db1272b91bb8',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createchooselabelquestion',['createChooseLabelQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#aeb9c0f7245ae0568275ca9c8cdd3465c',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['createwhatisthisquestion',['createWhatIsThisQuestion',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#aad73972fbc5a472777135e7309960fd3',1,'com::xenakis::application::ImagInLexisParser']]]
+  ['createchooseimage2question',['createChooseImage2Question',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a0feb65b653099e1af3802d2890488b67',1,'com::xenakis::application::QuestionFactory']]],
+  ['createchooseimagelinkquestion',['createChooseImageLinkQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a486ef09e0688a548e25a0d67a1bb1d0d',1,'com::xenakis::application::QuestionFactory']]],
+  ['createchooseimagequestion',['createChooseImageQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a7443342c2c71d399b3c342466fa48641',1,'com::xenakis::application::QuestionFactory']]],
+  ['createchooseinimagequestion',['createChooseInImageQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a9a6b8d4a64b4b3764151fb35838b09bf',1,'com::xenakis::application::QuestionFactory']]],
+  ['createchooselabelfromsoundquestion',['createChooseLabelFromSoundQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#ac213e7b9585272ae9461f0b96d1215cd',1,'com::xenakis::application::QuestionFactory']]],
+  ['createchooselabelquestion',['createChooseLabelQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#afbc063f390a7e49519ad3a00b743af63',1,'com::xenakis::application::QuestionFactory']]],
+  ['createquestion',['createQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a3556d95492c3f84436e16b0206bda4d9',1,'com::xenakis::application::QuestionFactory']]],
+  ['createwhatisthisquestion',['createWhatIsThisQuestion',['../classcom_1_1xenakis_1_1application_1_1_question_factory.html#a27c8fcc8f6c67d3f34764c0b3f29109e',1,'com::xenakis::application::QuestionFactory']]]
 ];

@@ -1,5 +1,5 @@
 <map id="com.xenakis.screenController.ScoreTableScreenController.renewScoreInfo" name="com.xenakis.screenController.ScoreTableScreenController.renewScoreInfo">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a16238083640b5ff346d441df1b904cc5" title="com.xenakis.application.\lImagInLexisParser.getScoreList" alt="" coords="281,27,490,65"/>
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a8223f7125afde18aa5c5bb1b456f4b10" title="com.xenakis.application.\lImagInLexisParser.getScoreList" alt="" coords="281,27,490,65"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a7ec9c00ea44188aa8b0254730929c22c" title="com.xenakis.service.Database.select" alt="" coords="538,33,779,59"/>
 <area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a758c49605ba55f4de19b09124d394bb6" title="com.xenakis.service.Database.connect" alt="" coords="827,5,1080,31"/>
 <area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1service_1_1_database.html#a4df977abe7e04b7c00eabb9ea52a1c2c" title="com.xenakis.service.Database.close\lConnection" alt="" coords="835,55,1072,93"/>

@@ -1,7 +1,6 @@
 language: java
 jdk:
-  - oraclejdk11
-  - openjdk-ea
+  - oraclejdk13
 os:
   - linux
   - osx

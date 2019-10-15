@@ -2,19 +2,501 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edd1e44c-8adf-4428-9e83-f9455f7445b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/service/JsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ImagInLexis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImagInLexis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a25de6d51a4a992e653b6e93a9b7842ac_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a25de6d51a4a992e653b6e93a9b7842ac_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_a416f55b58a7e19c832ab973b8c8c78ca_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_aa666364104d5c11ea554a8e3926504ec_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_aa666364104d5c11ea554a8e3926504ec_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1_imag_in_lexis_af6f9841058cea0f3642525706814b4f9_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a0303412f0d5805cb4876f437bf88413d_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a0303412f0d5805cb4876f437bf88413d_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a0303412f0d5805cb4876f437bf88413d_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a15789b1bf40eb772adcbb69fd7ff3f02_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a15789b1bf40eb772adcbb69fd7ff3f02_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a15789b1bf40eb772adcbb69fd7ff3f02_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a16238083640b5ff346d441df1b904cc5_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a23a2e89ead537679544536eeb2113bdd_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a418fcb00ce639c9dd9120f9fa9437d7f_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a450d4bcf104e1c39f00aa1c074b4451b_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a450d4bcf104e1c39f00aa1c074b4451b_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a450d4bcf104e1c39f00aa1c074b4451b_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a5b3c5f01cc0ca06191e41a6f27ba9f60_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6cc8803d44dc24362220db1272b91bb8_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6ffca8b83c70e1762f2e9584c2fc0ecf_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6ffca8b83c70e1762f2e9584c2fc0ecf_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a6ffca8b83c70e1762f2e9584c2fc0ecf_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a78a69be05ed245d3b0e65770a4d61afa_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7aa253a8b68e62b4969a48b24129e4d0_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7f0979415deccaa154f2cdec31f4b659_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7f0979415deccaa154f2cdec31f4b659_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7f0979415deccaa154f2cdec31f4b659_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7fa77e6b4cb327f6b80195bf6cbc2ed2_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7fa77e6b4cb327f6b80195bf6cbc2ed2_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a7fa77e6b4cb327f6b80195bf6cbc2ed2_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a89a8860301cb50f525d4597426542bba_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a89a8860301cb50f525d4597426542bba_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a89a8860301cb50f525d4597426542bba_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9d3ab4190e630cf5dbb028aba2fa5eaa_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_a9f370c84f2989e29afc64b72942524fd_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aa3f3cb3b9744e566e88225e074a8f005_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aad73972fbc5a472777135e7309960fd3_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_abfb611e538ecb22ce2fdbc36f71b4081_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aca3862499c9ef0982359a96f39af5530_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_acd139a11e6257dd02d09867ecfba7408_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_acd139a11e6257dd02d09867ecfba7408_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_acd139a11e6257dd02d09867ecfba7408_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ad2740a3b13261452094f6c2390ead320_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ad2740a3b13261452094f6c2390ead320_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ad2740a3b13261452094f6c2390ead320_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae2ad495f8d7b8d482eddfaf59ff208f8_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_ae3a1a7f2331cb3df1df09d2ee363292a_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_icgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_icgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_aeb9c0f7245ae0568275ca9c8cdd3465c_icgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_af4d83cc309ae0eb1abccbf86f6635938_cgraph.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_af4d83cc309ae0eb1abccbf86f6635938_cgraph.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser_af4d83cc309ae0eb1abccbf86f6635938_cgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_a0fa4a36916ea1592d5b8e0e78f56c980_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa589c628b41bd338d9f03729f5afcbcc_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa9bc008cf085440bd794d98402999463_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa9bc008cf085440bd794d98402999463_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa9bc008cf085440bd794d98402999463_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_image_holder_aa9bc008cf085440bd794d98402999463_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder__coll__graph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder__coll__graph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder__coll__graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder__coll__graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a2ca98b96a9944e88c05756e3c9ba3610_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_resource_paths_holder_a75e03f1dfe800ed0cef39b4cbc190c69_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_a5c477d784d632d154267b5e0a54065b1_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_aa159afd819a5bffe2ad425d54b349a2f_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_abc6f8b9c79dcd27b9237cb9c0e327acd_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_acb1aa2bf7cbae48a7a369c8efce0898b_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_adf608af0c83874d33f1ab6467b1dc16e_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_screen_pane_ae8b7ceae87f65e4c807fc887fdcbf52d_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a1b7075ce3cfcd5f750dc73f679ebe427_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a3e071129a8a8b55f68d37fca88854cbd_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a5a1e8b7305a2ab710271ce7f3bc9a6a2_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a5a1e8b7305a2ab710271ce7f3bc9a6a2_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a5a1e8b7305a2ab710271ce7f3bc9a6a2_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a5a1e8b7305a2ab710271ce7f3bc9a6a2_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a97bd609f5c94179775772014aa28c1a0_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a97bd609f5c94179775772014aa28c1a0_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a97bd609f5c94179775772014aa28c1a0_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_a97bd609f5c94179775772014aa28c1a0_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_ae35ce5708fbc16d60ef9912f809c6f30_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_af240ae391549327e7c5bfe3d7f13cb02_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_sound_holder_af240ae391549327e7c5bfe3d7f13cb02_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a0ac45e119118fdd0fbd92d00a5f76223_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a1206c81092cbba3c0f674be0490a26e0_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a1206c81092cbba3c0f674be0490a26e0_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a26688c0e9ab9a99cfc5bc79a414c73ef_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a26688c0e9ab9a99cfc5bc79a414c73ef_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a2f5606e9459940e898eb6beb5cd4aa71_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a2f5606e9459940e898eb6beb5cd4aa71_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a301d58c990c826ecef260bfd62c5fdef_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a301d58c990c826ecef260bfd62c5fdef_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a3691532972d35dd07dec870004091789_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a525cb1f1505b21d799a1fe0bf41c3aaf_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a5eebb396860a336bd81e3226a13d8c2b_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a5eebb396860a336bd81e3226a13d8c2b_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a7b1dd49d49202a714d0f03a768129ae5_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a8613e07917021a74af300c8c4929dcff_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a8613e07917021a74af300c8c4929dcff_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a8613e07917021a74af300c8c4929dcff_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a8613e07917021a74af300c8c4929dcff_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a961baa9ff4ed30685e4950533ba0f661_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_a9fb77305992009aec26e9588af795913_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aa4817eb628da33278e92c2b60b0208ce_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aabf2b7a2de0ec9e71a01540c8d2ce683_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_aabf2b7a2de0ec9e71a01540c8d2ce683_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ab5dfa818b7adccaaddd7e68a68b9447f_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad45818064dc1cfa08041b36d07364b84_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad45818064dc1cfa08041b36d07364b84_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ad940c7cac7c69b830ae61b0aa040431e_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae04626ffe5b2b1ee9865337ebdf2696a_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_ae0659c6851b9f0c870439a199accbc1d_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af5643343905a5512ad70acabf2cd548f_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af5643343905a5512ad70acabf2cd548f_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_af6ef2ca88f0c28c05bba972b8f2f0208_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_afedd9507ea92a218e2b61319b17dcd0e_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1application_1_1_test_afedd9507ea92a218e2b61319b17dcd0e_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1model_1_1_circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1model_1_1_circle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller_a869874cb169384a7e6363dfbe591adc9_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller_a869874cb169384a7e6363dfbe591adc9_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller_a869874cb169384a7e6363dfbe591adc9_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_combinational_chapter_screen_controller_a869874cb169384a7e6363dfbe591adc9_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller_a641aa210b6d0c185494e06667846233b_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller_a641aa210b6d0c185494e06667846233b_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller_a641aa210b6d0c185494e06667846233b_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller_a641aa210b6d0c185494e06667846233b_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller_a7b3e90dd6fa6737d5e2b19d0683443de_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller_a7b3e90dd6fa6737d5e2b19d0683443de_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller_a7b3e90dd6fa6737d5e2b19d0683443de_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_main_screen_controller_a7b3e90dd6fa6737d5e2b19d0683443de_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller_a576b80fb5b4e8364878af45c6b5d85e4_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller_a1642b4215726d60a4bf9e717c9ecd937_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a34d5d39625b14279694691035c599f59_cgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a438a519dd8e4539854f0077d22d2ee89_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a438a519dd8e4539854f0077d22d2ee89_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_a4f942406d41dde64fff66c87f6efacba_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_ab616f1549d5eac8ebf341c135b3f8704_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_ab616f1549d5eac8ebf341c135b3f8704_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_ad2b31bfaa3b727eac6b16db88fad6428_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_ad2b31bfaa3b727eac6b16db88fad6428_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller_adf5307c6791f161612486eccfe720d48_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller_a8ab1957102bb56cf317c20047e31e633_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller_a8ab1957102bb56cf317c20047e31e633_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller_a8ab1957102bb56cf317c20047e31e633_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_recognition_chapter_screen_controller_a8ab1957102bb56cf317c20047e31e633_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a1ae35c9ccf2e2f9a6a10cda2de50b666_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a1ae35c9ccf2e2f9a6a10cda2de50b666_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a1ae35c9ccf2e2f9a6a10cda2de50b666_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a1ae35c9ccf2e2f9a6a10cda2de50b666_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a675989e0127f5c4a347d5ac1c49b69ad_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a675989e0127f5c4a347d5ac1c49b69ad_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a675989e0127f5c4a347d5ac1c49b69ad_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a675989e0127f5c4a347d5ac1c49b69ad_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a6fd8dbda489ff7ab70aca01c39e08f4d_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a6fd8dbda489ff7ab70aca01c39e08f4d_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a6fd8dbda489ff7ab70aca01c39e08f4d_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_a6fd8dbda489ff7ab70aca01c39e08f4d_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_ae0db7491e31955b56b010a32a8debb31_cgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_ae0db7491e31955b56b010a32a8debb31_cgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_ae0db7491e31955b56b010a32a8debb31_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_score_table_screen_controller_ae0db7491e31955b56b010a32a8debb31_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller_ad860fab291f6cb70a9f0cb3d9eeb28f7_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_question_screen_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a20fbf855c3e063d47b0318a0be5ccccd_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder_a884fcb5c977d76f724c79cd40660dbb7_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a34d0a4549ff6943dc93b775dabfdb0a2_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a4df977abe7e04b7c00eabb9ea52a1c2c_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a758c49605ba55f4de19b09124d394bb6_icgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_icgraph.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_icgraph.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7ec9c00ea44188aa8b0254730929c22c_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7fb6148d1d11ec26c85896a9e61cd998_cgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7fb6148d1d11ec26c85896a9e61cd998_cgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7fb6148d1d11ec26c85896a9e61cd998_icgraph.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classcom_1_1xenakis_1_1service_1_1_database_a7fb6148d1d11ec26c85896a9e61cd998_icgraph.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/dir_6b7fb2c9bb88be56f817938ba0f04229.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/dir_6b7fb2c9bb88be56f817938ba0f04229.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/dir_e033c263f060d7fc7779c87a06ee47c5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/dir_e033c263f060d7fc7779c87a06ee47c5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_i.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_l.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_l.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_func_t.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_func_t.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_i.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_j.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_l.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_l.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_t.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_t.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_vars_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars_i.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_vars_i.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars_j.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars_p.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_vars_p.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/functions_vars_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/functions_vars_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_10.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_10.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_10.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_10.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_11.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_11.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_11.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_11.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_12.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_12.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_12.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_12.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_3.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_3.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_4.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_4.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_4.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_4.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_5.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_5.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_5.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_5.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_6.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_6.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_6.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_6.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_7.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_7.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_7.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_8.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_8.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_8.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_8.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_9.map" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_9.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_9.md5" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_9.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherit_graph_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherit_graph_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/inherits.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/inherits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/md__r_e_a_d_m_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/md__r_e_a_d_m_e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/namespacecom_1_1xenakis_1_1application.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/namespacecom_1_1xenakis_1_1application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/namespacecom_1_1xenakis_1_1service.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/namespacecom_1_1xenakis_1_1service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_13.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_13.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_14.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/classes_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/classes_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/functions_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/functions_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/variables_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/variables_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/xenakis/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/xenakis/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ResourcePathsHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xenakis/application/ResourcePathsHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ImagInLexis-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/ImagInLexisMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/ImagInLexisMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/ImagInLexis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/ImagInLexis.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImagInLexisParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ImageHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ResourcePathsHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ResourcePathsHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/ScreenPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/SoundHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/SoundHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/application/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/application/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/json/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/json/input.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/json/input.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/AboutUsMainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/AboutUsMainScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageLinkScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageLinkScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageScreenController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseImageScreenController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseInImageScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelFromSoundScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelFromSoundScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ChooseLabelScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/CombinationalChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/CombinationalChapterScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/KatonomasiaChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/KatonomasiaChapterScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/MainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/MainScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PostTestScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PostTestScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PreTestScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/PreTestScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/QuestionScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/QuestionScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/RecognitionChapterScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/RecognitionChapterScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController$Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController$Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScoreTableScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/ScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisMainScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisMainScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenController/WhatIsThisScreenController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageLinkScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageLinkScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageScreenData2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseImageScreenData2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseInImageScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseInImageScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseLabelFromSoundScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseLabelFromSoundScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseLabelScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ChooseLabelScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/QuestionScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/QuestionScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ScreenDataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/ScreenDataHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/WhatIsThisScreenData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xenakis/screenData/WhatIsThisScreenData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,131 +511,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1875">
+              <caret line="125" column="16" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#ImagInLexisParser#0;class#ImagInLexisParser#0" />
-                <element signature="method#parseCategoryNames#0;class#ImagInLexisParser#0" />
-                <element signature="method#getScoreList#0;class#ImagInLexisParser#0" />
-                <element signature="e#3087#3136#1" />
-                <element signature="e#3175#3231#1" />
-                <element signature="e#3239#3303#1" />
-                <element signature="method#getChapterList#0;class#ImagInLexisParser#0" />
-                <element signature="e#3519#3596#1" />
-                <element signature="method#getCategoryList#0;class#ImagInLexisParser#0" />
-                <element signature="e#3990#4209#1" />
-                <element signature="e#4105#4202#1" />
-                <element signature="method#parseSounds#0;class#ImagInLexisParser#0" />
-                <element signature="e#4623#4830#1" />
-                <element signature="method#parseImages#0;class#ImagInLexisParser#0" />
-                <element signature="e#4992#5199#1" />
-                <element signature="method#parseCategory#0;class#ImagInLexisParser#0" />
-                <element signature="e#14878#14932#1" />
-                <element signature="method#parseChapter#0;class#ImagInLexisParser#0" />
-                <element signature="e#15525#15578#1" />
-                <element signature="e#15874#15929#1" />
-                <element signature="method#parseScreens#0;class#ImagInLexisParser#0" />
-                <element signature="n#!!block;n#getCategoriesScreenIdList#0;n#ImagInLexisParser#0" />
-                <element signature="method#addtoChaptersCategoryList#0;class#ImagInLexisParser#0" />
-                <element signature="e#17187#17274#1" />
-                <element signature="method#addtoCategoriesScreenIdList#0;class#ImagInLexisParser#0" />
-                <element signature="e#17522#17609#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/service/JsonParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#219#295#0" />
-                <element signature="e#336#404#0" />
-                <element signature="e#538#569#1" />
-                <element signature="e#617#647#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-              <folding>
-                <element signature="e#6917#10609#0" />
-                <element signature="e#6996#10603#0" />
-                <element signature="e#10615#14071#0" />
-                <element signature="e#14077#17532#0" />
-                <element signature="e#17538#20869#0" />
-                <element signature="e#20875#24356#0" />
-                <element signature="e#24362#27918#0" />
-                <element signature="e#27924#31554#0" />
-                <element signature="e#31560#35091#0" />
-                <element signature="e#35097#38607#0" />
-                <element signature="e#38613#42232#0" />
-                <element signature="e#42238#45838#0" />
-                <element signature="e#45844#49527#0" />
-                <element signature="e#49533#55346#0" />
-                <element signature="e#55352#60850#0" />
-                <element signature="e#60856#65785#0" />
-                <element signature="e#65791#67865#0" />
-                <element signature="e#67871#71781#0" />
-                <element signature="e#71787#75900#0" />
-                <element signature="e#75906#79629#0" />
-                <element signature="e#79730#82000#0" />
-                <element signature="e#82006#95449#0" />
-                <element signature="e#95455#99357#0" />
-                <element signature="e#99476#101147#0" />
-                <element signature="e#101153#102788#0" />
-                <element signature="e#102794#104447#0" />
-                <element signature="e#104453#106174#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="method#createQuestion#0;class#QuestionFactory#0" />
-                <element signature="e#551#840#1" />
-                <element signature="e#888#1082#1" />
-                <element signature="e#1129#1321#1" />
-                <element signature="e#1370#1566#1" />
-                <element signature="e#1612#1802#1" />
-                <element signature="e#1853#2053#1" />
-                <element signature="e#2109#2319#1" />
-                <element signature="e#2329#2409#1" />
-                <element signature="method#createWhatIsThisQuestion#0;class#QuestionFactory#0" />
-                <element signature="method#createChooseInImageQuestion#0;class#QuestionFactory#0" />
-                <element signature="e#1812#2342#1" />
-                <element signature="method#createChooseLabelQuestion#0;class#QuestionFactory#0" />
-                <element signature="method#createChooseLabelFromSoundQuestion#0;class#QuestionFactory#0" />
-                <element signature="method#createChooseImageQuestion#0;class#QuestionFactory#0" />
-                <element signature="method#createChooseImage2Question#0;class#QuestionFactory#0" />
-                <element signature="method#createChooseImageLinkQuestion#0;class#QuestionFactory#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -169,13 +540,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ImagInLexisParser.ini</find>
-      <find>relea</find>
-      <find>fxml/ChooseImageScreen.fxml</find>
-      <find>loadScores</find>
-      <find>Database.</find>
-      <find>SoundHolder</find>
-      <find>getSound(</find>
       <find>exec</find>
       <find>surefire</find>
       <find>service.D</find>
@@ -193,12 +557,19 @@
       <find>parseScreens</find>
       <find>getCategoryTotalQuestions</find>
       <find>getResourcePaths</find>
-      <find>imagesJsonObject</find>
       <find>parseQuestion</find>
-      <find>parseQuestion(</find>
       <find>parseCategory(</find>
       <find>parseChapter(</find>
       <find>parseQuestions()</find>
+      <find>jsonObject.</find>
+      <find>jsonObject</find>
+      <find>imagesJsonObject</find>
+      <find>dataJsonObject</find>
+      <find>parseQuestion(</find>
+      <find>ResourcePathsHolder</find>
+      <find>doc</find>
+      <find>doxygen</find>
+      <find>mainCla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,7 +587,6 @@
         <option value="$PROJECT_DIR$/src/test/java/EmptyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xenakis/EmptyTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/Circle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/model/Circle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java" />
@@ -229,19 +599,22 @@
         <option value="$PROJECT_DIR$/doxygen.config" />
         <option value="$PROJECT_DIR$/Doxyfile" />
         <option value="$PROJECT_DIR$/src/test/java/com/xenakis/DatabaseTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/service/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/application.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/screenController/KatonomasiaChapterScreenController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/Test.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/service/JsonParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/application/ResourcePathsHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/ImagInLexisMain.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -292,8 +665,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,52 +698,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xenakis" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImagInLexis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImagInLexis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xenakis" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +742,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.ImagInLexis run">
+  <component name="RunManager" selected="Maven.clean/run">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -455,34 +786,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImagInLexis build" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="compile" />
-                <option value="jar:jar" />
-                <option value="install" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="ImagInLexis clean and build" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="clean" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -494,34 +798,6 @@
             <option name="goals">
               <list>
                 <option value="clean" />
-                <option value="compile" />
-                <option value="jar:jar" />
-                <option value="install" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="ImagInLexis run" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="exec:java" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -535,7 +811,136 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="ImagInLexis test" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="clean/run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="clean" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="compile" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:compile" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="javafx:compile" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="documentation" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="doxygen:report" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -580,11 +985,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.ImagInLexisMain" />
-      <item itemvalue="Maven.ImagInLexis clean and build" />
-      <item itemvalue="Maven.ImagInLexis build" />
-      <item itemvalue="Maven.ImagInLexis test" />
-      <item itemvalue="Maven.ImagInLexis run" />
       <item itemvalue="JUnit.DatabaseTest.testDB" />
+      <item itemvalue="Maven.clean/run" />
+      <item itemvalue="Maven.clean" />
+      <item itemvalue="Maven.compile" />
+      <item itemvalue="Maven.run" />
+      <item itemvalue="Maven.deploy" />
+      <item itemvalue="Maven.test" />
+      <item itemvalue="Maven.documentation" />
     </list>
     <recent_temporary>
       <list>
@@ -631,7 +1039,28 @@
       <option name="project" value="LOCAL" />
       <updated>1571002298290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Json parser created">
+      <created>1571084909055</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571084909056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="parser is static">
+      <created>1571086408757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571086408757</updated>
+    </task>
+    <task id="LOCAL-00007" summary="minor update">
+      <created>1571087875677</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571087875678</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -642,11 +1071,20 @@
       <configuration name="DatabaseTest.testDB" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -655,12 +1093,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37831324" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.16867469" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34457833" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -679,28 +1117,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="issues fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="issues fixed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java</url>
-          <line>182</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Json parser created" />
+    <MESSAGE value="parser is static" />
+    <MESSAGE value="minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/Initializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/media/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -736,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/ImagInLexisMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/PostTestScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -765,13 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -801,13 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -904,10 +1305,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/fxml/RecognitionChapterScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-350" />
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/ChooseImageScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -924,12 +1325,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/fxml/KatonomasiaChapterScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="48" column="327" selection-start-line="48" selection-start-column="312" selection-end-line="48" selection-end-column="327" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -942,13 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="59" selection-start-line="59" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="59" column="48" lean-forward="true" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1011,38 +1405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="47" selection-start-line="18" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/screenController/PreTestScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1060,45 +1426,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ResourcePathsHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ScreenPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="56" column="75" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="method#createQuestion#0;class#QuestionFactory#0" />
-            <element signature="e#551#840#1" />
-            <element signature="e#888#1082#1" />
-            <element signature="e#1129#1321#1" />
-            <element signature="e#1370#1566#1" />
-            <element signature="e#1612#1802#1" />
-            <element signature="e#1853#2053#1" />
-            <element signature="e#2109#2319#1" />
-            <element signature="e#2329#2409#1" />
-            <element signature="method#createWhatIsThisQuestion#0;class#QuestionFactory#0" />
-            <element signature="method#createChooseInImageQuestion#0;class#QuestionFactory#0" />
-            <element signature="e#1812#2342#1" />
-            <element signature="method#createChooseLabelQuestion#0;class#QuestionFactory#0" />
-            <element signature="method#createChooseLabelFromSoundQuestion#0;class#QuestionFactory#0" />
-            <element signature="method#createChooseImageQuestion#0;class#QuestionFactory#0" />
-            <element signature="method#createChooseImage2Question#0;class#QuestionFactory#0" />
-            <element signature="method#createChooseImageLinkQuestion#0;class#QuestionFactory#0" />
           </folding>
         </state>
       </provider>
@@ -1117,7 +1450,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/input.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/service/JsonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#219#295#0" />
+            <element signature="e#336#404#0" />
+            <element signature="e#538#569#1" />
+            <element signature="e#617#647#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
@@ -1153,53 +1500,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/service/JsonParser.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImageHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="210">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#219#295#0" />
-            <element signature="e#336#404#0" />
-            <element signature="e#538#569#1" />
-            <element signature="e#617#647#0" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ImagInLexisParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state relative-caret-position="1200">
+          <caret line="165" column="44" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#ImagInLexisParser#0;class#ImagInLexisParser#0" />
             <element signature="method#parseCategoryNames#0;class#ImagInLexisParser#0" />
             <element signature="method#getScoreList#0;class#ImagInLexisParser#0" />
-            <element signature="e#3087#3136#1" />
-            <element signature="e#3175#3231#1" />
-            <element signature="e#3239#3303#1" />
             <element signature="method#getChapterList#0;class#ImagInLexisParser#0" />
-            <element signature="e#3519#3596#1" />
             <element signature="method#getCategoryList#0;class#ImagInLexisParser#0" />
-            <element signature="e#3990#4209#1" />
-            <element signature="e#4105#4202#1" />
+            <element signature="method#initialize#0;class#ImagInLexisParser#0" />
             <element signature="method#parseSounds#0;class#ImagInLexisParser#0" />
-            <element signature="e#4623#4830#1" />
             <element signature="method#parseImages#0;class#ImagInLexisParser#0" />
-            <element signature="e#4992#5199#1" />
             <element signature="method#parseCategory#0;class#ImagInLexisParser#0" />
-            <element signature="e#14878#14932#1" />
             <element signature="method#parseChapter#0;class#ImagInLexisParser#0" />
-            <element signature="e#15525#15578#1" />
-            <element signature="e#15874#15929#1" />
-            <element signature="method#parseScreens#0;class#ImagInLexisParser#0" />
+            <element signature="method#parseQuestions#0;class#ImagInLexisParser#0" />
+            <element signature="method#parseMainScreens#0;class#ImagInLexisParser#0" />
             <element signature="n#!!block;n#getCategoriesScreenIdList#0;n#ImagInLexisParser#0" />
             <element signature="method#addtoChaptersCategoryList#0;class#ImagInLexisParser#0" />
-            <element signature="e#17187#17274#1" />
             <element signature="method#addtoCategoriesScreenIdList#0;class#ImagInLexisParser#0" />
-            <element signature="e#17522#17609#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/ResourcePathsHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xenakis/json/screens.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/application/QuestionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <folding>
+            <element signature="method#createWhatIsThisQuestion#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseInImageQuestion#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseLabelQuestion#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseLabelFromSoundQuestion#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseImageQuestion#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseImage2Question#0;class#QuestionFactory#0" />
+            <element signature="method#createChooseImageLinkQuestion#0;class#QuestionFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xenakis/ImagInLexis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/ImagInLexisMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" column="16" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

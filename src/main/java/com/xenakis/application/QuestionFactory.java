@@ -10,26 +10,26 @@ import java.util.Set;
 
 public class QuestionFactory {
 
-    public static void createQuestion(String screenId, JSONObject questionObj, String chapterName, String categoryName, Set<Integer> answersSet){
-        if(screenId.equals("chooseImage")){
+    public static void createQuestion(String screenType, JSONObject questionObj, String chapterName, String categoryName, Set<Integer> answersSet){
+        if(screenType.equals("chooseImage")){
             QuestionFactory.createChooseImageQuestion(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("chooseImage2")){
+        else if(screenType.equals("chooseImage2")){
             QuestionFactory.createChooseImage2Question(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("chooseLabel")){
+        else if(screenType.equals("chooseLabel")){
             QuestionFactory.createChooseLabelQuestion(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("chooseInImage")){
+        else if(screenType.equals("chooseInImage")){
             QuestionFactory.createChooseInImageQuestion(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("whatIsThis")){
+        else if(screenType.equals("whatIsThis")){
             QuestionFactory.createWhatIsThisQuestion(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("chooseImageLink")){
+        else if(screenType.equals("chooseImageLink")){
             QuestionFactory.createChooseImageLinkQuestion(questionObj,chapterName,categoryName,answersSet);
         }
-        else if(screenId.equals("chooseLabelFromSound")){
+        else if(screenType.equals("chooseLabelFromSound")){
             QuestionFactory.createChooseLabelFromSoundQuestion(questionObj,chapterName,categoryName,answersSet);
         }
         else{

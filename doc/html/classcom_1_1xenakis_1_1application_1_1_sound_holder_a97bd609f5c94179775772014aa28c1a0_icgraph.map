@@ -1,5 +1,5 @@
 <map id="com.xenakis.application.SoundHolder.addSound" name="com.xenakis.application.SoundHolder.addSound">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a7aa253a8b68e62b4969a48b24129e4d0" title="com.xenakis.application.\lImagInLexisParser.parseSounds" alt="" coords="220,5,434,44"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#abfb611e538ecb22ce2fdbc36f71b4081" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="482,5,665,44"/>
+<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a4e87983666dbb9611395cfd846cd04b0" title="com.xenakis.application.\lImagInLexisParser.parseSounds" alt="" coords="220,5,434,44"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a184b2548ee65eee39c44e584da63c3e9" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="482,5,665,44"/>
 <area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#a416f55b58a7e19c832ab973b8c8c78ca" title="com.xenakis.ImagInLexis.start" alt="" coords="713,12,914,37"/>
 </map>

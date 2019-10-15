@@ -14,32 +14,56 @@
 
 ImagInLexis is a tool that aims to enhance therapies programs of Logotherapeutic intervention. With the help of technology this tool was designed, which gives comfort to the therapist, as well as in the treated, complement and enrich dynamically and interactively the intervention therapies. At the same time, it aims indirectly for other purposes. It creates conditions for vocabulary enrichment, pulse recognition, the enhancement of basic knowledge and abstraction ability. Finally, it requires a combination of skills to enhance logical thinking. IMAGinLEXIS is addressed to speech therapists, special pedagogues and other professionals working with preschool and school age children, as well as adults which have difficulties in the areas mentioned above.
 
-## Building and Deployment
-
-To compile and deploy the project run
-```
-mvn clean compile jar:jar install -f pom.xml
-```
-
 ## Prerequisites
 
 * Java 8: This is the official website to download [java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 
+* Java JDK 13
+
+## Building and Deployment
+
+Clean
+```
+mvn clean
+```
+
+Compile
+```
+mvn javafx:compile
+```
+
+Run
+```
+mvn javafx:run
+```
+
+Deploy
+```
+mvn clean javafx:compile install
+```
+
 ## Testing
 
-Testing is not available yet.
+```
+mvn test
+```
 
 ## Documentation
 
-Documentation is not available yet.
+Generate
+```
+mvn doxygen:report 
+```
 
-## Built With
+## Tools
+
+### Building tools
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Version Control
 
-We use [GitHub](http://github.com/) for Version Control. For the versions available, see the [tags on this repository](https://github.com/nikosxenakis/ImagInLexis).
+* We use [GitHub](http://github.com/) for Version Control. For the versions available, see the [tags on this repository](https://github.com/nikosxenakis/ImagInLexis).
 
 ## Authors
 

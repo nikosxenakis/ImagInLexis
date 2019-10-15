@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['katonomasiachapterscreencontroller',['KatonomasiaChapterScreenController',['../classcom_1_1xenakis_1_1screen_controller_1_1_katonomasia_chapter_screen_controller.html',1,'com::xenakis::screenController']]]
+  ['jsonparser',['JsonParser',['../classcom_1_1xenakis_1_1service_1_1_json_parser.html',1,'com::xenakis::service']]]
 ];

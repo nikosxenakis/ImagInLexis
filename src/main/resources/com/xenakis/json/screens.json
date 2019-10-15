@@ -1,22 +1,25 @@
 {
   "screens": [
     {
-      "id": "chooseImage",
+      "type": "chooseImage",
       "path": "fxml/ChooseImageScreen.fxml"
     }, {
-      "id": "chooseImage2",
+      "type": "chooseImage2",
       "path": "fxml/ChooseImageScreen2.fxml"
     }, {
-      "id": "chooseInImage",
+      "type": "chooseLabel",
+      "path": "fxml/ChooseLabelScreen.fxml"
+    }, {
+      "type": "chooseInImage",
       "path": "fxml/ChooseInImageScreen.fxml"
     }, {
-      "id": "whatIsThis",
+      "type": "whatIsThis",
       "path": "fxml/WhatIsThisScreen.fxml"
     }, {
-      "id": "chooseImageLink",
+      "type": "chooseImageLink",
       "path": "fxml/ChooseImageLinkScreen.fxml"
     }, {
-      "id": "chooseLabelFromSound",
+      "type": "chooseLabelFromSound",
       "path": "fxml/ChooseLabelFromSoundScreen.fxml"
     }
   ]

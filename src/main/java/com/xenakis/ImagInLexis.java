@@ -34,7 +34,7 @@ public class ImagInLexis extends Application {
         ImagInLexisParser.initialize();
 
         Scene scene = new Scene(mainContainer);
-        scene.getStylesheets().add("src/application.css");
+//        scene.getStylesheets().add("src/application.css");
 
         ImagInLexis.mainContainer.setScreen("MainScreen");
 

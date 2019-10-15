@@ -11,46 +11,26 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class ImagInLexisParser {
-	
 
-	private JSONObject jsonObject;
-	private JSONObject imagesJsonObject;
-	private JSONObject soundsJsonObject;
-	private JSONObject screensJsonObject;
-	private final String screensPath = "json/screens.json";
+	private static JSONObject dataJsonObject;
+	private static JSONObject screensJsonObject;
 
 	//chapterName -> chapterTotalQuestions
-	private HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
+	private static HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
 	
 	//categoryName -> chapterTotalQuestions
-	private HashMap<String,Integer> categoryTotalQuestions = new HashMap<>();
+	private static HashMap<String,Integer> categoryTotalQuestions = new HashMap<>();
 
 	//chapterName -> categoryName List
-	private HashMap<String,List<String>> chaptersCategoryList = new HashMap<>();
+	private static HashMap<String,List<String>> chaptersCategoryList = new HashMap<>();
 	
 	//categoryName -> screenId List
-	private HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
+	private static HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
 	
-	private HashMap<String,String> categoryNames = new HashMap<>();
-	
-	public ImagInLexisParser(String filePath, String imagesFilePath, String soundsFilePath){
-          
-		this.jsonObject = null;
-		this.imagesJsonObject = null;
-		this.screensJsonObject = null;
+	private static HashMap<String,String> categoryNames = new HashMap<>();
 
-		this.jsonObject = JsonParser.loadObject(filePath);
-
-		this.imagesJsonObject = JsonParser.loadObject(imagesFilePath);
-
-        this.soundsJsonObject = JsonParser.loadObject(soundsFilePath);
-
-		this.screensJsonObject = JsonParser.loadObject(this.screensPath);
-
-	}
-
-	public void parseCategoryNames(){
-	    JSONArray scores = (JSONArray) jsonObject.get("questions");
+	public static void parseCategoryNames(){
+	    JSONArray scores = (JSONArray) dataJsonObject.get("questions");
     	for (Object scoresChapter : scores){
     	   	JSONObject tmpScoresChapter = (JSONObject) scoresChapter;
     		JSONArray chapterList = (JSONArray)(tmpScoresChapter.get("chapterList"));
@@ -63,7 +43,7 @@ public class ImagInLexisParser {
     	}
 	}
 	
-	public List<Score> getScoreList(String chapterName, String categoryName){
+	public static List<Score> getScoreList(String chapterName, String categoryName){
 
 		List<Score> scoreList;
 
@@ -80,7 +60,7 @@ public class ImagInLexisParser {
 	    return scoreList;
 	}
 	
-    public List<String> getChapterList(){
+    public static List<String> getChapterList(){
     	List<String> chapterList = new ArrayList<>();
     	
     	for (Entry<String, List<String>> entry : chaptersCategoryList.entrySet()) {
@@ -91,11 +71,11 @@ public class ImagInLexisParser {
     	return chapterList;
     }
     
-    public String getCategoryNameFromCategory(String category){
+    public static String getCategoryNameFromCategory(String category){
     	return categoryNames.get(category);
     }
     
-    public List<String> getCategoryList(String chapterName){
+    public static List<String> getCategoryList(String chapterName){
     	List<String> categoryList = new ArrayList<>();
     
     	for (Entry<String, List<String>> entry : ImagInLexis.imagInLexisParser.chaptersCategoryList.entrySet()) {
@@ -111,18 +91,22 @@ public class ImagInLexisParser {
     	return categoryList;
     }    
 
-	public void initialize(){
+	public static void initialize(){
+
+		dataJsonObject = JsonParser.loadObject("json/data.json");
+
+		screensJsonObject = JsonParser.loadObject("json/screens.json");
+
 		parseSounds();
 		parseImages();
 		parseQuestions();
 		parseMainScreens();
-//		parseScreens();
         parseCategoryNames();
 	}
 
-	private void parseSounds(){
-
-        JSONArray sounds = (JSONArray) this.soundsJsonObject.get("sounds");
+	private static void parseSounds(){
+		JSONObject soundsJsonObject = JsonParser.loadObject("json/sounds.json");
+		JSONArray sounds = (JSONArray) soundsJsonObject.get("sounds");
                 		
         for (Object c : sounds){
         	JSONObject c1 = (JSONObject) c;
@@ -132,9 +116,11 @@ public class ImagInLexisParser {
         }
 	}
 	
-	private void parseImages(){
+	private static void parseImages(){
 
-        JSONArray images = (JSONArray) this.imagesJsonObject.get("images");
+		JSONObject imagesJsonObject = JsonParser.loadObject("json/images.json");
+
+		JSONArray images = (JSONArray) imagesJsonObject.get("images");
                 		
         for (Object c : images){
         	JSONObject c1 = (JSONObject) c;
@@ -144,17 +130,7 @@ public class ImagInLexisParser {
         }        
 	}
 
-//	private void parseScreens() {
-//		ResourcePathsHolder.addResourcePaths("chooseImage", "fxml/ChooseImageScreen.fxml");
-//		ResourcePathsHolder.addResourcePaths("chooseImage2", "fxml/ChooseImageScreen2.fxml");
-//		ResourcePathsHolder.addResourcePaths("chooseLabel", "fxml/ChooseLabelScreen.fxml");
-//		ResourcePathsHolder.addResourcePaths("chooseInImage", "fxml/ChooseInImageScreen.fxml");
-//		ResourcePathsHolder.addResourcePaths("whatIsThis", "fxml/WhatIsThisScreen.fxml");
-//		ResourcePathsHolder.addResourcePaths("chooseImageLink", "fxml/ChooseImageLinkScreen.fxml");
-//		ResourcePathsHolder.addResourcePaths("chooseLabelFromSound", "fxml/ChooseLabelFromSoundScreen.fxml");
-//	}
-
-	private void parseQuestion(Object question, String chapterName, String category, String categoryName){
+	private static void parseQuestion(Object question, String chapterName, String category, String categoryName){
         
     	JSONObject questionObj = (JSONObject) question;
     	String screenType = (String)(questionObj.get("screenType"));
@@ -172,52 +148,27 @@ public class ImagInLexisParser {
         
 		addtoCategoriesScreenIdList(category,screenId);
 
-//		JSONArray screensArr = (JSONArray) this.screensJsonObject.get("screens");
-//
-//		if(screensArr != null)
-//			for (Object screenObj : screensArr){
-//				JSONObject screen = (JSONObject) screenObj;
-//				String screenIdTmp = (String)screen.get("id");
-//				String screenPathTmp = (String)screen.get("path");
-//				if(screenType.equals(screenIdTmp)) {
-//					ResourcePathsHolder.addResourcePaths(screenId, screenPathTmp);
-//					break;
-//				}
-//
-//			}
+		JSONArray screensArr = (JSONArray) screensJsonObject.get("screens");
 
+		String screenPath = null;
+		if(screensArr != null)
+			for (Object screenObj : screensArr){
+				JSONObject screen = (JSONObject) screenObj;
+				String screenTypeTmp = (String)screen.get("type");
+				String screenPathTmp = (String)screen.get("path");
+				if(screenType.equals(screenTypeTmp)) {
+					screenPath = screenPathTmp;
+					break;
+				}
 
+			}
 
-		if(screenType.equals("chooseImage")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageScreen.fxml");
-    	}
-    	else if(screenType.equals("chooseImage2")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageScreen2.fxml");
-    	}
-    	else if(screenType.equals("chooseLabel")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseLabelScreen.fxml");
-    	}
-    	else if(screenType.equals("chooseInImage")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseInImageScreen.fxml");
-    	}
-    	else if(screenType.equals("whatIsThis")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/WhatIsThisScreen.fxml");
-    	}
-    	else if(screenType.equals("chooseImageLink")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseImageLinkScreen.fxml");
-    	}
-    	else if(screenType.equals("chooseLabelFromSound")){
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/ChooseLabelFromSoundScreen.fxml");
-    	}
-    	else{
-    		System.err.println("error in parseQuestion not implemented yet");
-    	}
-
+		ResourcePathsHolder.addResourcePaths(screenId, screenPath);
 		QuestionFactory.createQuestion(screenType,questionObj,chapterName,categoryName,answersSet);
 
 	}
 	
-	private void parseCategory(Object categoryObj, String chapterName){
+	private static void parseCategory(Object categoryObj, String chapterName){
 		if(!(categoryObj instanceof JSONObject)){
 			System.out.println("error in parseCategory");
 		}
@@ -236,7 +187,7 @@ public class ImagInLexisParser {
         }	
 	}
 	
-	private void parseChapter(Object chapter){
+	private static void parseChapter(Object chapter){
 		if(!(chapter instanceof JSONObject)){
 			System.err.println("error in parseChapter");
 		}
@@ -252,18 +203,18 @@ public class ImagInLexisParser {
         }
 	}
 
-	private void parseQuestions(){
+	private static void parseQuestions(){
 
-		JSONArray questions = (JSONArray) jsonObject.get("questions");
+		JSONArray questions = (JSONArray) dataJsonObject.get("questions");
         
     	for (Object chapter : questions){
     		parseChapter(chapter);	
         }
 	}
 
-	private void parseMainScreens(){
+	private static void parseMainScreens(){
 
-		JSONArray mainScreens = (JSONArray) jsonObject.get("mainScreens");
+		JSONArray mainScreens = (JSONArray) dataJsonObject.get("mainScreens");
         
     	for (Object mainScreen : mainScreens){
     		JSONObject s = (JSONObject) mainScreen;
@@ -274,15 +225,15 @@ public class ImagInLexisParser {
         }
 	}
 
-	public Integer getCategoryTotalQuestions(String category){
+	public static Integer getCategoryTotalQuestions(String category){
 		return categoryTotalQuestions.get(category);
 	}
 
-	public List<String> getCategoriesScreenIdList(String category){
+	public static List<String> getCategoriesScreenIdList(String category){
 		return categoriesScreenIdList.get(category);
 	}
 	
-	private void addtoChaptersCategoryList(String chapterName, String categoryName){
+	private static void addtoChaptersCategoryList(String chapterName, String categoryName){
 		List<String> list = chaptersCategoryList.get(chapterName);
 		
 		if(list == null){
@@ -294,7 +245,7 @@ public class ImagInLexisParser {
 		//System.out.println(chaptersCategoryList.toString());
 	}
 
-	private void addtoCategoriesScreenIdList(String category, String screenId){
+	private static void addtoCategoriesScreenIdList(String category, String screenId){
 		List<String> list = categoriesScreenIdList.get(category);
 
 		if(list == null){

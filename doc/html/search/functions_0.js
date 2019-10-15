@@ -9,7 +9,7 @@ var searchData=
   ['addscreen',['addScreen',['../classcom_1_1xenakis_1_1application_1_1_screen_pane.html#adf608af0c83874d33f1ab6467b1dc16e',1,'com::xenakis::application::ScreenPane']]],
   ['addscreendata',['addScreenData',['../classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder.html#a884fcb5c977d76f724c79cd40660dbb7',1,'com::xenakis::screenData::ScreenDataHolder']]],
   ['addsound',['addSound',['../classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a97bd609f5c94179775772014aa28c1a0',1,'com::xenakis::application::SoundHolder']]],
-  ['addtocategoriesscreenidlist',['addtoCategoriesScreenIdList',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#ad2740a3b13261452094f6c2390ead320',1,'com::xenakis::application::ImagInLexisParser']]],
-  ['addtochapterscategorylist',['addtoChaptersCategoryList',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a15789b1bf40eb772adcbb69fd7ff3f02',1,'com::xenakis::application::ImagInLexisParser']]],
+  ['addtocategoriesscreenidlist',['addtoCategoriesScreenIdList',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#ae0b419eb910a1e1f2d48267570edf953',1,'com::xenakis::application::ImagInLexisParser']]],
+  ['addtochapterscategorylist',['addtoChaptersCategoryList',['../classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a23ad465e7d46dc4d0e36e09abd4ab0c5',1,'com::xenakis::application::ImagInLexisParser']]],
   ['addtoscreenlist',['addToScreenList',['../classcom_1_1xenakis_1_1application_1_1_test.html#a03b1482106cdbb68cf4ed99f795f43c8',1,'com::xenakis::application::Test']]]
 ];

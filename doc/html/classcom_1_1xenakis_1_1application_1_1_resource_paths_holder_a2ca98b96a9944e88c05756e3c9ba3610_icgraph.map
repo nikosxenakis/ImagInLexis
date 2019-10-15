@@ -1,7 +1,7 @@
 <map id="com.xenakis.application.ResourcePathsHolder.getResourcePaths" name="com.xenakis.application.ResourcePathsHolder.getResourcePaths">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#abc6f8b9c79dcd27b9237cb9c0e327acd" title="com.xenakis.application.\lScreenPane.loadScreen" alt="" coords="318,37,484,76"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a23a2e89ead537679544536eeb2113bdd" title="com.xenakis.application.\lImagInLexisParser.parseScreens" alt="" coords="532,5,750,44"/>
-<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="558,68,725,107"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#abfb611e538ecb22ce2fdbc36f71b4081" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="798,5,981,44"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#a416f55b58a7e19c832ab973b8c8c78ca" title="com.xenakis.ImagInLexis.start" alt="" coords="1029,12,1230,37"/>
+<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#ae94a43a93f404d8271d3cd9c31b3e577" title="com.xenakis.application.\lImagInLexisParser.parseMainScreens" alt="" coords="532,5,779,44"/>
+<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="572,68,739,107"/>
+<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#a184b2548ee65eee39c44e584da63c3e9" title="com.xenakis.application.\lImagInLexisParser.initialize" alt="" coords="827,5,1010,44"/>
+<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1_imag_in_lexis.html#a416f55b58a7e19c832ab973b8c8c78ca" title="com.xenakis.ImagInLexis.start" alt="" coords="1058,12,1259,37"/>
 </map>

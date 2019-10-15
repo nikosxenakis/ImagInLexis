@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['katonomasiachapterscreencontroller_2ejava',['KatonomasiaChapterScreenController.java',['../_katonomasia_chapter_screen_controller_8java.html',1,'']]]
+  ['jsonparser_2ejava',['JsonParser.java',['../_json_parser_8java.html',1,'']]]
 ];
