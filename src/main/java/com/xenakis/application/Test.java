@@ -14,7 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Test{
+public class Test {
 
 	private String chapter;
 	private String category;
@@ -40,6 +40,7 @@ public class Test{
 	private Integer totalQuestions;
 	private Integer answeredQuestions;
 
+//	TODO: add Test and TestUtil classes
 	public Test(String chapter, String category,String chapterName, String categoryName, String menuScreenId){
 		
 		this.chapter = chapter;

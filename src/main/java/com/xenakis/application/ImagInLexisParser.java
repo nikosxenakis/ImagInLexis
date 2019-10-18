@@ -1,8 +1,6 @@
 package com.xenakis.application;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.model.Score;
-import com.xenakis.service.Database;
 import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -30,34 +28,17 @@ public class ImagInLexisParser {
 	private static HashMap<String,String> categoryNames = new HashMap<>();
 
 	public static void parseCategoryNames(){
-	    JSONArray scores = (JSONArray) dataJsonObject.get("questions");
-    	for (Object scoresChapter : scores){
-    	   	JSONObject tmpScoresChapter = (JSONObject) scoresChapter;
-    		JSONArray chapterList = (JSONArray)(tmpScoresChapter.get("chapterList"));
-        	for (Object scoresCategory : chapterList){
-        	   	JSONObject tmpScoresCategory = (JSONObject) scoresCategory;
-            	String category = (String)(tmpScoresCategory.get("category"));
-            	String categoryName = (String)(tmpScoresCategory.get("categoryName"));
+	    JSONArray questions = (JSONArray) dataJsonObject.get("questions");
+    	for (Object questionsChapter : questions){
+    	   	JSONObject tmpQuestionsChapter = (JSONObject) questionsChapter;
+    		JSONArray chapterList = (JSONArray)(tmpQuestionsChapter.get("chapterList"));
+        	for (Object questionsCategory : chapterList){
+        	   	JSONObject tmpQuestionsCategory = (JSONObject) questionsCategory;
+            	String category = (String)(tmpQuestionsCategory.get("category"));
+            	String categoryName = (String)(tmpQuestionsCategory.get("categoryName"));
             	categoryNames.put(category, categoryName);
         	}
     	}
-	}
-	
-	public static List<Score> getScoreList(String chapterName, String categoryName){
-
-		List<Score> scoreList;
-
-		if(chapterName.equals("Όλα")) {
-			scoreList = Database.select(null, null);
-		}
-		else if(categoryName.equals("Όλα")) {
-			scoreList = Database.select(chapterName, null);
-		}
-		else {
-			scoreList = Database.select(chapterName, categoryName);
-		}
-        
-	    return scoreList;
 	}
 	
     public static List<String> getChapterList(){
@@ -146,7 +127,7 @@ public class ImagInLexisParser {
 	        	answersSet.add(answerNo);
 	        }
         
-		addtoCategoriesScreenIdList(category,screenId);
+		addToCategoriesScreenIdList(category,screenId);
 
 		JSONArray screensArr = (JSONArray) screensJsonObject.get("screens");
 
@@ -178,7 +159,7 @@ public class ImagInLexisParser {
     	String categoryName = (String) tmpCategory.get("categoryName");
 		JSONArray categoryList = (JSONArray) tmpCategory.get("categoryList");
 
-		addtoChaptersCategoryList(chapterName, categoryName);
+		addToChaptersCategoryList(chapterName, categoryName);
 		
 		categoryTotalQuestions.put(category, categoryList.size());
 
@@ -233,7 +214,7 @@ public class ImagInLexisParser {
 		return categoriesScreenIdList.get(category);
 	}
 	
-	private static void addtoChaptersCategoryList(String chapterName, String categoryName){
+	private static void addToChaptersCategoryList(String chapterName, String categoryName){
 		List<String> list = chaptersCategoryList.get(chapterName);
 		
 		if(list == null){
@@ -245,7 +226,7 @@ public class ImagInLexisParser {
 		//System.out.println(chaptersCategoryList.toString());
 	}
 
-	private static void addtoCategoriesScreenIdList(String category, String screenId){
+	private static void addToCategoriesScreenIdList(String category, String screenId){
 		List<String> list = categoriesScreenIdList.get(category);
 
 		if(list == null){

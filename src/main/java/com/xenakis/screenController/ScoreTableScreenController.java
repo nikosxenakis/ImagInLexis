@@ -5,6 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.application.ScoreUtil;
 import com.xenakis.model.Score;
 import com.xenakis.service.Database;
 import com.xenakis.ImagInLexis;
@@ -151,7 +152,7 @@ public class ScoreTableScreenController extends ScreenController{
     private void renewScoreInfo(){
     	String chapter = chapterOptions.getValue();
     	String category = categoryOptions.getValue();
-        List<Score> scoreList = ImagInLexisParser.getScoreList(chapter,category);
+        List<Score> scoreList = ScoreUtil.getScoreList(chapter,category);
 
         scoreTable.getItems().clear();
 
