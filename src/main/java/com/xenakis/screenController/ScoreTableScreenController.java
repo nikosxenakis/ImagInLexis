@@ -14,7 +14,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 
 import java.util.List;
 
@@ -23,8 +22,8 @@ public class ScoreTableScreenController extends ScreenController{
 	@FXML
     private TableView<Score> scoreTable;
 
-    @FXML
-    private ScrollBar scrollBar;
+//    @FXML
+//    private ScrollBar scrollBar;
     
     @FXML
     private ComboBox<String> chapterOptions;
@@ -32,19 +31,19 @@ public class ScoreTableScreenController extends ScreenController{
     @FXML
     private ComboBox<String> categoryOptions;
     
-    @FXML
-    private ImageView backgroundImage;
+//    @FXML
+//    private ImageView backgroundImage;
     
     @FXML
     private ImageView homeImage;
     
-	@FXML 
-	private AnchorPane mainWindow;
+//	@FXML
+//	private AnchorPane mainWindow;
 
-	@FXML
-    private Button removeAllButton;
+//	@FXML
+//    private Button removeAllButton;
 
-    public void homeIconClicked(MouseEvent e){
+    public void homeIconClicked(){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
     
