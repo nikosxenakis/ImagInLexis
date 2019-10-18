@@ -4,9 +4,10 @@
  */
 package com.xenakis.screenController;
 
+import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.model.Score;
 import com.xenakis.service.Database;
 import com.xenakis.ImagInLexis;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -51,7 +52,7 @@ public class ScoreTableScreenController extends ScreenController{
         chapterOptions.getItems().clear();
 
     	if(chapterOptions.getItems().isEmpty()){
-        	List<String> chapterList = ImagInLexis.imagInLexisParser.getChapterList();
+        	List<String> chapterList = ImagInLexisParser.getChapterList();
 
             chapterOptions.getItems().addAll("Όλα");
             for(String chapter: chapterList){
@@ -64,8 +65,13 @@ public class ScoreTableScreenController extends ScreenController{
     	categoryOptions.getItems().addAll("Όλα");
 
     	renewComboBoxData("Όλα");
-    	    	
-		TableColumn<Score, String> nameCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(0);
+
+//        final TableColumn<Score, ?> nameCol = scoreTable.getVisibleLeafColumn(0);
+//        final TableColumn<Score, ?> scoreCol = scoreTable.getVisibleLeafColumn(1);
+//        final TableColumn<Score, ?> dateCol = scoreTable.getVisibleLeafColumn(2);
+//        final TableColumn<Score, ?> timeCol = scoreTable.getVisibleLeafColumn(3);
+
+        TableColumn<Score, String> nameCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(0);
 		TableColumn<Score, String> scoreCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(1);
         TableColumn<Score, String> dateCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(2);
         TableColumn<Score, String> timeCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(3);
@@ -128,63 +134,32 @@ public class ScoreTableScreenController extends ScreenController{
     public void homeIconExited(){
     	homeImage.setStyle(null);
     }
-    
-    public void renewComboBoxData(String chapterName){
+
+    private void renewComboBoxData(String chapterName){
     	
-        List<String> categoryList = ImagInLexis.imagInLexisParser.getCategoryList(chapterName);
+        List<String> categoryList = ImagInLexisParser.getCategoryList(chapterName);
 
     	categoryOptions.getSelectionModel().select(0);
 
-    	for(int i=categoryOptions.getItems().size()-1; i>0; i--)
-    		categoryOptions.getItems().remove(i);
-        
+        scoreTable.getItems().clear();
+
         for(String category: categoryList){
     		categoryOptions.getItems().addAll(category);
         }
     }
     
-    public void renewScoreInfo(){
+    private void renewScoreInfo(){
     	String chapter = chapterOptions.getValue();
     	String category = categoryOptions.getValue();
-        List<Score> scoreList = ImagInLexis.imagInLexisParser.getScoreList(chapter,category);
+        List<Score> scoreList = ImagInLexisParser.getScoreList(chapter,category);
 
         scoreTable.getItems().clear();
-        
+
         for(Score score : scoreList){
             scoreTable.getItems().add(score);
         }
         
         
-    }
-    
-    public static class Score {
-    	private final SimpleStringProperty name;
-    	private final SimpleStringProperty score;
-    	private final SimpleStringProperty date;
-    	private final SimpleStringProperty time;
-    	
-    	public Score(String name, int score, String date, String time){
-    		this.name = new SimpleStringProperty(name);
-    		this.score = new SimpleStringProperty(Integer.toString(score));
-    		this.date = new SimpleStringProperty(date);
-    		this.time = new SimpleStringProperty(time);
-    	}
-
-    	public String getName() {
-            return name.get();
-        }
-    	
-    	public String getScore() {
-            return score.get();
-        }
-    	
-    	public String getDate() {
-            return date.get();
-        }
-    	
-    	public String getTime() {
-            return time.get();
-        }
     }
 
     public void removeAll() {

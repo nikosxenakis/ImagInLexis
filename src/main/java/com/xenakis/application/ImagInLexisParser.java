@@ -1,11 +1,11 @@
 package com.xenakis.application;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.model.Score;
 import com.xenakis.service.Database;
 import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import com.xenakis.screenController.ScoreTableScreenController.Score;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -78,7 +78,7 @@ public class ImagInLexisParser {
     public static List<String> getCategoryList(String chapterName){
     	List<String> categoryList = new ArrayList<>();
     
-    	for (Entry<String, List<String>> entry : ImagInLexis.imagInLexisParser.chaptersCategoryList.entrySet()) {
+    	for (Entry<String, List<String>> entry : ImagInLexisParser.chaptersCategoryList.entrySet()) {
     	    String key = entry.getKey();
     	    
     	    if(chapterName.equals(key) || chapterName.equals("Όλα")){
@@ -225,7 +225,7 @@ public class ImagInLexisParser {
         }
 	}
 
-	public static Integer getCategoryTotalQuestions(String category){
+	public static int getCategoryTotalQuestions(String category){
 		return categoryTotalQuestions.get(category);
 	}
 

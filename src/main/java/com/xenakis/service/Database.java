@@ -1,6 +1,6 @@
 package com.xenakis.service;
 
-import com.xenakis.screenController.ScoreTableScreenController;
+import com.xenakis.model.Score;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
@@ -108,7 +108,7 @@ public class Database {
 //        }
 //    }
 
-    public static List<ScoreTableScreenController.Score> select(String chapterName, String categoryName){
+    public static List<Score> select(String chapterName, String categoryName){
         Connection conn = Database.connect();
         ResultSet rs = null;
         String sql = null;
@@ -123,7 +123,7 @@ public class Database {
             sql = "SELECT * FROM scores WHERE chapter == ? AND category == ?";
         }
 
-        List<ScoreTableScreenController.Score> scoreList = new ArrayList<>();
+        List<Score> scoreList = new ArrayList<>();
 
         try {
             PreparedStatement statement  = conn.prepareStatement(sql);
@@ -146,7 +146,7 @@ public class Database {
                     int score = rs.getInt("score");
                     String time = rs.getString("time");
                     String date = rs.getString("date");
-                    scoreList.add( new ScoreTableScreenController.Score(username,score,date,time) );
+                    scoreList.add( new Score(username,score,date,time) );
                 }
             } catch (SQLException e) {
                 e.printStackTrace();

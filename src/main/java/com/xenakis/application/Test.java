@@ -52,29 +52,25 @@ public class Test{
 		this.mainPaneStyle = "-fx-background-radius: 15;";
     	this.infoPaneStyle = "-fx-background-radius: 15;";
 
-		switch (chapterName) {
-			case "Αναγνώριση":
-				this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
-				this.mainPaneStyle += "-fx-background-color:  #7ECCC7;";
-				this.infoPaneStyle += "-fx-background-color:  #7ECCA4;";
-				break;
-			case "Κατονομασία":
-				this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
-				this.mainPaneStyle += "-fx-background-color:  #80DBBB;";
-				this.infoPaneStyle += "-fx-background-color:  #BADB80;";
-				break;
-			case "Συσχετιζόμενες Έννοιες":
-				this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
-				this.mainPaneStyle += "-fx-background-color:  #AE99C2;";
-				this.infoPaneStyle += "-fx-background-color:  #E39DAD;";
-				break;
-			default:
-				System.err.println("error in Test Screen no such a chapter");
-				return;
+		if ("Αναγνώριση".equals(chapterName)) {
+			this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
+			this.mainPaneStyle += "-fx-background-color:  #7ECCC7;";
+			this.infoPaneStyle += "-fx-background-color:  #7ECCA4;";
+		} else if ("Κατονομασία".equals(chapterName)) {
+			this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
+			this.mainPaneStyle += "-fx-background-color:  #80DBBB;";
+			this.infoPaneStyle += "-fx-background-color:  #BADB80;";
+		} else if ("Συσχετιζόμενες Έννοιες".equals(chapterName)) {
+			this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
+			this.mainPaneStyle += "-fx-background-color:  #AE99C2;";
+			this.infoPaneStyle += "-fx-background-color:  #E39DAD;";
+		} else {
+			System.err.println("error in Test Screen no such a chapter");
+			return;
 		}
 
 		this.answeredQuestions = 0;
-		this.totalQuestions = ImagInLexis.imagInLexisParser.getCategoryTotalQuestions(category);
+		this.totalQuestions = ImagInLexisParser.getCategoryTotalQuestions(category);
                 
     	System.out.println("new Test: "+chapter+" "+category+" "+chapterName+" "+categoryName+" "+totalQuestions);
 
@@ -85,7 +81,7 @@ public class Test{
         PreTestScreenController sc2 = (PreTestScreenController) sc;
         sc2.init(this);
             	
-		for(String screenId : ImagInLexis.imagInLexisParser.getCategoriesScreenIdList(category)){
+		for(String screenId : ImagInLexisParser.getCategoriesScreenIdList(category)){
 	        ImagInLexis.mainContainer.loadScreen(screenId, this);
             this.addToScreenList(screenId);
 			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
@@ -196,7 +192,7 @@ public class Test{
 			System.err.println("error in finishTest answeredQuestions = "+answeredQuestions);
 		}
 
-		String name = ImagInLexis.userName;
+//		String name = ImagInLexis.userName;
 		
 		int score = calculateResults();
 		System.out.println("score= "+score);

@@ -5,6 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.application.ImagInLexisParser;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.Test;
 import javafx.fxml.FXML;
@@ -82,6 +83,6 @@ public class CombinationalChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-        new Test("combinational",category,"Συσχετιζόμενες Έννοιες",ImagInLexis.imagInLexisParser.getCategoryNameFromCategory(category),"CombinationalChapterScreen");
+        new Test("combinational",category,"Συσχετιζόμενες Έννοιες", ImagInLexisParser.getCategoryNameFromCategory(category),"CombinationalChapterScreen");
     }
 }

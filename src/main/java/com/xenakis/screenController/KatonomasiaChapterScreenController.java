@@ -5,6 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.application.ImagInLexisParser;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.Test;
 import javafx.fxml.FXML;
@@ -84,6 +85,6 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-		new Test("katonomasia",category,"Κατονομασία",ImagInLexis.imagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
+		new Test("katonomasia",category,"Κατονομασία", ImagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
     }
 }

@@ -12,18 +12,11 @@ public class ImagInLexis extends Application {
 
     public static ScreenPane mainContainer = null;
 
-    private final static String inputFilePath = "json/data.json";
-
-    public static ImagInLexisParser imagInLexisParser;
-
     public static String userName = "unknown user";
-
-    private static Stage mainStage = null;
 
     @Override
     public void start(Stage stage){
 
-        mainStage = stage;
         mainContainer = new ScreenPane();
 
         stage.setMinWidth(1130);

@@ -18,7 +18,7 @@ public class ChooseInImageScreenData extends QuestionScreenData{
 		this.questionSoundId = questionSoundId;
 		this.circlesList = circlesList;
 		if(absolute != null)
-			this.absolute = new Boolean(absolute);
+			this.absolute = Boolean.parseBoolean(absolute);
 	}
 	
 	public String getQuestionSoundId(){
