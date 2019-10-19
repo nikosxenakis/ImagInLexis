@@ -9,6 +9,7 @@ import com.xenakis.application.ScoreUtil;
 import com.xenakis.model.Score;
 import com.xenakis.service.Database;
 import com.xenakis.ImagInLexis;
+import com.xenakis.service.DatabaseUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -162,7 +163,7 @@ public class ScoreTableScreenController extends ScreenController{
     }
 
     public void removeAll() {
-        Database.removeAll();
+        DatabaseUtil.removeAllScores();
         this.renewScoreInfo();
     }
 

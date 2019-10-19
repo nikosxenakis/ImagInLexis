@@ -2,6 +2,7 @@ package com.xenakis.application;
 
 import com.xenakis.model.Score;
 import com.xenakis.service.Database;
+import com.xenakis.service.DatabaseUtil;
 
 import java.util.List;
 
@@ -12,13 +13,13 @@ public class ScoreUtil {
         List<Score> scoreList;
 
         if(chapterName.equals("Όλα")) {
-            scoreList = Database.select(null, null);
+            scoreList = DatabaseUtil.selectScores(null, null);
         }
         else if(categoryName.equals("Όλα")) {
-            scoreList = Database.select(chapterName, null);
+            scoreList = DatabaseUtil.selectScores(chapterName, null);
         }
         else {
-            scoreList = Database.select(chapterName, categoryName);
+            scoreList = DatabaseUtil.selectScores(chapterName, categoryName);
         }
 
         return scoreList;

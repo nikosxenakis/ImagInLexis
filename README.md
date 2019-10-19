@@ -1,10 +1,14 @@
 # ImagInLexis
 
+<div align="center">
+
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/nikosxenakis/ImagInLexis.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nikosxenakis/ImagInLexis/context:javascript)
+[![Build Status](https://travis-ci.org/nikosxenakis/ImagInLexis.svg?branch=master)](https://travis-ci.org/nikosxenakis/ImagInLexis)
+
+</div>
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/nikosxenakis/ImagInLexis.svg?branch=master)](https://travis-ci.org/nikosxenakis/ImagInLexis)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nikosxenakis/ImagInLexis/issues)
 [![HitCount](http://hits.dwyl.io/nikosxenakis/ImagInLexis.svg)](http://hits.dwyl.io/nikosxenakis/ImagInLexis)
 
@@ -67,7 +71,7 @@ mvn doxygen:report
 
 ## Authors
 
-* **Nikolaos Xenakis** - *Initial work* - [Nikolaos Xenakis](https://github.com/nikosxenakis)
+* **Nikolaos Xenakis** - *Development* - [Nikolaos Xenakis](https://github.com/nikosxenakis)
 
 ## License
 

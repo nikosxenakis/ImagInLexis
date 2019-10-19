@@ -1,6 +1,7 @@
 package com.xenakis;
 
 import com.xenakis.service.Database;
+import com.xenakis.service.DatabaseUtil;
 import org.junit.jupiter.api.Test;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -22,11 +23,11 @@ class DatabaseTest {
 		String strDate = dateFormat.format(date);
 		String strTime = timeFormat.format(time);
 
-		Database.insert(ImagInLexis.userName, strTime, strDate, 0, "Αναγνώριση", "Φρούτα");
-		Database.insert(ImagInLexis.userName, strTime, strDate, 2, "Αναγνώριση", "Χρώματα");
+		DatabaseUtil.insertScore(ImagInLexis.userName, strTime, strDate, 0, "Αναγνώριση", "Φρούτα");
+        DatabaseUtil.insertScore(ImagInLexis.userName, strTime, strDate, 2, "Αναγνώριση", "Χρώματα");
 
-        List l1 = Database.select("Αναγνώριση", "Φρούτα");
-        List l2 = Database.select("Αναγνώριση", "Χρώματα");
+        List l1 = DatabaseUtil.selectScores("Αναγνώριση", "Φρούτα");
+        List l2 = DatabaseUtil.selectScores("Αναγνώριση", "Χρώματα");
 
         assertEquals(l1.size(), l2.size());
     }

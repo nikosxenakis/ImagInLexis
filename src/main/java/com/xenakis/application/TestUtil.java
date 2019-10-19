@@ -9,7 +9,8 @@ import com.xenakis.screenController.ScreenController;
 import com.xenakis.screenData.ChooseInImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
-import com.xenakis.service.Database;
+import com.xenakis.service.DatabaseUtil;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -106,7 +107,6 @@ public class TestUtil {
 			this.infoPaneStyle += "-fx-background-color:  #E39DAD;";
 		} else {
 			System.err.println("error in TestUtil Screen no such a chapter");
-			return;
 		}
 	}
 
@@ -160,7 +160,7 @@ public class TestUtil {
 		System.out.println("date= "+strDate);
 		System.out.println("time= "+strTime);
 
-		Database.insert(ImagInLexis.userName, strTime, strDate, score, this.testData.getChapterName(), this.testData.getCategoryName());
+		DatabaseUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, this.testData.getChapterName(), this.testData.getCategoryName());
 
 		testData.setScoreNum(score);
 
