@@ -215,28 +215,13 @@ public class ImagInLexisParser {
 	}
 	
 	private static void addToChaptersCategoryList(String chapterName, String categoryName){
-		List<String> list = chaptersCategoryList.get(chapterName);
-		
-		if(list == null){
-			list = new ArrayList<>();
-			chaptersCategoryList.put(chapterName,list);
-		}
-		
+		List<String> list = chaptersCategoryList.computeIfAbsent(chapterName, k -> new ArrayList<>());
 		list.add(categoryName);
-		//System.out.println(chaptersCategoryList.toString());
 	}
 
 	private static void addToCategoriesScreenIdList(String category, String screenId){
-		List<String> list = categoriesScreenIdList.get(category);
-
-		if(list == null){
-			list = new ArrayList<>();
-			categoriesScreenIdList.put(category,list);
-
-		}
-		
+		List<String> list = categoriesScreenIdList.computeIfAbsent(category, k -> new ArrayList<>());
 		list.add(screenId);
-		//System.out.println(categoriesScreenIdList.toString());
 	}
 
 }

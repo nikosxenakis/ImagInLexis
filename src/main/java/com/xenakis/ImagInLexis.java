@@ -46,7 +46,6 @@ public class ImagInLexis extends Application {
     }
 
     public static void cleanMemory(){
-        SoundHolder.cleanMemory();
         ImageHolder.cleanMemory();
     }
 

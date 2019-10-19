@@ -76,23 +76,20 @@ public class ChooseInImageScreenController extends QuestionScreenController{
         	ellipse.setStroke(Paint.valueOf("#00ff0d"));
         	ellipse.setStrokeWidth(0);
 
-        	ellipse.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
-        	     @Override
-        	     public void handle(MouseEvent event) {
-        	         System.out.println("ellipse pressed");
-        	         Ellipse ellipse = (Ellipse) event.getSource();
-        	         ellipse.setStrokeWidth(5);
-        	        
-        	        int i = 1;
-        	        for(Circle cl : circlesList){
-        	        	if(cl.ellipse.equals(ellipse)){
-                	    	addAnswer(i);
-        	        	}
-        	        	i++;
-        	        }
-        	        
-        	     }
-        	});        	
+        	ellipse.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+				System.out.println("ellipse pressed");
+				Ellipse ellipse1 = (Ellipse) event.getSource();
+				ellipse1.setStrokeWidth(5);
+
+			   int i = 1;
+			   for(Circle cl1 : circlesList){
+				   if(cl1.ellipse.equals(ellipse1)){
+					   addAnswer(i);
+				   }
+				   i++;
+			   }
+
+			});
         	
         	circleContainer.getChildren().add(ellipse);
         }

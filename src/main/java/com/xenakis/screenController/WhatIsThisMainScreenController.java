@@ -5,15 +5,10 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.ImageHolder;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
 
 public class WhatIsThisMainScreenController extends ScreenController{
-
-	@FXML
-    private Text text;
     
     @FXML
     private ImageView homeImage;

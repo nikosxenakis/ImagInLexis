@@ -55,9 +55,4 @@ public class SoundHolder{
     public void add(String id, String path){
     	soundsPath.put(id, path);
     }
-    
-    public static void cleanMemory(){
-    	
-    }
-    
 }

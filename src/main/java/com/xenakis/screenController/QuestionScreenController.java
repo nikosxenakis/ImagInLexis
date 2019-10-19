@@ -60,7 +60,7 @@ public abstract class QuestionScreenController extends ScreenController{
     
     private TestUtil testUtil;
     private boolean isSelection = false;
-    private Set<Integer> answers = new HashSet<Integer>();
+    private HashSet answers = new HashSet();
     
 	public TestUtil getTestUtil(){
 		return testUtil;
@@ -74,7 +74,7 @@ public abstract class QuestionScreenController extends ScreenController{
 		return this.answers;
 	}
 	
-	public void setAnswer(Integer answer){
+	public void setAnswer(int answer){
 		this.answers.clear();
 		this.answers.add(answer);
 	}

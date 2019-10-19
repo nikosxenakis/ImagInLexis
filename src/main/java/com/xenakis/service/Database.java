@@ -32,9 +32,6 @@ public class Database {
         } catch (SQLException e) {
             logger.error(e.getMessage());
         }
-        catch (Exception e) {
-            logger.error(e.getMessage());
-        }
         return conn;
     }
 

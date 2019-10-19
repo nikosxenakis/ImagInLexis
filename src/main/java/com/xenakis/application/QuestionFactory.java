@@ -11,29 +11,31 @@ import java.util.Set;
 public class QuestionFactory {
 
     public static void createQuestion(String screenType, JSONObject questionObj, String chapterName, String categoryName, Set<Integer> answersSet){
-        if(screenType.equals("chooseImage")){
-            QuestionFactory.createChooseImageQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("chooseImage2")){
-            QuestionFactory.createChooseImage2Question(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("chooseLabel")){
-            QuestionFactory.createChooseLabelQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("chooseInImage")){
-            QuestionFactory.createChooseInImageQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("whatIsThis")){
-            QuestionFactory.createWhatIsThisQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("chooseImageLink")){
-            QuestionFactory.createChooseImageLinkQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else if(screenType.equals("chooseLabelFromSound")){
-            QuestionFactory.createChooseLabelFromSoundQuestion(questionObj,chapterName,categoryName,answersSet);
-        }
-        else{
-            System.err.println("error in parseQuestion not implemented yet");
+        switch (screenType) {
+            case "chooseImage":
+                QuestionFactory.createChooseImageQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "chooseImage2":
+                QuestionFactory.createChooseImage2Question(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "chooseLabel":
+                QuestionFactory.createChooseLabelQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "chooseInImage":
+                QuestionFactory.createChooseInImageQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "whatIsThis":
+                QuestionFactory.createWhatIsThisQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "chooseImageLink":
+                QuestionFactory.createChooseImageLinkQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            case "chooseLabelFromSound":
+                QuestionFactory.createChooseLabelFromSoundQuestion(questionObj, chapterName, categoryName, answersSet);
+                break;
+            default:
+                System.err.println("error in parseQuestion not implemented yet");
+                break;
         }
     }
 
