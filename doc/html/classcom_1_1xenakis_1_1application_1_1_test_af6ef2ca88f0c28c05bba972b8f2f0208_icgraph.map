@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.cleanMemory" name="com.xenakis.application.Test.cleanMemory">
+<map id="com.xenakis.application.TestUtil.cleanMemory" name="com.xenakis.application.TestUtil.cleanMemory">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#aa4817eb628da33278e92c2b60b0208ce" title="com.xenakis.application.\lTest.finishTest" alt="" coords="220,5,387,44"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="435,5,601,44"/>
 <area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a34d5d39625b14279694691035c599f59" title="com.xenakis.screenController.\lQuestionScreenController.clicked" alt="" coords="649,5,868,44"/>

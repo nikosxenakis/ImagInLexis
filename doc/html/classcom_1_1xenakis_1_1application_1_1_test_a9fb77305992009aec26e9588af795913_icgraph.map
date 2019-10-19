@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.getNextScreen" name="com.xenakis.application.Test.getNextScreen">
+<map id="com.xenakis.application.TestUtil.getNextScreen" name="com.xenakis.application.TestUtil.getNextScreen">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a961baa9ff4ed30685e4950533ba0f661" title="com.xenakis.application.\lTest.nextQuestion" alt="" coords="220,68,387,107"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#ab5dfa818b7adccaaddd7e68a68b9447f" title="com.xenakis.application.\lTest.startTest" alt="" coords="435,5,601,44"/>
 <area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a3691532972d35dd07dec870004091789" title="com.xenakis.application.\lTest.submitAnswer" alt="" coords="435,68,601,107"/>

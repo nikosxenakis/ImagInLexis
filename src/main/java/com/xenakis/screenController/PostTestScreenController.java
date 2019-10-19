@@ -7,7 +7,7 @@ package com.xenakis.screenController;
 import com.xenakis.ImagInLexis;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
-import com.xenakis.application.Test;
+import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -41,24 +41,24 @@ public class PostTestScreenController extends ScreenController{
 	@FXML
 	private ImageView backgroundImage;
 	
-	Test test = null;
+	TestUtil testUtil = null;
 
-    public void init(Test test){
-    	this.test = test;
+    public void init(TestUtil testUtil){
+    	this.testUtil = testUtil;
 		
-    	mainWindow.setStyle(test.getMainWindowStyle());	
-    	score.setText(test.getScoreNum().toString()+"%");
-    	correctAnswers.setText(test.getCorrectAnswers().toString());
-    	wrongAnswers.setText(test.getWrongAnswers().toString());
+    	mainWindow.setStyle(testUtil.getMainWindowStyle());
+    	score.setText( testUtil.getScoreNum()+"%");
+    	correctAnswers.setText(String.valueOf(testUtil.getCorrectAnswers()));
+    	wrongAnswers.setText(String.valueOf(testUtil.getWrongAnswers()));
 
     	backgroundImage.setImage(ImageHolder.getImage("background"));
 
     	boolean passed = false;
     	
     	if(
-    			(test.getChapterName().equals("Αναγνώριση") && test.getScoreNum() >= 80) ||
-    			(test.getChapterName().equals("Κατονομασία") && test.getScoreNum() >= 90) ||
-    			(test.getChapterName().equals("Συσχετιζόμενες Έννοιες") && test.getScoreNum() >= 90)
+    			(testUtil.getChapterName().equals("Αναγνώριση") && testUtil.getScoreNum() >= 80) ||
+    			(testUtil.getChapterName().equals("Κατονομασία") && testUtil.getScoreNum() >= 90) ||
+    			(testUtil.getChapterName().equals("Συσχετιζόμενες Έννοιες") && testUtil.getScoreNum() >= 90)
     	){
     		passed = true;
     	}
@@ -83,6 +83,6 @@ public class PostTestScreenController extends ScreenController{
     
     public void endTest(MouseEvent e){
     	SoundHolder.playSound("endProgramSound");
-    	ImagInLexis.mainContainer.setScreen(test.getMenuScreenId());
+    	ImagInLexis.mainContainer.setScreen(testUtil.getMenuScreenId());
     }
 }

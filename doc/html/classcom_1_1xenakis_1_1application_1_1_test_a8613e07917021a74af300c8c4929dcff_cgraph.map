@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.Test" name="com.xenakis.application.Test.Test">
+<map id="TestUtilTest" name="TestUtilTest">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_imag_in_lexis_parser.html#ab967c9c1f8b6f415dcd161ff3d57a899" title="com.xenakis.application.\lImagInLexisParser.getCategory\lTotalQuestions" alt="" coords="228,212,436,264"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#ae8b7ceae87f65e4c807fc887fdcbf52d" title="com.xenakis.application.\lScreenPane.setScreen" alt="" coords="249,288,415,327"/>
 <area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#aa159afd819a5bffe2ad425d54b349a2f" title="com.xenakis.application.\lScreenPane.getController" alt="" coords="245,351,420,389"/>

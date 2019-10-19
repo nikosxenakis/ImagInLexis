@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.getCategoryName" name="com.xenakis.application.Test.getCategoryName">
+<map id="com.xenakis.application.TestUtil.getCategoryName" name="com.xenakis.application.TestUtil.getCategoryName">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html#a7fea0c04b8d356e9a771a452a1923328" title="com.xenakis.screenController.\lPreTestScreenController.init" alt="" coords="220,5,420,44"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a8613e07917021a74af300c8c4929dcff" title="com.xenakis.application.\lTest.Test" alt="" coords="468,5,634,44"/>
 </map>

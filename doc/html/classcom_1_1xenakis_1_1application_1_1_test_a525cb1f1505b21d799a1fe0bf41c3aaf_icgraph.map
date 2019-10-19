@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.getMainWindowStyle" name="com.xenakis.application.Test.getMainWindowStyle">
+<map id="com.xenakis.application.TestUtil.getMainWindowStyle" name="com.xenakis.application.TestUtil.getMainWindowStyle">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_post_test_screen_controller.html#a576b80fb5b4e8364878af45c6b5d85e4" title="com.xenakis.screenController.\lPostTestScreenController.init" alt="" coords="239,5,439,44"/>
 <area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_controller_1_1_pre_test_screen_controller.html#a7fea0c04b8d356e9a771a452a1923328" title="com.xenakis.screenController.\lPreTestScreenController.init" alt="" coords="239,68,439,107"/>
 <area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#ad2b31bfaa3b727eac6b16db88fad6428" title="com.xenakis.screenController.\lQuestionScreenController.setData" alt="" coords="227,131,451,169"/>

@@ -6,10 +6,10 @@ package com.xenakis.screenController;
 
 import java.util.ArrayList;
 
+import com.xenakis.application.TestUtil;
 import com.xenakis.model.Circle;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
-import com.xenakis.application.Test;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -36,10 +36,10 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     
     private String questionSoundId;
     
-    public void setData(QuestionScreenData screenData, Test test){
+    public void setData(QuestionScreenData screenData, TestUtil testUtil){
     	
     	System.out.println("set Data in ChooseInImageScreenController");
-    	super.setData(screenData, test);
+    	super.setData(screenData, testUtil);
     	
     	if(!(screenData instanceof ChooseInImageScreenData)){
         	System.err.println("com.xenakis.screenData is not ChooseInImageScreenData");

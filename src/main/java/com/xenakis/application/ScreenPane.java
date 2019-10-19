@@ -52,7 +52,7 @@ public class ScreenPane extends StackPane{
     }
     //Loads the com.xenakis.fxml file, add the screen to the screens collection and
     //finally injects the screenPane to the controller.
-    public boolean loadScreen(String screenId, Test test){
+    public boolean loadScreen(String screenId, TestUtil testUtil){
         try {
         	String resource = ResourcePathsHolder.getResourcePaths(screenId);			
 
@@ -69,7 +69,7 @@ public class ScreenPane extends StackPane{
             
             if(screenController instanceof QuestionScreenController){
     			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-				((QuestionScreenController)screenController).setData(screenData,test);
+				((QuestionScreenController)screenController).setData(screenData, testUtil);
             }
  
             return true;

@@ -6,15 +6,12 @@ package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
 import com.xenakis.application.ImagInLexisParser;
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.Test;
+import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Ellipse;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 public class KatonomasiaChapterScreenController extends ScreenController{
 
@@ -85,6 +82,6 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-		new Test("katonomasia",category,"Κατονομασία", ImagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
+		new TestUtil("katonomasia",category,"Κατονομασία", ImagInLexisParser.getCategoryNameFromCategory(category),"KatonomasiaChapterScreen");
     }
 }

@@ -2,7 +2,7 @@ package com.xenakis.screenController;
 
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
-import com.xenakis.application.Test;
+import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
@@ -44,10 +44,10 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     private String questionSoundId = null;    
     private String mainQuestionSoundId = null;
 
-    public void setData(QuestionScreenData screenData, Test test){
+    public void setData(QuestionScreenData screenData, TestUtil testUtil){
     	
     	System.out.println("set Data in WhatIsThisScreenController");
-    	super.setData(screenData, test);
+    	super.setData(screenData, testUtil);
 
     	if(!(screenData instanceof WhatIsThisScreenData)){
         	System.err.println("com.xenakis.screenData is not WhatIsThisScreenData");

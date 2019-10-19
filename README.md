@@ -45,7 +45,7 @@ mvn clean javafx:compile install
 ## Testing
 
 ```
-mvn test
+mvn testUtil
 ```
 
 ## Documentation

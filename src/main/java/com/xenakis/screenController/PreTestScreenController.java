@@ -6,7 +6,7 @@ package com.xenakis.screenController;
 
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
-import com.xenakis.application.Test;
+import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -40,33 +40,33 @@ public class PreTestScreenController extends ScreenController{
 	@FXML
 	private ImageView backgroundImage;
 	
-	Test test = null;
+	TestUtil testUtil = null;
 
 	@Override
 	public void initialize(java.net.URL location, java.util.ResourceBundle resources) {
 	}
 
-    public void init(Test test){
-    	this.test = test;
+    public void init(TestUtil testUtil){
+    	this.testUtil = testUtil;
     	
-    	chapterName.setText(test.getChapterName());
-    	chapterImage.setImage(ImageHolder.getImage(test.getChapter()+"Image"));
-    	categoryName.setText(test.getCategoryName());
-    	categoryImage.setImage(ImageHolder.getImage(test.getCategory()+"Image"));
-    	totalQuestions.setText(test.getTotalQuestions().toString());
+    	chapterName.setText(testUtil.getChapterName());
+    	chapterImage.setImage(ImageHolder.getImage(testUtil.getChapter()+"Image"));
+    	categoryName.setText(testUtil.getCategoryName());
+    	categoryImage.setImage(ImageHolder.getImage(testUtil.getCategory()+"Image"));
+    	totalQuestions.setText(String.valueOf(testUtil.getTotalQuestions()));
 
     	backgroundImage.setImage(ImageHolder.getImage("background"));
     	
     	SoundHolder.stopSound("startProgramSound");
-    	SoundHolder.playSound(test.getCategory()+"Sound");
+    	SoundHolder.playSound(testUtil.getCategory()+"Sound");
     	
-    	mainWindow.setStyle(test.getMainWindowStyle());	
-    	infoPane.setStyle(test.getInfoPaneStyle()+" -fx-opacity: 0.9;");
+    	mainWindow.setStyle(testUtil.getMainWindowStyle());
+    	infoPane.setStyle(testUtil.getInfoPaneStyle()+" -fx-opacity: 0.9;");
     	
     	infoPane.setMaxWidth(500);
     }
     
     public void startTest(MouseEvent e){
-    	this.test.startTest();
+    	this.testUtil.startTest();
     }
 }

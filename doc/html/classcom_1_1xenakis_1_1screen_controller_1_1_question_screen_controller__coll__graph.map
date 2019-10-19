@@ -1,5 +1,5 @@
 <map id="com.xenakis.screenController.QuestionScreenController" name="com.xenakis.screenController.QuestionScreenController">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller.html" title="com.xenakis.screenController.\lScreenController" alt="" coords="778,20,978,59"/>
 <area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html" title="com.xenakis.application.\lScreenPane" alt="" coords="445,55,612,93"/>
-<area shape="rect" id="node14" href="$classcom_1_1xenakis_1_1application_1_1_test.html" title="com.xenakis.application.Test" alt="" coords="782,432,974,457"/>
+<area shape="rect" id="node14" href="$classcom_1_1xenakis_1_1application_1_1_test.html" title="com.xenakis.application.TestUtil" alt="" coords="782,432,974,457"/>
 </map>

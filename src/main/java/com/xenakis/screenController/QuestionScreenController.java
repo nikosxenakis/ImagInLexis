@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import com.xenakis.application.ImageHolder;
-import com.xenakis.application.Test;
+import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
@@ -58,12 +58,12 @@ public abstract class QuestionScreenController extends ScreenController{
     @FXML
     protected BorderPane mainPane;
     
-    private Test test;
+    private TestUtil testUtil;
     private boolean isSelection = false;
     private Set<Integer> answers = new HashSet<Integer>();
     
-	public Test getTest(){
-		return test;
+	public TestUtil getTestUtil(){
+		return testUtil;
 	}
 	
 	public boolean getIsSelection(){
@@ -87,45 +87,45 @@ public abstract class QuestionScreenController extends ScreenController{
 		this.isSelection = isSelection;
 	}
 	
-    public void setData(QuestionScreenData screenData, Test test){
+    public void setData(QuestionScreenData screenData, TestUtil testUtil){
     	//System.out.println("set Data in QuestionScreenController");
 
-    	this.test = test;
+    	this.testUtil = testUtil;
 
     	question.setText(screenData.getQuestion());
     	
-    	answeredQuestions.setText(test.getAnsweredQuestions().toString());
-    	totalQuestions.setText(test.getTotalQuestions().toString());
+    	answeredQuestions.setText(String.valueOf(testUtil.getAnsweredQuestions()));
+    	totalQuestions.setText(String.valueOf(testUtil.getTotalQuestions()));
     	chapterName.setText(screenData.getChapterName());
     	categoryName.setText(screenData.getCategoryName());
    
-    	//System.out.println("loading image: "+test.getChapter().toString()+"Image");
-    	Image image = ImageHolder.getImage(test.getChapter()+"Image");
+    	//System.out.println("loading image: "+testUtil.getChapter().toString()+"Image");
+    	Image image = ImageHolder.getImage(testUtil.getChapter()+"Image");
     	chapterImage.setImage(image);
 
-    	//System.out.println("loading image: "+test.getCategory()+"Image");
-    	image = ImageHolder.getImage(test.getCategory()+"Image");
+    	//System.out.println("loading image: "+testUtil.getCategory()+"Image");
+    	image = ImageHolder.getImage(testUtil.getCategory()+"Image");
     	categoryImage.setImage(image);
 
-    	progressBar.setProgress((double)(getTest().getAnsweredQuestions()/(double)getTest().getTotalQuestions()));
+    	progressBar.setProgress((double)(getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
     	
     	submitButton.setDisable(true);
 	
-    	if(test.getTotalQuestions().equals(1)){
+    	if(testUtil.getTotalQuestions() == 1){
     		nextButton.setDisable(true);
     	}
     	
-    	mainWindow.setStyle(test.getMainWindowStyle());	
-    	mainPane.setStyle(test.getMainPaneStyle());
-    	infoPane.setStyle(test.getInfoPaneStyle());
+    	mainWindow.setStyle(testUtil.getMainWindowStyle());
+    	mainPane.setStyle(testUtil.getMainPaneStyle());
+    	infoPane.setStyle(testUtil.getInfoPaneStyle());
     	
     }
     
     public void setAnsweredQuestions(Integer answeredQuestions){
     	this.answeredQuestions.setText(answeredQuestions.toString());
-    	this.progressBar.setProgress((double)(getTest().getAnsweredQuestions()/(double)getTest().getTotalQuestions()));
+    	this.progressBar.setProgress((getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
     	
-    	if(getTest().isLastQuestion()){
+    	if(getTestUtil().isLastQuestion()){
     		nextButton.setDisable(true);
     	}
 
@@ -141,13 +141,13 @@ public abstract class QuestionScreenController extends ScreenController{
         	
         	System.out.println("submitButton clicked");
             
-        	getTest().submitAnswer(getScreenPane(), getAnswer());
+        	getTestUtil().submitAnswer(getScreenPane(), getAnswer());
 
         }
         else if(e.getSource() == nextButton){
         	System.out.println("nextButton clicked");
 
-        	getTest().nextQuestion(getScreenPane());
+        	getTestUtil().nextQuestion(getScreenPane());
 
         }
         

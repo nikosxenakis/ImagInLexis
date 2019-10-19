@@ -1,4 +1,4 @@
-<map id="com.xenakis.application.Test.startTest" name="com.xenakis.application.Test.startTest">
+<map id="com.xenakis.application.TestUtil.startTest" name="com.xenakis.application.TestUtil.startTest">
 <area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a961baa9ff4ed30685e4950533ba0f661" title="com.xenakis.application.\lTest.nextQuestion" alt="" coords="220,103,387,141"/>
 <area shape="rect" id="node8" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a3e071129a8a8b55f68d37fca88854cbd" title="com.xenakis.application.\lSoundHolder.playSound" alt="" coords="220,165,387,204"/>
 <area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a9fb77305992009aec26e9588af795913" title="com.xenakis.application.\lTest.getNextScreen" alt="" coords="435,40,601,79"/>
