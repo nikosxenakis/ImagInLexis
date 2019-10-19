@@ -1,7 +1,0 @@
-<map id="com.xenakis.application.ScreenPane.loadScreen" name="com.xenakis.application.ScreenPane.loadScreen">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_resource_paths_holder.html#a2ca98b96a9944e88c05756e3c9ba3610" title="com.xenakis.application.\lResourcePathsHolder.getResourcePaths" alt="" coords="220,5,484,44"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1screen_controller_1_1_screen_controller.html#ad860fab291f6cb70a9f0cb3d9eeb28f7" title="com.xenakis.screenController.\lScreenController.setScreenPane" alt="" coords="244,68,460,107"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#acb1aa2bf7cbae48a7a369c8efce0898b" title="com.xenakis.application.\lScreenPane.addController" alt="" coords="263,131,441,169"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#adf608af0c83874d33f1ab6467b1dc16e" title="com.xenakis.application.\lScreenPane.addScreen" alt="" coords="269,193,435,232"/>
-<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_data_1_1_screen_data_holder.html#a20fbf855c3e063d47b0318a0be5ccccd" title="com.xenakis.screenData.Screen\lDataHolder.getScreenData" alt="" coords="246,256,459,295"/>
-</map>

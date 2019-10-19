@@ -1,6 +1,0 @@
-<map id="com.xenakis.screenController.PostTestScreenController.endTest" name="com.xenakis.screenController.PostTestScreenController.endTest">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a3e071129a8a8b55f68d37fca88854cbd" title="com.xenakis.application.\lSoundHolder.playSound" alt="" coords="276,5,442,44"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1application_1_1_screen_pane.html#ae8b7ceae87f65e4c807fc887fdcbf52d" title="com.xenakis.application.\lScreenPane.setScreen" alt="" coords="276,68,442,107"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1application_1_1_test.html#a1206c81092cbba3c0f674be0490a26e0" title="com.xenakis.application.\lTest.getMenuScreenId" alt="" coords="276,131,442,169"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a1b7075ce3cfcd5f750dc73f679ebe427" title="com.xenakis.application.\lSoundHolder.getSound" alt="" coords="490,5,657,44"/>
-</map>

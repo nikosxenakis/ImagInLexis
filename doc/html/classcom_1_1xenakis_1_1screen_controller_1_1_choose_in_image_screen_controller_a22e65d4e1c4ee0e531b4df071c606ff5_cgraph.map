@@ -1,7 +1,0 @@
-<map id="com.xenakis.screenController.ChooseInImageScreenController.setData" name="com.xenakis.screenController.ChooseInImageScreenController.setData">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a438a519dd8e4539854f0077d22d2ee89" title="com.xenakis.screenController.\lQuestionScreenController.setIsSelection" alt="" coords="320,5,581,44"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#aa589c628b41bd338d9f03729f5afcbcc" title="com.xenakis.application.\lImageHolder.getImage" alt="" coords="367,68,534,107"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_in_image_screen_data.html#a300701339af36cefd01063b1105be0b2" title="com.xenakis.screenData.Choose\lInImageScreenData.getImageId" alt="" coords="342,131,559,169"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_in_image_screen_data.html#a0677ae21484e83b4df3ef5eebbec2eab" title="com.xenakis.screenData.Choose\lInImageScreenData.getCirclesList" alt="" coords="339,193,562,232"/>
-<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_in_image_screen_data.html#a2fe8e52c906c080c9f146b1db429a98d" title="com.xenakis.screenData.Choose\lInImageScreenData.getQuestionSoundId" alt="" coords="318,256,583,295"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="com.xenakis.screenController.WhatIsThisScreenController.imageClicked" name="com.xenakis.screenController.WhatIsThisScreenController.imageClicked">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a3e071129a8a8b55f68d37fca88854cbd" title="com.xenakis.application.\lSoundHolder.playSound" alt="" coords="281,12,447,51"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1application_1_1_sound_holder.html#a1b7075ce3cfcd5f750dc73f679ebe427" title="com.xenakis.application.\lSoundHolder.getSound" alt="" coords="495,12,662,51"/>
-</map>

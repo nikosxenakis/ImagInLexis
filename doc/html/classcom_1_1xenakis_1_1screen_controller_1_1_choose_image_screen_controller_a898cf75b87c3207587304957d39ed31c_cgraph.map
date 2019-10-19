@@ -1,7 +1,0 @@
-<map id="com.xenakis.screenController.ChooseImageScreenController.setData" name="com.xenakis.screenController.ChooseImageScreenController.setData">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1application_1_1_image_holder.html#aa589c628b41bd338d9f03729f5afcbcc" title="com.xenakis.application.\lImageHolder.getImage" alt="" coords="332,5,498,44"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_image_screen_data.html#aac4086326ed427c17a468ee6e86b8135" title="com.xenakis.screenData.Choose\lImageScreenData.getImage1Id" alt="" coords="307,68,524,107"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_image_screen_data.html#a065ca5877da4ad9256ad075da1f77713" title="com.xenakis.screenData.Choose\lImageScreenData.getImage2Id" alt="" coords="307,131,524,169"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_image_screen_data.html#acf2f06ee7fda606f0d4be9d0aa07e9e5" title="com.xenakis.screenData.Choose\lImageScreenData.getImage3Id" alt="" coords="307,193,524,232"/>
-<area shape="rect" id="node6" href="$classcom_1_1xenakis_1_1screen_data_1_1_choose_image_screen_data.html#a3469a5eb3a7915046f7f008cdbf74d84" title="com.xenakis.screenData.Choose\lImageScreenData.getSoundId" alt="" coords="307,256,524,295"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="com.xenakis.screenController.ChooseImageScreenController.imageClicked" name="com.xenakis.screenController.ChooseImageScreenController.imageClicked">
-<area shape="rect" id="node2" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_image_screen_controller.html#a61f077dcf154eee394d78aa0e4062fb7" title="com.xenakis.screenController.\lChooseImageScreenController.selectImage" alt="" coords="297,68,576,107"/>
-<area shape="rect" id="node3" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#a438a519dd8e4539854f0077d22d2ee89" title="com.xenakis.screenController.\lQuestionScreenController.setIsSelection" alt="" coords="624,5,885,44"/>
-<area shape="rect" id="node4" href="$classcom_1_1xenakis_1_1screen_controller_1_1_question_screen_controller.html#ab616f1549d5eac8ebf341c135b3f8704" title="com.xenakis.screenController.\lQuestionScreenController.setAnswer" alt="" coords="635,68,875,107"/>
-<area shape="rect" id="node5" href="$classcom_1_1xenakis_1_1screen_controller_1_1_choose_image_screen_controller.html#a18995bbcdf8a934e9c782c5f7f1063c1" title="com.xenakis.screenController.\lChooseImageScreenController.disable\lImages" alt="" coords="630,131,879,183"/>
-</map>
