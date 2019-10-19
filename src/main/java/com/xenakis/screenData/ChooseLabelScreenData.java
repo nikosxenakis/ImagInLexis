@@ -4,16 +4,16 @@ import java.util.Set;
 
 public class ChooseLabelScreenData extends QuestionScreenData{
 	
-	private String radioOption1;
-	private String radioOption2;
-	private String radioOption3;
-	private String radioOption4;
-	private String imageId;
-	private String soundId;
-	private String sound1Id;
-	private String sound2Id;
-	private String sound3Id;
-	private String sound4Id;
+	private final String radioOption1;
+	private final String radioOption2;
+	private final String radioOption3;
+	private final String radioOption4;
+	private final String imageId;
+	private final String soundId;
+	private final String sound1Id;
+	private final String sound2Id;
+	private final String sound3Id;
+	private final String sound4Id;
 
 	public ChooseLabelScreenData(String question,String imageId, String radioOption1, String radioOption2, String radioOption3, String radioOption4, String soundId, String sound1Id, String sound2Id, String sound3Id, String sound4Id, Set<Integer> answers, String chapterName, String categoryName){
 		super(question,answers,chapterName,categoryName);

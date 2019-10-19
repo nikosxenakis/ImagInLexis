@@ -64,7 +64,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
         for (Circle cl : circlesList){
         	
         	//create and add circles
-        	System.out.println("new Ellipse: "+cl.x.toString()+" "+cl.y.toString()+" "+cl.w.toString()+" "+cl.h.toString());
+        	System.out.println("new Ellipse: "+cl.x+" "+cl.y+" "+cl.w+" "+cl.h);
         	Ellipse ellipse = new Ellipse(cl.x,cl.y,cl.w,cl.h);
         	
         	cl.addEllipse(ellipse);

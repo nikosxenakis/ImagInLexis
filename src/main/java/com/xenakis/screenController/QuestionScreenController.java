@@ -1,7 +1,6 @@
 package com.xenakis.screenController;
 
 import java.util.HashSet;
-import java.util.Set;
 
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.TestUtil;
@@ -60,30 +59,30 @@ public abstract class QuestionScreenController extends ScreenController{
     
     private TestUtil testUtil;
     private boolean isSelection = false;
-    private HashSet answers = new HashSet();
-    
-	public TestUtil getTestUtil(){
+    private final HashSet<Integer> answers = new HashSet<>();
+
+	private TestUtil getTestUtil(){
 		return testUtil;
 	}
-	
-	public boolean getIsSelection(){
+
+	private boolean getIsSelection(){
 		return this.isSelection;
 	}
-	
-	public Set<Integer> getAnswer(){
+
+	private HashSet<Integer> getAnswer(){
 		return this.answers;
 	}
-	
-	public void setAnswer(int answer){
+
+	void setAnswer(int answer){
 		this.answers.clear();
 		this.answers.add(answer);
 	}
-	
-	public void addAnswer(Integer answer){
+
+	void addAnswer(int answer){
 		this.answers.add(answer);
 	}
-	
-	public void setIsSelection(boolean isSelection){
+
+	void setIsSelection(boolean isSelection){
 		this.isSelection = isSelection;
 	}
 	
@@ -107,7 +106,7 @@ public abstract class QuestionScreenController extends ScreenController{
     	image = ImageHolder.getImage(testUtil.getCategory()+"Image");
     	categoryImage.setImage(image);
 
-    	progressBar.setProgress((double)(getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
+    	progressBar.setProgress((getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
     	
     	submitButton.setDisable(true);
 	
@@ -130,11 +129,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	}
 
     }
-    
+
     public void clicked(MouseEvent e){
     	
         if(e.getSource() == submitButton){
-        	if(getIsSelection() == false){
+        	if(!getIsSelection()){
         		System.err.println("error in clicked there is no selection");
         		return;
         	}

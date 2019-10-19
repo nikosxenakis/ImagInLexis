@@ -22,15 +22,15 @@ import com.xenakis.screenData.ScreenDataHolder;
 
 public class ScreenPane extends StackPane{
     //Holds the screens to be displayed
-    private HashMap<String, Node> screens = new HashMap<>();
-    private HashMap<String, ScreenController> screenControllersList = new HashMap<>();
+    private final HashMap<String, Node> screens = new HashMap<>();
+    private final HashMap<String, ScreenController> screenControllersList = new HashMap<>();
 
     public ScreenPane() {
         super();
     }
     
     //Add the screen to the collection
-    public void addScreen(String name, Node screen){
+	private void addScreen(String name, Node screen){
         screens.put(name, screen);
     }
     
@@ -46,7 +46,7 @@ public class ScreenPane extends StackPane{
     	return sc;
     }
     
-    public void addController(String screenId, ScreenController screenController){
+    private void addController(String screenId, ScreenController screenController){
     	//System.out.println("addController: "+screenId+" "+com.xenakis.screenController);
     	screenControllersList.put(screenId, screenController);
     }

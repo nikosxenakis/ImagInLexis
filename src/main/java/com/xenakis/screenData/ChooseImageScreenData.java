@@ -4,10 +4,10 @@ import java.util.Set;
 
 public class ChooseImageScreenData extends QuestionScreenData{
 	
-	private String image1Id;
-	private String image2Id;
-	private String image3Id;
-	private String soundId;
+	private final String image1Id;
+	private final String image2Id;
+	private final String image3Id;
+	private final String soundId;
 	
 	public ChooseImageScreenData(String question,String image1Id, String image2Id, String image3Id, String soundId, Set<Integer> answers, String chapterName, String categoryName){
 		super(question,answers,chapterName,categoryName);

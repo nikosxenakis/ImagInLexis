@@ -9,10 +9,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DatabaseTest {
+class DatabaseTest {
 
     @Test
-    public void testDB() {
+    void testDB() {
 
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		DateFormat timeFormat = new SimpleDateFormat("HH:mm");

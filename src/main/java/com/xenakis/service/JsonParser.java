@@ -9,7 +9,7 @@ import java.io.*;
 
 public class JsonParser {
 
-    private static JSONParser parser = new JSONParser();
+    private static final JSONParser parser = new JSONParser();
 
     public static JSONObject loadObject(String filePath){
 

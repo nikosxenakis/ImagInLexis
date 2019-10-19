@@ -4,11 +4,11 @@ import java.util.Set;
 
 public class WhatIsThisScreenData extends QuestionScreenData{
 
-	private String imageId;
-	private String soundId;
-	private String questionSoundId;
-	private String mainQuestion;
-	private String mainQuestionSoundId;
+	private final String imageId;
+	private final String soundId;
+	private final String questionSoundId;
+	private final String mainQuestion;
+	private final String mainQuestionSoundId;
 
 	public WhatIsThisScreenData(String question, String mainQuestion, String mainQuestionSoundId, String imageId, String soundId, String questionSoundId, Set<Integer> answersSet, String chapterName, String categoryName){		
 		super(question,answersSet,chapterName,categoryName);

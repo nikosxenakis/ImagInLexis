@@ -40,8 +40,8 @@ public class PostTestScreenController extends ScreenController{
     
 	@FXML
 	private ImageView backgroundImage;
-	
-	TestUtil testUtil = null;
+
+	private TestUtil testUtil = null;
 
     public void init(TestUtil testUtil){
     	this.testUtil = testUtil;
@@ -63,7 +63,7 @@ public class PostTestScreenController extends ScreenController{
     		passed = true;
     	}
     	
-		if(passed == true){
+		if(passed){
 			SoundHolder.playSound("correctSound");
 			resultText.setText("Επιτυχία");
 	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightgreen; -fx-opacity: 0.9;");

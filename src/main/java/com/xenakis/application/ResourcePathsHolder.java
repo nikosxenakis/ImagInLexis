@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class ResourcePathsHolder{
 
-    private static HashMap<String, String> resourcePaths = new HashMap<>();
+    private static final HashMap<String, String> resourcePaths = new HashMap<>();
 
     public static void addResourcePaths(String screenId, String resourcePath){
     	resourcePaths.put(screenId, resourcePath);

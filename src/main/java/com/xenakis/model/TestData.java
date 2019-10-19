@@ -7,22 +7,22 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class TestData {
-    private String chapter;
-    private String category;
-    private String chapterName;
-    private String categoryName;
+    private final String chapter;
+    private final String category;
+    private final String chapterName;
+    private final String categoryName;
     private int scoreNum;
 
-    private Integer correctAnswersNum;
-    private Integer wrongAnswersNum;
+    private int correctAnswersNum;
+    private int wrongAnswersNum;
 
-    private HashMap<String, Set<Integer>> answers = new HashMap<>();
-    private HashMap<String, Set<Integer>> correctAnswers = new HashMap<>();
+    private final HashMap<String, Set<Integer>> answers = new HashMap<>();
+    private final HashMap<String, Set<Integer>> correctAnswers = new HashMap<>();
 
-    private HashMap<String, Boolean> absoluteAnswers = new HashMap<>();
+    private final HashMap<String, Boolean> absoluteAnswers = new HashMap<>();
 
-    private Integer totalQuestions;
-    private Integer answeredQuestions;
+    private final int totalQuestions;
+    private int answeredQuestions;
 
     public TestData(String chapter, String category,String chapterName, String categoryName) {
         this.chapter = chapter;

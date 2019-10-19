@@ -16,15 +16,15 @@ import java.util.*;
 
 public class TestUtil {
 
-	private String menuScreenId;
+	private final String menuScreenId;
 	private String mainWindowStyle;
 	private String mainPaneStyle;
 	private String infoPaneStyle;
 
-	private Queue<String> screenList = new LinkedList<>();
-	private ArrayList<String> testScreenList = new ArrayList<>();
+	private final Queue<String> screenList = new LinkedList<>();
+	private final ArrayList<String> testScreenList = new ArrayList<>();
 
-	private TestData testData;
+	private final TestData testData;
 
 	public TestUtil(String chapter, String category, String chapterName, String categoryName, String menuScreenId){
 
@@ -142,7 +142,7 @@ public class TestUtil {
 		this.nextQuestion(myScreenPane);
 	}
 
-	public void finishTest(){
+	private void finishTest(){
 		if(this.testData.getTotalQuestions() != this.testData.getAnsweredQuestions()){
 			System.err.println("error in finishTest answeredQuestions = " + this.testData.getAnsweredQuestions());
 		}
@@ -180,7 +180,7 @@ public class TestUtil {
 		testScreenList.add(screenId);
 	}
 
-	public String getNextScreen(){
+	private String getNextScreen(){
 		System.out.println("screenList before: "+screenList.toString());
 
 		if(!screenList.isEmpty()){
@@ -198,7 +198,7 @@ public class TestUtil {
 			return null;
 	}
 
-	public void removeScreen(){
+	private void removeScreen(){
 
 		if(!screenList.isEmpty())
 			screenList.remove();

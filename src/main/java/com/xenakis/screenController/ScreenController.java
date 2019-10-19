@@ -19,7 +19,7 @@ public abstract class ScreenController implements Initializable {
 		myScreenPane = screenPage;
 	}
 	
-	public ScreenPane getScreenPane(){
+	ScreenPane getScreenPane(){
 		return myScreenPane;
 	}
 

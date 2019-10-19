@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 public class ScreenDataHolder{
 	
-    private static ScreenDataHolder instance = new ScreenDataHolder();
+    private static final ScreenDataHolder instance = new ScreenDataHolder();
     
-    private HashMap<String, QuestionScreenData> screenData;
+    private final HashMap<String, QuestionScreenData> screenData;
     
     private ScreenDataHolder(){
     	this.screenData = new HashMap<>();

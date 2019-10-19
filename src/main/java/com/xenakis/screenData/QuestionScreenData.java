@@ -4,10 +4,10 @@ import java.util.Set;
 
 public abstract class QuestionScreenData{
 	
-	private String question;
-	private Set<Integer> answers;
-	private String chapterName;
-	private String categoryName;
+	private final String question;
+	private final Set<Integer> answers;
+	private final String chapterName;
+	private final String categoryName;
 	
 	QuestionScreenData(String question, Set<Integer> answers, String chapterName, String categoryName){
 		this.question = question;

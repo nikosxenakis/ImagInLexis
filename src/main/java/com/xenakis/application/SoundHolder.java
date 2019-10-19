@@ -9,10 +9,10 @@ import java.util.HashMap;
 
 public class SoundHolder{
 	
-    private static SoundHolder instance = new SoundHolder();
+    private static final SoundHolder instance = new SoundHolder();
     
-    private HashMap<String, MediaPlayer> sounds;
-    private HashMap<String, String> soundsPath;
+    private final HashMap<String, MediaPlayer> sounds;
+    private final HashMap<String, String> soundsPath;
 
     private SoundHolder(){
     	this.sounds = new HashMap<>();
@@ -23,7 +23,7 @@ public class SoundHolder{
         return instance;
     }
     
-    public static MediaPlayer getSound(String id){
+    private static MediaPlayer getSound(String id){
 
         String path = instance.soundsPath.get(id);
         System.out.println(path);
@@ -52,7 +52,7 @@ public class SoundHolder{
     	instance.add(id, path);
     }
     
-    public void add(String id, String path){
+    private void add(String id, String path){
     	soundsPath.put(id, path);
     }
 }

@@ -7,10 +7,10 @@ import com.xenakis.model.Circle;
 
 public class ChooseInImageScreenData extends QuestionScreenData{
 	
-	private String imageId;
-	private ArrayList<Circle> circlesList;
+	private final String imageId;
+	private final ArrayList<Circle> circlesList;
 	private boolean absolute = true;
-	private String questionSoundId;
+	private final String questionSoundId;
 	
 	public ChooseInImageScreenData(String question, String questionSoundId, String imageId, ArrayList<Circle> circlesList, String absolute, Set<Integer> answers, String chapterName, String categoryName){
 		super(question,answers,chapterName,categoryName);

@@ -94,7 +94,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	}
     }
    
-    public void enableImage(ImageView image){
+    private void enableImage(ImageView image){
     	disableImages();
     	if(image == selectedImage )
     		return;
@@ -114,8 +114,8 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
         	link3.setStyle(enabledImageStyle);
     	}  	
     }
-    
-    public void selectImage(ImageView image){
+
+	private void selectImage(ImageView image){
     	if(image == selectedImage)
     		return;
     	

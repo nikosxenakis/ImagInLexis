@@ -9,10 +9,10 @@ import javafx.scene.image.Image;
 
 public class ImageHolder{
 	
-    private static ImageHolder instance = new ImageHolder();
+    private static final ImageHolder instance = new ImageHolder();
     
-    private HashMap<String, Image> images;
-    private HashMap<String, String> imagePaths;
+    private final HashMap<String, Image> images;
+    private final HashMap<String, String> imagePaths;
 
     private ImageHolder(){
     	this.images = new HashMap<>();

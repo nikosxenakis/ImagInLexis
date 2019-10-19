@@ -14,20 +14,20 @@ public class ImagInLexisParser {
 	private static JSONObject screensJsonObject;
 
 	//chapterName -> chapterTotalQuestions
-	private static HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
+	private static final HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
 	
 	//categoryName -> chapterTotalQuestions
-	private static HashMap<String,Integer> categoryTotalQuestions = new HashMap<>();
+	private static final HashMap<String,Integer> categoryTotalQuestions = new HashMap<>();
 
 	//chapterName -> categoryName List
-	private static HashMap<String,List<String>> chaptersCategoryList = new HashMap<>();
+	private static final HashMap<String,List<String>> chaptersCategoryList = new HashMap<>();
 	
 	//categoryName -> screenId List
-	private static HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
+	private static final HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
 	
-	private static HashMap<String,String> categoryNames = new HashMap<>();
+	private static final HashMap<String,String> categoryNames = new HashMap<>();
 
-	public static void parseCategoryNames(){
+	private static void parseCategoryNames(){
 	    JSONArray questions = (JSONArray) dataJsonObject.get("questions");
     	for (Object questionsChapter : questions){
     	   	JSONObject tmpQuestionsChapter = (JSONObject) questionsChapter;

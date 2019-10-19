@@ -70,8 +70,8 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	if(image3 != selectedImage )
     		image3.setStyle(disabledImageStyle);
     }
-   
-    public void enableImage(ImageView image){
+
+	private void enableImage(ImageView image){
     	disableImages();
     	if(image == selectedImage )
     		return;
@@ -79,8 +79,8 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	String enabledImageStyle = "-fx-effect: dropshadow(three-pass-box, rgba(255,100,100,0.8), 10, 0, 0, 0)";
     	image.setStyle(enabledImageStyle);
     }
-    
-    public void selectImage(ImageView image){
+
+	private void selectImage(ImageView image){
     	if(image == selectedImage)
     		return;
     	

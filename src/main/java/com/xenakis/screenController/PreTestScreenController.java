@@ -39,8 +39,8 @@ public class PreTestScreenController extends ScreenController{
     
 	@FXML
 	private ImageView backgroundImage;
-	
-	TestUtil testUtil = null;
+
+	private TestUtil testUtil = null;
 
 	@Override
 	public void initialize(java.net.URL location, java.util.ResourceBundle resources) {

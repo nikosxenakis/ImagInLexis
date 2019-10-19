@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Database {
 
-    static Logger logger;
+    private static Logger logger;
 
     private static Connection connect() {
 

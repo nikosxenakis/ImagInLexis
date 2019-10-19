@@ -4,14 +4,14 @@ import javafx.scene.shape.Ellipse;
 
 public class Circle {
 	
-	public String id;
-	public Integer x;
-	public Integer y;
-	public Integer w;
-	public Integer h;
+	public final String id;
+	public final int x;
+	public final int y;
+	public final int w;
+	public final int h;
 	public Ellipse ellipse;
 	
-	public Circle(String id, Integer x, Integer y, Integer w, Integer h){
+	public Circle(String id, int x, int y, int w, int h){
 		this.id = id;
 		this.x = x;
 		this.y = y;
