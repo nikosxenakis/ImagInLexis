@@ -73,6 +73,36 @@ public class DatabaseUtil extends Database {
         return user;
     }
 
+    public static String getImagePath(String name){
+        Connection conn = Database.connect();
+        ResultSet rs;
+        String sql;
+        String path = null;
+
+        sql = "SELECT * FROM images WHERE name='" + name + "'";
+        logger.info("Image: " + name);
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+
+            try {
+                while (rs.next()) {
+                    path = rs.getString("path");
+                    logger.info("Path: " + path);
+                    break;
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        } catch (SQLException e) {
+            logger.error(e.getMessage());
+        }
+        Database.closeConnection(conn);
+        return path;
+    }
+
     public static void insertScore(String username, String time, String date, int score, String chapter, String category) {
         String sql = "INSERT INTO scores(username, time, date, score, chapter, category) VALUES(?,?,?,?,?,?)";
         Connection conn = null;

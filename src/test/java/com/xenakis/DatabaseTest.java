@@ -1,6 +1,5 @@
 package com.xenakis;
 
-import com.xenakis.service.Database;
 import com.xenakis.service.DatabaseUtil;
 import org.junit.jupiter.api.Test;
 import java.text.DateFormat;
@@ -31,4 +30,11 @@ class DatabaseTest {
 
         assertEquals(l1.size(), l2.size());
     }
+
+    @Test
+    void testDBImages() {
+        String path = DatabaseUtil.getImagePath("logo");
+        assertEquals(path, "images/logo/imagInLexisLogo.png");
+    }
+
 }

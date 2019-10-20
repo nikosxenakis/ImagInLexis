@@ -7,11 +7,11 @@ package com.xenakis.screenController;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
 import com.xenakis.application.TestUtil;
+import com.xenakis.screenData.ChooseImageScreenData1;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import com.xenakis.screenData.ChooseImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 
 public class ChooseImageScreenController extends QuestionScreenController{
@@ -37,12 +37,12 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	System.out.println("set Data in ChooseImageScreenController");
     	super.setData(screenData, testUtil);
     	
-    	if(!(screenData instanceof ChooseImageScreenData)){
-        	System.err.println("com.xenakis.screenData is not ChooseImageScreenData");
+    	if(!(screenData instanceof ChooseImageScreenData1)){
+        	System.err.println("com.xenakis.screenData is not ChooseImageScreenData1");
     		return;
     	}
     	
-    	ChooseImageScreenData data = (ChooseImageScreenData) screenData;
+    	ChooseImageScreenData1 data = (ChooseImageScreenData1) screenData;
     	    	  	    	
     	Image image = ImageHolder.getImage(data.getImage1Id());
     	image1.setImage(image);

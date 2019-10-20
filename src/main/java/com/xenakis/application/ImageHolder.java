@@ -7,6 +7,7 @@ import java.util.Map.Entry;
 import com.xenakis.ImagInLexis;
 import javafx.scene.image.Image;
 
+//TODO remove it and use the SQL queries
 public class ImageHolder{
 	
     private static final ImageHolder instance = new ImageHolder();

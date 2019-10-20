@@ -129,8 +129,8 @@ public class QuestionFactory {
         String image3Id = (String)(question.get("image3Id"));
         String soundId = (String)(question.get("soundId"));
 
-        ChooseImageScreenData chooseImageScreenData = new ChooseImageScreenData(questionString,image1Id,image2Id,image3Id,soundId,answers,chapterName,categoryName);
-        ScreenDataHolder.addScreenData(screenId,chooseImageScreenData);
+        ChooseImageScreenData1 chooseImageScreenData1 = new ChooseImageScreenData1(questionString,image1Id,image2Id,image3Id,soundId,answers,chapterName,categoryName);
+        ScreenDataHolder.addScreenData(screenId, chooseImageScreenData1);
     }
 
     private static void createChooseImage2Question(JSONObject question, String chapterName, String categoryName, Set<Integer> answers){
