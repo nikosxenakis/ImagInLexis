@@ -103,6 +103,36 @@ public class DatabaseUtil extends Database {
         return path;
     }
 
+    public static String getSoundPath(String name){
+        Connection conn = Database.connect();
+        ResultSet rs;
+        String sql;
+        String path = null;
+
+        sql = "SELECT * FROM sounds WHERE name='" + name + "'";
+        logger.info("Sound: " + name);
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+
+            try {
+                while (rs.next()) {
+                    path = rs.getString("path");
+                    logger.info("Path: " + path);
+                    break;
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        } catch (SQLException e) {
+            logger.error(e.getMessage());
+        }
+        Database.closeConnection(conn);
+        return path;
+    }
+
     public static void insertScore(String username, String time, String date, int score, String chapter, String category) {
         String sql = "INSERT INTO scores(username, time, date, score, chapter, category) VALUES(?,?,?,?,?,?)";
         Connection conn = null;

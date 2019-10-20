@@ -10,6 +10,7 @@ import com.xenakis.application.TestUtil;
 import com.xenakis.model.Circle;
 import com.xenakis.application.ImageHolder;
 import com.xenakis.application.SoundHolder;
+import com.xenakis.service.DatabaseUtil;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;

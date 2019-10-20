@@ -171,7 +171,6 @@ public class TestUtil {
 		sc2.init(this);
 
 		this.cleanMemory();
-		ImagInLexis.cleanMemory();
 	}
 
 	private void addToScreenList(String screenId){

@@ -79,7 +79,6 @@ public class ImagInLexisParser {
 		screensJsonObject = JsonParser.loadObject("json/screens.json");
 
 		parseSounds();
-		parseImages();
 		parseQuestions();
 		parseMainScreens();
         parseCategoryNames();
@@ -88,27 +87,13 @@ public class ImagInLexisParser {
 	private static void parseSounds(){
 		JSONObject soundsJsonObject = JsonParser.loadObject("json/sounds.json");
 		JSONArray sounds = (JSONArray) soundsJsonObject.get("sounds");
-                		
+
         for (Object c : sounds){
         	JSONObject c1 = (JSONObject) c;
         	String soundId = (String)(c1.get("id"));
         	String soundPath = (String)(c1.get("path"));
         	SoundHolder.addSound(soundId, soundPath);
         }
-	}
-	
-	private static void parseImages(){
-
-		JSONObject imagesJsonObject = JsonParser.loadObject("json/images.json");
-
-		JSONArray images = (JSONArray) imagesJsonObject.get("images");
-                		
-        for (Object c : images){
-        	JSONObject c1 = (JSONObject) c;
-        	String imageId = (String)(c1.get("id"));
-        	String imagePath = (String)(c1.get("path"));
-        	ImageHolder.addImage(imageId, imagePath);
-        }        
 	}
 
 	private static void parseQuestion(Object question, String chapterName, String category, String categoryName){

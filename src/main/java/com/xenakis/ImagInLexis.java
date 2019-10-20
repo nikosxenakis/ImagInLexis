@@ -46,10 +46,6 @@ public class ImagInLexis extends Application {
         launch(args);
     }
 
-    public static void cleanMemory(){
-        ImageHolder.cleanMemory();
-    }
-
     public static void setUserName(String userName) {
         ImagInLexis.userName = userName;
     }
