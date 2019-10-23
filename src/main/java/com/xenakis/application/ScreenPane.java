@@ -19,15 +19,20 @@ import com.xenakis.screenController.QuestionScreenController;
 import com.xenakis.screenController.ScreenController;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
+import org.apache.log4j.Logger;
 
-public class ScreenPane extends StackPane{
-    //Holds the screens to be displayed
+public class ScreenPane extends StackPane {
+
+	private Logger logger;
+
+	//Holds the screens to be displayed
     private final HashMap<String, Node> screens = new HashMap<>();
     private final HashMap<String, ScreenController> screenControllersList = new HashMap<>();
 
     public ScreenPane() {
-        super();
-    }
+		super();
+		this.logger = Logger.getLogger(ScreenPane.class);
+	}
     
     //Add the screen to the collection
 	private void addScreen(String name, Node screen){
@@ -42,12 +47,12 @@ public class ScreenPane extends StackPane{
     public ScreenController getController(String screenId){
     	ScreenController sc = screenControllersList.get(screenId);
     	if(sc == null)
-    		System.err.println("error in getController ScreenController is null");
+			logger.error("Controller of screen: " + screenId + " is null");
     	return sc;
     }
     
-    private void addController(String screenId, ScreenController screenController){
-    	//System.out.println("addController: "+screenId+" "+com.xenakis.screenController);
+    private void addController(String screenId, ScreenController screenController) {
+		logger.info("addController: "+screenId+" " + screenController);
     	screenControllersList.put(screenId, screenController);
     }
     //Loads the com.xenakis.fxml file, add the screen to the screens collection and
@@ -74,8 +79,8 @@ public class ScreenPane extends StackPane{
  
             return true;
             
-        }catch(Exception e){
-            System.err.println(e.getMessage());
+        } catch(Exception e){
+			logger.error(e.getMessage());
             return false;
         }
     }
@@ -120,8 +125,8 @@ public class ScreenPane extends StackPane{
     		}
     	return true;
 	    }
-    	else{
-    		System.err.println("screen hasn't been loaded!!! \n");
+    	else {
+			logger.error("setScreen with screenId = " + screenId + " failed");
     		return false;
 	    }
     }

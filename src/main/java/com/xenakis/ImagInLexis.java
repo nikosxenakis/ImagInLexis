@@ -1,7 +1,6 @@
 package com.xenakis;
 
 import com.xenakis.application.ImagInLexisParser;
-import com.xenakis.application.ImageHolder;
 import com.xenakis.application.ScreenPane;
 import com.xenakis.service.DatabaseUtil;
 import javafx.application.Application;
@@ -15,15 +14,17 @@ public class ImagInLexis extends Application {
     public static String userName = DatabaseUtil.getActiveUser();
 
     @Override
-    public void start(Stage stage){
+    public void start(Stage primaryStage){
 
         BasicConfigurator.configure();
-        mainContainer = new ScreenPane();
 
-        stage.setMinWidth(1130);
-        stage.setMinHeight(750);
-        stage.setMaxWidth(1130);
-        stage.setMaxHeight(750);
+        primaryStage.setTitle("ImagInLexis");
+        primaryStage.setMinWidth(1130);
+        primaryStage.setMinHeight(750);
+        primaryStage.setMaxWidth(1130);
+        primaryStage.setMaxHeight(750);
+
+        mainContainer = new ScreenPane();
 
         ImagInLexisParser.initialize();
 
@@ -32,8 +33,8 @@ public class ImagInLexis extends Application {
 
         ImagInLexis.mainContainer.setScreen("MainScreen");
 
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     @Override

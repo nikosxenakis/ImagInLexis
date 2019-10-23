@@ -5,13 +5,12 @@ import java.sql.*;
 
 public abstract class Database {
 
-    protected static Logger logger;
+    protected static Logger logger = Logger.getLogger(Database.class);
 
     protected static Connection connect() {
 
         String db_path = "jdbc:sqlite::resource:com/xenakis/database/database.db";
         Connection conn = null;
-        logger = Logger.getLogger(Database.class);
 
         try {
             Class.forName("org.sqlite.JDBC");
