@@ -1,7 +1,7 @@
 package com.xenakis.screenController;
 
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.ImageUtil;
+import com.xenakis.service.SoundUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
@@ -61,7 +61,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	System.out.println("imageId: "+imageId);
 
     	if(imageId != null){
-        	Image tmpImage = ImageHolder.getImage(imageId);
+        	Image tmpImage = ImageUtil.getImage(imageId);
         	image.setImage(tmpImage); 		
     	}
     	else{
@@ -75,13 +75,13 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	if(data.getMainQuestion() != null && data.getMainQuestionSoundId() != null){
         	mainQuestion.setText(data.getMainQuestion());
         	mainQuestionSoundId = data.getMainQuestionSoundId();
-        	mainQuestionSoundImage.setImage(ImageHolder.getImage("soundImage"));
+        	mainQuestionSoundImage.setImage(ImageUtil.getImage("soundImage"));
     	}
     	else{
     		mainPane.getChildren().remove(mainQuestionHBox);
     	}
         
-    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
 
     	setAnswer(1);
 
@@ -103,19 +103,19 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     public void imageClicked(){
     	System.out.println(soundId);
     	if(soundId != null)
-    		SoundHolder.playSound(soundId);
+    		SoundUtil.playSound(soundId);
     }
     
     public void soundIconClicked(){
     	System.out.println(questionSoundId);
 
-    	SoundHolder.playSound(questionSoundId);
+    	SoundUtil.playSound(questionSoundId);
     }
     
     public void mainQuestionSoundIconClicked(){
     	System.out.println(mainQuestionSoundId);
 
-    	SoundHolder.playSound(mainQuestionSoundId);
+    	SoundUtil.playSound(mainQuestionSoundId);
     }
     
 }

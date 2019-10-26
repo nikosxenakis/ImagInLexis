@@ -4,8 +4,8 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.ImageUtil;
+import com.xenakis.service.SoundUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -57,16 +57,16 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	
     	ChooseImageLinkScreenData data = (ChooseImageLinkScreenData) screenData;
       	
-    	Image image = ImageHolder.getImage(data.getBasicImageId());
+    	Image image = ImageUtil.getImage(data.getBasicImageId());
     	basicImage.setImage(image);
     	
-    	image = ImageHolder.getImage(data.getImage1Id());
+    	image = ImageUtil.getImage(data.getImage1Id());
     	image1.setImage(image);
 
-    	image = ImageHolder.getImage(data.getImage2Id());
+    	image = ImageUtil.getImage(data.getImage2Id());
     	image2.setImage(image);
     	
-    	image = ImageHolder.getImage(data.getImage3Id());
+    	image = ImageUtil.getImage(data.getImage3Id());
     	image3.setImage(image);
     	
     	if(link1 == null || link2 == null || link3 == null){
@@ -75,7 +75,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	
     	soundId = data.getSoundId();
   
-    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
     }
     
     public void disableImages(){
@@ -183,6 +183,6 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     }
     
     public void soundIconClicked(){
-    	SoundHolder.playSound(soundId);
+    	SoundUtil.playSound(soundId);
     }
 }

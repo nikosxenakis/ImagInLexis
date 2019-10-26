@@ -4,8 +4,8 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.SoundUtil;
+import com.xenakis.service.ImageUtil;
 import com.xenakis.application.TestUtil;
 import com.xenakis.screenData.ChooseImageScreenData1;
 import javafx.fxml.FXML;
@@ -44,20 +44,20 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	
     	ChooseImageScreenData1 data = (ChooseImageScreenData1) screenData;
     	    	  	    	
-    	Image image = ImageHolder.getImage(data.getImage1Id());
+    	Image image = ImageUtil.getImage(data.getImage1Id());
     	image1.setImage(image);
         
-    	image = ImageHolder.getImage(data.getImage2Id());
+    	image = ImageUtil.getImage(data.getImage2Id());
     	image2.setImage(image);
     	
-    	image = ImageHolder.getImage(data.getImage3Id());
+    	image = ImageUtil.getImage(data.getImage3Id());
     	image3.setImage(image);
     	image3.setSmooth(true); 
     	image3.setCache(true); 
     	
     	soundId = data.getSoundId();
 
-    	soundImage.setImage(ImageHolder.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
 
     }
     
@@ -137,6 +137,6 @@ public class ChooseImageScreenController extends QuestionScreenController{
     }
     
     public void soundIconClicked(){
-    	SoundHolder.playSound(soundId);
+    	SoundUtil.playSound(soundId);
     }
 }

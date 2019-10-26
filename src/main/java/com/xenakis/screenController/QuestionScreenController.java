@@ -2,7 +2,7 @@ package com.xenakis.screenController;
 
 import java.util.HashSet;
 
-import com.xenakis.application.ImageHolder;
+import com.xenakis.service.ImageUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -99,11 +99,11 @@ public abstract class QuestionScreenController extends ScreenController{
     	categoryName.setText(screenData.getCategoryName());
    
     	//System.out.println("loading image: "+testUtil.getChapter().toString()+"Image");
-    	Image image = ImageHolder.getImage(testUtil.getChapter()+"Image");
+    	Image image = ImageUtil.getImage(testUtil.getChapter()+"Image");
     	chapterImage.setImage(image);
 
     	//System.out.println("loading image: "+testUtil.getCategory()+"Image");
-    	image = ImageHolder.getImage(testUtil.getCategory()+"Image");
+    	image = ImageUtil.getImage(testUtil.getCategory()+"Image");
     	categoryImage.setImage(image);
 
     	progressBar.setProgress((getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));

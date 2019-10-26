@@ -5,7 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.SoundUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
@@ -72,22 +72,22 @@ public class MainScreenController extends ScreenController{
 
     @FXML
     public void initialize(URL url, ResourceBundle rb) {
-        SoundHolder.playSound("endProgramSound");
+        SoundUtil.playSound("endProgramSound");
     }
 
     public void start(MouseEvent e){
 
         if(e.getSource() instanceof Text){
             if((Text)e.getSource() == chapter1Button){
-            	SoundHolder.playSound("chapter1Anagnorisi");
+            	SoundUtil.playSound("chapter1Anagnorisi");
                 ImagInLexis.mainContainer.setScreen("RecognitionChapterScreen");
             }
             else if((Text)e.getSource() == chapter2Button){
-            	SoundHolder.playSound("chapter2Katonomasia");
+            	SoundUtil.playSound("chapter2Katonomasia");
                 ImagInLexis.mainContainer.setScreen("KatonomasiaChapterScreen");
             }
             else if((Text)e.getSource() == chapter3Button){
-            	SoundHolder.playSound("chapter3Sisxetizomenesennoies");
+            	SoundUtil.playSound("chapter3Sisxetizomenesennoies");
                 ImagInLexis.mainContainer.setScreen("CombinationalChapterScreen");
             }
             else if((Text)e.getSource() == whatIsThisMainLabel){
@@ -124,7 +124,7 @@ public class MainScreenController extends ScreenController{
     	else{
         	System.err.println("unknown source in main screen controller");
     	}
-        SoundHolder.stopSound("endProgramSound");
+        SoundUtil.stopSound("endProgramSound");
 
     }
 

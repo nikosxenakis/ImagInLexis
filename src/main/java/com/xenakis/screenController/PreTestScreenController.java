@@ -4,8 +4,8 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.ImageUtil;
+import com.xenakis.service.SoundUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
@@ -50,15 +50,15 @@ public class PreTestScreenController extends ScreenController{
     	this.testUtil = testUtil;
     	
     	chapterName.setText(testUtil.getChapterName());
-    	chapterImage.setImage(ImageHolder.getImage(testUtil.getChapter()+"Image"));
+    	chapterImage.setImage(ImageUtil.getImage(testUtil.getChapter()+"Image"));
     	categoryName.setText(testUtil.getCategoryName());
-    	categoryImage.setImage(ImageHolder.getImage(testUtil.getCategory()+"Image"));
+    	categoryImage.setImage(ImageUtil.getImage(testUtil.getCategory()+"Image"));
     	totalQuestions.setText(String.valueOf(testUtil.getTotalQuestions()));
 
-    	backgroundImage.setImage(ImageHolder.getImage("background"));
+    	backgroundImage.setImage(ImageUtil.getImage("background"));
     	
-    	SoundHolder.stopSound("startProgramSound");
-    	SoundHolder.playSound(testUtil.getCategory()+"Sound");
+    	SoundUtil.stopSound("startProgramSound");
+    	SoundUtil.playSound(testUtil.getCategory()+"Sound");
     	
     	mainWindow.setStyle(testUtil.getMainWindowStyle());
     	infoPane.setStyle(testUtil.getInfoPaneStyle()+" -fx-opacity: 0.9;");

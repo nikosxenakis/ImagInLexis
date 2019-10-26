@@ -9,7 +9,8 @@ import com.xenakis.screenController.ScreenController;
 import com.xenakis.screenData.ChooseInImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
-import com.xenakis.service.DatabaseUtil;
+import com.xenakis.service.ScoreUtil;
+import com.xenakis.service.SoundUtil;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -116,7 +117,7 @@ public class TestUtil {
 
 	public void startTest(){
 		this.nextQuestion(ImagInLexis.mainContainer);
-		SoundHolder.playSound("completeSound");
+		SoundUtil.playSound("completeSound");
 	}
 
 	public void nextQuestion(ScreenPane myScreenPane){
@@ -160,7 +161,7 @@ public class TestUtil {
 		System.out.println("date= "+strDate);
 		System.out.println("time= "+strTime);
 
-		DatabaseUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, this.testData.getChapterName(), this.testData.getCategoryName());
+		ScoreUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, this.testData.getChapterName(), this.testData.getCategoryName());
 
 		testData.setScoreNum(score);
 

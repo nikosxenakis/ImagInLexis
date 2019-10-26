@@ -2,7 +2,7 @@ package com.xenakis;
 
 import com.xenakis.application.ImagInLexisParser;
 import com.xenakis.application.ScreenPane;
-import com.xenakis.service.DatabaseUtil;
+import com.xenakis.service.UserUtil;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -11,7 +11,7 @@ import org.apache.log4j.BasicConfigurator;
 public class ImagInLexis extends Application {
 
     public static ScreenPane mainContainer = null;
-    public static String userName = DatabaseUtil.getActiveUser();
+    public static String userName = UserUtil.getActiveUser();
 
     @Override
     public void start(Stage primaryStage){

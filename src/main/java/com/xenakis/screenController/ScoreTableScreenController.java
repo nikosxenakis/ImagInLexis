@@ -5,11 +5,9 @@
 package com.xenakis.screenController;
 
 import com.xenakis.application.ImagInLexisParser;
-import com.xenakis.application.ScoreUtil;
+import com.xenakis.service.ScoreUtil;
 import com.xenakis.model.Score;
-import com.xenakis.service.Database;
 import com.xenakis.ImagInLexis;
-import com.xenakis.service.DatabaseUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -158,12 +156,10 @@ public class ScoreTableScreenController extends ScreenController{
         for(Score score : scoreList){
             scoreTable.getItems().add(score);
         }
-        
-        
     }
 
     public void removeAll() {
-        DatabaseUtil.removeAllScores();
+        ScoreUtil.removeAllScores();
         this.renewScoreInfo();
     }
 

@@ -5,7 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.CategoryUtil;
+import com.xenakis.service.CategoryUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;

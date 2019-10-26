@@ -5,8 +5,8 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.SoundUtil;
+import com.xenakis.service.ImageUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
@@ -51,7 +51,7 @@ public class PostTestScreenController extends ScreenController{
     	correctAnswers.setText(String.valueOf(testUtil.getCorrectAnswers()));
     	wrongAnswers.setText(String.valueOf(testUtil.getWrongAnswers()));
 
-    	backgroundImage.setImage(ImageHolder.getImage("background"));
+    	backgroundImage.setImage(ImageUtil.getImage("background"));
 
     	boolean passed = false;
     	
@@ -64,17 +64,17 @@ public class PostTestScreenController extends ScreenController{
     	}
     	
 		if(passed){
-			SoundHolder.playSound("correctSound");
+			SoundUtil.playSound("correctSound");
 			resultText.setText("Επιτυχία");
 	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightgreen; -fx-opacity: 0.9;");
-	    	emotionImage.setImage(ImageHolder.getImage("happyIcon"));
+	    	emotionImage.setImage(ImageUtil.getImage("happyIcon"));
 
 		}
 		else{
 			resultText.setText("Αποτυχία");
-			SoundHolder.playSound("wrongSound");
+			SoundUtil.playSound("wrongSound");
 	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightcoral; -fx-opacity: 0.9;");
-	    	emotionImage.setImage(ImageHolder.getImage("sadIcon"));
+	    	emotionImage.setImage(ImageUtil.getImage("sadIcon"));
 		}
 		
     	infoPane.setMaxWidth(500);
@@ -82,7 +82,7 @@ public class PostTestScreenController extends ScreenController{
     }
     
     public void endTest(MouseEvent e){
-    	SoundHolder.playSound("endProgramSound");
+    	SoundUtil.playSound("endProgramSound");
     	ImagInLexis.mainContainer.setScreen(testUtil.getMenuScreenId());
     }
 }

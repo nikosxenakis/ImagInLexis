@@ -6,12 +6,10 @@ package com.xenakis.screenController;
 
 import java.util.ArrayList;
 
+import com.xenakis.service.ImageUtil;
 import com.xenakis.application.TestUtil;
 import com.xenakis.model.Circle;
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
-import com.xenakis.service.DatabaseUtil;
-import javafx.event.EventHandler;
+import com.xenakis.service.SoundUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -52,12 +50,12 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     	
     	ChooseInImageScreenData data = (ChooseInImageScreenData) screenData;
     	    	  	    	
-    	Image imageJPG = ImageHolder.getImage(data.getImageId());
+    	Image imageJPG = ImageUtil.getImage(data.getImageId());
     	image.setImage(imageJPG);
 
     	circlesList = data.getCirclesList();
 
-    	questionSoundImage.setImage(ImageHolder.getImage("soundImage"));
+    	questionSoundImage.setImage(ImageUtil.getImage("soundImage"));
 
     	questionSoundId = data.getQuestionSoundId();
 
@@ -98,6 +96,6 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     }
 
     public void questionSoundIconClicked(){
-    	SoundHolder.playSound(this.questionSoundId);
+    	SoundUtil.playSound(this.questionSoundId);
     }
 }

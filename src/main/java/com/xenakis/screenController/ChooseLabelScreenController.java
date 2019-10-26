@@ -1,7 +1,7 @@
 package com.xenakis.screenController;
 
-import com.xenakis.application.ImageHolder;
-import com.xenakis.application.SoundHolder;
+import com.xenakis.service.ImageUtil;
+import com.xenakis.service.SoundUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -70,7 +70,7 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 
     	ChooseLabelScreenData data = (ChooseLabelScreenData) screenData;
     	    	  	    	
-    	Image tmpImage = ImageHolder.getImage(data.getImageId());
+    	Image tmpImage = ImageUtil.getImage(data.getImageId());
     	image.setImage(tmpImage);
     	
     	radioOption1.setText(data.getRadioOption1());
@@ -86,15 +86,15 @@ public class ChooseLabelScreenController extends QuestionScreenController{
     	sound2Id = data.getSound2Id();
     	sound3Id = data.getSound3Id();
 		
-    	soundIcon.setImage(ImageHolder.getImage("soundImage"));
-    	sound1Icon.setImage(ImageHolder.getImage("soundImage"));
-    	sound2Icon.setImage(ImageHolder.getImage("soundImage"));
-    	sound3Icon.setImage(ImageHolder.getImage("soundImage"));
+    	soundIcon.setImage(ImageUtil.getImage("soundImage"));
+    	sound1Icon.setImage(ImageUtil.getImage("soundImage"));
+    	sound2Icon.setImage(ImageUtil.getImage("soundImage"));
+    	sound3Icon.setImage(ImageUtil.getImage("soundImage"));
     	
     	if(data.getRadioOption4() != null && data.getSound4Id() != null){
         	radioOption4.setText(data.getRadioOption4());
         	sound4Id = data.getSound4Id();	
-        	sound4Icon.setImage(ImageHolder.getImage("soundImage"));
+        	sound4Icon.setImage(ImageUtil.getImage("soundImage"));
     	}
     	else{
         	vBox.getChildren().remove(hBox4);
@@ -125,19 +125,19 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 
 		switch (id) {
 			case "soundIcon":
-				SoundHolder.playSound(soundId);
+				SoundUtil.playSound(soundId);
 				break;
 			case "sound1Icon":
-				SoundHolder.playSound(sound1Id);
+				SoundUtil.playSound(sound1Id);
 				break;
 			case "sound2Icon":
-				SoundHolder.playSound(sound2Id);
+				SoundUtil.playSound(sound2Id);
 				break;
 			case "sound3Icon":
-				SoundHolder.playSound(sound3Id);
+				SoundUtil.playSound(sound3Id);
 				break;
 			case "sound4Icon":
-				SoundHolder.playSound(sound4Id);
+				SoundUtil.playSound(sound4Id);
 				break;
 			default:
 				System.err.println("error in soundIconClicked in ChooseLabelScreenController");
