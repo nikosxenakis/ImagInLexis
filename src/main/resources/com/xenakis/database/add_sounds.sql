@@ -1,11 +1,3 @@
-DROP TABLE "sounds";
-
-CREATE TABLE "sounds" (
-    "id"    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    "name"  TEXT NOT NULL,
-    "path"  TEXT NOT NULL
-);
-
   DELETE 
     FROM
         sounds;

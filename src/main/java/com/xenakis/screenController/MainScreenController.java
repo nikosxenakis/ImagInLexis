@@ -73,7 +73,6 @@ public class MainScreenController extends ScreenController{
     @FXML
     public void initialize(URL url, ResourceBundle rb) {
         SoundHolder.playSound("endProgramSound");
-//        SoundHolder.playSound("startProgramSound");
     }
 
     public void start(MouseEvent e){

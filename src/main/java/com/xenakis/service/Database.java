@@ -21,7 +21,7 @@ public abstract class Database {
 
         try {
             conn = DriverManager.getConnection(db_path);
-            logger.info("Connection to SQLite has been established.");
+//            logger.info("Connection to SQLite has been established.");
         } catch (SQLException e) {
             logger.error(e.getMessage());
         }
@@ -32,7 +32,7 @@ public abstract class Database {
         try {
             if (conn != null) {
                 conn.close();
-                logger.info("Connection to SQLite has been closed.");
+//                logger.info("Connection to SQLite has been closed.");
             }
         } catch (SQLException ex) {
             logger.error(ex.getMessage());

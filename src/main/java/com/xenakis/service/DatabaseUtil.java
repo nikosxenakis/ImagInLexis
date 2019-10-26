@@ -73,61 +73,39 @@ public class DatabaseUtil extends Database {
         return user;
     }
 
-    public static String getImagePath(String name){
-        Connection conn = Database.connect();
+    public static String getImagePath(String name) throws Exception {
         ResultSet rs;
-        String sql;
-        String path = null;
+        String sql = "SELECT * FROM images WHERE name='" + name + "'";
+        String path;
 
-        sql = "SELECT * FROM images WHERE name='" + name + "'";
-        logger.info("Image: " + name);
+        Connection conn = Database.connect();
 
         try {
             PreparedStatement statement  = conn.prepareStatement(sql);
             rs = statement.executeQuery();
-
-            try {
-                while (rs.next()) {
-                    path = rs.getString("path");
-                    logger.info("Path: " + path);
-                    break;
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
+            rs.next();
+            path = rs.getString("path");
         } catch (SQLException e) {
-            logger.error(e.getMessage());
+            throw new Exception("Image with name = " + name + " was not found");
         }
         Database.closeConnection(conn);
         return path;
     }
 
-    public static String getSoundPath(String name){
-        Connection conn = Database.connect();
+    public static String getSoundPath(String name) throws Exception {
         ResultSet rs;
-        String sql;
-        String path = null;
+        String sql = "SELECT * FROM sounds WHERE name='" + name + "'";
+        String path;
 
-        sql = "SELECT * FROM sounds WHERE name='" + name + "'";
-        logger.info("Sound: " + name);
+        Connection conn = Database.connect();
 
         try {
             PreparedStatement statement  = conn.prepareStatement(sql);
             rs = statement.executeQuery();
-
-            try {
-                while (rs.next()) {
-                    path = rs.getString("path");
-                    logger.info("Path: " + path);
-                    break;
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
+            rs.next();
+            path = rs.getString("path");
         } catch (SQLException e) {
-            logger.error(e.getMessage());
+            throw new Exception("Sound with name = " + name + " was not found");
         }
         Database.closeConnection(conn);
         return path;

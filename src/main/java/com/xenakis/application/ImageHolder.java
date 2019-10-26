@@ -5,29 +5,30 @@ import java.util.HashMap;
 import com.xenakis.ImagInLexis;
 import com.xenakis.service.DatabaseUtil;
 import javafx.scene.image.Image;
+import org.apache.log4j.Logger;
 
 public class ImageHolder {
 
 	private static final HashMap<String, Image> images = new HashMap<>();
+	private static Logger logger = Logger.getLogger(ImageHolder.class);
 
-	public static Image getImage(String id){
+	public static Image getImage(String name){
 
-		Image image = ImageHolder.images.get(id);
+		Image image = ImageHolder.images.get(name);
+
 		if(image == null) {
-			image = ImageHolder.addImage(id);
+			String path;
+			try {
+				path = DatabaseUtil.getImagePath(name);
+				URL resource = ImagInLexis.class.getResource(path);
+				image = new Image(resource.toString());
+				ImageHolder.images.put(name, image);
+				ImageHolder.logger.info("Add image with name = " + name);
+			}
+			catch (Exception e) {
+				ImageHolder.logger.error(e);
+			}
 		}
-		return image;
-	}
-
-	private static Image addImage(String id) {
-		String path = DatabaseUtil.getImagePath(id);
-		assert(path != null);
-		System.out.println(path);
-		URL resource = ImagInLexis.class.getResource(path);
-		assert(resource != null);
-		Image image = new Image(resource.toString());
-		assert(image != null);
-		ImageHolder.images.put(id, image);
 		return image;
 	}
 }
