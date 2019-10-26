@@ -46,8 +46,8 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     	}
 
     	submitButton.setDisable(false);
-    	setIsSelection(true);
-    	
+    	setIsSelection();
+
     	ChooseInImageScreenData data = (ChooseInImageScreenData) screenData;
     	    	  	    	
     	Image imageJPG = ImageUtil.getImage(data.getImageId());

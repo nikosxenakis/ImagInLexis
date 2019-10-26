@@ -10,19 +10,20 @@ import java.util.List;
 
 public class ScoreUtil extends DatabaseUtil {
 
-    private static List<Score> selectScores(String chapterName, String categoryName){
+    private static List<Score> selectScores(String chapterName, String categoryName) {
         Connection conn = DatabaseUtil.connect();
         ResultSet rs;
         String sql;
 
+// TODO what if just category
         if(chapterName == null) {
             sql = "SELECT * FROM scores";
         }
         else if(categoryName == null) {
-            sql = "SELECT * FROM scores WHERE chapter == ?";
+            sql = "SELECT * FROM scores WHERE chapter = ?";
         }
         else {
-            sql = "SELECT * FROM scores WHERE chapter == ? AND category == ?";
+            sql = "SELECT * FROM scores WHERE chapter = ? AND category = ?";
         }
 
         List<Score> scoreList = new ArrayList<>();

@@ -85,7 +85,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
 
     	setAnswer(1);
 
-    	setIsSelection(true);
+    	setIsSelection();
     	submitButton.setDisable(false);
     }
     

@@ -16,7 +16,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import com.xenakis.screenData.QuestionScreenData;
 
-public abstract class QuestionScreenController extends ScreenController{
+public abstract class QuestionScreenController extends ScreenController {
 
 	@FXML
 	protected AnchorPane mainWindow;
@@ -58,9 +58,13 @@ public abstract class QuestionScreenController extends ScreenController{
     protected BorderPane mainPane;
     
     private TestUtil testUtil;
-    private boolean isSelection = false;
+    private boolean isSelection;
     private final HashSet<Integer> answers = new HashSet<>();
 
+    protected QuestionScreenController() {
+    	super();
+		isSelection = false;
+	}
 	private TestUtil getTestUtil(){
 		return testUtil;
 	}
@@ -82,8 +86,8 @@ public abstract class QuestionScreenController extends ScreenController{
 		this.answers.add(answer);
 	}
 
-	void setIsSelection(boolean isSelection){
-		this.isSelection = isSelection;
+	void setIsSelection(){
+		this.isSelection = true;
 	}
 	
     public void setData(QuestionScreenData screenData, TestUtil testUtil){

@@ -119,7 +119,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	if(image == selectedImage)
     		return;
     	
-    	setIsSelection(true);
+    	setIsSelection();
     	submitButton.setDisable(false);
     	selectedImage = image;
     	if(image == image1)

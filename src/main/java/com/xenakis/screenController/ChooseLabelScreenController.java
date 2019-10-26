@@ -77,7 +77,7 @@ public class ChooseLabelScreenController extends QuestionScreenController{
     	radioOption2.setText(data.getRadioOption2());
     	radioOption3.setText(data.getRadioOption3());
 
-    	setIsSelection(true);
+    	setIsSelection();
     	setAnswer(1);
     	submitButton.setDisable(false);
     	

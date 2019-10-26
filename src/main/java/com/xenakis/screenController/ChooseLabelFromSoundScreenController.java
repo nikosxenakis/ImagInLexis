@@ -131,7 +131,7 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
         	soundImage.setImage(ImageUtil.getImage("soundImage"));
     	}
 
-    	setIsSelection(true);
+    	setIsSelection();
     	setAnswer(1);
     	submitButton.setDisable(false);
     }
