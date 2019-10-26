@@ -23,8 +23,6 @@ public class ImagInLexisParser {
 	
 	//categoryName -> screenId List
 	private static final HashMap<String, List<String>> categoriesScreenIdList = new HashMap<>();
-	
-	private static final HashMap<String, String> categoryNames = new HashMap<>();
 
 	public static void initialize() {
 
@@ -33,21 +31,6 @@ public class ImagInLexisParser {
 
 		parseMainScreens();
 		parseQuestions();
-		parseCategoryNames();
-	}
-
-	private static void parseCategoryNames(){
-	    JSONArray questions = (JSONArray) dataJsonObject.get("questions");
-    	for (Object questionsChapter : questions){
-    	   	JSONObject tmpQuestionsChapter = (JSONObject) questionsChapter;
-    		JSONArray chapterList = (JSONArray)(tmpQuestionsChapter.get("chapterList"));
-        	for (Object questionsCategory : chapterList){
-        	   	JSONObject tmpQuestionsCategory = (JSONObject) questionsCategory;
-            	String category = (String)(tmpQuestionsCategory.get("category"));
-            	String categoryName = (String)(tmpQuestionsCategory.get("categoryName"));
-            	categoryNames.put(category, categoryName);
-        	}
-    	}
 	}
 	
     public static List<String> getChapterList(){
@@ -60,11 +43,7 @@ public class ImagInLexisParser {
     	
     	return chapterList;
     }
-    
-    public static String getCategoryNameFromCategory(String category){
-    	return categoryNames.get(category);
-    }
-    
+
     public static List<String> getCategoryList(String chapterName){
     	List<String> categoryList = new ArrayList<>();
     

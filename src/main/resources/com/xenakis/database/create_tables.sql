@@ -19,10 +19,11 @@ CREATE TABLE IF NOT EXISTS "chapters" (
 	"name"	TEXT NOT NULL UNIQUE
 );
 
-CREATE TABLE IF NOT EXISTS "categories" (
+CREATE TABLE "categories" (
 	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
 	"chapterId"	INTEGER NOT NULL,
-	"name"	TEXT NOT NULL,
+	"greekName"	TEXT NOT NULL,
+	"name"	TEXT,
 	FOREIGN KEY("chapterId") REFERENCES "categories"
 );
 

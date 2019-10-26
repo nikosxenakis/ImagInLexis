@@ -2,36 +2,6 @@ INSERT INTO chapters VALUES(1,'Αναγνώριση');
 INSERT INTO chapters VALUES(2,'Κατονομασία');
 INSERT INTO chapters VALUES(3,'Συσχετιζόμενες Έννοιες');
 
-
-INSERT INTO categories VALUES(1,1,'Σώμα');
-INSERT INTO categories VALUES(2,1,'Ζώα');
-INSERT INTO categories VALUES(3,1,'Φρούτα');
-INSERT INTO categories VALUES(4,1,'Αντικείμενα');
-INSERT INTO categories VALUES(5,1,'Χρώματα');
-INSERT INTO categories VALUES(6,1,'Σχήματα');
-INSERT INTO categories VALUES(7,1,'Επαγγέλματα');
-INSERT INTO categories VALUES(8,1,'Ηλεκτρικές Συσκευές');
-INSERT INTO categories VALUES(9,1,'Τοποθεσία');
-INSERT INTO categories VALUES(10,1,'Οχήματα');
-INSERT INTO categories VALUES(11,1,'Ενέργειες');
-INSERT INTO categories VALUES(12,1,'Συναισθήματα');
-INSERT INTO categories VALUES(13,1,'Εποχές');
-INSERT INTO categories VALUES(14,1,'Μήνες');
-INSERT INTO categories VALUES(15,1,'Μέρες Της Εβδομάδας');
-INSERT INTO categories VALUES(16,1,'Αντιθετικοί Προσδιορισμοί');
-INSERT INTO categories VALUES(17,1,'Αφαιρετική Ικανότητα');
-INSERT INTO categories VALUES(18,1,'Αυτοματοποιημένες Πράξεις');
-INSERT INTO categories VALUES(19,1,'Ερωτήσεις Κλειστού Τύπου');
-INSERT INTO categories VALUES(20,1,'Εντοπισμός');
-INSERT INTO categories VALUES(35,2,'Ορισμοί');
-INSERT INTO categories VALUES(36,2,'Συμπλήρωση προτάσεων');
-INSERT INTO categories VALUES(37,2,'Ήχοι');
-INSERT INTO categories VALUES(38,3,'Αντικείμενα');
-INSERT INTO categories VALUES(39,3,'Επαγγέλματα');
-INSERT INTO categories VALUES(40,3,'Ενέργειες');
-INSERT INTO categories VALUES(41,3,'Αλληλουχία Πράξεων');
-
-
 INSERT INTO users VALUES(1,'Stelios',0);
 
 INSERT INTO images VALUES(1,'logo','images/logo/imagInLexisLogo.png');

@@ -5,7 +5,7 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.application.CategoryUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
@@ -84,6 +84,6 @@ public class RecognitionChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
         
-        new TestUtil("recognition",category,"Αναγνώριση", ImagInLexisParser.getCategoryNameFromCategory(category),"RecognitionChapterScreen");
+        new TestUtil("recognition",category,"Αναγνώριση", CategoryUtil.getCategoryGreekName(category),"RecognitionChapterScreen");
     }
 }

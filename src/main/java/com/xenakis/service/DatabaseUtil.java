@@ -1,5 +1,6 @@
 package com.xenakis.service;
 
+import com.xenakis.model.Category;
 import com.xenakis.model.Score;
 
 import java.sql.Connection;
@@ -71,6 +72,29 @@ public class DatabaseUtil extends Database {
         }
         Database.closeConnection(conn);
         return user;
+    }
+
+    public static Category getCategory(String name) throws Exception {
+        ResultSet rs;
+        String sql = "SELECT * FROM categories WHERE name='" + name + "'";
+        Category category;
+
+        Connection conn = Database.connect();
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+            rs.next();
+            category = new Category(
+                    rs.getString("chapterId"),
+                    rs.getString("greekName"),
+                    rs.getString("name")
+            );
+        } catch (Exception e) {
+            throw new Exception("Category with name = " + name + " was not found");
+        }
+        Database.closeConnection(conn);
+        return category;
     }
 
     public static String getImagePath(String name) throws Exception {
