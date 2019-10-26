@@ -23,7 +23,7 @@ import org.apache.log4j.Logger;
 
 public class ScreenPane extends StackPane {
 
-	private Logger logger;
+	private final Logger logger;
 
 	//Holds the screens to be displayed
     private final HashMap<String, Node> screens = new HashMap<>();
@@ -98,18 +98,15 @@ public class ScreenPane extends StackPane {
     		if (!getChildren().isEmpty()) {    //if there is more than one screen
     			Timeline fade = new Timeline(
     				new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
-    				new KeyFrame(new Duration(200), new EventHandler<ActionEvent>() {
-    					@Override
-    					public void handle(ActionEvent t) {
-    						getChildren().remove(0);                    //remove the displayed screen
-    						getChildren().add(0, screens.get(screenId));     //add the screen
-    						Timeline fadeIn = new Timeline(
-    							new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-    							new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0))
-    						);
-    						fadeIn.play();
-    					}
-    				}, new KeyValue(opacity, 0.0))
+    				new KeyFrame(new Duration(200), t -> {
+						getChildren().remove(0);                    //remove the displayed screen
+						getChildren().add(0, screens.get(screenId));     //add the screen
+						Timeline fadeIn = new Timeline(
+							new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
+							new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0))
+						);
+						fadeIn.play();
+					}, new KeyValue(opacity, 0.0))
     			);
     			fade.play();
     		}

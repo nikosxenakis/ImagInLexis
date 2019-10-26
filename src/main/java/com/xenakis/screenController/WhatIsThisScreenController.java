@@ -92,10 +92,10 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     public void radioClicked(MouseEvent e){
     	System.out.println("radioClicked");
     	
-        if((RadioButton)e.getSource() == correctOption){
+        if(e.getSource() == correctOption){
         	setAnswer(1);
         }
-        else if((RadioButton)e.getSource() == wrongOption){
+        else if(e.getSource() == wrongOption){
         	setAnswer(2);
         }
     }

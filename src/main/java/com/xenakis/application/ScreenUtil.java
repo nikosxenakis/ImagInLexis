@@ -2,7 +2,7 @@ package com.xenakis.application;
 
 import org.apache.log4j.Logger;
 
-public class ScreenUtil {
+class ScreenUtil {
     private static Logger logger = Logger.getLogger(ScreenUtil.class);
 
 //    public static void getScreens() {

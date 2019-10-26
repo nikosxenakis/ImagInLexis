@@ -69,10 +69,10 @@ public class QuestionFactory {
         for (Object c : circlesList){
             JSONObject c1 = (JSONObject) c;
             String id = (String)(c1.get("id"));
-            Integer circleX = Integer.parseInt((String)(c1.get("circleX")));
-            Integer circleY = Integer.parseInt((String)(c1.get("circleY")));
-            Integer circleW = Integer.parseInt((String)(c1.get("circleW")));
-            Integer circleH = Integer.parseInt((String)(c1.get("circleH")));
+            int circleX = Integer.parseInt((String)(c1.get("circleX")));
+            int circleY = Integer.parseInt((String)(c1.get("circleY")));
+            int circleW = Integer.parseInt((String)(c1.get("circleW")));
+            int circleH = Integer.parseInt((String)(c1.get("circleH")));
 
             Circle circle = new Circle(id,circleX,circleY,circleW,circleH);
             circlesArrayList.add(circle);

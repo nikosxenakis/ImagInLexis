@@ -139,16 +139,16 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     public void radioClicked(MouseEvent e){
     	System.out.println("radioClicked");
     	
-        if((RadioButton)e.getSource() == radioOption1){
+        if(e.getSource() == radioOption1){
         	setAnswer(1);
         }
-        else if((RadioButton)e.getSource() == radioOption2){
+        else if(e.getSource() == radioOption2){
         	setAnswer(2);
         }
-        else if((RadioButton)e.getSource() == radioOption3){
+        else if(e.getSource() == radioOption3){
         	setAnswer(3);
         }
-        else if((RadioButton)e.getSource() == radioOption4){
+        else if(e.getSource() == radioOption4){
         	setAnswer(4);
         }     
     }

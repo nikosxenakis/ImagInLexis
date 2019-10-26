@@ -1,9 +1,9 @@
 package com.xenakis.model;
 
 public class Category {
-    private String chapterId;
-    private String greekName;
-    private String name;
+    private final String chapterId;
+    private final String greekName;
+    private final String name;
 
     public Category(String chapterId, String greekName, String name) {
         this.chapterId = chapterId;

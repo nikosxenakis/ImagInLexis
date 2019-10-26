@@ -1,15 +1,10 @@
 package com.xenakis;
 
-import com.xenakis.service.ImageUtil;
 import com.xenakis.service.ScoreUtil;
-import com.xenakis.service.UserUtil;
 import org.junit.jupiter.api.Test;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DatabaseUtilTest {
 

@@ -145,7 +145,8 @@ public class ScoreTableScreenController extends ScreenController{
     		categoryOptions.getItems().addAll(category);
         }
     }
-    
+
+    // TODO It is not working
     private void renewScoreInfo() {
     	String chapter = chapterOptions.getValue();
     	String category = categoryOptions.getValue();

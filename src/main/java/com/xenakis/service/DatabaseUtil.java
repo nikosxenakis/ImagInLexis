@@ -5,9 +5,9 @@ import java.sql.*;
 
 public abstract class DatabaseUtil {
 
-    protected static Logger logger = Logger.getLogger(DatabaseUtil.class);
+    static final Logger logger = Logger.getLogger(DatabaseUtil.class);
 
-    protected static Connection connect() {
+    static Connection connect() {
 
         String db_path = "jdbc:sqlite::resource:com/xenakis/database/database.db";
         Connection conn = null;
@@ -28,7 +28,7 @@ public abstract class DatabaseUtil {
         return conn;
     }
 
-    protected static void closeConnection(Connection conn) {
+    static void closeConnection(Connection conn) {
         try {
             if (conn != null) {
                 conn.close();

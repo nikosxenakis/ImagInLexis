@@ -108,19 +108,19 @@ public class ChooseImageScreenController2 extends QuestionScreenController{
     
     public void overImage(MouseEvent e){
     	
-        if((ImageView)e.getSource() == image1){
+        if(e.getSource() == image1){
         	System.out.println("hover image1");
         	enableImage(image1);
         }
-        else if((ImageView)e.getSource() == image2){
+        else if(e.getSource() == image2){
         	System.out.println("hover image2");
         	enableImage(image2);
         }
-        else if((ImageView)e.getSource() == image3){
+        else if(e.getSource() == image3){
         	System.out.println("hover image3");
         	enableImage(image3);
         }
-        else if((ImageView)e.getSource() == image4){
+        else if(e.getSource() == image4){
         	System.out.println("hover image4");
         	enableImage(image4);
         }
@@ -133,19 +133,19 @@ public class ChooseImageScreenController2 extends QuestionScreenController{
     public void imageClicked(MouseEvent e){
     	System.out.println("imageClicked");
 
-        if((ImageView)e.getSource() == image1){
+        if(e.getSource() == image1){
         	System.out.println("image1");
         	selectImage(image1);
         }
-        else if((ImageView)e.getSource() == image2){
+        else if(e.getSource() == image2){
         	System.out.println("image2");
         	selectImage(image2);
         }
-        else if((ImageView)e.getSource() == image3){
+        else if(e.getSource() == image3){
         	System.out.println("image3");
         	selectImage(image3);
         }
-        else if((ImageView)e.getSource() == image4){
+        else if(e.getSource() == image4){
         	System.out.println("image4");
         	selectImage(image4);
         }

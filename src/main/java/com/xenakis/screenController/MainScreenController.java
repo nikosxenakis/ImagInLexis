@@ -78,24 +78,24 @@ public class MainScreenController extends ScreenController{
     public void start(MouseEvent e){
 
         if(e.getSource() instanceof Text){
-            if((Text)e.getSource() == chapter1Button){
+            if(e.getSource() == chapter1Button){
             	SoundUtil.playSound("chapter1Anagnorisi");
                 ImagInLexis.mainContainer.setScreen("RecognitionChapterScreen");
             }
-            else if((Text)e.getSource() == chapter2Button){
+            else if(e.getSource() == chapter2Button){
             	SoundUtil.playSound("chapter2Katonomasia");
                 ImagInLexis.mainContainer.setScreen("KatonomasiaChapterScreen");
             }
-            else if((Text)e.getSource() == chapter3Button){
+            else if(e.getSource() == chapter3Button){
             	SoundUtil.playSound("chapter3Sisxetizomenesennoies");
                 ImagInLexis.mainContainer.setScreen("CombinationalChapterScreen");
             }
-            else if((Text)e.getSource() == whatIsThisMainLabel){
+            else if(e.getSource() == whatIsThisMainLabel){
                 ImagInLexis.mainContainer.setScreen("WhatIsThisMainScreen");
             }
-            else if((Text)e.getSource() == instructionsLabel){
+            else if(e.getSource() == instructionsLabel){
             }
-            else if((Text)e.getSource() == scoreTableLabel){
+            else if(e.getSource() == scoreTableLabel){
             	ScoreTableScreenController ctrl = (ScoreTableScreenController) ImagInLexis.mainContainer.getController("ScoreTableScreen");
             	ctrl.init();
                 ImagInLexis.mainContainer.setScreen("ScoreTableScreen");
@@ -106,13 +106,13 @@ public class MainScreenController extends ScreenController{
 
     	}
     	else if(e.getSource() instanceof ImageView){
-            if((ImageView)e.getSource() == whatIsThisMainButton){
+            if(e.getSource() == whatIsThisMainButton){
                 ImagInLexis.mainContainer.setScreen("WhatIsThisMainScreen");
             }
-            else if((ImageView)e.getSource() == instructionsButton){
+            else if(e.getSource() == instructionsButton){
                 ImagInLexis.mainContainer.setScreen("AboutUsMainScreen");
             }
-            else if((ImageView)e.getSource() == scoreTableButton){
+            else if(e.getSource() == scoreTableButton){
             	ScoreTableScreenController ctrl = (ScoreTableScreenController) ImagInLexis.mainContainer.getController("ScoreTableScreen");
             	ctrl.init();
                 ImagInLexis.mainContainer.setScreen("ScoreTableScreen");
