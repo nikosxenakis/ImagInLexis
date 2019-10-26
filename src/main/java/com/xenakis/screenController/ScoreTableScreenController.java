@@ -146,7 +146,7 @@ public class ScoreTableScreenController extends ScreenController{
         }
     }
     
-    private void renewScoreInfo(){
+    private void renewScoreInfo() {
     	String chapter = chapterOptions.getValue();
     	String category = categoryOptions.getValue();
         List<Score> scoreList = ScoreUtil.getScoreList(chapter,category);

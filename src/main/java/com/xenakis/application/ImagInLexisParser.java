@@ -173,5 +173,4 @@ public class ImagInLexisParser {
 		List<String> list = categoriesScreenIdList.computeIfAbsent(category, k -> new ArrayList<>());
 		list.add(screenId);
 	}
-
 }
