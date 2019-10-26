@@ -32,33 +32,6 @@ public class ImagInLexisParser {
 		parseMainScreens();
 		parseQuestions();
 	}
-	
-    private static List<String> getChapterList(){
-    	List<String> chapterList = new ArrayList<>();
-
-    	for (Entry<String, List<String>> entry : chaptersCategoryList.entrySet()) {
-    	    String key = entry.getKey();
-    	    chapterList.add(key);
-    	}
-
-    	return chapterList;
-    }
-
-    public static List<String> getCategoryList(String chapterName){
-    	List<String> categoryList = new ArrayList<>();
-    
-    	for (Entry<String, List<String>> entry : ImagInLexisParser.chaptersCategoryList.entrySet()) {
-    	    String key = entry.getKey();
-    	    
-    	    if(chapterName.equals(key) || chapterName.equals("Όλα")){
-        	    List<String> value = entry.getValue();
-
-				categoryList.addAll(value);
-    	    }
-    	}
-    	
-    	return categoryList;
-    }
 
 	private static void parseQuestion(Object question, String chapterName, String category, String categoryName){
         
@@ -102,21 +75,21 @@ public class ImagInLexisParser {
 		if(!(categoryObj instanceof JSONObject)){
 			System.out.println("error in parseCategory");
 		}
-		
+
     	JSONObject tmpCategory = (JSONObject) categoryObj;
     	String category = (String) tmpCategory.get("category");
     	String categoryName = (String) tmpCategory.get("categoryName");
 		JSONArray categoryList = (JSONArray) tmpCategory.get("categoryList");
 
 		addToChaptersCategoryList(chapterName, categoryName);
-		
+
 		categoryTotalQuestions.put(category, categoryList.size());
 
     	for (Object question : categoryList){
         	parseQuestion(question,chapterName,category,categoryName);
-        }	
+        }
 	}
-	
+
 	private static void parseChapter(Object chapter){
 		if(!(chapter instanceof JSONObject)){
 			System.err.println("error in parseChapter");
@@ -142,6 +115,12 @@ public class ImagInLexisParser {
         }
 	}
 
+	public static int getCategoryTotalQuestions(String category){
+		return categoryTotalQuestions.get(category);
+	}
+
+
+
 	private static void parseMainScreens(){
 
 		JSONArray mainScreens = (JSONArray) screensJsonObject.get("mainScreens");
@@ -156,9 +135,8 @@ public class ImagInLexisParser {
         }
 	}
 
-	public static int getCategoryTotalQuestions(String category){
-		return categoryTotalQuestions.get(category);
-	}
+
+//	TODO must remove bellow in later release
 
 	public static List<String> getCategoriesScreenIdList(String category){
 		return categoriesScreenIdList.get(category);
@@ -173,4 +151,21 @@ public class ImagInLexisParser {
 		List<String> list = categoriesScreenIdList.computeIfAbsent(category, k -> new ArrayList<>());
 		list.add(screenId);
 	}
+
+	public static List<String> getCategoryList(String chapterName) {
+		List<String> categoryList = new ArrayList<>();
+
+		for (Entry<String, List<String>> entry : ImagInLexisParser.chaptersCategoryList.entrySet()) {
+			String key = entry.getKey();
+
+			if(chapterName.equals(key) || chapterName.equals("Όλα")){
+				List<String> value = entry.getValue();
+
+				categoryList.addAll(value);
+			}
+		}
+
+		return categoryList;
+	}
+
 }

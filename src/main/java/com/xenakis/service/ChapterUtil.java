@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class ChapterUtil extends DatabaseUtil {
 
@@ -22,14 +21,45 @@ public class ChapterUtil extends DatabaseUtil {
             rs = statement.executeQuery();
             rs.next();
             chapter = new Chapter(
+                    rs.getString("id"),
                     rs.getString("name"),
                     rs.getString("greekName")
             );
         } catch (Exception e) {
-            throw new Exception("Category with name = " + name + " was not found");
+            throw new Exception("Chapter with name = " + name + " was not found");
         }
         DatabaseUtil.closeConnection(conn);
         return chapter;
+    }
+
+    public static String getChapterId(String name) {
+        Chapter chapter;
+        try {
+            chapter = ChapterUtil.getChapter(name);
+        }
+        catch (Exception e) {
+            return "-";
+        }
+        return chapter.getId();
+    }
+
+    public static String getChapterNameFromGreekName(String chapterGreekName) {
+        ResultSet rs;
+        String sql = "SELECT * FROM chapters WHERE greekName='" + chapterGreekName + "'";
+        String chapterName = null;
+
+        Connection conn = DatabaseUtil.connect();
+        logger.info("Get chapter with greekName: " + chapterGreekName);
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+            rs.next();
+            chapterName = rs.getString("name");
+        } catch (Exception e) {
+        }
+        DatabaseUtil.closeConnection(conn);
+        return chapterName;
     }
 
     public static String getChapterGreekName(String name) {
@@ -53,6 +83,7 @@ public class ChapterUtil extends DatabaseUtil {
             rs = DatabaseUtil.execute(conn, sql);
             while(rs.next()) {
                 chapterList.add(new Chapter(
+                        rs.getString("id"),
                         rs.getString("name"),
                         rs.getString("greekName")
                 ));

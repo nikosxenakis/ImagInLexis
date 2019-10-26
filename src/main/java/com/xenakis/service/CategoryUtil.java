@@ -43,12 +43,36 @@ public class CategoryUtil extends DatabaseUtil {
         return category.getGreekName();
     }
 
-    public static List<Category> getCategoryList(){
+    public static List<Category> getCategoryList() {
         List<Category> categoryList = new ArrayList<>();
         Connection conn = DatabaseUtil.connect();
-        String sql = "SELECT * FROM category";
+        String sql = "SELECT * FROM categories";
         ResultSet rs;
 
+        try {
+            rs = DatabaseUtil.execute(conn, sql);
+            while(rs.next()) {
+                categoryList.add(new Category(
+                        rs.getString("chapterId"),
+                        rs.getString("greekName"),
+                        rs.getString("name")
+                ));
+            }
+        } catch (Exception e) {
+        }
+        DatabaseUtil.closeConnection(conn);
+        return categoryList;
+    }
+
+    public static List<Category> getCategoryList(String chapterName) {
+        List<Category> categoryList = new ArrayList<>();
+        Connection conn = DatabaseUtil.connect();
+        ResultSet rs;
+
+        String chapterId = ChapterUtil.getChapterId(chapterName);
+        String sql = "SELECT * FROM categories WHERE chapterId = '" + chapterId + "'";
+
+        logger.info("Get category list of chapter: " + chapterName);
         try {
             rs = DatabaseUtil.execute(conn, sql);
             while(rs.next()) {

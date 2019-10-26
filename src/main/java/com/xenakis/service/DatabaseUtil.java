@@ -3,6 +3,8 @@ package com.xenakis.service;
 import org.apache.log4j.Logger;
 import java.sql.*;
 
+//TODO decouple Database to different solution
+
 public abstract class DatabaseUtil {
 
     static final Logger logger = Logger.getLogger(DatabaseUtil.class);

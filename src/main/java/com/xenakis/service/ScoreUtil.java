@@ -62,7 +62,7 @@ public class ScoreUtil extends DatabaseUtil {
         return scoreList;
     }
 
-    public static List<Score> getScoreList(String chapterName, String categoryName){
+    public static List<Score> getScoreList(String chapterName, String categoryName) {
 
         List<Score> scoreList;
 
@@ -82,7 +82,7 @@ public class ScoreUtil extends DatabaseUtil {
     public static void insertScore(String username, String time, String date, int score, String chapter, String category) {
         String sql = "INSERT INTO scores(username, time, date, score, chapter, category) VALUES(?,?,?,?,?,?)";
         Connection conn = null;
-        try{
+        try {
             conn = DatabaseUtil.connect();
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, username);

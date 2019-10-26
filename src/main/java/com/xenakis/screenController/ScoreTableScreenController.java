@@ -5,7 +5,9 @@
 package com.xenakis.screenController;
 
 import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.model.Category;
 import com.xenakis.model.Chapter;
+import com.xenakis.service.CategoryUtil;
 import com.xenakis.service.ChapterUtil;
 import com.xenakis.service.ScoreUtil;
 import com.xenakis.model.Score;
@@ -140,6 +142,33 @@ public class ScoreTableScreenController extends ScreenController{
     		categoryOptions.getItems().addAll(category);
         }
     }
+//TODO add this
+
+//    private void renewComboBoxData(String chapterGreekName){
+//
+//        String chapterName;
+//        List<Category> categoryList;
+//
+//        if(chapterGreekName.equals("Όλα")) {
+//            categoryList = CategoryUtil.getCategoryList();
+//        }
+//        else {
+//            chapterName = ChapterUtil.getChapterNameFromGreekName(chapterGreekName);
+//            categoryList = CategoryUtil.getCategoryList(chapterName);
+//        }
+//
+//        scoreTable.getItems().clear();
+//
+//        categoryOptions.getItems().clear();
+//        categoryOptions.getItems().add("Όλα");
+//
+//        for(Category category: categoryList){
+//            categoryOptions.getItems().add(category.getGreekName());
+//        }
+//
+//        categoryOptions.getSelectionModel().select(0);
+//
+//    }
 
     // TODO It is not working
     private void renewScoreInfo() {
