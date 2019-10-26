@@ -23,33 +23,43 @@
       "path": "fxml/ChooseLabelFromSoundScreen.fxml"
     }
   ],
+
   "mainScreens": [
     {
-      "name": "AboutUsMainScreen"
+      "name": "AboutUsMainScreen",
+      "path": "fxml/AboutUsMainScreen.fxml"
     },
     {
-      "name": "ScoreTableScreen"
+      "name": "ScoreTableScreen",
+      "path": "fxml/ScoreTableScreen.fxml"
     },
     {
-      "name": "RecognitionChapterScreen"
+      "name": "RecognitionChapterScreen",
+      "path": "fxml/RecognitionChapterScreen.fxml"
     },
     {
-      "name": "KatonomasiaChapterScreen"
+      "name": "KatonomasiaChapterScreen",
+      "path": "fxml/KatonomasiaChapterScreen.fxml"
     },
     {
-      "name": "CombinationalChapterScreen"
+      "name": "CombinationalChapterScreen",
+      "path": "fxml/CombinationalChapterScreen.fxml"
     },
     {
-      "name": "MainScreen"
+      "name": "MainScreen",
+      "path": "fxml/MainScreen.fxml"
     },
     {
-      "name": "PreTestScreen"
+      "name": "PreTestScreen",
+      "path": "fxml/PreTestScreen.fxml"
     },
     {
-      "name": "PostTestScreen"
+      "name": "PostTestScreen",
+      "path": "fxml/PostTestScreen.fxml"
     },
     {
-      "name": "WhatIsThisMainScreen"
+      "name": "WhatIsThisMainScreen",
+      "path": "fxml/WhatIsThisMainScreen.fxml"
     }
   ]
 }

@@ -13,26 +13,26 @@ public class ImagInLexisParser {
 	private static JSONObject screensJsonObject;
 
 	//chapterName -> chapterTotalQuestions
-	private static final HashMap<String,Integer> chapterTotalQuestions = new HashMap<>();
+	private static final HashMap<String, Integer> chapterTotalQuestions = new HashMap<>();
 	
 	//categoryName -> chapterTotalQuestions
-	private static final HashMap<String,Integer> categoryTotalQuestions = new HashMap<>();
+	private static final HashMap<String, Integer> categoryTotalQuestions = new HashMap<>();
 
 	//chapterName -> categoryName List
-	private static final HashMap<String,List<String>> chaptersCategoryList = new HashMap<>();
+	private static final HashMap<String, List<String>> chaptersCategoryList = new HashMap<>();
 	
 	//categoryName -> screenId List
-	private static final HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
+	private static final HashMap<String, List<String>> categoriesScreenIdList = new HashMap<>();
 	
-	private static final HashMap<String,String> categoryNames = new HashMap<>();
+	private static final HashMap<String, String> categoryNames = new HashMap<>();
 
-	public static void initialize(){
+	public static void initialize() {
 
 		dataJsonObject = JsonParser.loadObject("json/data.json");
 		screensJsonObject = JsonParser.loadObject("json/screens.json");
 
-		parseQuestions();
 		parseMainScreens();
+		parseQuestions();
 		parseCategoryNames();
 	}
 
@@ -170,7 +170,9 @@ public class ImagInLexisParser {
     	for (Object mainScreen : mainScreens){
     		JSONObject s = (JSONObject) mainScreen;
     		String screenId = (String) s.get("name");
-        	ResourcePathsHolder.addResourcePaths(screenId, "fxml/" +screenId+".fxml");
+			String path = (String) s.get("path");
+			ResourcePathsHolder.addResourcePaths(screenId, path);
+
             ImagInLexis.mainContainer.loadScreen(screenId, null);
         }
 	}
