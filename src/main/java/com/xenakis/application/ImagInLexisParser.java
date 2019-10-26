@@ -4,7 +4,6 @@ import com.xenakis.ImagInLexis;
 import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -26,6 +25,16 @@ public class ImagInLexisParser {
 	private static final HashMap<String,List<String>> categoriesScreenIdList = new HashMap<>();
 	
 	private static final HashMap<String,String> categoryNames = new HashMap<>();
+
+	public static void initialize(){
+
+		dataJsonObject = JsonParser.loadObject("json/data.json");
+		screensJsonObject = JsonParser.loadObject("json/screens.json");
+
+		parseQuestions();
+		parseMainScreens();
+		parseCategoryNames();
+	}
 
 	private static void parseCategoryNames(){
 	    JSONArray questions = (JSONArray) dataJsonObject.get("questions");
@@ -70,31 +79,7 @@ public class ImagInLexisParser {
     	}
     	
     	return categoryList;
-    }    
-
-	public static void initialize(){
-
-		dataJsonObject = JsonParser.loadObject("json/data.json");
-
-		screensJsonObject = JsonParser.loadObject("json/screens.json");
-
-//        parseSounds();
-		parseQuestions();
-		parseMainScreens();
-        parseCategoryNames();
-	}
-
-//	private static void parseSounds(){
-//		JSONObject soundsJsonObject = JsonParser.loadObject("json/sounds.json");
-//		JSONArray sounds = (JSONArray) soundsJsonObject.get("sounds");
-//
-//        for (Object c : sounds){
-//        	JSONObject c1 = (JSONObject) c;
-//        	String soundId = (String)(c1.get("id"));
-//        	String soundPath = (String)(c1.get("path"));
-//        	SoundHolder.addSound(soundId, soundPath);
-//        }
-//	}
+    }
 
 	private static void parseQuestion(Object question, String chapterName, String category, String categoryName){
         
@@ -180,13 +165,12 @@ public class ImagInLexisParser {
 
 	private static void parseMainScreens(){
 
-		JSONArray mainScreens = (JSONArray) dataJsonObject.get("mainScreens");
+		JSONArray mainScreens = (JSONArray) screensJsonObject.get("mainScreens");
         
     	for (Object mainScreen : mainScreens){
     		JSONObject s = (JSONObject) mainScreen;
-    		String screenId = (String) s.get("screenId");
+    		String screenId = (String) s.get("name");
         	ResourcePathsHolder.addResourcePaths(screenId, "fxml/" +screenId+".fxml");
-
             ImagInLexis.mainContainer.loadScreen(screenId, null);
         }
 	}

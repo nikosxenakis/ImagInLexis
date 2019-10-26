@@ -22,5 +22,34 @@
       "type": "chooseLabelFromSound",
       "path": "fxml/ChooseLabelFromSoundScreen.fxml"
     }
+  ],
+  "mainScreens": [
+    {
+      "name": "AboutUsMainScreen"
+    },
+    {
+      "name": "ScoreTableScreen"
+    },
+    {
+      "name": "RecognitionChapterScreen"
+    },
+    {
+      "name": "KatonomasiaChapterScreen"
+    },
+    {
+      "name": "CombinationalChapterScreen"
+    },
+    {
+      "name": "MainScreen"
+    },
+    {
+      "name": "PreTestScreen"
+    },
+    {
+      "name": "PostTestScreen"
+    },
+    {
+      "name": "WhatIsThisMainScreen"
+    }
   ]
 }

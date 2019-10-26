@@ -1,33 +1,4 @@
 {
-	"mainScreens": [
-		{
-			"screenId": "AboutUsMainScreen"
-		},
-		{
-			"screenId": "ScoreTableScreen"
-		},
-		{
-			"screenId": "RecognitionChapterScreen"
-		},
-		{
-			"screenId": "KatonomasiaChapterScreen"
-		},
-		{
-			"screenId": "CombinationalChapterScreen"
-		},
-		{
-			"screenId": "MainScreen"
-		},
-		{
-			"screenId": "PreTestScreen"
-		},
-		{
-			"screenId": "PostTestScreen"
-		},
-		{
-			"screenId": "WhatIsThisMainScreen"
-		}
-	],
 	"questions": [
 		{
 			"chapter": "recognition",
