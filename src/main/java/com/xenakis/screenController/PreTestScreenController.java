@@ -9,7 +9,6 @@ import com.xenakis.service.SoundUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -66,7 +65,7 @@ public class PreTestScreenController extends ScreenController{
     	infoPane.setMaxWidth(500);
     }
     
-    public void startTest(MouseEvent e){
+    public void startTest(){
     	this.testUtil.startTest();
     }
 }

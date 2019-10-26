@@ -8,8 +8,6 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.beans.property.DoubleProperty;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -57,7 +55,7 @@ public class ScreenPane extends StackPane {
     }
     //Loads the com.xenakis.fxml file, add the screen to the screens collection and
     //finally injects the screenPane to the controller.
-    public boolean loadScreen(String screenId, TestUtil testUtil){
+    public void loadScreen(String screenId, TestUtil testUtil){
         try {
         	String resource = ResourcePathsHolder.getResourcePaths(screenId);			
 
@@ -76,12 +74,9 @@ public class ScreenPane extends StackPane {
     			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
 				((QuestionScreenController)screenController).setData(screenData, testUtil);
             }
- 
-            return true;
-            
+
         } catch(Exception e){
 			logger.error(e.getMessage());
-            return false;
         }
     }
     
@@ -90,7 +85,7 @@ public class ScreenPane extends StackPane {
     //one screen the new screen is been added second, and then the current screen is removed.
     // If there isn't any screen being displayed, the new screen is just added to the root.
     
-    public boolean setScreen(final String screenId){
+    public void setScreen(final String screenId){
 
     	if (screens.get(screenId) != null) {   //screen loaded
     		final DoubleProperty opacity = opacityProperty();
@@ -120,12 +115,10 @@ public class ScreenPane extends StackPane {
     			);
     			fadeIn.play();
     		}
-    	return true;
-	    }
+		}
     	else {
 			logger.error("setScreen with screenId = " + screenId + " failed");
-    		return false;
-	    }
+		}
     }
     
     //This method will remove the screen with the given name from the collection of screens

@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -129,7 +128,7 @@ public class MainScreenController extends ScreenController{
     }
 
 //    @FXML
-    public void inputChanged(KeyEvent event) {
+    public void inputChanged() {
         System.out.println(username.getText());
         ImagInLexis.setUserName(username.getText());
     }

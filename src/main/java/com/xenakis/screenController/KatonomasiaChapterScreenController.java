@@ -49,7 +49,7 @@ public class KatonomasiaChapterScreenController extends ScreenController{
     	homeImage.setStyle(null);
     }
     
-    public void homeIconClicked(MouseEvent e){
+    public void homeIconClicked(){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
     

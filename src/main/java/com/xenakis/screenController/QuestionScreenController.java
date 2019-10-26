@@ -61,7 +61,7 @@ public abstract class QuestionScreenController extends ScreenController {
     private boolean isSelection;
     private final HashSet<Integer> answers = new HashSet<>();
 
-    protected QuestionScreenController() {
+    QuestionScreenController() {
     	super();
 		isSelection = false;
 	}

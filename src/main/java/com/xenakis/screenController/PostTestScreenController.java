@@ -10,7 +10,6 @@ import com.xenakis.service.ImageUtil;
 import com.xenakis.application.TestUtil;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -81,7 +80,7 @@ public class PostTestScreenController extends ScreenController{
 
     }
     
-    public void endTest(MouseEvent e){
+    public void endTest(){
     	SoundUtil.playSound("endProgramSound");
     	ImagInLexis.mainContainer.setScreen(testUtil.getMenuScreenId());
     }

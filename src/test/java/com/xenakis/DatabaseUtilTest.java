@@ -28,10 +28,10 @@ class DatabaseUtilTest {
 //        assertEquals(l1.size(), l2.size());
     }
 
-    @Test
-    void testDBImages() {
+//    @Test
+//    void testDBImages() {
 //        String path = ImageUtil.getImagePath("logo");
 //        assertEquals(path, "images/logo/imagInLexisLogo.png");
-    }
+//    }
 
 }
