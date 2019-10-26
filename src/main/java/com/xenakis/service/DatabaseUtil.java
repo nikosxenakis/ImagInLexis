@@ -39,4 +39,15 @@ public abstract class DatabaseUtil {
         }
     }
 
+    static ResultSet execute(Connection conn, String sql) {
+        PreparedStatement statement  = null;
+        ResultSet rs = null;
+        try {
+            statement = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rs;
+    }
 }

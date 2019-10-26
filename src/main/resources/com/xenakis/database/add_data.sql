@@ -1,7 +1,3 @@
-INSERT INTO chapters VALUES(1,'Αναγνώριση');
-INSERT INTO chapters VALUES(2,'Κατονομασία');
-INSERT INTO chapters VALUES(3,'Συσχετιζόμενες Έννοιες');
-
 INSERT INTO users VALUES(1,'Stelios',0);
 
 INSERT INTO images VALUES(1,'logo','images/logo/imagInLexisLogo.png');

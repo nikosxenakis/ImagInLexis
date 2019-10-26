@@ -33,14 +33,14 @@ public class ImagInLexisParser {
 		parseQuestions();
 	}
 	
-    public static List<String> getChapterList(){
+    private static List<String> getChapterList(){
     	List<String> chapterList = new ArrayList<>();
-    	
+
     	for (Entry<String, List<String>> entry : chaptersCategoryList.entrySet()) {
     	    String key = entry.getKey();
     	    chapterList.add(key);
     	}
-    	
+
     	return chapterList;
     }
 

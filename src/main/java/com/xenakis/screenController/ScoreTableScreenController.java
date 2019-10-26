@@ -5,6 +5,8 @@
 package com.xenakis.screenController;
 
 import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.model.Chapter;
+import com.xenakis.service.ChapterUtil;
 import com.xenakis.service.ScoreUtil;
 import com.xenakis.model.Score;
 import com.xenakis.ImagInLexis;
@@ -48,26 +50,19 @@ public class ScoreTableScreenController extends ScreenController{
     public void init(){
 
         chapterOptions.getItems().clear();
+        chapterOptions.getItems().add("Όλα");
 
-    	if(chapterOptions.getItems().isEmpty()){
-        	List<String> chapterList = ImagInLexisParser.getChapterList();
+        List<Chapter> chapterList = ChapterUtil.getChapterList();
 
-            chapterOptions.getItems().addAll("Όλα");
-            for(String chapter: chapterList){
-            	chapterOptions.getItems().addAll(chapter);
-            }    		
-    	}
-        
-    	chapterOptions.getSelectionModel().select(0);
+        for(Chapter chapter : chapterList) {
+            chapterOptions.getItems().add(chapter.getGreekName());
+        }
+
+        chapterOptions.getSelectionModel().select(0);
 
     	categoryOptions.getItems().addAll("Όλα");
 
     	renewComboBoxData("Όλα");
-
-//        final TableColumn<Score, ?> nameCol = scoreTable.getVisibleLeafColumn(0);
-//        final TableColumn<Score, ?> scoreCol = scoreTable.getVisibleLeafColumn(1);
-//        final TableColumn<Score, ?> dateCol = scoreTable.getVisibleLeafColumn(2);
-//        final TableColumn<Score, ?> timeCol = scoreTable.getVisibleLeafColumn(3);
 
         TableColumn<Score, String> nameCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(0);
 		TableColumn<Score, String> scoreCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(1);

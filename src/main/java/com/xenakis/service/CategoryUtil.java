@@ -4,6 +4,8 @@ import com.xenakis.model.Category;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CategoryUtil extends DatabaseUtil {
 
@@ -39,5 +41,26 @@ public class CategoryUtil extends DatabaseUtil {
             return "-";
         }
         return category.getGreekName();
+    }
+
+    public static List<Category> getCategoryList(){
+        List<Category> categoryList = new ArrayList<>();
+        Connection conn = DatabaseUtil.connect();
+        String sql = "SELECT * FROM category";
+        ResultSet rs;
+
+        try {
+            rs = DatabaseUtil.execute(conn, sql);
+            while(rs.next()) {
+                categoryList.add(new Category(
+                        rs.getString("chapterId"),
+                        rs.getString("greekName"),
+                        rs.getString("name")
+                ));
+            }
+        } catch (Exception e) {
+        }
+        DatabaseUtil.closeConnection(conn);
+        return categoryList;
     }
 }

@@ -17,12 +17,10 @@ public class ImageUtil extends DatabaseUtil {
 		ResultSet rs;
 		String sql = "SELECT * FROM images WHERE name='" + name + "'";
 		String path;
-
 		Connection conn = DatabaseUtil.connect();
 
 		try {
-			PreparedStatement statement  = conn.prepareStatement(sql);
-			rs = statement.executeQuery();
+			rs = DatabaseUtil.execute(conn, sql);
 			rs.next();
 			path = rs.getString("path");
 		} catch (SQLException e) {
