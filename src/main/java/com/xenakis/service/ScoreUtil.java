@@ -38,36 +38,26 @@ public class ScoreUtil extends DatabaseUtil {
         return scoreList;
     }
 
-    private static List<Score> selectScores() {
-        String sql = "SELECT * FROM scores";
-        return selectScoresSql(sql);
-    }
-
-    private static List<Score> selectScores(int chapterId) {
-        String sql = "SELECT * FROM scores WHERE chapterId = " + chapterId;
-        return selectScoresSql(sql);
-    }
-
-    private static List<Score> selectScores(int chapterId, int categoryId) {
-        String sql = "SELECT * FROM scores WHERE chapterId = " + chapterId + " AND categoryId = " + categoryId;
-        return selectScoresSql(sql);
-    }
-
     public static List<Score> getScoreList(int chapterId, int categoryId) {
+        String sql;
 
-        List<Score> scoreList;
-
-        if(chapterId == 0) {
-            scoreList = ScoreUtil.selectScores();
-        }
-        else if(categoryId == 0) {
-            scoreList = ScoreUtil.selectScores(chapterId);
+        if(categoryId != 0) {
+            if(chapterId != 0) {
+                sql = "SELECT * FROM scores WHERE chapterId = " + chapterId + " AND categoryId = " + categoryId;
+            }
+            else {
+                sql = "SELECT * FROM scores WHERE categoryId = " + categoryId;
+            }
         }
         else {
-            scoreList = ScoreUtil.selectScores(chapterId, categoryId);
+            if(chapterId != 0) {
+                sql = "SELECT * FROM scores WHERE chapterId = " + chapterId;
+            }
+            else {
+                sql = "SELECT * FROM scores";
+            }
         }
-
-        return scoreList;
+        return selectScoresSql(sql);
     }
 
     public static void insertScore(String username, String time, String date, int score, int chapterId, int categoryId) {

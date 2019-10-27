@@ -18,9 +18,6 @@ public class ImagInLexisParser {
 	//categoryName -> chapterTotalQuestions
 	private static final HashMap<String, Integer> categoryTotalQuestions = new HashMap<>();
 
-	//chapterName -> categoryName List
-	private static final HashMap<String, List<String>> chaptersCategoryList = new HashMap<>();
-	
 	//categoryName -> screenId List
 	private static final HashMap<String, List<String>> categoriesScreenIdList = new HashMap<>();
 
@@ -81,8 +78,6 @@ public class ImagInLexisParser {
     	String categoryName = (String) tmpCategory.get("categoryName");
 		JSONArray categoryList = (JSONArray) tmpCategory.get("categoryList");
 
-		addToChaptersCategoryList(chapterName, categoryName);
-
 		categoryTotalQuestions.put(category, categoryList.size());
 
     	for (Object question : categoryList){
@@ -119,8 +114,6 @@ public class ImagInLexisParser {
 		return categoryTotalQuestions.get(category);
 	}
 
-
-
 	private static void parseMainScreens(){
 
 		JSONArray mainScreens = (JSONArray) screensJsonObject.get("mainScreens");
@@ -135,37 +128,13 @@ public class ImagInLexisParser {
         }
 	}
 
-
-//	TODO must remove bellow in later release
-
 	public static List<String> getCategoriesScreenIdList(String category){
 		return categoriesScreenIdList.get(category);
-	}
-	
-	private static void addToChaptersCategoryList(String chapterName, String categoryName){
-		List<String> list = chaptersCategoryList.computeIfAbsent(chapterName, k -> new ArrayList<>());
-		list.add(categoryName);
 	}
 
 	private static void addToCategoriesScreenIdList(String category, String screenId){
 		List<String> list = categoriesScreenIdList.computeIfAbsent(category, k -> new ArrayList<>());
 		list.add(screenId);
-	}
-
-	public static List<String> getCategoryList(String chapterName) {
-		List<String> categoryList = new ArrayList<>();
-
-		for (Entry<String, List<String>> entry : ImagInLexisParser.chaptersCategoryList.entrySet()) {
-			String key = entry.getKey();
-
-			if(chapterName.equals(key) || chapterName.equals("Όλα")){
-				List<String> value = entry.getValue();
-
-				categoryList.addAll(value);
-			}
-		}
-
-		return categoryList;
 	}
 
 }
