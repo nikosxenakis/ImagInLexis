@@ -33,7 +33,6 @@ public class ImagInLexis extends Application {
 
         ArrayList<ScreenData>  screenDataArray = ScreenUtil.getScreens(1);
         for(ScreenData screenData: screenDataArray) {
-            System.out.println(screenData.getPath());
             ResourcePathsHolder.addResourcePaths(screenData.getName(), screenData.getPath());
             ImagInLexis.mainContainer.loadScreen(screenData.getName(), null);
         }
@@ -52,7 +51,6 @@ public class ImagInLexis extends Application {
     @Override
     public void stop(){
         System.out.println("Stage is closing");
-        // Save file
     }
 
     public static void main(String[] args) {

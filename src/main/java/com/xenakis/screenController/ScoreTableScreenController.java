@@ -143,12 +143,14 @@ public class ScoreTableScreenController extends ScreenController{
             categoryId = category.getId();
         }
 
-        System.out.println("Renew Scores with : " + chapterId + " " + categoryId);
+        System.out.println();
     	List<Score> scoreList = ScoreUtil.getScoreList(chapterId, categoryId);
 
         scoreTable.getItems().clear();
         for(Score score : scoreList){
             scoreTable.getItems().add(score);
         }
+
+        logger.info("Renew Scores: chapterId = " + chapterId + ", categoryId = " + categoryId);
     }
 }

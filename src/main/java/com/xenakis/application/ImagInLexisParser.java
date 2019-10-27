@@ -1,11 +1,9 @@
 package com.xenakis.application;
 
-import com.xenakis.ImagInLexis;
 import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import java.util.*;
-import java.util.Map.Entry;
 
 public class ImagInLexisParser {
 
@@ -63,6 +61,7 @@ public class ImagInLexisParser {
 			}
 
 		ResourcePathsHolder.addResourcePaths(screenId, screenPath);
+
 		QuestionFactory.createQuestion(screenType,questionObj,chapterName,categoryName,answersSet);
 
 	}
