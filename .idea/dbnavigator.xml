@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="0a3ca45c-9bcc-4262-8f2a-e58e262dcc0a">
-        <schema name="main" object-types="index, view, table" />
+        <schema name="main" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>

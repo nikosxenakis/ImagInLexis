@@ -21,9 +21,10 @@ public class CategoryUtil extends DatabaseUtil {
             rs = statement.executeQuery();
             rs.next();
             category = new Category(
-                    rs.getString("chapterId"),
-                    rs.getString("greekName"),
-                    rs.getString("name")
+                    rs.getInt("id"),
+                    rs.getInt("chapterId"),
+                    rs.getString("name"),
+                    rs.getString("greekName")
             );
         } catch (Exception e) {
             throw new Exception("Category with name = " + name + " was not found");
@@ -53,9 +54,10 @@ public class CategoryUtil extends DatabaseUtil {
             rs = DatabaseUtil.execute(conn, sql);
             while(rs.next()) {
                 categoryList.add(new Category(
-                        rs.getString("chapterId"),
-                        rs.getString("greekName"),
-                        rs.getString("name")
+                        rs.getInt("id"),
+                        rs.getInt("chapterId"),
+                        rs.getString("name"),
+                        rs.getString("greekName")
                 ));
             }
         } catch (Exception e) {
@@ -64,27 +66,51 @@ public class CategoryUtil extends DatabaseUtil {
         return categoryList;
     }
 
-    public static List<Category> getCategoryList(String chapterName) {
+    public static List<Category> getCategoryList(int chapterId) {
         List<Category> categoryList = new ArrayList<>();
         Connection conn = DatabaseUtil.connect();
         ResultSet rs;
 
-        String chapterId = ChapterUtil.getChapterId(chapterName);
         String sql = "SELECT * FROM categories WHERE chapterId = '" + chapterId + "'";
 
-        logger.info("Get category list of chapter: " + chapterName);
+        logger.info("Get category list of chapterId : " + chapterId);
         try {
             rs = DatabaseUtil.execute(conn, sql);
             while(rs.next()) {
                 categoryList.add(new Category(
-                        rs.getString("chapterId"),
-                        rs.getString("greekName"),
-                        rs.getString("name")
+                    rs.getInt("id"),
+                    rs.getInt("chapterId"),
+                    rs.getString("name"),
+                    rs.getString("greekName")
                 ));
             }
         } catch (Exception e) {
         }
         DatabaseUtil.closeConnection(conn);
         return categoryList;
+    }
+
+    public static Category getCategoryFromGreekName(String categoryGreekName) {
+        ResultSet rs;
+        String sql = "SELECT * FROM categories WHERE greekName='" + categoryGreekName + "'";
+        Category category = null;
+
+        Connection conn = DatabaseUtil.connect();
+        logger.info("Get category with greekName: " + categoryGreekName);
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+            rs.next();
+            category = new Category(
+                    rs.getInt("id"),
+                    rs.getInt("chapterId"),
+                    rs.getString("name"),
+                    rs.getString("greekName")
+            );
+        } catch (Exception e) {
+        }
+        DatabaseUtil.closeConnection(conn);
+        return category;
     }
 }

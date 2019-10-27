@@ -1,6 +1,8 @@
 package com.xenakis.application;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.model.Category;
+import com.xenakis.model.Chapter;
 import com.xenakis.model.TestData;
 import com.xenakis.screenController.PostTestScreenController;
 import com.xenakis.screenController.PreTestScreenController;
@@ -9,6 +11,8 @@ import com.xenakis.screenController.ScreenController;
 import com.xenakis.screenData.ChooseInImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
+import com.xenakis.service.CategoryUtil;
+import com.xenakis.service.ChapterUtil;
 import com.xenakis.service.ScoreUtil;
 import com.xenakis.service.SoundUtil;
 
@@ -158,10 +162,15 @@ public class TestUtil {
 		Date time = new Date();
 		String strDate = dateFormat.format(date);
 		String strTime = timeFormat.format(time);
+		Chapter chapter = ChapterUtil.getChapterFromGreekName(this.testData.getChapterName());
+		int chapterId = chapter.getId();
+		Category category = CategoryUtil.getCategoryFromGreekName(this.testData.getCategoryName());
+		int categoryId = category.getId();
+
 		System.out.println("date= "+strDate);
 		System.out.println("time= "+strTime);
 
-		ScoreUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, this.testData.getChapterName(), this.testData.getCategoryName());
+		ScoreUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, chapterId, categoryId);
 
 		testData.setScoreNum(score);
 

@@ -58,6 +58,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </ComboBox>
+                        <Button fx:id="refreshButton" mnemonicParsing="false" onMouseClicked="#refreshScores" text="Αναζήτηση" />
                         <Button fx:id="removeAllButton" mnemonicParsing="false" onMouseClicked="#removeAll" text="Καθαρισμός Όλων" />
                      </children>
                   </HBox>

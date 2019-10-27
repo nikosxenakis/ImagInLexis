@@ -1,14 +1,10 @@
-CREATE TABLE IF NOT EXISTS "scores" (
+CREATE TABLE IF NOT EXISTS "sounds" (
 	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-	"username"	TEXT,
-	"time"	TEXT,
-	"date"	TEXT,
-	"score"	INTEGER,
-	"chapter"	TEXT,
-	"category"	TEXT
+	"name"	TEXT NOT NULL,
+	"path"	TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS "sounds" (
+CREATE TABLE IF NOT EXISTS "images" (
 	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
 	"name"	TEXT NOT NULL,
 	"path"	TEXT NOT NULL
@@ -26,6 +22,18 @@ CREATE TABLE IF NOT EXISTS "categories" (
 	"greekName"	TEXT NOT NULL,
 	"name"	TEXT,
 	FOREIGN KEY("chapterId") REFERENCES "categories"
+);
+
+CREATE TABLE IF NOT EXISTS "scores" (
+	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+	"username"	TEXT,
+	"time"	TEXT,
+	"date"	TEXT,
+	"score"	INTEGER,
+	"chapterId"	INTEGER,
+	"categoryId" INTEGER,
+	FOREIGN KEY("chapterId") REFERENCES "chapters"("id"),
+	FOREIGN KEY("categoryId") REFERENCES "categories"("id")
 );
 
 CREATE TABLE IF NOT EXISTS "questions" (
@@ -50,10 +58,4 @@ CREATE TABLE IF NOT EXISTS "users" (
 	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
 	"name"	TEXT NOT NULL,
 	"active"	INTEGER NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS "images" (
-	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-	"name"	TEXT NOT NULL,
-	"path"	TEXT NOT NULL
 );

@@ -21,7 +21,7 @@ public class ChapterUtil extends DatabaseUtil {
             rs = statement.executeQuery();
             rs.next();
             chapter = new Chapter(
-                    rs.getString("id"),
+                    rs.getInt("id"),
                     rs.getString("name"),
                     rs.getString("greekName")
             );
@@ -32,15 +32,38 @@ public class ChapterUtil extends DatabaseUtil {
         return chapter;
     }
 
-    public static String getChapterId(String name) {
+    public static int getChapterId(String name) {
         Chapter chapter;
         try {
             chapter = ChapterUtil.getChapter(name);
         }
         catch (Exception e) {
-            return "-";
+            return 0;
         }
         return chapter.getId();
+    }
+
+    public static Chapter getChapterFromGreekName(String chapterGreekName) {
+        ResultSet rs;
+        String sql = "SELECT * FROM chapters WHERE greekName='" + chapterGreekName + "'";
+        Chapter chapter = null;
+
+        Connection conn = DatabaseUtil.connect();
+        logger.info("Get chapter with greekName: " + chapterGreekName);
+
+        try {
+            PreparedStatement statement  = conn.prepareStatement(sql);
+            rs = statement.executeQuery();
+            rs.next();
+            chapter = new Chapter(
+                rs.getInt("id"),
+                rs.getString("name"),
+                rs.getString("greekName")
+            );
+        } catch (Exception e) {
+        }
+        DatabaseUtil.closeConnection(conn);
+        return chapter;
     }
 
     public static String getChapterNameFromGreekName(String chapterGreekName) {
@@ -83,7 +106,7 @@ public class ChapterUtil extends DatabaseUtil {
             rs = DatabaseUtil.execute(conn, sql);
             while(rs.next()) {
                 chapterList.add(new Chapter(
-                        rs.getString("id"),
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("greekName")
                 ));
