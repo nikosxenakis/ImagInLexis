@@ -1,12 +1,17 @@
 package com.xenakis;
 
 import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.application.ResourcePathsHolder;
 import com.xenakis.application.ScreenPane;
+import com.xenakis.model.ScreenData;
+import com.xenakis.service.ScreenUtil;
 import com.xenakis.service.UserUtil;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.log4j.BasicConfigurator;
+
+import java.util.ArrayList;
 
 public class ImagInLexis extends Application {
 
@@ -25,6 +30,13 @@ public class ImagInLexis extends Application {
         primaryStage.setMaxHeight(750);
 
         mainContainer = new ScreenPane();
+
+        ArrayList<ScreenData>  screenDataArray = ScreenUtil.getScreens(1);
+        for(ScreenData screenData: screenDataArray) {
+            System.out.println(screenData.getPath());
+            ResourcePathsHolder.addResourcePaths(screenData.getName(), screenData.getPath());
+            ImagInLexis.mainContainer.loadScreen(screenData.getName(), null);
+        }
 
         ImagInLexisParser.initialize();
 

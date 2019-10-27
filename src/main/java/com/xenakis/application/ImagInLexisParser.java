@@ -26,7 +26,6 @@ public class ImagInLexisParser {
 		dataJsonObject = JsonParser.loadObject("json/data.json");
 		screensJsonObject = JsonParser.loadObject("json/screens.json");
 
-		parseMainScreens();
 		parseQuestions();
 	}
 
@@ -112,20 +111,6 @@ public class ImagInLexisParser {
 
 	public static int getCategoryTotalQuestions(String category){
 		return categoryTotalQuestions.get(category);
-	}
-
-	private static void parseMainScreens(){
-
-		JSONArray mainScreens = (JSONArray) screensJsonObject.get("mainScreens");
-        
-    	for (Object mainScreen : mainScreens){
-    		JSONObject s = (JSONObject) mainScreen;
-    		String screenId = (String) s.get("name");
-			String path = (String) s.get("path");
-			ResourcePathsHolder.addResourcePaths(screenId, path);
-
-            ImagInLexis.mainContainer.loadScreen(screenId, null);
-        }
 	}
 
 	public static List<String> getCategoriesScreenIdList(String category){

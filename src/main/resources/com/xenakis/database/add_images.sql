@@ -1,5 +1,3 @@
-INSERT INTO users VALUES(1,'Stelios',0);
-
 INSERT INTO images VALUES(1,'logo','images/logo/imagInLexisLogo.png');
 INSERT INTO images VALUES(2,'background','images/logo/background.png');
 INSERT INTO images VALUES(3,'mainMenu','images/logo/mainMenu.png');

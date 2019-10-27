@@ -22,44 +22,5 @@
       "type": "chooseLabelFromSound",
       "path": "fxml/ChooseLabelFromSoundScreen.fxml"
     }
-  ],
-
-  "mainScreens": [
-    {
-      "name": "AboutUsMainScreen",
-      "path": "fxml/AboutUsMainScreen.fxml"
-    },
-    {
-      "name": "ScoreTableScreen",
-      "path": "fxml/ScoreTableScreen.fxml"
-    },
-    {
-      "name": "RecognitionChapterScreen",
-      "path": "fxml/RecognitionChapterScreen.fxml"
-    },
-    {
-      "name": "KatonomasiaChapterScreen",
-      "path": "fxml/KatonomasiaChapterScreen.fxml"
-    },
-    {
-      "name": "CombinationalChapterScreen",
-      "path": "fxml/CombinationalChapterScreen.fxml"
-    },
-    {
-      "name": "MainScreen",
-      "path": "fxml/MainScreen.fxml"
-    },
-    {
-      "name": "PreTestScreen",
-      "path": "fxml/PreTestScreen.fxml"
-    },
-    {
-      "name": "PostTestScreen",
-      "path": "fxml/PostTestScreen.fxml"
-    },
-    {
-      "name": "WhatIsThisMainScreen",
-      "path": "fxml/WhatIsThisMainScreen.fxml"
-    }
   ]
 }
