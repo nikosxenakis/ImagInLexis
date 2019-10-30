@@ -30,7 +30,7 @@
                         <Shadow color="#29e2e5f7" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaDefinition" fill="#2721ffb5" layoutX="553.0" layoutY="227.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="146.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
+                  <Ellipse fx:id="katonomasiaDefinition" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="553.0" layoutY="227.0" onMouseClicked="#start" radiusX="146.0" radiusY="59.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#660eff" />
                      </effect>
@@ -38,7 +38,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaSounds" fill="#2721ffb5" layoutX="346.0" layoutY="468.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
+                  <Ellipse fx:id="katonomasiaSounds" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="346.0" layoutY="468.0" onMouseClicked="#start" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -46,7 +46,7 @@
                         <Shadow color="#ff0808" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="katonomasiaCompleteSentence" fill="#2721ffb5" layoutX="766.0" layoutY="459.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="173.0" radiusY="61.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;" styleClass="chapter_ellipse">
+                  <Ellipse fx:id="katonomasiaCompleteSentence" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="766.0" layoutY="459.0" onMouseClicked="#start" radiusX="173.0" radiusY="61.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#79ff0a" />
                      </effect>

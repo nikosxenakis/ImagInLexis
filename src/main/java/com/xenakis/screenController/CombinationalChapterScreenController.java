@@ -53,30 +53,6 @@ public class CombinationalChapterScreenController extends ScreenController{
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
     
-    public void mouseOverCircle(MouseEvent e){
-    	
-    	Ellipse el = (Ellipse)e.getSource();
-    	
-    	if(el instanceof Ellipse){
-    		el.setStyle("-fx-opacity: 1");
-    	}
-    	else{
-        	System.err.println("error in mouseOverCircle in CombinationalChapterScreenController");
-    	}
-    }
-   
-    public void mouseOutCircle(MouseEvent e){
-    	
-    	Ellipse el = (Ellipse)e.getSource();
-    	
-    	if(el instanceof Ellipse){
-    		el.setStyle("-fx-opacity: 0.7");
-    	}
-    	else{
-        	System.err.println("error in mouseOutCircle in CombinationalChapterScreenController");
-    	}	
-    }
-    
     public void start(MouseEvent e){
 
     	Ellipse el = (Ellipse)e.getSource();

@@ -31,7 +31,7 @@
                         <Shadow color="#29e2e5f7" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalObject" fill="#2721ffb5" layoutX="549.0" layoutY="214.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="175.0" radiusY="68.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalObject" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="549.0" layoutY="214.0" onMouseClicked="#start" radiusX="175.0" radiusY="68.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#660eff" />
                      </effect>
@@ -39,7 +39,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalProfessions" fill="#2721ffb5" layoutX="820.0" layoutY="363.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="182.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                  <Ellipse fx:id="combinationalProfessions" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="820.0" layoutY="363.0" onMouseClicked="#start" radiusX="182.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#ffaa00" />
                      </effect>
@@ -47,7 +47,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalSequence" fill="#2721ffb5" layoutX="273.0" layoutY="362.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalSequence" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="273.0" layoutY="362.0" onMouseClicked="#start" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -55,7 +55,7 @@
                         <Shadow color="#ff0808" />
                      </effect>
                   </Ellipse>
-                  <Ellipse fx:id="combinationalAction" fill="#2721ffb5" layoutX="537.0" layoutY="534.0" onMouseClicked="#start" onMouseEntered="#mouseOverCircle" onMouseExited="#mouseOutCircle" radiusX="156.0" radiusY="55.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-opacity: 0.7;">
+                  <Ellipse fx:id="combinationalAction" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="537.0" layoutY="534.0" onMouseClicked="#start" radiusX="156.0" radiusY="55.0" stroke="TRANSPARENT" strokeType="INSIDE">
                      <effect>
                         <Shadow color="#79ff0a" />
                      </effect>

@@ -14,12 +14,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Ellipse;
 
 public class RecognitionChapterScreenController extends ScreenController{
-
-	@FXML 
-	private AnchorPane mainWindow;
-		
-    @FXML
-    private ImageView backgroundImage;
     
     @FXML
     private ImageView homeImage;
@@ -36,31 +30,7 @@ public class RecognitionChapterScreenController extends ScreenController{
     public void homeIconClicked(){
         ImagInLexis.mainContainer.setScreen("MainScreen");
     }
-    
-    public void mouseOverCircle(MouseEvent e){
-    	
-    	Ellipse el = (Ellipse)e.getSource();
-    	
-    	if(el instanceof Ellipse){
-    		el.setStyle("-fx-opacity: 1");
-    	}
-    	else{
-        	System.err.println("error in mouseOverCircle in RecognitionChapterScreenController");
-    	}
-    }
-   
-    public void mouseOutCircle(MouseEvent e){
-    	
-    	Ellipse el = (Ellipse)e.getSource();
-    	
-    	if(el instanceof Ellipse){
-    		el.setStyle("-fx-opacity: 0.7");
-    	}
-    	else{
-        	System.err.println("error in mouseOutCircle in RecognitionChapterScreenController");
-    	}	
-    }
-    
+
     public void start(MouseEvent e){
 
     	Ellipse el = (Ellipse)e.getSource();
