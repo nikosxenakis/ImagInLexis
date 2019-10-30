@@ -4,9 +4,9 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.service.ImageUtil;
-import com.xenakis.service.SoundUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -45,10 +45,10 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     
     private String soundId = null;
     
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in ChooseImageLinkScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
     	
     	if(!(screenData instanceof ChooseImageLinkScreenData)){
         	System.err.println("com.xenakis.screenData is not ChooseImageLinkScreenData");
@@ -57,16 +57,16 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	
     	ChooseImageLinkScreenData data = (ChooseImageLinkScreenData) screenData;
       	
-    	Image image = ImageUtil.getImage(data.getBasicImageId());
+    	Image image = ImageService.getImage(data.getBasicImageId());
     	basicImage.setImage(image);
     	
-    	image = ImageUtil.getImage(data.getImage1Id());
+    	image = ImageService.getImage(data.getImage1Id());
     	image1.setImage(image);
 
-    	image = ImageUtil.getImage(data.getImage2Id());
+    	image = ImageService.getImage(data.getImage2Id());
     	image2.setImage(image);
     	
-    	image = ImageUtil.getImage(data.getImage3Id());
+    	image = ImageService.getImage(data.getImage3Id());
     	image3.setImage(image);
     	
     	if(link1 == null || link2 == null || link3 == null){
@@ -75,7 +75,7 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	
     	soundId = data.getSoundId();
   
-    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageService.getImage(soundImage.getId()));
     }
     
     public void disableImages(){
@@ -183,6 +183,6 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     }
     
     public void soundIconClicked(){
-    	SoundUtil.playSound(soundId);
+		SoundService.playSound(soundId);
     }
 }

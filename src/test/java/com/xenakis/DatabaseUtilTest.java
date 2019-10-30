@@ -1,11 +1,5 @@
 package com.xenakis;
 
-import com.xenakis.service.ScoreUtil;
-import org.junit.jupiter.api.Test;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 class DatabaseUtilTest {
 
 //    @Test

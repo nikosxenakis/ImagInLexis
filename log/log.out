@@ -1,11 +1,11 @@
  INFO DatabaseUtil:48 - Active user: unknown user
- INFO ScreenPane:53 - addController: AboutUsMainScreen com.xenakis.screenController.AboutUsMainScreenController@5a853245
- INFO ScreenPane:53 - addController: ScoreTableScreen com.xenakis.screenController.ScoreTableScreenController@16c555bf
- INFO ScreenPane:53 - addController: RecognitionChapterScreen com.xenakis.screenController.RecognitionChapterScreenController@29d25a4c
- INFO ScreenPane:53 - addController: KatonomasiaChapterScreen com.xenakis.screenController.KatonomasiaChapterScreenController@3a430b3f
- INFO ScreenPane:53 - addController: CombinationalChapterScreen com.xenakis.screenController.CombinationalChapterScreenController@2f8b65ae
- INFO DatabaseUtil:44 - Play sound with name = endProgramSound
- INFO ScreenPane:53 - addController: MainScreen com.xenakis.screenController.MainScreenController@19230f1a
- INFO ScreenPane:53 - addController: PreTestScreen com.xenakis.screenController.PreTestScreenController@79386063
- INFO ScreenPane:53 - addController: PostTestScreen com.xenakis.screenController.PostTestScreenController@3d44877
- INFO ScreenPane:53 - addController: WhatIsThisMainScreen com.xenakis.screenController.WhatIsThisMainScreenController@3dde2959
+ INFO ScreenPane:54 - addController: AboutUsMainScreen com.xenakis.screenController.AboutUsMainScreenController@5a853245
+ INFO ScreenPane:54 - addController: ScoreTableScreen com.xenakis.screenController.ScoreTableScreenController@16c555bf
+ INFO ScreenPane:54 - addController: RecognitionChapterScreen com.xenakis.screenController.RecognitionChapterScreenController@29d25a4c
+ INFO ScreenPane:54 - addController: KatonomasiaChapterScreen com.xenakis.screenController.KatonomasiaChapterScreenController@3a430b3f
+ INFO ScreenPane:54 - addController: CombinationalChapterScreen com.xenakis.screenController.CombinationalChapterScreenController@2f8b65ae
+ INFO SoundService:26 - Play sound with name = endProgramSound
+ INFO ScreenPane:54 - addController: MainScreen com.xenakis.screenController.MainScreenController@19230f1a
+ INFO ScreenPane:54 - addController: PreTestScreen com.xenakis.screenController.PreTestScreenController@79386063
+ INFO ScreenPane:54 - addController: PostTestScreen com.xenakis.screenController.PostTestScreenController@3d44877
+ INFO ScreenPane:54 - addController: WhatIsThisMainScreen com.xenakis.screenController.WhatIsThisMainScreenController@3dde2959

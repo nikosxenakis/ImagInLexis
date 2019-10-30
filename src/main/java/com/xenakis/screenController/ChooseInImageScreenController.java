@@ -6,10 +6,10 @@ package com.xenakis.screenController;
 
 import java.util.ArrayList;
 
-import com.xenakis.service.ImageUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
 import com.xenakis.model.Circle;
-import com.xenakis.service.SoundUtil;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -35,10 +35,10 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     
     private String questionSoundId;
     
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in ChooseInImageScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
     	
     	if(!(screenData instanceof ChooseInImageScreenData)){
         	System.err.println("com.xenakis.screenData is not ChooseInImageScreenData");
@@ -50,12 +50,12 @@ public class ChooseInImageScreenController extends QuestionScreenController{
 
     	ChooseInImageScreenData data = (ChooseInImageScreenData) screenData;
     	    	  	    	
-    	Image imageJPG = ImageUtil.getImage(data.getImageId());
+    	Image imageJPG = ImageService.getImage(data.getImageId());
     	image.setImage(imageJPG);
 
     	circlesList = data.getCirclesList();
 
-    	questionSoundImage.setImage(ImageUtil.getImage("soundImage"));
+    	questionSoundImage.setImage(ImageService.getImage("soundImage"));
 
     	questionSoundId = data.getQuestionSoundId();
 
@@ -96,6 +96,6 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     }
 
     public void questionSoundIconClicked(){
-    	SoundUtil.playSound(this.questionSoundId);
+		SoundService.playSound(this.questionSoundId);
     }
 }

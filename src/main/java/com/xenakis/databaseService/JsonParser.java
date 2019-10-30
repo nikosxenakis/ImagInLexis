@@ -1,4 +1,4 @@
-package com.xenakis.service;
+package com.xenakis.databaseService;
 
 import com.xenakis.ImagInLexis;
 import org.json.simple.JSONObject;

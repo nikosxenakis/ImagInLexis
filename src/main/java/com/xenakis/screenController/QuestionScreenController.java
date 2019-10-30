@@ -2,8 +2,8 @@ package com.xenakis.screenController;
 
 import java.util.HashSet;
 
-import com.xenakis.service.ImageUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
@@ -57,7 +57,7 @@ public abstract class QuestionScreenController extends ScreenController {
     @FXML
     protected BorderPane mainPane;
     
-    private TestUtil testUtil;
+    private TestService testService;
     private boolean isSelection;
     private final HashSet<Integer> answers = new HashSet<>();
 
@@ -65,8 +65,8 @@ public abstract class QuestionScreenController extends ScreenController {
     	super();
 		isSelection = false;
 	}
-	private TestUtil getTestUtil(){
-		return testUtil;
+	private TestService getTestService(){
+		return testService;
 	}
 
 	private boolean getIsSelection(){
@@ -90,45 +90,45 @@ public abstract class QuestionScreenController extends ScreenController {
 		this.isSelection = true;
 	}
 	
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	//System.out.println("set Data in QuestionScreenController");
 
-    	this.testUtil = testUtil;
+    	this.testService = testService;
 
     	question.setText(screenData.getQuestion());
     	
-    	answeredQuestions.setText(String.valueOf(testUtil.getAnsweredQuestions()));
-    	totalQuestions.setText(String.valueOf(testUtil.getTotalQuestions()));
+    	answeredQuestions.setText(String.valueOf(testService.getAnsweredQuestions()));
+    	totalQuestions.setText(String.valueOf(testService.getTotalQuestions()));
     	chapterName.setText(screenData.getChapterName());
     	categoryName.setText(screenData.getCategoryName());
    
     	//System.out.println("loading image: "+testUtil.getChapter().toString()+"Image");
-    	Image image = ImageUtil.getImage(testUtil.getChapter()+"Image");
+    	Image image = ImageService.getImage(testService.getChapter()+"Image");
     	chapterImage.setImage(image);
 
     	//System.out.println("loading image: "+testUtil.getCategory()+"Image");
-    	image = ImageUtil.getImage(testUtil.getCategory()+"Image");
+    	image = ImageService.getImage(testService.getCategory()+"Image");
     	categoryImage.setImage(image);
 
-    	progressBar.setProgress((getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
+    	progressBar.setProgress((getTestService().getAnsweredQuestions()/(double) getTestService().getTotalQuestions()));
     	
     	submitButton.setDisable(true);
 	
-    	if(testUtil.getTotalQuestions() == 1){
+    	if(testService.getTotalQuestions() == 1){
     		nextButton.setDisable(true);
     	}
     	
-    	mainWindow.setStyle(testUtil.getMainWindowStyle());
-    	mainPane.setStyle(testUtil.getMainPaneStyle());
-    	infoPane.setStyle(testUtil.getInfoPaneStyle());
+    	mainWindow.setStyle(testService.getMainWindowStyle());
+    	mainPane.setStyle(testService.getMainPaneStyle());
+    	infoPane.setStyle(testService.getInfoPaneStyle());
     	
     }
     
     public void setAnsweredQuestions(Integer answeredQuestions){
     	this.answeredQuestions.setText(answeredQuestions.toString());
-    	this.progressBar.setProgress((getTestUtil().getAnsweredQuestions()/(double) getTestUtil().getTotalQuestions()));
+    	this.progressBar.setProgress((getTestService().getAnsweredQuestions()/(double) getTestService().getTotalQuestions()));
     	
-    	if(getTestUtil().isLastQuestion()){
+    	if(getTestService().isLastQuestion()){
     		nextButton.setDisable(true);
     	}
 
@@ -144,13 +144,13 @@ public abstract class QuestionScreenController extends ScreenController {
         	
         	System.out.println("submitButton clicked");
             
-        	getTestUtil().submitAnswer(getScreenPane(), getAnswer());
+        	getTestService().submitAnswer(getScreenPane(), getAnswer());
 
         }
         else if(e.getSource() == nextButton){
         	System.out.println("nextButton clicked");
 
-        	getTestUtil().nextQuestion(getScreenPane());
+        	getTestService().nextQuestion(getScreenPane());
 
         }
         

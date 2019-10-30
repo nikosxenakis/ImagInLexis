@@ -1,4 +1,4 @@
-package com.xenakis.service;
+package com.xenakis.databaseService;
 
 import com.xenakis.model.Chapter;
 import java.sql.Connection;

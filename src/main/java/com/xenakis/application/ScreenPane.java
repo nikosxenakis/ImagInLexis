@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.HashMap;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.service.TestService;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -55,7 +56,7 @@ public class ScreenPane extends StackPane {
     }
     //Loads the com.xenakis.fxml file, add the screen to the screens collection and
     //finally injects the screenPane to the controller.
-    public void loadScreen(String screenId, TestUtil testUtil){
+    public void loadScreen(String screenId, TestService testService){
         try {
         	String resource = ResourcePathsHolder.getResourcePaths(screenId);			
 
@@ -72,7 +73,7 @@ public class ScreenPane extends StackPane {
             
             if(screenController instanceof QuestionScreenController){
     			QuestionScreenData screenData = ScreenDataHolder.getScreenData(screenId);
-				((QuestionScreenController)screenController).setData(screenData, testUtil);
+				((QuestionScreenController)screenController).setData(screenData, testService);
             }
 
         } catch(Exception e){

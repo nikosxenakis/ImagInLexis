@@ -1,8 +1,7 @@
-package com.xenakis.service;
+package com.xenakis.databaseService;
 
 import com.xenakis.model.ScreenData;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 

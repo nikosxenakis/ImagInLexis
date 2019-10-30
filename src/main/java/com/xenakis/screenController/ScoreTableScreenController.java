@@ -2,9 +2,9 @@ package com.xenakis.screenController;
 
 import com.xenakis.model.Category;
 import com.xenakis.model.Chapter;
-import com.xenakis.service.CategoryUtil;
-import com.xenakis.service.ChapterUtil;
-import com.xenakis.service.ScoreUtil;
+import com.xenakis.databaseService.CategoryUtil;
+import com.xenakis.databaseService.ChapterUtil;
+import com.xenakis.databaseService.ScoreUtil;
 import com.xenakis.model.Score;
 import com.xenakis.ImagInLexis;
 import javafx.beans.value.ChangeListener;

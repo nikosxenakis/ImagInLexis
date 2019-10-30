@@ -1,8 +1,8 @@
 package com.xenakis.screenController;
 
-import com.xenakis.service.SoundUtil;
-import com.xenakis.service.ImageUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.ImageView;
@@ -67,10 +67,10 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
 	private String sound3Id = null;
 	private String sound4Id = null;
 
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	//System.out.println("set Data in ChooseLabelFromSoundScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
 
     	if(!(screenData instanceof ChooseLabelFromSoundScreenData)){
         	System.err.println("com.xenakis.screenData is not ChooseLabelFromSoundScreenData");
@@ -87,14 +87,14 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     	sound1Id = data.getSound1Id();
     	sound2Id = data.getSound2Id();
 
-    	questionSoundImage.setImage(ImageUtil.getImage("soundImage"));
-    	sound1Image.setImage(ImageUtil.getImage("soundImage"));
-    	sound2Image.setImage(ImageUtil.getImage("soundImage"));
+    	questionSoundImage.setImage(ImageService.getImage("soundImage"));
+    	sound1Image.setImage(ImageService.getImage("soundImage"));
+    	sound2Image.setImage(ImageService.getImage("soundImage"));
     	
     	if(data.getRadioOption3() != null && data.getSound3Id() != null){
         	radioOption3.setText(data.getRadioOption3());
         	sound3Id = data.getSound3Id();
-        	sound3Image.setImage(ImageUtil.getImage("soundImage"));
+        	sound3Image.setImage(ImageService.getImage("soundImage"));
     	}
     	else{
     		//System.out.println("remove radioHBox3");
@@ -104,7 +104,7 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     	if(data.getRadioOption4() != null && data.getSound4Id() != null){
         	radioOption4.setText(data.getRadioOption4());
         	sound4Id = data.getSound4Id();
-        	sound4Image.setImage(ImageUtil.getImage("soundImage"));
+        	sound4Image.setImage(ImageService.getImage("soundImage"));
     	}
     	else{
     		//System.out.println("remove radioHBox4");
@@ -118,7 +118,7 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     	}
     	else{
         	//System.out.println("image : "+imageId);
-    		image.setImage(ImageUtil.getImage(imageId));
+    		image.setImage(ImageService.getImage(imageId));
     	}
     	
     	soundId = data.getSoundId();
@@ -128,7 +128,7 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     	}
     	else{
         	//System.out.println("soundId : "+soundId);
-        	soundImage.setImage(ImageUtil.getImage("soundImage"));
+        	soundImage.setImage(ImageService.getImage("soundImage"));
     	}
 
     	setIsSelection();
@@ -157,19 +157,19 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     	ImageView sound = (ImageView)e.getSource();
     	
     	if(sound == soundImage){
-    		SoundUtil.playSound(soundId);
+			SoundService.playSound(soundId);
     	}
     	else if(sound == sound1Image){
-    		SoundUtil.playSound(sound1Id);
+			SoundService.playSound(sound1Id);
     	}
     	else if(sound == sound2Image){
-    		SoundUtil.playSound(sound2Id);
+			SoundService.playSound(sound2Id);
     	}
     	else if(sound == sound3Image){
-    		SoundUtil.playSound(sound3Id);
+			SoundService.playSound(sound3Id);
     	}
     	else if(sound == sound4Image){
-    		SoundUtil.playSound(sound4Id);
+			SoundService.playSound(sound4Id);
     	}
     	else{
     		System.err.println("error in soundIconClicked in ChooseLabelScreenController");
@@ -177,6 +177,6 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
     }
   
     public void questionSoundIconClicked(){
-    	SoundUtil.playSound(this.questionSoundId);
+		SoundService.playSound(this.questionSoundId);
     }
 }

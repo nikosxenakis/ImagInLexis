@@ -5,8 +5,8 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.service.CategoryUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.databaseService.CategoryUtil;
+import com.xenakis.service.TestService;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -82,6 +82,6 @@ public class CombinationalChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
 
-        new TestUtil("combinational",category,"Συσχετιζόμενες Έννοιες", CategoryUtil.getCategoryGreekName(category),"CombinationalChapterScreen");
+        new TestService("combinational",category,"Συσχετιζόμενες Έννοιες", CategoryUtil.getCategoryGreekName(category),"CombinationalChapterScreen");
     }
 }

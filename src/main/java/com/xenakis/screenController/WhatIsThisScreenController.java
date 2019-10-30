@@ -1,8 +1,8 @@
 package com.xenakis.screenController;
 
-import com.xenakis.service.ImageUtil;
-import com.xenakis.service.SoundUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
@@ -44,10 +44,10 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     private String questionSoundId = null;    
     private String mainQuestionSoundId = null;
 
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in WhatIsThisScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
 
     	if(!(screenData instanceof WhatIsThisScreenData)){
         	System.err.println("com.xenakis.screenData is not WhatIsThisScreenData");
@@ -61,7 +61,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	System.out.println("imageId: "+imageId);
 
     	if(imageId != null){
-        	Image tmpImage = ImageUtil.getImage(imageId);
+        	Image tmpImage = ImageService.getImage(imageId);
         	image.setImage(tmpImage); 		
     	}
     	else{
@@ -75,13 +75,13 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	if(data.getMainQuestion() != null && data.getMainQuestionSoundId() != null){
         	mainQuestion.setText(data.getMainQuestion());
         	mainQuestionSoundId = data.getMainQuestionSoundId();
-        	mainQuestionSoundImage.setImage(ImageUtil.getImage("soundImage"));
+        	mainQuestionSoundImage.setImage(ImageService.getImage("soundImage"));
     	}
     	else{
     		mainPane.getChildren().remove(mainQuestionHBox);
     	}
         
-    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageService.getImage(soundImage.getId()));
 
     	setAnswer(1);
 
@@ -101,21 +101,15 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     }
     
     public void imageClicked(){
-    	System.out.println(soundId);
-    	if(soundId != null)
-    		SoundUtil.playSound(soundId);
+		SoundService.playSound(soundId);
     }
     
     public void soundIconClicked(){
-    	System.out.println(questionSoundId);
-
-    	SoundUtil.playSound(questionSoundId);
+		SoundService.playSound(questionSoundId);
     }
     
     public void mainQuestionSoundIconClicked(){
-    	System.out.println(mainQuestionSoundId);
-
-    	SoundUtil.playSound(mainQuestionSoundId);
+		SoundService.playSound(mainQuestionSoundId);
     }
     
 }

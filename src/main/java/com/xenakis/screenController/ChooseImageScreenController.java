@@ -4,10 +4,10 @@
  */
 package com.xenakis.screenController;
 
-import com.xenakis.service.SoundUtil;
-import com.xenakis.service.ImageUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
 import com.xenakis.screenData.ChooseImageScreenData1;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -32,10 +32,10 @@ public class ChooseImageScreenController extends QuestionScreenController{
     
     private String soundId = null;
 
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in ChooseImageScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
     	
     	if(!(screenData instanceof ChooseImageScreenData1)){
         	System.err.println("com.xenakis.screenData is not ChooseImageScreenData1");
@@ -44,20 +44,20 @@ public class ChooseImageScreenController extends QuestionScreenController{
     	
     	ChooseImageScreenData1 data = (ChooseImageScreenData1) screenData;
     	    	  	    	
-    	Image image = ImageUtil.getImage(data.getImage1Id());
+    	Image image = ImageService.getImage(data.getImage1Id());
     	image1.setImage(image);
         
-    	image = ImageUtil.getImage(data.getImage2Id());
+    	image = ImageService.getImage(data.getImage2Id());
     	image2.setImage(image);
     	
-    	image = ImageUtil.getImage(data.getImage3Id());
+    	image = ImageService.getImage(data.getImage3Id());
     	image3.setImage(image);
     	image3.setSmooth(true); 
     	image3.setCache(true); 
     	
     	soundId = data.getSoundId();
 
-    	soundImage.setImage(ImageUtil.getImage(soundImage.getId()));
+    	soundImage.setImage(ImageService.getImage(soundImage.getId()));
 
     }
     
@@ -137,6 +137,6 @@ public class ChooseImageScreenController extends QuestionScreenController{
     }
     
     public void soundIconClicked(){
-    	SoundUtil.playSound(soundId);
+		SoundService.playSound(soundId);
     }
 }

@@ -1,8 +1,8 @@
 package com.xenakis.screenController;
 
-import com.xenakis.service.ImageUtil;
-import com.xenakis.service.SoundUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.RadioButton;
@@ -58,10 +58,10 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 	private String sound3Id;
 	private String sound4Id;
 
-    public void setData(QuestionScreenData screenData, TestUtil testUtil){
+    public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in ChooseLabelScreenController");
-    	super.setData(screenData, testUtil);
+    	super.setData(screenData, testService);
 
     	if(!(screenData instanceof ChooseLabelScreenData)){
         	System.err.println("com.xenakis.screenData is not ChooseLabelScreenData");
@@ -70,7 +70,7 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 
     	ChooseLabelScreenData data = (ChooseLabelScreenData) screenData;
     	    	  	    	
-    	Image tmpImage = ImageUtil.getImage(data.getImageId());
+    	Image tmpImage = ImageService.getImage(data.getImageId());
     	image.setImage(tmpImage);
     	
     	radioOption1.setText(data.getRadioOption1());
@@ -86,15 +86,15 @@ public class ChooseLabelScreenController extends QuestionScreenController{
     	sound2Id = data.getSound2Id();
     	sound3Id = data.getSound3Id();
 		
-    	soundIcon.setImage(ImageUtil.getImage("soundImage"));
-    	sound1Icon.setImage(ImageUtil.getImage("soundImage"));
-    	sound2Icon.setImage(ImageUtil.getImage("soundImage"));
-    	sound3Icon.setImage(ImageUtil.getImage("soundImage"));
+    	soundIcon.setImage(ImageService.getImage("soundImage"));
+    	sound1Icon.setImage(ImageService.getImage("soundImage"));
+    	sound2Icon.setImage(ImageService.getImage("soundImage"));
+    	sound3Icon.setImage(ImageService.getImage("soundImage"));
     	
     	if(data.getRadioOption4() != null && data.getSound4Id() != null){
         	radioOption4.setText(data.getRadioOption4());
         	sound4Id = data.getSound4Id();	
-        	sound4Icon.setImage(ImageUtil.getImage("soundImage"));
+        	sound4Icon.setImage(ImageService.getImage("soundImage"));
     	}
     	else{
         	vBox.getChildren().remove(hBox4);
@@ -125,19 +125,19 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 
 		switch (id) {
 			case "soundIcon":
-				SoundUtil.playSound(soundId);
+				SoundService.playSound(soundId);
 				break;
 			case "sound1Icon":
-				SoundUtil.playSound(sound1Id);
+				SoundService.playSound(sound1Id);
 				break;
 			case "sound2Icon":
-				SoundUtil.playSound(sound2Id);
+				SoundService.playSound(sound2Id);
 				break;
 			case "sound3Icon":
-				SoundUtil.playSound(sound3Id);
+				SoundService.playSound(sound3Id);
 				break;
 			case "sound4Icon":
-				SoundUtil.playSound(sound4Id);
+				SoundService.playSound(sound4Id);
 				break;
 			default:
 				System.err.println("error in soundIconClicked in ChooseLabelScreenController");

@@ -1,4 +1,4 @@
-package com.xenakis.service;
+package com.xenakis.databaseService;
 
 import com.xenakis.model.Score;
 import java.sql.Connection;

@@ -1,6 +1,8 @@
-package com.xenakis.application;
+package com.xenakis.service;
 
 import com.xenakis.ImagInLexis;
+import com.xenakis.application.ImagInLexisParser;
+import com.xenakis.application.ScreenPane;
 import com.xenakis.model.Category;
 import com.xenakis.model.Chapter;
 import com.xenakis.model.TestData;
@@ -11,16 +13,16 @@ import com.xenakis.screenController.ScreenController;
 import com.xenakis.screenData.ChooseInImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 import com.xenakis.screenData.ScreenDataHolder;
-import com.xenakis.service.CategoryUtil;
-import com.xenakis.service.ChapterUtil;
-import com.xenakis.service.ScoreUtil;
-import com.xenakis.service.SoundUtil;
+import com.xenakis.databaseService.CategoryUtil;
+import com.xenakis.databaseService.ChapterUtil;
+import com.xenakis.databaseService.ScoreUtil;
+import com.xenakis.service.SoundService;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class TestUtil {
+public class TestService {
 
 	private final String menuScreenId;
 	private String mainWindowStyle;
@@ -32,7 +34,7 @@ public class TestUtil {
 
 	private final TestData testData;
 
-	public TestUtil(String chapter, String category, String chapterName, String categoryName, String menuScreenId){
+	public TestService(String chapter, String category, String chapterName, String categoryName, String menuScreenId){
 
 		this.testData = new TestData(chapter, category, chapterName, categoryName);
 
@@ -121,7 +123,7 @@ public class TestUtil {
 
 	public void startTest(){
 		this.nextQuestion(ImagInLexis.mainContainer);
-		SoundUtil.playSound("completeSound");
+		SoundService.playSound("completeSound");
 	}
 
 	public void nextQuestion(ScreenPane myScreenPane){

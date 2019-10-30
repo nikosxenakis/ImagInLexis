@@ -5,8 +5,8 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.service.CategoryUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.databaseService.CategoryUtil;
+import com.xenakis.service.TestService;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -23,24 +23,6 @@ public class RecognitionChapterScreenController extends ScreenController{
     
     @FXML
     private ImageView homeImage;
-
-//    public void initialize(java.net.URL location, java.util.ResourceBundle resources) {
-//		super.initialize(location, resources);
-//
-//    	homeImage.setImage(ImageHolder.getImage("logo"));
-//    	//backgroundImage.setImage(ImageHolder.getImage("background"));
-//    	backgroundImage.setImage(null);
-//
-//
-//        for (Node node : mainWindow.getChildrenUnmodifiable()) {
-//        	if(node instanceof ImageView){
-//        		ImageView image = (ImageView) node;
-//        		String id = image.getId();
-//        		if(id != null)
-//        			image.setImage(ImageHolder.getImage(id));
-//        	}
-//        }
-//    }
     
     public void homeIconEntered(){
     	String enabledImageStyle = "-fx-effect: dropshadow(three-pass-box, rgba(255,100,100,0.8), 10, 0, 0, 0)";
@@ -84,6 +66,6 @@ public class RecognitionChapterScreenController extends ScreenController{
     	Ellipse el = (Ellipse)e.getSource();
     	String category = el.getId();
         
-        new TestUtil("recognition",category,"Αναγνώριση", CategoryUtil.getCategoryGreekName(category),"RecognitionChapterScreen");
+        new TestService("recognition",category,"Αναγνώριση", CategoryUtil.getCategoryGreekName(category),"RecognitionChapterScreen");
     }
 }

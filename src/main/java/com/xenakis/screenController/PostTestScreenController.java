@@ -5,9 +5,9 @@
 package com.xenakis.screenController;
 
 import com.xenakis.ImagInLexis;
-import com.xenakis.service.SoundUtil;
-import com.xenakis.service.ImageUtil;
-import com.xenakis.application.TestUtil;
+import com.xenakis.service.TestService;
+import com.xenakis.service.ImageService;
+import com.xenakis.service.SoundService;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -40,40 +40,40 @@ public class PostTestScreenController extends ScreenController{
 	@FXML
 	private ImageView backgroundImage;
 
-	private TestUtil testUtil = null;
+	private TestService testService = null;
 
-    public void init(TestUtil testUtil){
-    	this.testUtil = testUtil;
+    public void init(TestService testService){
+    	this.testService = testService;
 		
-    	mainWindow.setStyle(testUtil.getMainWindowStyle());
-    	score.setText( testUtil.getScoreNum()+"%");
-    	correctAnswers.setText(String.valueOf(testUtil.getCorrectAnswers()));
-    	wrongAnswers.setText(String.valueOf(testUtil.getWrongAnswers()));
+    	mainWindow.setStyle(testService.getMainWindowStyle());
+    	score.setText( testService.getScoreNum()+"%");
+    	correctAnswers.setText(String.valueOf(testService.getCorrectAnswers()));
+    	wrongAnswers.setText(String.valueOf(testService.getWrongAnswers()));
 
-    	backgroundImage.setImage(ImageUtil.getImage("background"));
+    	backgroundImage.setImage(ImageService.getImage("background"));
 
     	boolean passed = false;
     	
     	if(
-    			(testUtil.getChapterName().equals("Αναγνώριση") && testUtil.getScoreNum() >= 80) ||
-    			(testUtil.getChapterName().equals("Κατονομασία") && testUtil.getScoreNum() >= 90) ||
-    			(testUtil.getChapterName().equals("Συσχετιζόμενες Έννοιες") && testUtil.getScoreNum() >= 90)
+    			(testService.getChapterName().equals("Αναγνώριση") && testService.getScoreNum() >= 80) ||
+    			(testService.getChapterName().equals("Κατονομασία") && testService.getScoreNum() >= 90) ||
+    			(testService.getChapterName().equals("Συσχετιζόμενες Έννοιες") && testService.getScoreNum() >= 90)
     	){
     		passed = true;
     	}
     	
 		if(passed){
-			SoundUtil.playSound("correctSound");
+			SoundService.playSound("correctSound");
 			resultText.setText("Επιτυχία");
 	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightgreen; -fx-opacity: 0.9;");
-	    	emotionImage.setImage(ImageUtil.getImage("happyIcon"));
+	    	emotionImage.setImage(ImageService.getImage("happyIcon"));
 
 		}
 		else{
 			resultText.setText("Αποτυχία");
-			SoundUtil.playSound("wrongSound");
+			SoundService.playSound("wrongSound");
 	    	infoPane.setStyle("-fx-background-radius: 15; -fx-background-color: lightcoral; -fx-opacity: 0.9;");
-	    	emotionImage.setImage(ImageUtil.getImage("sadIcon"));
+	    	emotionImage.setImage(ImageService.getImage("sadIcon"));
 		}
 		
     	infoPane.setMaxWidth(500);
@@ -81,7 +81,7 @@ public class PostTestScreenController extends ScreenController{
     }
     
     public void endTest(){
-    	SoundUtil.playSound("endProgramSound");
-    	ImagInLexis.mainContainer.setScreen(testUtil.getMenuScreenId());
+		SoundService.playSound("endProgramSound");
+    	ImagInLexis.mainContainer.setScreen(testService.getMenuScreenId());
     }
 }

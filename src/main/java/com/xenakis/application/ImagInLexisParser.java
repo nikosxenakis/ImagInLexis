@@ -1,6 +1,6 @@
 package com.xenakis.application;
 
-import com.xenakis.service.JsonParser;
+import com.xenakis.databaseService.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import java.util.*;
