@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.shape.*?>
-<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.RecognitionChapterScreenController">
    <children>
@@ -391,7 +387,7 @@
                         <Image url="@../images/icons/detectIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="homeImage" fitHeight="124.0" fitWidth="164.0" layoutX="13.0" layoutY="-30.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" styleClass="homeIcon" fitHeight="124.0" fitWidth="164.0" layoutX="13.0" layoutY="-30.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/logo/imagInLexisLogo.png" />
                      </image>

@@ -74,7 +74,7 @@
                         <Image url="@../images/icons/completeSentenceIcon.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="homeImage" fitHeight="116.0" fitWidth="198.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" styleClass="homeIcon" fitHeight="116.0" fitWidth="198.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/logo/imagInLexisLogo.png" />
                      </image>

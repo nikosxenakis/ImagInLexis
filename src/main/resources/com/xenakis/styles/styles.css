@@ -1,0 +1,17 @@
+//homeIcon
+.homeIcon {
+    -fx-effect: null;
+}
+
+.homeIcon:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255,100,100,0.8), 10, 0, 0, 0);
+}
+
+//chapter screens
+.chapter_ellipse {
+    -fx-opacity: 0.7;
+}
+
+.chapter_ellipse:hover {
+    -fx-opacity: 1;
+}
