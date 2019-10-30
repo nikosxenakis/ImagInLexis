@@ -30,7 +30,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <ImageView fx:id="homeImage" fitHeight="139.0" fitWidth="220.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="homeImage" styleClass="homeIcon" fitHeight="139.0" fitWidth="220.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/logo/imagInLexisLogo.png" />
                            </image>

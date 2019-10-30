@@ -21,7 +21,7 @@
             <top>
                 <HBox alignment="CENTER" prefHeight="154.0" prefWidth="883.0" BorderPane.alignment="CENTER">
                     <children>
-                        <ImageView fx:id="homeImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#homeIconClicked" onMouseEntered="#homeIconEntered" onMouseExited="#homeIconExited" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="homeImage" styleClass="homeIcon" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../images/logo/imagInLexisLogo.png" />
                             </image>
