@@ -33,7 +33,7 @@ mvn clean
 
 Compile
 ```
-mvn javafx:compile
+mvn compile
 ```
 
 Run
@@ -43,13 +43,13 @@ mvn javafx:run
 
 Deploy
 ```
-mvn clean javafx:compile install
+mvn clean compile install
 ```
 
 ## Testing
 
 ```
-mvn testUtil
+mvn test
 ```
 
 ## Documentation

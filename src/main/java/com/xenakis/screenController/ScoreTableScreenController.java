@@ -31,7 +31,7 @@ public class ScoreTableScreenController extends ScreenController{
     @FXML
     private ImageView homeImage;
 
-    static final Logger logger = Logger.getLogger(ScoreTableScreenController.class);
+    private static final Logger logger = Logger.getLogger(ScoreTableScreenController.class);
 
     public void homeIconClicked(){
         ImagInLexis.mainContainer.setScreen("MainScreen");
