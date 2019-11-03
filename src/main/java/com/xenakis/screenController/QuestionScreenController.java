@@ -1,7 +1,6 @@
 package com.xenakis.screenController;
 
 import java.util.HashSet;
-
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
 import javafx.fxml.FXML;
