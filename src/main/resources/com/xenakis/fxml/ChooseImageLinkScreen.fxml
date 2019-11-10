@@ -14,27 +14,15 @@
             <bottom>
                 <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
                     <children>
-                        <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#clicked" prefHeight="56.0" prefWidth="260.0" style="-fx-text-fill: white; -fx-background-color: rgba(0,64,255,0.7); -fx-background-radius: 15;" styleClass="nextButton" text="Επόμενο &gt;" textAlignment="CENTER">
-                            <font>
-                                <Font size="24.0" />
-                            </font>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
+                        <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="nextButton" text="Επόμενο &gt;">
                             <HBox.margin>
                                 <Insets right="10.0" />
                             </HBox.margin>
                         </Button>
-                        <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#clicked" prefHeight="56.0" prefWidth="245.0" style="-fx-text-fill: white; -fx-background-color: rgba(22,230,0,0.7); -fx-background-radius: 15;" styleClass="submitButton" text="Καταχώρηση ✓" textAlignment="CENTER">
-                            <font>
-                                <Font size="24.0" />
-                            </font>
+                        <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="submitButton" text="Καταχώρηση ✓">
                             <HBox.margin>
                                 <Insets right="10.0" />
                             </HBox.margin>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
                         </Button>
                     </children>
                     <BorderPane.margin>
