@@ -16,31 +16,34 @@
     -fx-opacity: 1;
 }
 
-//buttons
-.nextButton {
-    -fx-text-fill: white;
-    -fx-background-color: rgba(0,64,255,0.7);
+//test
+.testMainWindow {
+    -fx-background-color: #9ED5DB;
+    -fx-border-color: #DDE3A8;
+    -fx-border-width: 10;
+}
+
+//mainPane
+.mainPane {
     -fx-background-radius: 15;
-    -fx-font-size: 24;
-    -fx-cursor: hand;
-    -fx-text-alignment: center;
-    -fx-pref-height: 56.0;
-    -fx-pref-width: 260.0;
+    -fx-background-color: #6CBD93;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
 
-.nextButton:hover {
-}
-
-.submitButton {
-    -fx-text-fill: white;
-    -fx-background-color: rgba(22,230,0,0.7);
+//infoPane
+.infoPane {
+    -fx-background-color: rgb(195,227,168);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
     -fx-background-radius: 15;
-    -fx-font-size: 24;
-    -fx-cursor: hand;
-    -fx-text-alignment: center;
-    -fx-pref-height: 56.0;
-    -fx-pref-width: 245.0;
 }
 
-.submitButton:hover {
+.infoPaneChapterText {
+}
+
+.infoPaneCategoryText {
+    -fx-font-size: 20;
+}
+
+.testImage {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
 }

@@ -30,7 +30,7 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Κεφάλαιο:">
                            <font>
                               <Font size="20.0" />
-                           </font>
+                           </font>infoPaneStyle
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>

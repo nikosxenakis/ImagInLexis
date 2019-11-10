@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="mainWindow" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.ChooseImageScreenController2">
+<AnchorPane fx:id="mainWindow" styleClass="testMainWindow" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.ChooseImageScreenController2">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
@@ -30,7 +30,7 @@
             </HBox>
          </bottom>
          <center>
-            <BorderPane fx:id="mainPane" style="-fx-background-color: #6CBD93; -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+            <BorderPane fx:id="mainPane" styleClass="mainPane" BorderPane.alignment="CENTER">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -68,7 +68,7 @@
                <center>
                   <HBox alignment="CENTER" BorderPane.alignment="CENTER">
                      <children>
-                        <ImageView fx:id="image1" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" styleClass="image">
+                        <ImageView fx:id="image1" styleClass="testImage" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true">
                            <image>
                               <Image url="@../images/grammateas.jpg" />
                            </image>
@@ -79,7 +79,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="image2" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="image">
+                        <ImageView fx:id="image2" styleClass="testImage" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true">
                            <image>
                               <Image url="@../images/grammateas.jpg" />
                            </image>
@@ -90,7 +90,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="image3" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="image">
+                        <ImageView fx:id="image3" styleClass="testImage" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true">
                            <image>
                               <Image url="@../images/grammateas.jpg" />
                            </image>
@@ -101,7 +101,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <ImageView fx:id="image4" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="image">
+                        <ImageView fx:id="image4" styleClass="testImage" fitHeight="260.0" fitWidth="245.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>

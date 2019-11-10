@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="mainWindow" style="-fx-background-color: #9ED5DB; -fx-border-color: #DDE3A8; -fx-border-width: 10;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.ChooseImageLinkScreenController">
+<AnchorPane fx:id="mainWindow" styleClass="testMainWindow" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.ChooseImageLinkScreenController">
     <children>
         <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <bottom>
@@ -31,7 +31,7 @@
                 </HBox>
             </bottom>
             <center>
-                <BorderPane fx:id="mainPane" style="-fx-background-color: #6CBD93; -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
+                <BorderPane fx:id="mainPane" styleClass="mainPane" BorderPane.alignment="CENTER">
                     <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </padding>
@@ -75,7 +75,7 @@
                                         <Line fx:id="link2" endX="-100.0" endY="60.0" layoutX="492.0" layoutY="151.0" startX="-100.0" stroke="#5e9080" strokeWidth="5.0" />
                                         <Line fx:id="link1" endX="-210.0" endY="290.0" layoutX="424.0" layoutY="-87.0" startX="-120.0" startY="180.0" stroke="#5e9080" strokeWidth="5.0" />
                                         <Line fx:id="link3" endX="-20.0" endY="290.0" layoutX="616.0" layoutY="-78.0" startX="-120.0" startY="170.0" stroke="#5e9080" strokeWidth="5.0" />
-                                        <ImageView fx:id="basicImage" fitHeight="160.0" fitWidth="200.0" layoutX="295.0" layoutY="8.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" styleClass="image">
+                                        <ImageView fx:id="basicImage" styleClass="testImage" fitHeight="160.0" fitWidth="200.0" layoutX="295.0" layoutY="8.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true">
                                             <image>
                                                 <Image url="@../images/daskalaRound.jpg" />
                                             </image>
@@ -83,7 +83,7 @@
                                                 <Cursor fx:constant="DEFAULT" />
                                             </cursor>
                                         </ImageView>
-                                        <ImageView fx:id="image2" fitHeight="160.0" fitWidth="200.0" layoutX="292.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-radius: 10;" styleClass="image">
+                                        <ImageView fx:id="image2" styleClass="testImage" fitHeight="160.0" fitWidth="200.0" layoutX="292.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-border-radius: 10;">
                                             <cursor>
                                                 <Cursor fx:constant="HAND" />
                                             </cursor>
@@ -91,7 +91,7 @@
                                                 <Image url="@../images/daskalaRound.jpg" />
                                             </image>
                                         </ImageView>
-                                        <ImageView fx:id="image1" fitHeight="160.0" fitWidth="200.0" layoutX="59.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-radius: 10;" styleClass="image">
+                                        <ImageView fx:id="image1" styleClass="testImage" fitHeight="160.0" fitWidth="200.0" layoutX="59.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-border-radius: 10;">
                                             <cursor>
                                                 <Cursor fx:constant="HAND" />
                                             </cursor>
@@ -99,7 +99,7 @@
                                                 <Image url="@../images/daskalaRound.jpg" />
                                             </image>
                                         </ImageView>
-                                        <ImageView fx:id="image3" fitHeight="160.0" fitWidth="200.0" layoutX="526.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-radius: 10;" styleClass="image">
+                                        <ImageView fx:id="image3" styleClass="testImage" fitHeight="160.0" fitWidth="200.0" layoutX="526.0" layoutY="202.0" onMouseClicked="#imageClicked" onMouseEntered="#overImage" onMouseExited="#disableImages" pickOnBounds="true" style="-fx-border-radius: 10;">
                                             <cursor>
                                                 <Cursor fx:constant="HAND" />
                                             </cursor>
