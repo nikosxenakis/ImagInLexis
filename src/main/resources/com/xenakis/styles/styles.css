@@ -38,6 +38,7 @@
 }
 
 .infoPaneChapterText {
+    -fx-font-size: 20;
 }
 
 .infoPaneCategoryText {
