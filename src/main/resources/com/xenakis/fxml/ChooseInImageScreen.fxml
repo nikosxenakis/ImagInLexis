@@ -11,14 +11,16 @@
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
+<!--            <fx:include fx:id="testActions" source="TestActions.fxml" />-->
+            <StackPane>
             <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="nextButton" text="Επόμενο &gt;">
+                  <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#nextButtonPressed" styleClass="nextButton" text="Επόμενο &gt;">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="submitButton" text="Καταχώρηση ✓">
+                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#submitButtonPressed" styleClass="submitButton" text="Καταχώρηση ✓">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
@@ -28,6 +30,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </BorderPane.margin>
             </HBox>
+            </StackPane>
          </bottom>
          <center>
             <BorderPane fx:id="mainPane" styleClass="mainPane" BorderPane.alignment="CENTER">

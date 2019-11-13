@@ -17,6 +17,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import com.xenakis.screenData.QuestionScreenData;
+import org.apache.log4j.Logger;
 
 public abstract class QuestionScreenController extends ScreenController {
 
@@ -61,6 +62,8 @@ public abstract class QuestionScreenController extends ScreenController {
 
 //	@FXML
 //	private TestActionsController testActionsController;
+
+	private static final Logger logger = Logger.getLogger(QuestionScreenController.class);
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
@@ -143,27 +146,19 @@ public abstract class QuestionScreenController extends ScreenController {
 
     }
 
-    public void clicked(MouseEvent e){
-    	
-        if(e.getSource() == submitButton){
-        	if(!getIsSelection()){
-        		System.err.println("error in clicked there is no selection");
-        		return;
-        	}
-        	
-        	System.out.println("submitButton clicked");
-            
-        	getTestService().submitAnswer(getScreenPane(), getAnswer());
-
-        }
-        else if(e.getSource() == nextButton){
-        	System.out.println("nextButton clicked");
-
-        	getTestService().nextQuestion(getScreenPane());
-
-        }
-        
+	public void submitButtonPressed(MouseEvent e) {
+		if(!getIsSelection()){
+			logger.error("error in clicked there is no selection");
+			return;
+		}
+		logger.info("submitButton clicked");
+		getTestService().submitAnswer(getScreenPane(), getAnswer());
     }
+
+	public void nextButtonPressed(MouseEvent e) {
+		logger.info("nextButton clicked");
+		getTestService().nextQuestion(getScreenPane());
+	}
 
     protected void enableSubmit() {
 		submitButton.setDisable(false);

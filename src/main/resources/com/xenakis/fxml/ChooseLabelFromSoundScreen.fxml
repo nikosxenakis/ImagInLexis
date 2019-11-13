@@ -16,12 +16,12 @@
          <bottom>
             <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="nextButton" text="Επόμενο &gt;">
+                  <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#nextButtonPressed" styleClass="nextButton" text="Επόμενο &gt;">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#clicked" styleClass="submitButton" text="Καταχώρηση ✓">
+                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#submitButtonPressed" styleClass="submitButton" text="Καταχώρηση ✓">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
