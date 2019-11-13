@@ -61,12 +61,16 @@ public abstract class QuestionScreenController extends ScreenController {
     protected BorderPane mainPane;
 
 //	@FXML
-//	private TestActionsController testActionsController;
+//	protected TestActionsController testActionsController;
 
 	private static final Logger logger = Logger.getLogger(QuestionScreenController.class);
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
+//		testActionsController.setParentController(this);
+//		testActionsController.submitButtonProperty().addListener(
+//			(observable, oldValue, newValue) -> submitButtonPressed()
+//		);
 	}
 
     private TestService testService;
@@ -146,7 +150,7 @@ public abstract class QuestionScreenController extends ScreenController {
 
     }
 
-	public void submitButtonPressed(MouseEvent e) {
+	public void submitButtonPressed() {
 		if(!getIsSelection()){
 			logger.error("error in clicked there is no selection");
 			return;
@@ -155,7 +159,7 @@ public abstract class QuestionScreenController extends ScreenController {
 		getTestService().submitAnswer(getScreenPane(), getAnswer());
     }
 
-	public void nextButtonPressed(MouseEvent e) {
+	public void nextButtonPressed() {
 		logger.info("nextButton clicked");
 		getTestService().nextQuestion(getScreenPane());
 	}

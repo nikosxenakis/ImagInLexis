@@ -14,6 +14,8 @@ public class TestActionsController {
     @FXML
     protected Button nextButton;
 
+    private QuestionScreenController questionScreenController;
+
     private final BooleanProperty submitButtonValue = new SimpleBooleanProperty();
 
     public BooleanProperty submitButtonProperty() {
@@ -23,4 +25,9 @@ public class TestActionsController {
     public void clicked(MouseEvent e){
         submitButtonValue.set(true);
     }
+
+    public void setParentController(QuestionScreenController questionScreenController) {
+        this.questionScreenController = questionScreenController;
+    }
+
 }
