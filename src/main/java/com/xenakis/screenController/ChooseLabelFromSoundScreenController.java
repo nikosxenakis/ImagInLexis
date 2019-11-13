@@ -133,7 +133,7 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
 
     	setIsSelection();
     	setAnswer(1);
-    	submitButton.setDisable(false);
+		enableSubmit();
     }
     
     public void radioClicked(MouseEvent e){

@@ -1,11 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.xenakis.screenController;
 
 import java.util.ArrayList;
-
 import com.xenakis.service.TestService;
 import com.xenakis.model.Circle;
 import com.xenakis.service.ImageService;
@@ -20,8 +15,8 @@ import javafx.scene.shape.Ellipse;
 import com.xenakis.screenData.ChooseInImageScreenData;
 import com.xenakis.screenData.QuestionScreenData;
 
-public class ChooseInImageScreenController extends QuestionScreenController{
-    
+public class ChooseInImageScreenController extends QuestionScreenController {
+
 	@FXML
     private ImageView image;
 
@@ -34,7 +29,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
 	private ArrayList<Circle> circlesList;
     
     private String questionSoundId;
-    
+
     public void setData(QuestionScreenData screenData, TestService testService){
     	
     	System.out.println("set Data in ChooseInImageScreenController");
@@ -45,7 +40,7 @@ public class ChooseInImageScreenController extends QuestionScreenController{
     		return;
     	}
 
-    	submitButton.setDisable(false);
+		enableSubmit();
     	setIsSelection();
 
     	ChooseInImageScreenData data = (ChooseInImageScreenData) screenData;

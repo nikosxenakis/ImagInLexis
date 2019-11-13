@@ -79,8 +79,8 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 
     	setIsSelection();
     	setAnswer(1);
-    	submitButton.setDisable(false);
-    	
+		enableSubmit();
+
     	soundId = data.getSoundId();
     	sound1Id = data.getSound1Id();
     	sound2Id = data.getSound2Id();

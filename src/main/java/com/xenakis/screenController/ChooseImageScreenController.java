@@ -85,7 +85,7 @@ public class ChooseImageScreenController extends QuestionScreenController{
     		return;
     	
     	setIsSelection();
-    	submitButton.setDisable(false);
+    	enableSubmit();
     	selectedImage = image;
     	if(image == image1)
     		setAnswer(1);

@@ -1,6 +1,9 @@
 package com.xenakis.screenController;
 
+import java.net.URL;
 import java.util.HashSet;
+import java.util.ResourceBundle;
+
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
 import javafx.fxml.FXML;
@@ -21,11 +24,11 @@ public abstract class QuestionScreenController extends ScreenController {
 	protected AnchorPane mainWindow;
 	
 	@FXML
-    protected Button submitButton;
-    
+	private Button submitButton;
+
     @FXML
-    protected Button nextButton;
-    
+    private Button nextButton;
+
     @FXML
     protected Text question;
     
@@ -55,7 +58,14 @@ public abstract class QuestionScreenController extends ScreenController {
     
     @FXML
     protected BorderPane mainPane;
-    
+
+//	@FXML
+//	private TestActionsController testActionsController;
+
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+	}
+
     private TestService testService;
     private boolean isSelection;
     private final HashSet<Integer> answers = new HashSet<>();
@@ -155,4 +165,7 @@ public abstract class QuestionScreenController extends ScreenController {
         
     }
 
+    protected void enableSubmit() {
+		submitButton.setDisable(false);
+	}
 }

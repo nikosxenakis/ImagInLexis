@@ -86,7 +86,7 @@ public class WhatIsThisScreenController extends QuestionScreenController{
     	setAnswer(1);
 
     	setIsSelection();
-    	submitButton.setDisable(false);
+		enableSubmit();
     }
     
     public void radioClicked(MouseEvent e){
