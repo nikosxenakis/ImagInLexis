@@ -10,7 +10,6 @@ import java.util.*;
 public class ImagInLexisParser {
 
 	private static JSONObject dataJsonObject;
-	private static JSONObject screensJsonObject;
 
 	//chapterName -> chapterTotalQuestions
 	private static final HashMap<String, Integer> chapterTotalQuestions = new HashMap<>();
@@ -43,7 +42,7 @@ public class ImagInLexisParser {
 	        }
         
 		addToCategoriesScreenIdList(category,screenId);
-	        
+
 		ScreenData screenData = ScreenUtil.getScreen(2, screenType);
 		String screenPath = (screenData != null) ? screenData.getPath() : null;
 		ResourcePathsHolder.addResourcePaths(screenId, screenPath);
