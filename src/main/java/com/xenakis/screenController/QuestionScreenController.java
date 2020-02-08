@@ -3,7 +3,6 @@ package com.xenakis.screenController;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.ResourceBundle;
-
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
 import javafx.fxml.FXML;
@@ -11,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -63,7 +61,7 @@ public abstract class QuestionScreenController extends ScreenController {
 //	@FXML
 //	protected TestActionsController testActionsController;
 
-	private static final Logger logger = Logger.getLogger(QuestionScreenController.class);
+	protected static final Logger logger = Logger.getLogger(QuestionScreenController.class);
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
@@ -107,7 +105,6 @@ public abstract class QuestionScreenController extends ScreenController {
 	}
 	
     public void setData(QuestionScreenData screenData, TestService testService){
-    	//System.out.println("set Data in QuestionScreenController");
 
     	this.testService = testService;
 
@@ -118,11 +115,9 @@ public abstract class QuestionScreenController extends ScreenController {
     	chapterName.setText(screenData.getChapterName());
     	categoryName.setText(screenData.getCategoryName());
    
-    	//System.out.println("loading image: "+testUtil.getChapter().toString()+"Image");
     	Image image = ImageService.getImage(testService.getChapter()+"Image");
     	chapterImage.setImage(image);
 
-    	//System.out.println("loading image: "+testUtil.getCategory()+"Image");
     	image = ImageService.getImage(testService.getCategory()+"Image");
     	categoryImage.setImage(image);
 

@@ -59,12 +59,12 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 	private String sound4Id;
 
     public void setData(QuestionScreenData screenData, TestService testService){
-    	
-    	System.out.println("set Data in ChooseLabelScreenController");
+
+		logger.info("set Data in ChooseLabelScreenController");
     	super.setData(screenData, testService);
 
     	if(!(screenData instanceof ChooseLabelScreenData)){
-        	System.err.println("com.xenakis.screenData is not ChooseLabelScreenData");
+			logger.error("screenData is not ChooseLabelScreenData");
     		return;
     	}
 
@@ -140,7 +140,7 @@ public class ChooseLabelScreenController extends QuestionScreenController{
 				SoundService.playSound(sound4Id);
 				break;
 			default:
-				System.err.println("error in soundIconClicked in ChooseLabelScreenController");
+				logger.error("error in soundIconClicked in ChooseLabelScreenController");
 				break;
 		}
     }

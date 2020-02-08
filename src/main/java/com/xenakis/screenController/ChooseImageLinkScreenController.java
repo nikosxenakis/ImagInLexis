@@ -70,8 +70,8 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     	image3.setImage(image);
     	
     	if(link1 == null || link2 == null || link3 == null){
-    		System.err.println("no link in ChooseImageLinkScreenController");
-    	}
+			logger.error("no link in ChooseImageLinkScreenController");
+		}
     	
     	soundId = data.getSoundId();
   
@@ -148,36 +148,28 @@ public class ChooseImageLinkScreenController extends QuestionScreenController{
     public void overImage(MouseEvent e){
     	
         if(e.getSource() == image1){
-        	System.out.println("hover image1");
         	enableImage(image1);
         }
         else if(e.getSource() == image2){
-        	System.out.println("hover image2");
         	enableImage(image2);
         }
         else if(e.getSource() == image3){
-        	System.out.println("hover image3");
         	enableImage(image3);
-        }
-        else{
-        	System.out.println("hover null");
-
         }
     }
     
     public void imageClicked(MouseEvent e){
-    	System.out.println("imageClicked");
 
         if(e.getSource() == image1){
-        	System.out.println("image1");
+			logger.info("imageClicked: image1");
         	selectImage(image1);
         }
         else if(e.getSource() == image2){
-        	System.out.println("image2");
+			logger.info("imageClicked: image2");
         	selectImage(image2);
         }
         else if(e.getSource() == image3){
-        	System.out.println("image3");
+			logger.info("imageClicked: image3");
         	selectImage(image3);
         }
     }

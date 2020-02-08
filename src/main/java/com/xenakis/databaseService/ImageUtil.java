@@ -17,6 +17,7 @@ public class ImageUtil extends DatabaseUtil {
 			rs.next();
 			path = rs.getString("path");
 		} catch (SQLException e) {
+			logger.error("Image with name = " + name + " was not found");
 			throw new Exception("Image with name = " + name + " was not found");
 		}
 		DatabaseUtil.closeConnection(conn);

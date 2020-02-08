@@ -69,7 +69,6 @@ public class ChooseLabelFromSoundScreenController extends QuestionScreenControll
 
     public void setData(QuestionScreenData screenData, TestService testService){
     	
-    	//System.out.println("set Data in ChooseLabelFromSoundScreenController");
     	super.setData(screenData, testService);
 
     	if(!(screenData instanceof ChooseLabelFromSoundScreenData)){

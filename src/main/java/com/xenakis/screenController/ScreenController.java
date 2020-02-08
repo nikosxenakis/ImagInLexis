@@ -4,11 +4,14 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import com.xenakis.application.ScreenPane;
 import javafx.fxml.Initializable;
+import org.apache.log4j.Logger;
 
 public abstract class ScreenController implements Initializable {
     private ScreenPane myScreenPane;
- 
-    /**
+
+	static final Logger logger = Logger.getLogger(ScreenController.class);
+
+	/**
      * Initializes the controller class.
      */
 	@Override

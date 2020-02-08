@@ -1,9 +1,14 @@
 package com.xenakis.screenData;
 
+import com.xenakis.screenController.QuestionScreenController;
+import org.apache.log4j.Logger;
+
 import java.util.HashMap;
 
-public class ScreenDataHolder{
-	
+public class ScreenDataHolder {
+
+    private static final Logger logger = Logger.getLogger(QuestionScreenController.class);
+
     private static final ScreenDataHolder instance = new ScreenDataHolder();
     
     private final HashMap<String, QuestionScreenData> screenData;
@@ -19,7 +24,7 @@ public class ScreenDataHolder{
     public static QuestionScreenData getScreenData(String id){
     	QuestionScreenData screenData = instance.screenData.get(id);
     	if(screenData == null)
-    		System.err.println("error in getScreenData");
+            logger.error("error in getScreenData");
     	return screenData;
     }
     

@@ -26,6 +26,7 @@ public class ChapterUtil extends DatabaseUtil {
                     rs.getString("greekName")
             );
         } catch (Exception e) {
+            logger.error("Chapter with name = " + name + " was not found");
             throw new Exception("Chapter with name = " + name + " was not found");
         }
         DatabaseUtil.closeConnection(conn);
@@ -61,6 +62,7 @@ public class ChapterUtil extends DatabaseUtil {
                 rs.getString("greekName")
             );
         } catch (Exception e) {
+            logger.error("getChapterFromGreekName");
         }
         DatabaseUtil.closeConnection(conn);
         return chapter;
@@ -80,6 +82,7 @@ public class ChapterUtil extends DatabaseUtil {
             rs.next();
             chapterName = rs.getString("name");
         } catch (Exception e) {
+            logger.error("getChapterNameFromGreekName");
         }
         DatabaseUtil.closeConnection(conn);
         return chapterName;
@@ -91,6 +94,7 @@ public class ChapterUtil extends DatabaseUtil {
             chapter = ChapterUtil.getChapter(name);
         }
         catch (Exception e) {
+            logger.error("getChapterGreekName");
             return "-";
         }
         return chapter.getGreekName();
@@ -112,6 +116,7 @@ public class ChapterUtil extends DatabaseUtil {
                 ));
             }
         } catch (Exception e) {
+            logger.error("getChapterList");
         }
         DatabaseUtil.closeConnection(conn);
         return chapterList;

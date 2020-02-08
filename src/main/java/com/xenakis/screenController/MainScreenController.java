@@ -16,7 +16,7 @@ import javafx.scene.text.Text;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainScreenController extends ScreenController{
+public class MainScreenController extends ScreenController {
 
 	@FXML
     private Text chapter1Button;
@@ -100,7 +100,7 @@ public class MainScreenController extends ScreenController{
                 ImagInLexis.mainContainer.setScreen("ScoreTableScreen");
             }
             else{
-            	System.err.println("unknown source in main screen controller");
+                logger.error("unknown source in main screen controller");
             }
 
     	}
@@ -117,11 +117,11 @@ public class MainScreenController extends ScreenController{
                 ImagInLexis.mainContainer.setScreen("ScoreTableScreen");
             }
             else{
-            	System.err.println("unknown source in main screen controller");
+                logger.error("unknown source in main screen controller");
             }
     	}
     	else{
-        	System.err.println("unknown source in main screen controller");
+            logger.error("unknown source in main screen controller");
     	}
         SoundService.stopSound("endProgramSound");
 

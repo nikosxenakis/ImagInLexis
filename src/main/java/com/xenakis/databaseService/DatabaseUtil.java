@@ -23,7 +23,6 @@ abstract class DatabaseUtil {
 
         try {
             conn = DriverManager.getConnection(db_path);
-//            logger.info("Connection to SQLite has been established.");
         } catch (SQLException e) {
             logger.error(e.getMessage());
         }
@@ -34,7 +33,6 @@ abstract class DatabaseUtil {
         try {
             if (conn != null) {
                 conn.close();
-//                logger.info("Connection to SQLite has been closed.");
             }
         } catch (SQLException ex) {
             logger.error(ex.getMessage());
@@ -42,10 +40,9 @@ abstract class DatabaseUtil {
     }
 
     static ResultSet execute(Connection conn, String sql) {
-        PreparedStatement statement  = null;
         ResultSet rs = null;
         try {
-            statement = conn.prepareStatement(sql);
+            PreparedStatement statement = conn.prepareStatement(sql);
             rs = statement.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();

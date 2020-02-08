@@ -27,6 +27,7 @@ public class CategoryUtil extends DatabaseUtil {
                     rs.getString("greekName")
             );
         } catch (Exception e) {
+            logger.error("Category with name = " + name + " was not found");
             throw new Exception("Category with name = " + name + " was not found");
         }
         DatabaseUtil.closeConnection(conn);
@@ -39,6 +40,7 @@ public class CategoryUtil extends DatabaseUtil {
             category = CategoryUtil.getCategory(name);
         }
         catch (Exception e) {
+            logger.error("getCategoryGreekName");
             return "-";
         }
         return category.getGreekName();
@@ -61,6 +63,7 @@ public class CategoryUtil extends DatabaseUtil {
                 ));
             }
         } catch (Exception e) {
+            logger.error("getCategoryList");
         }
         DatabaseUtil.closeConnection(conn);
         return categoryList;
@@ -85,6 +88,7 @@ public class CategoryUtil extends DatabaseUtil {
                 ));
             }
         } catch (Exception e) {
+            logger.error("getCategoryList");
         }
         DatabaseUtil.closeConnection(conn);
         return categoryList;
@@ -109,6 +113,7 @@ public class CategoryUtil extends DatabaseUtil {
                     rs.getString("greekName")
             );
         } catch (Exception e) {
+            logger.error("getCategoryFromGreekName");
         }
         DatabaseUtil.closeConnection(conn);
         return category;

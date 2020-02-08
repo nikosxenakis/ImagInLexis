@@ -3,11 +3,14 @@ package com.xenakis.application;
 import com.xenakis.databaseService.ScreenUtil;
 import com.xenakis.model.ScreenData;
 import com.xenakis.service.JsonParser;
+import org.apache.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import java.util.*;
 
 public class ImagInLexisParser {
+
+	static final Logger logger = Logger.getLogger(ImagInLexisParser.class);
 
 	private static JSONObject dataJsonObject;
 
@@ -51,7 +54,8 @@ public class ImagInLexisParser {
 	
 	private static void parseCategory(Object categoryObj, String chapterName){
 		if(!(categoryObj instanceof JSONObject)){
-			System.out.println("error in parseCategory");
+			logger.error("parseCategory");
+
 		}
 
     	JSONObject tmpCategory = (JSONObject) categoryObj;
@@ -68,7 +72,7 @@ public class ImagInLexisParser {
 
 	private static void parseChapter(Object chapter){
 		if(!(chapter instanceof JSONObject)){
-			System.err.println("error in parseChapter");
+			logger.error("parseChapter");
 		}
 		
     	JSONObject tmpChapter = (JSONObject) chapter;
