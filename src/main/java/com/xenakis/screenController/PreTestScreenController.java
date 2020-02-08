@@ -56,7 +56,7 @@ public class PreTestScreenController extends ScreenController{
 
     	backgroundImage.setImage(ImageService.getImage("background"));
 
-		SoundService.stopSound("startProgramSound");
+		SoundService.stopSound("endProgramSound");
 		SoundService.playSound(testService.getCategory()+"Sound");
     	
     	mainWindow.setStyle(testService.getMainWindowStyle());
