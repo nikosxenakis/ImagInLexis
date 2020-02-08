@@ -25,10 +25,35 @@ public class ScreenUtil extends DatabaseUtil {
                 ));
             }
         } catch (Exception e) {
-            logger.error("getScreens error");
+            logger.error("getScreens error executing: " + sql);
             logger.error(e.getMessage());
         }
         DatabaseUtil.closeConnection(conn);
         return screenDataArray;
+    }
+
+    public static ScreenData getScreen(int screenTypeId, String screenName) {
+        ResultSet rs;
+        String sql = "SELECT * FROM screens WHERE screenTypeId=" + screenTypeId + " AND name='" + screenName + "'";
+        ScreenData screenData = null;
+
+        Connection conn = DatabaseUtil.connect();
+
+        try {
+            rs = DatabaseUtil.execute(conn, sql);
+            while(rs.next()) {
+                screenData = new ScreenData(
+                        rs.getInt("id"),
+                        rs.getInt("screenTypeId"),
+                        rs.getString("name"),
+                        rs.getString("path")
+                );
+            }
+        } catch (Exception e) {
+            logger.error("getScreen error executing: " + sql);
+            logger.error(e.getMessage());
+        }
+        DatabaseUtil.closeConnection(conn);
+        return screenData;
     }
 }

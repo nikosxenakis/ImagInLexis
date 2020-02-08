@@ -4,7 +4,7 @@
     <groupId>com.nikosxenakis.ImagInLexis</groupId>
     <artifactId>ImagInLexis</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.1</version>
+    <version>1.2</version>
     <name>ImagInLexis</name>
     <url>https://github.com/nikosxenakis/ImagInLexis</url>
 

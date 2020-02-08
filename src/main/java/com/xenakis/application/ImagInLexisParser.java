@@ -1,5 +1,7 @@
 package com.xenakis.application;
 
+import com.xenakis.databaseService.ScreenUtil;
+import com.xenakis.model.ScreenData;
 import com.xenakis.service.JsonParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -20,10 +22,7 @@ public class ImagInLexisParser {
 	private static final HashMap<String, List<String>> categoriesScreenIdList = new HashMap<>();
 
 	public static void initialize() {
-
 		dataJsonObject = JsonParser.loadObject("json/data.json");
-		screensJsonObject = JsonParser.loadObject("json/screens.json");
-
 		parseQuestions();
 	}
 
@@ -44,26 +43,11 @@ public class ImagInLexisParser {
 	        }
         
 		addToCategoriesScreenIdList(category,screenId);
-
-		JSONArray screensArr = (JSONArray) screensJsonObject.get("screens");
-
-		String screenPath = null;
-		if(screensArr != null)
-			for (Object screenObj : screensArr){
-				JSONObject screen = (JSONObject) screenObj;
-				String screenTypeTmp = (String)screen.get("type");
-				String screenPathTmp = (String)screen.get("path");
-				if(screenType.equals(screenTypeTmp)) {
-					screenPath = screenPathTmp;
-					break;
-				}
-
-			}
-
+	        
+		ScreenData screenData = ScreenUtil.getScreen(2, screenType);
+		String screenPath = (screenData != null) ? screenData.getPath() : null;
 		ResourcePathsHolder.addResourcePaths(screenId, screenPath);
-
 		QuestionFactory.createQuestion(screenType,questionObj,chapterName,categoryName,answersSet);
-
 	}
 	
 	private static void parseCategory(Object categoryObj, String chapterName){
