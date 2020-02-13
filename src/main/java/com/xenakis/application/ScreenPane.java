@@ -94,12 +94,12 @@ public class ScreenPane extends StackPane {
     		if (!getChildren().isEmpty()) {    //if there is more than one screen
     			Timeline fade = new Timeline(
     				new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
-    				new KeyFrame(new Duration(200), t -> {
+    				new KeyFrame(new Duration(100), t -> {
 						getChildren().remove(0);                    //remove the displayed screen
 						getChildren().add(0, screens.get(screenId));     //add the screen
 						Timeline fadeIn = new Timeline(
 							new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-							new KeyFrame(new Duration(200), new KeyValue(opacity, 1.0))
+							new KeyFrame(new Duration(100), new KeyValue(opacity, 1.0))
 						);
 						fadeIn.play();
 					}, new KeyValue(opacity, 0.0))
