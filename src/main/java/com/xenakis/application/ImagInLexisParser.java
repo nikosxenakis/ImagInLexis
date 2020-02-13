@@ -14,9 +14,6 @@ public class ImagInLexisParser {
 
 	private static JSONObject dataJsonObject;
 
-	//chapterName -> chapterTotalQuestions
-	private static final HashMap<String, Integer> chapterTotalQuestions = new HashMap<>();
-	
 	//categoryName -> chapterTotalQuestions
 	private static final HashMap<String, Integer> categoryTotalQuestions = new HashMap<>();
 
@@ -79,8 +76,6 @@ public class ImagInLexisParser {
     	String chapterName = (String) tmpChapter.get("chapterName");
 		JSONArray chapterList = (JSONArray) tmpChapter.get("chapterList");
 
-		chapterTotalQuestions.put(chapterName, chapterList.size());
-		
     	for (Object category : chapterList){
     		parseCategory(category,chapterName);	
         }
