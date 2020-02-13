@@ -13,49 +13,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.MainScreenController">
+<AnchorPane fx:id="mainWindow" prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xenakis.screenController.MainScreenController">
    <children>
       <BorderPane prefHeight="657.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <center>
-            <AnchorPane prefHeight="608.0" prefWidth="956.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fx:id="backgroundImage" fitHeight="472.0" fitWidth="1023.0" layoutX="96.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/logo/mainMenu.png" />
-                     </image>
-                  </ImageView>
-                  <Text fx:id="chapter3Button" layoutX="285.0" layoutY="277.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Συσχετιζόμενες&#10;Έννοιες" textAlignment="CENTER">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-                  <Text fx:id="chapter2Button" layoutX="602.0" layoutY="248.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Κατονομασία">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-                  <Text fx:id="chapter1Button" layoutX="466.0" layoutY="119.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Αναγνώριση">
-                     <font>
-                        <Font size="31.0" />
-                     </font>
-                     <effect>
-                        <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                  </Text>
-               </children>
-               <BorderPane.margin>
-                  <Insets top="100.0" />
-               </BorderPane.margin>
-            </AnchorPane>
-         </center>
          <top>
-            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <ImageView fx:id="logoImage" fitHeight="154.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -145,6 +107,49 @@
                </children>
             </HBox>
          </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="608.0" prefWidth="956.0">
+                           <children>
+                              <ImageView fx:id="backgroundImage" fitHeight="472.0" fitWidth="1023.0" layoutX="65.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/logo/mainMenu.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="chapter3Button" layoutX="265.0" layoutY="314.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Συσχετιζόμενες&#10;Έννοιες" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                                 <effect>
+                                    <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </Text>
+                              <Text fx:id="chapter2Button" layoutX="575.0" layoutY="289.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Κατονομασία">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                                 <effect>
+                                    <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </Text>
+                              <Text fx:id="chapter1Button" layoutX="437.0" layoutY="158.0" onMouseClicked="#start" onMouseEntered="#mouseOver" onMouseExited="#mouseOut" strokeType="OUTSIDE" strokeWidth="0.0" text="Αναγνώριση">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                                 <effect>
+                                    <Shadow blurType="ONE_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>

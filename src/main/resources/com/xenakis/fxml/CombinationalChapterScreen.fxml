@@ -1,111 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.xenakis.screenController.CombinationalChapterScreenController">
+<AnchorPane prefHeight="657.0" prefWidth="883.0" style="-fx-background-color: #9ED5DB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xenakis.screenController.CombinationalChapterScreenController">
    <children>
       <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="685.0" prefWidth="1059.0">
          <center>
-            <ImageView fx:id="backgroundImage" fitHeight="706.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../images/logo/background.png" />
-               </image>
-            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="backgroundImage" fitHeight="706.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo/background.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
          </center>
       </BorderPane>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <AnchorPane fx:id="mainWindow" prefHeight="520.0" prefWidth="989.0" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
-                  <Ellipse fill="#1f93ffb5" layoutX="550.0" layoutY="361.0" radiusX="483.0" radiusY="275.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                     <effect>
-                        <Shadow color="#29e2e5f7" />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fx:id="combinationalObject" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="549.0" layoutY="214.0" onMouseClicked="#start" radiusX="175.0" radiusY="68.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                     <effect>
-                        <Shadow color="#660eff" />
-                     </effect>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fx:id="combinationalProfessions" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="820.0" layoutY="363.0" onMouseClicked="#start" radiusX="182.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                     <effect>
-                        <Shadow color="#ffaa00" />
-                     </effect>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Ellipse>
-                  <Ellipse fx:id="combinationalSequence" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="273.0" layoutY="362.0" onMouseClicked="#start" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <effect>
-                        <Shadow color="#ff0808" />
-                     </effect>
-                  </Ellipse>
-                  <Ellipse fx:id="combinationalAction" styleClass="chapter_ellipse" fill="#2721ffb5" layoutX="537.0" layoutY="534.0" onMouseClicked="#start" radiusX="156.0" radiusY="55.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                     <effect>
-                        <Shadow color="#79ff0a" />
-                     </effect>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Ellipse>
-                  <Text fill="WHITE" layoutX="506.0" layoutY="218.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
-                     <font>
-                        <Font size="30.0" />
-                     </font>
-                  </Text>
-                  <ImageView fx:id="combinationalProfessionsImage" fitHeight="68.0" fitWidth="75.0" layoutX="687.0" layoutY="331.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons/professionsIcon.jpg" />
-                     </image>
-                  </ImageView>
-                  <Text fill="WHITE" layoutX="777.0" layoutY="374.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα" wrappingWidth="200.70791625976562">
-                     <font>
-                        <Font size="30.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="opposite111" fill="WHITE" layoutX="492.0" layoutY="542.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες" wrappingWidth="156.7188720703125">
-                     <font>
-                        <Font size="30.0" />
-                     </font>
-                  </Text>
-                  <ImageView fx:id="combinationalObjectImage" fitHeight="57.0" fitWidth="60.0" layoutX="428.0" layoutY="179.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons/objectIcon.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="automatedActionsImage" fitHeight="61.0" fitWidth="68.0" layoutX="418.0" layoutY="501.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons/actionIcon.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="homeImage" styleClass="homeIcon" fitHeight="155.0" fitWidth="210.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/logo/imagInLexisLogo.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="combinationalSequenceImage" fitHeight="60.0" fitWidth="68.0" layoutX="132.0" layoutY="331.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons/automatedActionsIcon.jpg" />
-                     </image>
-                  </ImageView>
-                  <Text fx:id="opposite1111" fill="WHITE" layoutX="213.0" layoutY="352.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αλληλουχία πράξεων" wrappingWidth="165.92950439453125">
-                     <font>
-                        <Font size="30.0" />
-                     </font>
-                  </Text>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="mainWindow" prefHeight="520.0" prefWidth="989.0">
+                           <children>
+                              <Ellipse fill="#1f93ffb5" layoutX="550.0" layoutY="361.0" radiusX="483.0" radiusY="275.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                                 <effect>
+                                    <Shadow color="#29e2e5f7" />
+                                 </effect>
+                              </Ellipse>
+                              <Ellipse fx:id="combinationalObject" fill="#2721ffb5" layoutX="549.0" layoutY="214.0" onMouseClicked="#start" radiusX="175.0" radiusY="68.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="chapter_ellipse">
+                                 <effect>
+                                    <Shadow color="#660eff" />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Ellipse>
+                              <Ellipse fx:id="combinationalProfessions" fill="#2721ffb5" layoutX="820.0" layoutY="363.0" onMouseClicked="#start" radiusX="182.0" radiusY="60.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="chapter_ellipse">
+                                 <effect>
+                                    <Shadow color="#ffaa00" />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Ellipse>
+                              <Ellipse fx:id="combinationalSequence" fill="#2721ffb5" layoutX="273.0" layoutY="362.0" onMouseClicked="#start" radiusX="161.0" radiusY="78.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="chapter_ellipse">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <Shadow color="#ff0808" />
+                                 </effect>
+                              </Ellipse>
+                              <Ellipse fx:id="combinationalAction" fill="#2721ffb5" layoutX="537.0" layoutY="534.0" onMouseClicked="#start" radiusX="156.0" radiusY="55.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="chapter_ellipse">
+                                 <effect>
+                                    <Shadow color="#79ff0a" />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Ellipse>
+                              <Text fill="WHITE" layoutX="506.0" layoutY="218.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αντικείμενα">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="combinationalProfessionsImage" fitHeight="68.0" fitWidth="75.0" layoutX="687.0" layoutY="331.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/professionsIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" layoutX="777.0" layoutY="374.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="επαγγέλματα" wrappingWidth="200.70791625976562">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="opposite111" fill="WHITE" layoutX="492.0" layoutY="542.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="ενέργειες" wrappingWidth="156.7188720703125">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="combinationalObjectImage" fitHeight="57.0" fitWidth="60.0" layoutX="428.0" layoutY="179.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/objectIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="automatedActionsImage" fitHeight="61.0" fitWidth="68.0" layoutX="418.0" layoutY="501.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/actionIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="homeImage" fitHeight="155.0" fitWidth="210.0" layoutX="10.0" layoutY="48.0" onMouseClicked="#homeIconClicked" pickOnBounds="true" preserveRatio="true" styleClass="homeIcon">
+                                 <image>
+                                    <Image url="@../images/logo/imagInLexisLogo.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="combinationalSequenceImage" fitHeight="60.0" fitWidth="68.0" layoutX="132.0" layoutY="331.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/automatedActionsIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="opposite1111" fill="WHITE" layoutX="213.0" layoutY="352.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="αλληλουχία πράξεων" wrappingWidth="165.92950439453125">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
                </children>
-            </AnchorPane>
+            </VBox>
          </center>
       </BorderPane>
    </children>
