@@ -1,2 +1,9 @@
 language: java
 jdk: openjdk14
+deploy:
+  provider: releases
+  api_key: "f51a3be0f506bf51b7ecb18174afea1777aafb8b"
+  file: "./target/ImagInLexis.jar"
+  skip_cleanup: true
+  on:
+    tags: true
