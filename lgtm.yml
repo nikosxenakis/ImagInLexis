@@ -1,15 +1,5 @@
-# extraction:
-#   java:
-#     before_index:
-#       export BUILD_MODE=release
-#     index:
-#       maven:
-#         version: 4.0.0
-#         settings_file: $LGTM_SRC/pom.xml
-
-
 extraction:
   java:
     index:
       build_command:
-      - mvn clean compile jar:jar install -f pom.xml
+      - mvn clean compile install
