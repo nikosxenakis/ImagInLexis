@@ -4,13 +4,13 @@
     <groupId>com.nikosxenakis.ImagInLexis</groupId>
     <artifactId>ImagInLexis</artifactId>
     <packaging>jar</packaging>
-    <version>1.2</version>
+    <version>1.3</version>
     <name>ImagInLexis</name>
     <url>https://github.com/nikosxenakis/ImagInLexis</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>com.xenakis.ImagInLexis</mainClass>
+        <mainClass>com.xenakis.ImagInLexisMain</mainClass>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
@@ -18,7 +18,7 @@
     <developers>
         <developer>
             <name>
-                Nikos Xenakis
+                Nikolaos Xenakis
             </name>
         </developer>
     </developers>
@@ -26,18 +26,25 @@
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics </artifactId>
-            <version>13</version>
+            <artifactId>javafx-graphics</artifactId>
+            <version>14</version>
+            <classifier>mac</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>14</version>
+            <classifier>win</classifier>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
-            <version>13</version>
+            <version>14</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>13</version>
+            <version>14</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -89,7 +96,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.3</version>
                 <configuration>
-                    <mainClass>com.xenakis.ImagInLexis</mainClass>
+                    <mainClass>com.xenakis.ImagInLexisMain</mainClass>
                 </configuration>
             </plugin>
 
@@ -101,7 +108,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.xenakis.ImagInLexis</mainClass>
+                            <mainClass>com.xenakis.ImagInLexisMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -120,7 +127,8 @@
                 </executions>
                 <configuration>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
-                    <finalName>${project.artifactId}-${project.version}</finalName>
+                    <shadedClassifierName>${project.artifactId}-original</shadedClassifierName>
+                    <finalName>${project.artifactId}</finalName>
                 </configuration>
             </plugin>
 

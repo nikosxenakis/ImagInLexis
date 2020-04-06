@@ -22,7 +22,11 @@ ImagInLexis is a tool that aims to enhance therapies programs of Logotherapeutic
 
 * Java 8: This is the official website to download [java 8](https://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 
-* Java JDK 13
+* Java Open JDK 14
+
+* Greek language keyboard
+
+* Maven 4.0.0
 
 ## Building and Deployment
 
