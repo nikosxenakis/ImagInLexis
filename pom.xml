@@ -4,7 +4,7 @@
     <groupId>com.nikosxenakis.ImagInLexis</groupId>
     <artifactId>ImagInLexis</artifactId>
     <packaging>jar</packaging>
-    <version>1.3</version>
+    <version>1.4</version>
     <name>ImagInLexis</name>
     <url>https://github.com/nikosxenakis/ImagInLexis</url>
 
@@ -71,7 +71,6 @@
     <build>
         <finalName>ImagInLexis</finalName>
         <plugins>
-
             <!--compile-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -82,14 +81,12 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
             <!--test-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-
             <!--run-->
             <plugin>
                 <groupId>org.openjfx</groupId>
@@ -99,7 +96,6 @@
                     <mainClass>com.xenakis.ImagInLexisMain</mainClass>
                 </configuration>
             </plugin>
-
             <!--build-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -113,6 +109,7 @@
                     </archive>
                 </configuration>
             </plugin>
+            <!--create fat jar-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -131,7 +128,6 @@
                     <finalName>${project.artifactId}</finalName>
                 </configuration>
             </plugin>
-
             <!--doxygen-->
             <plugin>
                 <groupId>com.soebes.maven.plugins</groupId>
@@ -141,11 +137,7 @@
                     <configurationFile>${basedir}/Doxyfile</configurationFile>
                 </configuration>
             </plugin>
-
-
-
         </plugins>
-
     </build>
 
     <reporting>
