@@ -1,11 +1,12 @@
 package com.xenakis.screenController;
 
-import com.xenakis.model.Category;
-import com.xenakis.model.Chapter;
 import com.xenakis.databaseService.CategoryUtil;
 import com.xenakis.databaseService.ChapterUtil;
 import com.xenakis.databaseService.ScoreUtil;
+import com.xenakis.model.Category;
+import com.xenakis.model.Chapter;
 import com.xenakis.model.Score;
+import com.xenakis.view.ScoreView;
 import com.xenakis.ImagInLexis;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -16,10 +17,10 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
-public class ScoreTableScreenController extends ScreenController{
+public class ScoreTableScreenController extends ScreenController {
 
 	@FXML
-    private TableView<Score> scoreTable;
+    private TableView<ScoreView> scoreTable;
     
     @FXML
     private ComboBox<String> chapterOptions;
@@ -39,16 +40,10 @@ public class ScoreTableScreenController extends ScreenController{
     }
 
     public void init(){
-
-        TableColumn<Score, String> nameCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(0);
-        TableColumn<Score, String> scoreCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(1);
-        TableColumn<Score, String> dateCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(2);
-        TableColumn<Score, String> timeCol = (TableColumn<Score, String>) scoreTable.getVisibleLeafColumn(3);
-
-        nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
-        scoreCol.setCellValueFactory(new PropertyValueFactory<>("score"));
-        dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
-        timeCol.setCellValueFactory(new PropertyValueFactory<>("time"));
+        scoreTable.getVisibleLeafColumn(0).setCellValueFactory(new PropertyValueFactory<>("name"));
+        scoreTable.getVisibleLeafColumn(1).setCellValueFactory(new PropertyValueFactory<>("score"));
+        scoreTable.getVisibleLeafColumn(2).setCellValueFactory(new PropertyValueFactory<>("date"));
+        scoreTable.getVisibleLeafColumn(3).setCellValueFactory(new PropertyValueFactory<>("time"));
 
         chapterOptions.getItems().clear();
         chapterOptions.getItems().add("Όλα");
@@ -135,7 +130,7 @@ public class ScoreTableScreenController extends ScreenController{
 
         scoreTable.getItems().clear();
         for(Score score : scoreList){
-            scoreTable.getItems().add(score);
+            scoreTable.getItems().add(new ScoreView(score));
         }
 
         logger.info("Renew Scores: chapterId = " + chapterId + ", categoryId = " + categoryId);

@@ -2,7 +2,7 @@ package com.xenakis.screenData;
 
 import java.util.Set;
 
-public class WhatIsThisScreenData extends QuestionScreenData{
+public class WhatIsThisScreenData extends QuestionScreenData {
 
 	private final String imageId;
 	private final String soundId;

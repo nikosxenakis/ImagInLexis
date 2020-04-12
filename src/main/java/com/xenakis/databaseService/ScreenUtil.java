@@ -1,9 +1,9 @@
 package com.xenakis.databaseService;
 
-import com.xenakis.model.ScreenData;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import com.xenakis.model.ScreenData;
 
 public class ScreenUtil extends DatabaseUtil {
 
