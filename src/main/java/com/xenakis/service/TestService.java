@@ -20,6 +20,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+class TestView {
+
+}
+
 public class TestService {
 
 	private final String menuScreenId;
@@ -31,6 +35,7 @@ public class TestService {
 	private final ArrayList<String> testScreenList = new ArrayList<>();
 
 	private final TestData testData;
+	private int answeredQuestions = 0;
 
 	public TestService(String chapter, String category, String chapterName, String categoryName, String menuScreenId){
 
@@ -102,20 +107,22 @@ public class TestService {
 
 	public int calculateScore() {
 		int correctAnswersNum = this.calculateCorrectAnswers();
-		int score = (correctAnswersNum * 100) / testData.getTotalQuestions();
-		System.out.println("Correct: " + correctAnswersNum + ", Total: " + testData.getTotalQuestions() + ", Score: " + score);
+		int score = (correctAnswersNum * 100) / this.getTotalQuestions();
+		System.out.println("Correct: " + correctAnswersNum + ", Total: " + this.getTotalQuestions() + ", Score: " + score);
 		return score;
 	}
 
 	public int getCorrectAnswers(){ return this.calculateCorrectAnswers(); }
 
 	public int getWrongAnswers(){
-		return testData.getTotalQuestions() - this.calculateCorrectAnswers();
+		return this.getTotalQuestions() - this.calculateCorrectAnswers();
 	}
 
-	public int getAnsweredQuestions() { return testData.getAnsweredQuestions(); }
+	public int getAnsweredQuestions() { return this.answeredQuestions; }
 
-	public int getTotalQuestions() { return testData.getTotalQuestions(); }
+	public void setAnsweredQuestions(int answeredQuestions) { this.answeredQuestions = answeredQuestions; }
+
+	public int getTotalQuestions() { return ImagInLexisParser.getCategoryTotalQuestions(this.testData.getCategory()); }
 
 	private void setStyle(String chapterName) {
 		this.mainWindowStyle = "-fx-border-width: 10;";
@@ -155,7 +162,7 @@ public class TestService {
 	}
 
 	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
-		this.testData.setAnsweredQuestions(this.testData.getAnsweredQuestions() + 1);
+		this.setAnsweredQuestions(this.getAnsweredQuestions() + 1);
 		this.testData.addAnswer(screenList.peek(), answersNo);
 
 		removeScreen();
@@ -167,14 +174,14 @@ public class TestService {
 
 		String screenId = screenList.peek();
 		QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(screenId);
-		screenController.setAnsweredQuestions(this.testData.getAnsweredQuestions());
+		screenController.setAnsweredQuestions(this.getAnsweredQuestions());
 
 		this.nextQuestion(myScreenPane);
 	}
 
 	private void finishTest(){
-		if(this.testData.getTotalQuestions() != this.testData.getAnsweredQuestions()){
-			System.err.println("error in finishTest answeredQuestions = " + this.testData.getAnsweredQuestions());
+		if(this.getTotalQuestions() != this.getAnsweredQuestions()){
+			System.err.println("error in finishTest answeredQuestions = " + this.getAnsweredQuestions());
 		}
 
 		int score = this.calculateScore();
@@ -220,7 +227,7 @@ public class TestService {
 			screenList.add(screenId);
 			String retScreenId = screenList.peek();
 			QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(retScreenId);
-			screenController.setAnsweredQuestions(testData.getAnsweredQuestions());
+			screenController.setAnsweredQuestions(this.getAnsweredQuestions());
 
 			System.out.println("screenList after: "+screenList.toString());
 
@@ -237,7 +244,7 @@ public class TestService {
 	}
 
 	public boolean isLastQuestion(){
-		return testData.getTotalQuestions() - 1 == testData.getAnsweredQuestions();
+		return this.getTotalQuestions() - 1 == this.getAnsweredQuestions();
 	}
 
 	private void cleanMemory(){
