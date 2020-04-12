@@ -77,8 +77,8 @@ public class TestService {
 		return testData.getCategoryName();
 	}
 
-	public int getScoreNum(){
-		return testData.getScoreNum();
+	public int getScoreNum() {
+		return testData.getScore();
 	}
 
 	public int getCorrectAnswers(){
@@ -152,7 +152,7 @@ public class TestService {
 			System.err.println("error in finishTest answeredQuestions = " + this.testData.getAnsweredQuestions());
 		}
 
-		int score = this.testData.calculateResults();
+		int score = this.testData.getScore();
 		System.out.println("score= "+score);
 
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
@@ -171,8 +171,6 @@ public class TestService {
 		System.out.println("time= "+strTime);
 
 		ScoreUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, chapterId, categoryId);
-
-		testData.setScoreNum(score);
 
 		//load PostTestScreen
 		ImagInLexis.mainContainer.setScreen("PostTestScreen");
