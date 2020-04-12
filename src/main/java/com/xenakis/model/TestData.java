@@ -15,10 +15,9 @@ public class TestData {
     private final HashMap<String, Set<Integer>> answers = new HashMap<>();
     private final HashMap<String, Set<Integer>> correctAnswers = new HashMap<>();
     private final HashMap<String, Boolean> absoluteAnswers = new HashMap<>();
-    private final int totalQuestions;
 
-    private int correctAnswersNum;
     private int answeredQuestions;
+    private final int totalQuestions;
 
     public TestData(String chapter, String category, String chapterName, String categoryName) {
         this.chapter = chapter;
@@ -28,16 +27,6 @@ public class TestData {
 
         this.answeredQuestions = 0;
         this.totalQuestions = ImagInLexisParser.getCategoryTotalQuestions(category);
-
-        System.out.println("new TestUtil.java: "+chapter+" "+category+" "+chapterName+" "+categoryName+" "+totalQuestions);
-    }
-
-    public void addAbsoluteAnswers(String screenId, boolean absoluteAnswer) {
-        this.absoluteAnswers.put(screenId, absoluteAnswer);
-    }
-
-    public void addCorrectAnswers(String screenId, Set<Integer> answers) {
-        this.correctAnswers.put(screenId, answers);
     }
 
     public String getChapter(){
@@ -56,49 +45,23 @@ public class TestData {
         return this.categoryName;
     }
 
-    public int getCorrectAnswers(){
-        return correctAnswersNum;
-    }
-
-    public int getWrongAnswers(){
-        return this.totalQuestions - this.correctAnswersNum;
-    }
-
     public int getAnsweredQuestions() { return this.answeredQuestions; }
 
     public int getTotalQuestions() { return this.totalQuestions; }
 
-    public HashMap<String, Set<Integer>> getAnswers() { return this.answers; }
+    public Set<String> getAnswersKeys() { return this.answers.keySet(); }
 
-    public void submitAnswer(String screenId, Set<Integer> answersNo) {
-        answeredQuestions++;
-        answers.put(screenId, answersNo);
-    }
+    public Set<Integer> getCorrectAnswers(String answersKey) { return this.correctAnswers.get(answersKey); }
 
-    public int getScore() {
+    public Set<Integer> getAnswers(String answersKey) { return this.answers.get(answersKey); }
 
-        System.out.println("answers: " + answers.toString());
-        System.out.println("correctAnswers: "+ correctAnswers);
+    public Boolean getAbsoluteAnswers(String answersKey) { return this.absoluteAnswers.get(answersKey); }
 
-        this.correctAnswersNum = 0;
+    public void setAnsweredQuestions(int answeredQuestions) { this.answeredQuestions = answeredQuestions; }
 
-        for (String key : answers.keySet()) {
+    public void addAbsoluteAnswers(String screenId, boolean absoluteAnswer) { this.absoluteAnswers.put(screenId, absoluteAnswer); }
 
-            //if it is not absolute
-            if(absoluteAnswers.get(key) != null && !absoluteAnswers.get(key)){
-                if(correctAnswers.get(key).containsAll(answers.get(key)) && answers.get(key).size() > 0){
-                    this.correctAnswersNum++;
-                }
-            }
-            else{
-                Set<Integer> mutualAnswers = new TreeSet<>(correctAnswers.get(key));
-                mutualAnswers.retainAll(answers.get(key));
-                this.correctAnswersNum += mutualAnswers.size()/correctAnswers.get(key).size();
-            }
-        }
+    public void addCorrectAnswers(String screenId, Set<Integer> answers) { this.correctAnswers.put(screenId, answers); }
 
-        int score = (this.correctAnswersNum * 100) / this.totalQuestions;
-        System.out.println("Correct: " + correctAnswersNum + ", Total: " + totalQuestions + ", Score: " + score);
-        return score;
-    }
+    public void addAnswer(String screenId, Set<Integer> answersNo) { answers.put(screenId, answersNo); }
 }

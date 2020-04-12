@@ -46,7 +46,7 @@ public class PostTestScreenController extends ScreenController{
     	this.testService = testService;
 		
     	mainWindow.setStyle(testService.getMainWindowStyle());
-    	score.setText( testService.getScoreNum()+"%");
+    	score.setText( testService.calculateScore() + "%");
     	correctAnswers.setText(String.valueOf(testService.getCorrectAnswers()));
     	wrongAnswers.setText(String.valueOf(testService.getWrongAnswers()));
 
@@ -55,9 +55,9 @@ public class PostTestScreenController extends ScreenController{
     	boolean passed = false;
     	
     	if(
-    			(testService.getChapterName().equals("Αναγνώριση") && testService.getScoreNum() >= 80) ||
-    			(testService.getChapterName().equals("Κατονομασία") && testService.getScoreNum() >= 90) ||
-    			(testService.getChapterName().equals("Συσχετιζόμενες Έννοιες") && testService.getScoreNum() >= 90)
+    			(testService.getChapterName().equals("Αναγνώριση") && testService.calculateScore() >= 80) ||
+    			(testService.getChapterName().equals("Κατονομασία") && testService.calculateScore() >= 90) ||
+    			(testService.getChapterName().equals("Συσχετιζόμενες Έννοιες") && testService.calculateScore() >= 90)
     	){
     		passed = true;
     	}

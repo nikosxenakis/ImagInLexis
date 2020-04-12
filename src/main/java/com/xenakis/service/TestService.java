@@ -58,7 +58,6 @@ public class TestService {
 			Set<Integer> answers = screenData.getAnswers();
 			this.testData.addCorrectAnswers(screenId, answers);
 		}
-
 	}
 
 	public String getChapter(){
@@ -77,16 +76,41 @@ public class TestService {
 		return testData.getCategoryName();
 	}
 
-	public int getScoreNum() {
-		return testData.getScore();
+	public int calculateCorrectAnswers() {
+		int correctAnswersNum = 0;
+
+		for (String answersKey : testData.getAnswersKeys()) {
+			Set<Integer> correctAnswers = testData.getCorrectAnswers(answersKey);
+			Set<Integer> answers = testData.getAnswers(answersKey);
+			Boolean absoluteAnswerExist = testData.getAbsoluteAnswers(answersKey);
+
+			//if it is not absolute
+			if(absoluteAnswerExist != null && !absoluteAnswerExist){
+				if(correctAnswers.containsAll(answers) && answers.size() > 0){
+					correctAnswersNum++;
+				}
+			}
+			else {
+				Set<Integer> mutualAnswers = new TreeSet<>(correctAnswers);
+				mutualAnswers.retainAll(answers);
+				correctAnswersNum += mutualAnswers.size()/correctAnswers.size();
+			}
+		}
+
+		return correctAnswersNum;
 	}
 
-	public int getCorrectAnswers(){
-		return testData.getCorrectAnswers();
+	public int calculateScore() {
+		int correctAnswersNum = this.calculateCorrectAnswers();
+		int score = (correctAnswersNum * 100) / testData.getTotalQuestions();
+		System.out.println("Correct: " + correctAnswersNum + ", Total: " + testData.getTotalQuestions() + ", Score: " + score);
+		return score;
 	}
+
+	public int getCorrectAnswers(){ return this.calculateCorrectAnswers(); }
 
 	public int getWrongAnswers(){
-		return testData.getWrongAnswers();
+		return testData.getTotalQuestions() - this.calculateCorrectAnswers();
 	}
 
 	public int getAnsweredQuestions() { return testData.getAnsweredQuestions(); }
@@ -131,7 +155,8 @@ public class TestService {
 	}
 
 	public void submitAnswer(ScreenPane myScreenPane, Set<Integer> answersNo){
-		this.testData.submitAnswer(screenList.peek(), answersNo);
+		this.testData.setAnsweredQuestions(this.testData.getAnsweredQuestions() + 1);
+		this.testData.addAnswer(screenList.peek(), answersNo);
 
 		removeScreen();
 
@@ -152,7 +177,7 @@ public class TestService {
 			System.err.println("error in finishTest answeredQuestions = " + this.testData.getAnsweredQuestions());
 		}
 
-		int score = this.testData.getScore();
+		int score = this.calculateScore();
 		System.out.println("score= "+score);
 
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
