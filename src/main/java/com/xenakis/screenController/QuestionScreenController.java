@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.ResourceBundle;
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
+import com.xenakis.view.TestView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
@@ -125,10 +126,10 @@ public abstract class QuestionScreenController extends ScreenController {
     	categoryImage.setImage(image);
 
     	progressBar.setProgress((getTestService().getAnsweredQuestions()/(double) getTestService().getTotalQuestions()));
-    	
-    	mainWindow.setStyle(testService.getMainWindowStyle());
-    	mainPane.setStyle(testService.getMainPaneStyle());
-    	infoPane.setStyle(testService.getInfoPaneStyle());
+
+		mainWindow.setStyle(TestView.getMainWindowStyle(testService.getChapterName()));
+		mainPane.setStyle(TestView.getMainPaneStyle(testService.getChapterName()));
+		infoPane.setStyle(TestView.getInfoPaneStyle(testService.getChapterName()));
 
 		submitButton.setDisable(true);
 

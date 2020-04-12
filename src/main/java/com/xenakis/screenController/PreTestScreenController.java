@@ -7,6 +7,7 @@ package com.xenakis.screenController;
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
 import com.xenakis.service.SoundService;
+import com.xenakis.view.TestView;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -58,11 +59,11 @@ public class PreTestScreenController extends ScreenController{
 
 		SoundService.stopSound("endProgramSound");
 		SoundService.playSound(testService.getCategory()+"Sound");
-    	
-    	mainWindow.setStyle(testService.getMainWindowStyle());
-    	infoPane.setStyle(testService.getInfoPaneStyle()+" -fx-opacity: 0.9;");
-    	
-    	infoPane.setMaxWidth(500);
+
+		mainWindow.setStyle(TestView.getMainWindowStyle(testService.getChapterName()));
+		infoPane.setStyle(TestView.getInfoPaneStyle(testService.getChapterName()) + " -fx-opacity: 0.9;");
+
+		infoPane.setMaxWidth(500);
     }
     
     public void startTest(){

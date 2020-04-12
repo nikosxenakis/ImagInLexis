@@ -8,6 +8,7 @@ import com.xenakis.ImagInLexis;
 import com.xenakis.service.TestService;
 import com.xenakis.service.ImageService;
 import com.xenakis.service.SoundService;
+import com.xenakis.view.TestView;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -45,7 +46,7 @@ public class PostTestScreenController extends ScreenController{
     public void init(TestService testService){
     	this.testService = testService;
 		
-    	mainWindow.setStyle(testService.getMainWindowStyle());
+    	mainWindow.setStyle(TestView.getMainWindowStyle(testService.getChapterName()));
     	score.setText( testService.calculateScore() + "%");
     	correctAnswers.setText(String.valueOf(testService.getCorrectAnswers()));
     	wrongAnswers.setText(String.valueOf(testService.getWrongAnswers()));

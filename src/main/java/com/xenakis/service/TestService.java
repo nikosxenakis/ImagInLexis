@@ -20,16 +20,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-class TestView {
-
-}
-
 public class TestService {
 
 	private final String menuScreenId;
-	private String mainWindowStyle;
-	private String mainPaneStyle;
-	private String infoPaneStyle;
+
 
 	private final Queue<String> screenList = new LinkedList<>();
 	private final ArrayList<String> testScreenList = new ArrayList<>();
@@ -42,8 +36,6 @@ public class TestService {
 		this.testData = new TestData(chapter, category, chapterName, categoryName);
 
 		this.menuScreenId = menuScreenId;
-
-		this.setStyle(chapterName);
 
 		//load PreTestScreen
 		ImagInLexis.mainContainer.setScreen("PreTestScreen");
@@ -123,28 +115,6 @@ public class TestService {
 	public void setAnsweredQuestions(int answeredQuestions) { this.answeredQuestions = answeredQuestions; }
 
 	public int getTotalQuestions() { return ImagInLexisParser.getCategoryTotalQuestions(this.testData.getCategory()); }
-
-	private void setStyle(String chapterName) {
-		this.mainWindowStyle = "-fx-border-width: 10;";
-		this.mainPaneStyle = "-fx-background-radius: 15;";
-		this.infoPaneStyle = "-fx-background-radius: 15;";
-
-		if ("Αναγνώριση".equals(chapterName)) {
-			this.mainWindowStyle += "-fx-background-color:  #DDE3A8;";// -fx-border-color:  #9ED5DB";
-			this.mainPaneStyle += "-fx-background-color:  #7ECCC7;";
-			this.infoPaneStyle += "-fx-background-color:  #7ECCA4;";
-		} else if ("Κατονομασία".equals(chapterName)) {
-			this.mainWindowStyle += "-fx-background-color:  #FFD154;";// -fx-border-color:  #CF903B";
-			this.mainPaneStyle += "-fx-background-color:  #80DBBB;";
-			this.infoPaneStyle += "-fx-background-color:  #BADB80;";
-		} else if ("Συσχετιζόμενες Έννοιες".equals(chapterName)) {
-			this.mainWindowStyle += "-fx-background-color:  #ED591F;";// -fx-border-color:  #E08E70";
-			this.mainPaneStyle += "-fx-background-color:  #AE99C2;";
-			this.infoPaneStyle += "-fx-background-color:  #E39DAD;";
-		} else {
-			System.err.println("error in TestUtil Screen no such a chapter");
-		}
-	}
 
 	public String getMenuScreenId(){
 		return this.menuScreenId;
@@ -257,17 +227,4 @@ public class TestService {
 
 		System.gc();
 	}
-
-	public String getMainWindowStyle(){
-		return this.mainWindowStyle;
-	}
-
-	public String getMainPaneStyle(){
-		return this.mainPaneStyle;
-	}
-
-	public String getInfoPaneStyle(){
-		return this.infoPaneStyle;
-	}
-
 }
