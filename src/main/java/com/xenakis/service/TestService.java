@@ -16,6 +16,8 @@ import com.xenakis.screenData.ScreenDataHolder;
 import com.xenakis.databaseService.CategoryUtil;
 import com.xenakis.databaseService.ChapterUtil;
 import com.xenakis.databaseService.ScoreUtil;
+import org.apache.log4j.Logger;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -23,13 +25,12 @@ import java.util.*;
 public class TestService {
 
 	private final String menuScreenId;
-
-
 	private final Queue<String> screenList = new LinkedList<>();
 	private final ArrayList<String> testScreenList = new ArrayList<>();
-
 	private final TestData testData;
 	private int answeredQuestions = 0;
+
+	protected static final Logger logger = Logger.getLogger(TestService.class);
 
 	public TestService(String chapter, String category, String chapterName, String categoryName, String menuScreenId){
 
@@ -100,7 +101,7 @@ public class TestService {
 	public int calculateScore() {
 		int correctAnswersNum = this.calculateCorrectAnswers();
 		int score = (correctAnswersNum * 100) / this.getTotalQuestions();
-		System.out.println("Correct: " + correctAnswersNum + ", Total: " + this.getTotalQuestions() + ", Score: " + score);
+		logger.info("Correct: " + correctAnswersNum + ", Total: " + this.getTotalQuestions() + ", Score: " + score);
 		return score;
 	}
 
@@ -127,7 +128,7 @@ public class TestService {
 
 	public void nextQuestion(ScreenPane myScreenPane){
 		String screenId = this.getNextScreen();
-		System.out.println("next screenId = "+screenId);
+		logger.info("next screenId = "+screenId);
 		myScreenPane.setScreen(screenId);
 	}
 
@@ -151,11 +152,10 @@ public class TestService {
 
 	private void finishTest(){
 		if(this.getTotalQuestions() != this.getAnsweredQuestions()){
-			System.err.println("error in finishTest answeredQuestions = " + this.getAnsweredQuestions());
+			logger.error("error in finishTest answeredQuestions = " + this.getAnsweredQuestions());
 		}
 
 		int score = this.calculateScore();
-		System.out.println("score= "+score);
 
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		DateFormat timeFormat = new SimpleDateFormat("HH:mm");
@@ -169,8 +169,7 @@ public class TestService {
 		Category category = CategoryUtil.getCategoryFromGreekName(this.testData.getCategoryName());
 		int categoryId = category.getId();
 
-		System.out.println("date= "+strDate);
-		System.out.println("time= "+strTime);
+		logger.info("date = "+strDate + ", time = "+strTime);
 
 		ScoreUtil.insertScore(ImagInLexis.userName, strTime, strDate, score, chapterId, categoryId);
 
@@ -184,13 +183,13 @@ public class TestService {
 	}
 
 	private void addToScreenList(String screenId){
-		System.out.println("addToScreenList: "+screenId);
+		logger.info("addToScreenList: " + screenId);
 		screenList.add(screenId);
 		testScreenList.add(screenId);
 	}
 
 	private String getNextScreen(){
-		System.out.println("screenList before: "+screenList.toString());
+		logger.info("screenList before: "+screenList.toString());
 
 		if(!screenList.isEmpty()){
 			String screenId = screenList.remove();
@@ -199,7 +198,7 @@ public class TestService {
 			QuestionScreenController screenController = (QuestionScreenController) ImagInLexis.mainContainer.getController(retScreenId);
 			screenController.setAnsweredQuestions(this.getAnsweredQuestions());
 
-			System.out.println("screenList after: "+screenList.toString());
+			logger.info("screenList next: "+screenList.toString());
 
 			return retScreenId;
 		}
@@ -219,7 +218,7 @@ public class TestService {
 
 	private void cleanMemory(){
 		for(String screenId: testScreenList){
-			System.out.println("unload screen : "+screenId);
+			logger.info("unload screen : " + screenId);
 			ImagInLexis.mainContainer.unloadScreen(screenId);
 		}
 

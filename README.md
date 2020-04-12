@@ -80,3 +80,8 @@ mvn doxygen:report
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## TODO
+
+Katonomasia tests doesn't work
+Eponemo doesn't work

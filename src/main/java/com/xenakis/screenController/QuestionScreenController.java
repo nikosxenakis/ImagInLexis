@@ -106,10 +106,6 @@ public abstract class QuestionScreenController extends ScreenController {
 	}
 	
     public void setData(QuestionScreenData screenData, TestService testService){
-
-		submitButton.setDisable(true);
-		nextButton.setDisable(true);
-
     	this.testService = testService;
 
     	question.setText(screenData.getQuestion());
@@ -132,6 +128,7 @@ public abstract class QuestionScreenController extends ScreenController {
 		infoPane.setStyle(TestView.getInfoPaneStyle(testService.getChapterName()));
 
 		submitButton.setDisable(true);
+		nextButton.setDisable(false);
 
 		if(testService.getTotalQuestions() == 1){
 			nextButton.setDisable(true);
