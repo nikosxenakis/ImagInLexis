@@ -1,10 +1,3 @@
-FROM openjdk:14
-COPY . /usr/src/ImagInLexis
-WORKDIR /usr/src/ImagInLexis
-RUN javac Main.java
-CMD ["java", "Main"]
-
-
 FROM openjdk:14-jdk
 
 ARG MAVEN_VERSION=3.6.3
@@ -26,5 +19,5 @@ COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
 COPY settings-docker.xml /usr/share/maven/ref/
 
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-CMD ["mvn"]
+CMD ["java", "mvn"]
 RUN mvn clean compile install
