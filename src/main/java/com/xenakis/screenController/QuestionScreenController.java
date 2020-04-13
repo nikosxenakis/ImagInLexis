@@ -80,9 +80,6 @@ public abstract class QuestionScreenController extends ScreenController {
     	super();
 		isSelection = false;
 	}
-	private TestService getTestService(){
-		return testService;
-	}
 
 	private boolean getIsSelection(){
 		return this.isSelection;
@@ -110,7 +107,6 @@ public abstract class QuestionScreenController extends ScreenController {
 
     	question.setText(screenData.getQuestion());
     	
-    	answeredQuestions.setText(String.valueOf(testService.getAnsweredQuestions()));
     	totalQuestions.setText(String.valueOf(testService.getTotalQuestions()));
     	chapterName.setText(screenData.getChapterName());
     	categoryName.setText(screenData.getCategoryName());
@@ -121,14 +117,15 @@ public abstract class QuestionScreenController extends ScreenController {
     	image = ImageService.getImage(testService.getCategory()+"Image");
     	categoryImage.setImage(image);
 
-    	progressBar.setProgress((getTestService().getAnsweredQuestions()/(double) getTestService().getTotalQuestions()));
-
 		mainWindow.setStyle(TestView.getMainWindowStyle(testService.getChapterName()));
 		mainPane.setStyle(TestView.getMainPaneStyle(testService.getChapterName()));
 		infoPane.setStyle(TestView.getInfoPaneStyle(testService.getChapterName()));
 
 		submitButton.setDisable(true);
 		nextButton.setDisable(false);
+
+		answeredQuestions.setText(String.valueOf(testService.getAnsweredQuestions()));
+		progressBar.setProgress((testService.getAnsweredQuestions()/(double) testService.getTotalQuestions()));
 
 		if(testService.getTotalQuestions() == 1){
 			nextButton.setDisable(true);
@@ -137,9 +134,9 @@ public abstract class QuestionScreenController extends ScreenController {
     
     public void setAnsweredQuestions(Integer answeredQuestions){
     	this.answeredQuestions.setText(answeredQuestions.toString());
-    	this.progressBar.setProgress((getTestService().getAnsweredQuestions()/(double) getTestService().getTotalQuestions()));
+    	this.progressBar.setProgress((testService.getAnsweredQuestions()/(double) testService.getTotalQuestions()));
     	
-    	if(getTestService().isLastQuestion()){
+    	if(testService.isLastQuestion()){
     		nextButton.setDisable(true);
     	}
 
@@ -151,12 +148,12 @@ public abstract class QuestionScreenController extends ScreenController {
 			return;
 		}
 		logger.info("submitButton clicked");
-		getTestService().submitAnswer(getScreenPane(), getAnswer());
+		testService.submitAnswer(getScreenPane(), getAnswer());
     }
 
 	public void nextButtonPressed() {
 		logger.info("nextButton clicked");
-		getTestService().nextQuestion(getScreenPane());
+		testService.nextQuestion(getScreenPane());
 	}
 
     protected void enableSubmit() {
